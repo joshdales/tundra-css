@@ -22,7 +22,15 @@
 	--green-7: oklch(90% 0.15 165);
 	--green: var(--green-4);
 
-	--blue: oklch(60% 0.2 255);
+	--blue-1: oklch(30% 0.126 255);
+	--blue-2: oklch(40% 0.16 255);
+	--blue-3: oklch(50% 0.2 255);
+	--blue-4: oklch(60% 0.2 255);
+	--blue-5: oklch(70% 0.17 255);
+	--blue-6: oklch(80% 0.111 255);
+	--blue-7: oklch(90% 0.054 255);
+	--blue: var(--blue-4);
+
 	--yellow: oklch(85% 0.15 80);
 
 	/* Space */
@@ -54,6 +62,7 @@
 @supports not (color: color(display-p3 1 1 1)) {
 	:root {
 		--red: #ff333c;
+
 		--green-1: #003726;
 		--green-2: #00563c;
 		--green-3: #007654;
@@ -62,6 +71,15 @@
 		--green-6: #41dca5;
 		--green-7: #6afdc5;
 		--blue: #007df2;
+
+	--blue-1: #002d5e;
+	--blue-2: #00468c;
+	--blue-3: #0061be;
+	--blue-4: #007df2;
+	--blue-5: #53a0ff;
+	--blue-6: #91c1ff;
+	--blue-7: #c9e0ff;
+
 		--yellow: #ffc251;
 	}
 }

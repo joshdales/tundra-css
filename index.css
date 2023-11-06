@@ -1,0 +1,52 @@
+:root {
+	/* Neutrals */
+	--neutral-0: oklch(23.59% 0.011 242.18); /* #1a1f23 */
+	--neutral-1: oklch(32.18% 0.01 241.98); /* #2f3438 */
+	--neutral-2: oklch(40.56% 0.008 233.84); /* #454a4d */
+	--neutral-3: oklch(49.01% 0.007 239.93); /* #5d6164 */
+	--neutral-4: oklch(57.45% 0.006 247.93); /* #76797c */
+	--neutral-5: oklch(66.14% 0.005 236.53); /* #909395 */
+	--neutral-6: oklch(74.55% 0.004 219.54); /* #aaadae */
+	--neutral-7: oklch(82.95% 0.003 264.54); /* #c6c7c9 */
+	--neutral-8: oklch(91.53% 0.002 247.84); /* #e2e3e4 */
+	--neutral-9: oklch(100% 0 0) /* #ffffff */;
+
+	--red: oklch(65% 0.24 25);
+	--green: oklch(60% 0.15 165);
+	--blue: oklch(60% 0.2 255);
+	--yellow: oklch(85% 0.15 80);
+
+	/* Space */
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 14px;
+	--space-5: 16px;
+	--space-6: 18px;
+	--space-7: 20px;
+	--space-8: 24px;
+	--space-9: 28px;
+	--space-10: 32px;
+	--space-11: 40px;
+	--space-12: 48px;
+	--space-13: 64px;
+	--space-14: 128px;
+
+	/* Radius */
+	--radius-1: 3px;
+	--radius-2: 5px;
+	--radius-3: 10px;
+	--radius-4: 20px;
+	--radius-5: 30px;
+	--radius-6: 50px;
+}
+
+/* When Display-P3 is not supported. */
+@supports not (color: color(display-p3 1 1 1)) {
+	:root {
+		--red: #ff333c;
+		--green: #00976d;
+		--blue: #007df2;
+		--yellow: #ffc251;
+	}
+}

@@ -11,7 +11,14 @@
 	--neutral-8: oklch(91.53% 0.002 247.84); /* #e2e3e4 */
 	--neutral-9: oklch(100% 0 0) /* #ffffff */;
 
-	--red: oklch(65% 0.24 25);
+	--red-1: oklch(35% 0.158 25);
+	--red-2: oklch(45% 0.2 25);
+	--red-3: oklch(55% 0.24 25);
+	--red-4: oklch(65% 0.24 25);
+	--red-5: oklch(75% 0.19 25);
+	--red-6: oklch(85% 0.105 25);
+	--red-7: oklch(90% 0.066 25);
+	--red: var(--red-4);
 
 	--green-1: oklch(30% 0.086 165);
 	--green-2: oklch(40% 0.11 165);
@@ -31,7 +38,14 @@
 	--blue-7: oklch(90% 0.054 255);
 	--blue: var(--blue-4);
 
-	--yellow: oklch(85% 0.15 80);
+	--yellow-1: oklch(70% 0.15 80);
+	--yellow-2: oklch(75% 0.15 80);
+	--yellow-3: oklch(80% 0.15 80);
+	--yellow-4: oklch(85% 0.15 80);
+	--yellow-5: oklch(89% 0.129 80);
+	--yellow-6: oklch(92% 0.092 80);
+	--yellow-7: oklch(95% 0.056 80);
+	--yellow: var(--yellow-4);
 
 	/* Space */
 	--space-1: 4px;
@@ -61,16 +75,21 @@
 /* When Display-P3 is not supported. */
 @supports not (color: color(display-p3 1 1 1)) {
 	:root {
-		--red: #ff333c;
+		--red-1: #73000d;
+		--red-2: #a30018;
+		--red-3: #d50022;
+		--red-4: #ff333c;
+		--red-5: #ff847d;
+		--red-6: #ffbab3;
+		--red-7: #ffd1cd;
 
-		--green-1: #003726;
-		--green-2: #00563c;
-		--green-3: #007654;
-		--green-4: #00976d;
-		--green-5: #00ba87;
-		--green-6: #41dca5;
-		--green-7: #6afdc5;
-		--blue: #007df2;
+	--green-1: #003726;
+	--green-2: #00563c;
+	--green-3: #007654;
+	--green-4: #00976d;
+	--green-5: #00ba87;
+	--green-6: #41dca5;
+	--green-7: #6afdc5;
 
 	--blue-1: #002d5e;
 	--blue-2: #00468c;
@@ -80,6 +99,12 @@
 	--blue-6: #91c1ff;
 	--blue-7: #c9e0ff;
 
-		--yellow: #ffc251;
+	--yellow-1: #cd9200;
+	--yellow-2: #dfa11a;
+	--yellow-3: #f0b135;
+	--yellow-4: #ffc251;
+	--yellow-5: #ffd48a;
+	--yellow-6: #ffe0ad;
+	--yellow-7: #ffeccd;
 	}
 }

@@ -12,7 +12,16 @@
 	--neutral-9: oklch(100% 0 0) /* #ffffff */;
 
 	--red: oklch(65% 0.24 25);
-	--green: oklch(60% 0.15 165);
+
+	--green-1: oklch(30% 0.086 165);
+	--green-2: oklch(40% 0.11 165);
+	--green-3: oklch(50% 0.14 165);
+	--green-4: oklch(60% 0.15 165);
+	--green-5: oklch(70% 0.15 165);
+	--green-6: oklch(80% 0.15 165);
+	--green-7: oklch(90% 0.15 165);
+	--green: var(--green-4);
+
 	--blue: oklch(60% 0.2 255);
 	--yellow: oklch(85% 0.15 80);
 
@@ -45,7 +54,13 @@
 @supports not (color: color(display-p3 1 1 1)) {
 	:root {
 		--red: #ff333c;
-		--green: #00976d;
+		--green-1: #003726;
+		--green-2: #00563c;
+		--green-3: #007654;
+		--green-4: #00976d;
+		--green-5: #00ba87;
+		--green-6: #41dca5;
+		--green-7: #6afdc5;
 		--blue: #007df2;
 		--yellow: #ffc251;
 	}

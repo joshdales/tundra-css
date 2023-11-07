@@ -67,11 +67,10 @@
 
 	/* Radius */
 	--radius-1: 3px;
-	--radius-2: 5px;
-	--radius-3: 10px;
-	--radius-4: 20px;
-	--radius-5: 30px;
-	--radius-6: 50px;
+	--radius-2: 6px;
+	--radius-3: 12px;
+	--radius-4: 24px;
+	--radius-5: 48px;
 
 	/* Font Weights */
 	--font-weight-1: 400;

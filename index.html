@@ -35,6 +35,14 @@
 			}
 		}
 
+		.btn-selector {
+			display: flex;
+		}
+
+		fieldset {
+			display: flex;
+			flex-direction: column;
+		}
 	</style>
 </head>
 <body>
@@ -179,5 +187,79 @@
 			<p class="label-4">Label 4</p>
 		</section>
 	</article>
+
+	<article class="buttons">
+		<div class="btn-selector">
+			<fieldset id="button-colour">
+				<legend>Select <code>button</code> colour</legend>
+				<label for="colour-red">
+					Red
+					<input type="radio" name="colour" id="colour-red" value="red">
+				</label>
+
+				<label for="colour-blue">
+					Blue
+					<input type="radio" name="colour" id="colour-blue" value="blue" checked>
+				</label>
+
+				<label for="colour-green">
+					Green
+					<input type="radio" name="colour" id="colour-green" value="green">
+				</label>
+
+				<label for="colour-yellow">
+					Yellow
+					<input type="radio" name="colour" id="colour-yellow" value="yellow">
+				</label>
+			</fieldset>
+
+			<fieldset id="button-variant">
+				<legend>Select <code>button</code> variant</legend>
+				<label for="primary">
+					Primary
+					<input type="radio" name="variant" id="primary" value="primary" checked>
+				</label>
+
+				<label for="secondary">
+					Secondary
+					<input type="radio" name="variant" id="secondary" value="secondary">
+				</label>
+
+				<label for="ghost">
+					Ghost
+					<input type="radio" name="variant" id="ghost" value="ghost">
+				</label>
+			</fieldset>
+		</div>
+
+		<button class="button-1 primary blue">Button 1</button>
+		<button class="button-2 primary blue">Button 2</button>
+		<button class="button-3 primary blue">Button 3</button>
+		<button class="button-4 primary blue">Button 4</button>
+	</article>
+
+	<script>
+		const btns = document.querySelectorAll(".buttons button")
+		const btn_variant_radio = document.querySelectorAll('input[type="radio"][name="variant"]')
+		btn_variant_radio.forEach(radio => {
+			radio.addEventListener('change', (event) => {
+				const { value } = event.target
+				btns.forEach((btn, i) => {
+					btn.classList.remove('primary', 'secondary', 'ghost')
+					btn.classList.add(value)
+				})
+			})
+		})
+		const btn_colour_radio = document.querySelectorAll('input[type="radio"][name="colour"]')
+		btn_colour_radio.forEach(radio => {
+			radio.addEventListener('change', (event) => {
+				const { value } = event.target
+				btns.forEach((btn, i) => {
+					btn.classList.remove('red', 'blue', 'green', 'yellow')
+					btn.classList.add(value)
+				})
+			})
+		})
+	</script>
 </body>
 </html>

@@ -196,6 +196,11 @@
 		<div class="btn-selector">
 			<fieldset id="button-colour">
 				<legend>Select <code>button</code> colour</legend>
+				<label for="colour-neutral">
+					Neutral
+					<input type="radio" name="colour" id="colour-neutral" value="neutral" checked>
+				</label>
+
 				<label for="colour-red">
 					Red
 					<input type="radio" name="colour" id="colour-red" value="red">
@@ -203,7 +208,7 @@
 
 				<label for="colour-blue">
 					Blue
-					<input type="radio" name="colour" id="colour-blue" value="blue" checked>
+					<input type="radio" name="colour" id="colour-blue" value="blue">
 				</label>
 
 				<label for="colour-green">
@@ -236,10 +241,10 @@
 			</fieldset>
 		</div>
 
-		<button class="button-1 primary blue">Button 1</button>
-		<button class="button-2 primary blue">Button 2</button>
-		<button class="button-3 primary blue">Button 3</button>
-		<button class="button-4 primary blue">Button 4</button>
+		<button class="button-1 primary neutral">Button 1</button>
+		<button class="button-2 primary neutral">Button 2</button>
+		<button class="button-3 primary neutral">Button 3</button>
+		<button class="button-4 primary neutral">Button 4</button>
 	</article>
 
 	<script>
@@ -259,7 +264,7 @@
 			radio.addEventListener('change', (event) => {
 				const { value } = event.target
 				btns.forEach((btn, i) => {
-					btn.classList.remove('red', 'blue', 'green', 'yellow')
+					btn.classList.remove('neutral', 'red', 'blue', 'green', 'yellow')
 					btn.classList.add(value)
 				})
 			})

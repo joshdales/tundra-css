@@ -540,6 +540,12 @@ button,
 		}
 	}
 
+	&.neutral {
+		--btn-1: var(--neutral-2);
+		--btn-2: var(--neutral-1);
+		--btn-3: var(--neutral-3);
+	}
+
 	&.red {
 		--btn-1: var(--red-2);
 		--btn-2: var(--red-3);

@@ -10,7 +10,7 @@
 	--neutral-8: oklch(98% 0.01 250);
 
 	/* Reds */
-	--red-1: oklch(35% 0.158 25);
+	--red-1: oklch(40% 0.18 25);
 	--red-2: oklch(45% 0.2 25);
 	--red-3: oklch(55% 0.24 25);
 	--red-4: oklch(65% 0.24 25);
@@ -20,7 +20,7 @@
 	--red: var(--red-4);
 
 	/* Greens */
-	--green-1: oklch(30% 0.086 165);
+	--green-1: oklch(35% 0.1 165);
 	--green-2: oklch(40% 0.11 165);
 	--green-3: oklch(50% 0.14 165);
 	--green-4: oklch(60% 0.15 165);
@@ -30,7 +30,7 @@
 	--green: var(--green-4);
 
 	/* Blues */
-	--blue-1: oklch(30% 0.126 255);
+	--blue-1: oklch(35% 0.14 255);
 	--blue-2: oklch(40% 0.16 255);
 	--blue-3: oklch(50% 0.2 255);
 	--blue-4: oklch(60% 0.2 255);
@@ -74,12 +74,13 @@
 	--radius-6: 50px;
 }
 
+
 /* When Display-P3 is not supported. */
 @supports not (color: color(display-p3 1 1 1)) {
 	:root {
 		--neutral-8: #f4f9ff;
 
-		--red-1: #73000d;
+		--red-1: #8a0012;
 		--red-2: #a30018;
 		--red-3: #d50022;
 		--red-4: #ff333c;
@@ -87,7 +88,7 @@
 		--red-6: #ffbab3;
 		--red-7: #ffd1cd;
 
-		--green-1: #003726;
+		--green-1: #004631;
 		--green-2: #00563c;
 		--green-3: #007654;
 		--green-4: #00976d;
@@ -95,7 +96,7 @@
 		--green-6: #41dca5;
 		--green-7: #6afdc5;
 
-		--blue-1: #002d5e;
+		--blue-1: #003974;
 		--blue-2: #00468c;
 		--blue-3: #0061be;
 		--blue-4: #007df2;

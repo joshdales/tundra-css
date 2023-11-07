@@ -49,7 +49,7 @@
 	--yellow-7: oklch(95% 0.056 80);
 	--yellow: var(--yellow-4);
 
-	/* Space */
+	/* Spacing */
 	--space-1: 4px;
 	--space-2: 8px;
 	--space-3: 12px;
@@ -72,8 +72,107 @@
 	--radius-4: 20px;
 	--radius-5: 30px;
 	--radius-6: 50px;
+
+	/* Font Weights */
+	--font-weight-1: 400;
+	--font-weight-2: 500;
+	--font-weight-3: 700;
+
+	/* Font Sizes */
+	--font-size-1: var(--space-3);
+	--font-size-2: var(--space-4);
+	--font-size-3: var(--space-5);
+	--font-size-4: var(--space-6);
+	--font-size-5: var(--space-7);
+	--font-size-6: var(--space-8);
+	--font-size-7: var(--space-9);
+	--font-size-8: var(--space-10);
+	--font-size-9: var(--space-12);
+
+	/* Line Heights */
+	--line-height-1: 1.0;
+	--line-height-2: 1.05;
+	--line-height-3: 1.15;
+	--line-height-4: 1.25;
+	--line-height-5: 1.5;
+
+	/* Letter Spacing */
+	--letter-spacing-1: -0.04em;
+	--letter-spacing-2: -0.02em;
+	--letter-spacing-3: 0em;
+	--letter-spacing-4: 0.02em;
+	--letter-spacing-5: 0.04em;
 }
 
+.font-weight-1 {
+	font-weight: var(--font-weight-1);
+}
+.font-weight-2 {
+	font-weight: var(--font-weight-2);
+}
+.font-weight-3 {
+	font-weight: var(--font-weight-3);
+}
+
+.font-size-1 {
+	font-size: var(--font-size-1);
+}
+.font-size-2 {
+	font-size: var(--font-size-2);
+}
+.font-size-3 {
+	font-size: var(--font-size-3);
+}
+.font-size-4 {
+	font-size: var(--font-size-4);
+}
+.font-size-5 {
+	font-size: var(--font-size-5);
+}
+.font-size-6 {
+	font-size: var(--font-size-6);
+}
+.font-size-7 {
+	font-size: var(--font-size-7);
+}
+.font-size-8 {
+	font-size: var(--font-size-8);
+}
+.font-size-9 {
+	font-size: var(--font-size-9);
+}
+
+.line-height-1{
+	line-height: var(--line-height-1);
+}
+.line-height-2{
+	line-height: var(--line-height-2);
+}
+.line-height-3{
+	line-height: var(--line-height-3);
+}
+.line-height-4{
+	line-height: var(--line-height-4);
+}
+.line-height-5{
+	line-height: var(--line-height-5);
+}
+
+.letter-spacing-1 {
+	letter-spacing: var(--letter-spacing-1);
+}
+.letter-spacing-2 {
+	letter-spacing: var(--letter-spacing-2);
+}
+.letter-spacing-3 {
+	letter-spacing: var(--letter-spacing-3);
+}
+.letter-spacing-4 {
+	letter-spacing: var(--letter-spacing-4);
+}
+.letter-spacing-5 {
+	letter-spacing: var(--letter-spacing-5);
+}
 
 /* When Display-P3 is not supported. */
 @supports not (color: color(display-p3 1 1 1)) {

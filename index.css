@@ -107,9 +107,11 @@
 .font-weight-1 {
 	font-weight: var(--font-weight-1);
 }
+
 .font-weight-2 {
 	font-weight: var(--font-weight-2);
 }
+
 .font-weight-3 {
 	font-weight: var(--font-weight-3);
 }
@@ -117,64 +119,85 @@
 .font-size-1 {
 	font-size: var(--font-size-1);
 }
+
 .font-size-2 {
 	font-size: var(--font-size-2);
 }
+
 .font-size-3 {
 	font-size: var(--font-size-3);
 }
+
 .font-size-4 {
 	font-size: var(--font-size-4);
 }
+
 .font-size-5 {
 	font-size: var(--font-size-5);
 }
+
 .font-size-6 {
 	font-size: var(--font-size-6);
 }
+
 .font-size-7 {
 	font-size: var(--font-size-7);
 }
+
 .font-size-8 {
 	font-size: var(--font-size-8);
 }
+
 .font-size-9 {
 	font-size: var(--font-size-9);
 }
 
-.line-height-1{
+.line-height-1 {
 	line-height: var(--line-height-1);
 }
-.line-height-2{
+
+.line-height-2 {
 	line-height: var(--line-height-2);
 }
-.line-height-3{
+
+.line-height-3 {
 	line-height: var(--line-height-3);
 }
-.line-height-4{
+
+.line-height-4 {
 	line-height: var(--line-height-4);
 }
-.line-height-5{
+
+.line-height-5 {
 	line-height: var(--line-height-5);
 }
 
 .letter-spacing-1 {
 	letter-spacing: var(--letter-spacing-1);
 }
+
 .letter-spacing-2 {
 	letter-spacing: var(--letter-spacing-2);
 }
+
 .letter-spacing-3 {
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .letter-spacing-4 {
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .letter-spacing-5 {
 	letter-spacing: var(--letter-spacing-5);
 }
 
-.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
 	font-weight: var(--font-weight-3);
 }
 
@@ -187,30 +210,39 @@
 .heading-2 {
 	font-size: var(--font-size-5);
 	line-height: var(--line-height-5);
-letter-spacing: var(--letter-spacing-4);
+	letter-spacing: var(--letter-spacing-4);
 }
+
 .heading-3 {
 	font-size: var(--font-size-6);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .heading-4 {
 	font-size: var(--font-size-7);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .heading-5 {
 	font-size: var(--font-size-8);
 	line-height: var(--line-height-4);
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .heading-6 {
 	font-size: var(--font-size-9);
 	line-height: var(--line-height-4);
 	letter-spacing: var(--letter-spacing-2);
 }
 
-.alt-heading-1, .alt-heading-2, .alt-heading-3, .alt-heading-4, .alt-heading-5, .alt-heading-6 {
+.alt-heading-1,
+.alt-heading-2,
+.alt-heading-3,
+.alt-heading-4,
+.alt-heading-5,
+.alt-heading-6 {
 	font-weight: var(--font-weight-2);
 }
 
@@ -219,33 +251,41 @@ letter-spacing: var(--letter-spacing-4);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .alt-heading-2 {
 	font-size: var(--font-size-5);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .alt-heading-3 {
 	font-size: var(--font-size-6);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-2);
 }
+
 .alt-heading-4 {
 	font-size: var(--font-size-7);
 	line-height: var(--line-height-5);
 	letter-spacing: var(--letter-spacing-2);
 }
+
 .alt-heading-5 {
 	font-size: var(--font-size-8);
 	line-height: var(--line-height-4);
 	letter-spacing: var(--letter-spacing-1);
 }
+
 .alt-heading-6 {
 	font-size: var(--font-size-9);
 	line-height: var(--line-height-4);
 	letter-spacing: var(--letter-spacing-1);
 }
 
-.body-1, .body-2, .body-3, .body-4 {
+.body-1,
+.body-2,
+.body-3,
+.body-4 {
 	line-height: var(--line-height-5);
 }
 
@@ -254,23 +294,29 @@ letter-spacing: var(--letter-spacing-4);
 	font-weight: var(--font-weight-2);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .body-2 {
 	font-size: var(--font-size-2);
 	font-weight: var(--font-weight-1);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .body-3 {
 	font-size: var(--font-size-3);
 	font-weight: var(--font-weight-1);
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .body-4 {
 	font-size: var(--font-size-4);
 	font-weight: var(--font-weight-1);
 	letter-spacing: var(--letter-spacing-2);
 }
 
-.link-1, .link-2, .link-3, .link-4 {
+.link-1,
+.link-2,
+.link-3,
+.link-4 {
 	cursor: pointer;
 	text-decoration: underline;
 	font-weight: var(--font-weight-2);
@@ -281,20 +327,26 @@ letter-spacing: var(--letter-spacing-4);
 	font-size: var(--font-size-1);
 	letter-spacing: var(--letter-spacing-5);
 }
+
 .link-2 {
 	font-size: var(--font-size-2);
 	letter-spacing: var(--letter-spacing-5);
 }
+
 .link-3 {
 	font-size: var(--font-size-3);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .link-4 {
 	font-size: var(--font-size-4);
 	letter-spacing: var(--letter-spacing-4);
 }
 
-.button-1, .button-2, .button-3, .button-4 {
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
 	line-height: var(--line-height-4);
 	font-weight: var(--font-weight-2);
 	letter-spacing: var(--letter-spacing-5);
@@ -303,17 +355,23 @@ letter-spacing: var(--letter-spacing-4);
 .button-1 {
 	font-size: var(--font-size-2);
 }
+
 .button-2 {
 	font-size: var(--font-size-3);
 }
+
 .button-3 {
 	font-size: var(--font-size-4);
 }
+
 .button-4 {
 	font-size: var(--font-size-5);
 }
 
-.input-1, .input-2, .input-3, .input-4 {
+.input-1,
+.input-2,
+.input-3,
+.input-4 {
 	font-weight: var(--font-weight-1);
 	line-height: var(--line-height-4);
 }
@@ -322,20 +380,26 @@ letter-spacing: var(--letter-spacing-4);
 	font-size: var(--font-size-2);
 	letter-spacing: var(--letter-spacing-5);
 }
+
 .input-2 {
 	font-size: var(--font-size-3);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .input-3 {
 	font-size: var(--font-size-4);
 	letter-spacing: var(--letter-spacing-3);
 }
+
 .input-4 {
 	font-size: var(--font-size-5);
 	letter-spacing: var(--letter-spacing-2);
 }
 
-.label-1, .label-2, .label-3, .label-4 {
+.label-1,
+.label-2,
+.label-3,
+.label-4 {
 	font-weight: var(--font-weight-2);
 	line-height: var(--line-height-3);
 }
@@ -344,14 +408,17 @@ letter-spacing: var(--letter-spacing-4);
 	font-size: var(--font-size-2);
 	letter-spacing: var(--letter-spacing-5);
 }
+
 .label-2 {
 	font-size: var(--font-size-3);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .label-3 {
 	font-size: var(--font-size-4);
 	letter-spacing: var(--letter-spacing-4);
 }
+
 .label-4 {
 	font-size: var(--font-size-5);
 	letter-spacing: var(--letter-spacing-3);
@@ -400,7 +467,8 @@ html {
 	color: var(--neutral-1);
 }
 
-button, .button {
+button,
+.button {
 	cursor: pointer;
 	box-sizing: border-box;
 	border: 1px var(--btn-2) solid;

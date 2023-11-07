@@ -1,5 +1,5 @@
 # Tundra
-A design system.
+A design system, currently under construction 🏗️
 
 ## Naming conventions
 Variable names are prefixed with a number 0 -> 999. <br />

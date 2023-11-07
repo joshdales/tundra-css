@@ -519,13 +519,20 @@ button,
 	}
 
 	&.secondary {
-		background-color: transparent;
+		background-color: var(--neutral-8);
 		color: var(--btn-2);
 		border-color: var(--btn-2);
 
 		&:hover,
 		&:focus {
 			background-color: oklch(from var(--btn-3) l c h / 15%);
+			color: var(--btn-1);
+			border-color: var(--btn-1);
+		}
+
+		&:active {
+			color: var(--btn-3);
+			border-color: var(--btn-3);
 		}
 	}
 
@@ -537,6 +544,10 @@ button,
 		&:hover,
 		&:focus {
 			background-color: oklch(from var(--btn-3) l c h / 15%);
+		}
+
+		&:active {
+			border-color: var(--btn-3);
 		}
 	}
 

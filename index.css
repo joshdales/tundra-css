@@ -395,3 +395,7 @@ letter-spacing: var(--letter-spacing-4);
 		--yellow-7: #ffeccd;
 	}
 }
+
+html {
+	color: var(--neutral-1);
+}

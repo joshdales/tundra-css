@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tundra</title>
+	<link rel="stylesheet" href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css">
+	<link rel="stylesheet" href="index.css">
+	<style>
+
+		body, .typography, .text-styles {
+			display: flex;
+			flex-direction: column;
+			gap: var(--space-11);
+		}
+		.colour {
+			display: flex;
+
+			& > div {
+				height: var(--space-11);
+				width: var(--space-11);
+
+			}
+		}
+
+		.typography, .text-styles {
+			gap: var(--space-6);
+
+			& p {
+				margin-block: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<article class="colours">
+		<section class="colour">
+			<div style="background-color: var(--neutral-1);"></div>
+			<div style="background-color: var(--neutral-2);"></div>
+			<div style="background-color: var(--neutral-3);"></div>
+			<div style="background-color: var(--neutral-4);"></div>
+			<div style="background-color: var(--neutral-5);"></div>
+			<div style="background-color: var(--neutral-6);"></div>
+			<div style="background-color: var(--neutral-7);"></div>
+			<div style="background-color: var(--neutral-8);"></div>
+		</section>
+
+		<section class="colour">
+			<div style="background-color: var(--red-1);"></div>
+			<div style="background-color: var(--red-2);"></div>
+			<div style="background-color: var(--red-3);"></div>
+			<div style="background-color: var(--red-4);"></div>
+			<div style="background-color: var(--red-5);"></div>
+			<div style="background-color: var(--red-6);"></div>
+			<div style="background-color: var(--red-7);"></div>
+		</section>
+
+		<section class="colour">
+			<div style="background-color: var(--blue-1);"></div>
+			<div style="background-color: var(--blue-2);"></div>
+			<div style="background-color: var(--blue-3);"></div>
+			<div style="background-color: var(--blue-4);"></div>
+			<div style="background-color: var(--blue-5);"></div>
+			<div style="background-color: var(--blue-6);"></div>
+			<div style="background-color: var(--blue-7);"></div>
+		</section>
+
+		<section class="colour">
+			<div style="background-color: var(--green-1);"></div>
+			<div style="background-color: var(--green-2);"></div>
+			<div style="background-color: var(--green-3);"></div>
+			<div style="background-color: var(--green-4);"></div>
+			<div style="background-color: var(--green-5);"></div>
+			<div style="background-color: var(--green-6);"></div>
+			<div style="background-color: var(--green-7);"></div>
+		</section>
+
+		<section class="colour">
+			<div style="background-color: var(--yellow-1);"></div>
+			<div style="background-color: var(--yellow-2);"></div>
+			<div style="background-color: var(--yellow-3);"></div>
+			<div style="background-color: var(--yellow-4);"></div>
+			<div style="background-color: var(--yellow-5);"></div>
+			<div style="background-color: var(--yellow-6);"></div>
+			<div style="background-color: var(--yellow-7);"></div>
+		</section>
+	</article>
+
+	<article class="typography">
+		<section>
+			<p class="font-weight-1">Font Weight 1</p>
+			<p class="font-weight-2">Font Weight 2</p>
+			<p class="font-weight-3">Font Weight 3</p>
+		</section>
+		<section>
+			<p class="font-size-1">Font Size 1</p>
+			<p class="font-size-2">Font Size 2</p>
+			<p class="font-size-3">Font Size 3</p>
+			<p class="font-size-4">Font Size 4</p>
+			<p class="font-size-5">Font Size 5</p>
+			<p class="font-size-6">Font Size 6</p>
+			<p class="font-size-7">Font Size 7</p>
+			<p class="font-size-8">Font Size 8</p>
+			<p class="font-size-9">Font Size 9</p>
+		</section>
+		<section>
+			<p class="line-height-1">Line Height 1</p>
+			<p class="line-height-2">Line Height 2</p>
+			<p class="line-height-3">Line Height 3</p>
+			<p class="line-height-4">Line Height 4</p>
+			<p class="line-height-5">Line Height 5</p>
+		</section>
+		<section>
+			<p class="letter-spacing-1">Letter Spacing 1</p>
+			<p class="letter-spacing-2">Letter Spacing 2</p>
+			<p class="letter-spacing-3">Letter Spacing 3</p>
+			<p class="letter-spacing-4">Letter Spacing 4</p>
+			<p class="letter-spacing-5">Letter Spacing 5</p>
+		</section>
+	</article>
+
+	<article class="text-styles">
+		<section>
+			<p class="heading-1">Heading 1</p>
+			<p class="heading-2">Heading 2</p>
+			<p class="heading-3">Heading 3</p>
+			<p class="heading-4">Heading 4</p>
+			<p class="heading-5">Heading 5</p>
+			<p class="heading-6">Heading 6</p>
+		</section>
+
+		<section>
+			<p class="alt-heading-1">Alt-heading 1</p>
+			<p class="alt-heading-2">Alt-heading 2</p>
+			<p class="alt-heading-3">Alt-heading 3</p>
+			<p class="alt-heading-4">Alt-heading 4</p>
+			<p class="alt-heading-5">Alt-heading 5</p>
+			<p class="alt-heading-6">Alt-heading 6</p>
+		</section>
+
+		<section>
+			<p class="body-1">Body 1</p>
+			<p class="body-2">Body 2</p>
+			<p class="body-3">Body 3</p>
+			<p class="body-4">Body 4</p>
+		</section>
+
+		<section>
+			<p class="link-1">Link 1</p>
+			<p class="link-2">Link 2</p>
+			<p class="link-3">Link 3</p>
+			<p class="link-4">Link 4</p>
+		</section>
+
+		<section>
+			<p class="button-1">Button 1</p>
+			<p class="button-2">Button 2</p>
+			<p class="button-3">Button 3</p>
+			<p class="button-4">Button 4</p>
+		</section>
+
+		<section>
+			<p class="input-1">Input 1</p>
+			<p class="input-2">Input 2</p>
+			<p class="input-3">Input 3</p>
+			<p class="input-4">Input 4</p>
+		</section>
+
+		<section>
+			<p class="label-1">Label 1</p>
+			<p class="label-2">Label 2</p>
+			<p class="label-3">Label 3</p>
+			<p class="label-4">Label 4</p>
+		</section>
+	</article>
+</body>
+</html>

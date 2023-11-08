@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="index.css">
 	<style>
 		body,
+		main,
 		.typography,
 		.text-styles {
 			display: flex;
@@ -27,6 +28,10 @@
 				width: var(--space-14);
 				font-size: var(--font-size-1);
 			}
+		}
+
+		main {
+			margin-inline: auto;
 		}
 
 		.typography,
@@ -51,7 +56,6 @@
 
 		header {
 			border-block-end: 1px solid var(--neutral-7);
-			display: sticky;
 		}
 
 		nav {
@@ -63,6 +67,23 @@
 				margin: var(--space-5);
 				padding: 0;
 				display: flex;
+			}
+		}
+
+		main {
+			max-width: 1030px;
+		}
+
+		footer {
+			text-align: center;
+			border-block-start: 1px solid var(--neutral-7);
+
+			& p {
+				margin: var(--space-6);
+			}
+
+			& a {
+				color: var(--green-4);
 			}
 		}
 	</style>
@@ -88,205 +109,216 @@
 		</nav>
 	</header>
 
-	<article class="colours" id="colours">
-		<section class="colour">
-			<div class="label-1" style="background-color: var(--neutral-1); color: var(--neutral-8);"><code>neutral-1</code>
+	<main>
+
+		<article class="colours" id="colours">
+			<section class="colour">
+				<div class="label-1" style="background-color: var(--neutral-1); color: var(--neutral-8);"><code>neutral-1</code>
+				</div>
+				<div class="label-1" style="background-color: var(--neutral-2); color: var(--neutral-8);"><code>neutral-2</code>
+				</div>
+				<div class="label-1" style="background-color: var(--neutral-3); color: var(--neutral-8);"><code>neutral-3</code>
+				</div>
+				<div class="label-1" style="background-color: var(--neutral-4); color: var(--neutral-8);"><code>neutral-4</code>
+				</div>
+				<div class="label-1" style="background-color: var(--neutral-5);"><code>neutral-5</code></div>
+				<div class="label-1" style="background-color: var(--neutral-6);"><code>neutral-6</code></div>
+				<div class="label-1" style="background-color: var(--neutral-7);"><code>neutral-7</code></div>
+				<div class="label-1" style="background-color: var(--neutral-8);"><code>neutral-8</code></div>
+			</section>
+
+			<section class="colour">
+				<div class="label-1" style="background-color: var(--red-1); color: var(--neutral-8);"><code>red-1</code></div>
+				<div class="label-1" style="background-color: var(--red-2); color: var(--neutral-8);"><code>red-2</code></div>
+				<div class="label-1" style="background-color: var(--red-3); color: var(--neutral-8);"><code>red-3</code></div>
+				<div class="label-1" style="background-color: var(--red-4);"><code>red-4</code></div>
+				<div class="label-1" style="background-color: var(--red-5);"><code>red-5</code></div>
+				<div class="label-1" style="background-color: var(--red-6);"><code>red-6</code></div>
+				<div class="label-1" style="background-color: var(--red-7);"><code>red-7</code></div>
+			</section>
+
+			<section class="colour">
+				<div class="label-1" style="background-color: var(--blue-1); color: var(--neutral-8);"><code>blue-1</code></div>
+				<div class="label-1" style="background-color: var(--blue-2); color: var(--neutral-8);"><code>blue-2</code></div>
+				<div class="label-1" style="background-color: var(--blue-3); color: var(--neutral-8);"><code>blue-3</code></div>
+				<div class="label-1" style="background-color: var(--blue-4);"><code>blue-4</code></div>
+				<div class="label-1" style="background-color: var(--blue-5);"><code>blue-5</code></div>
+				<div class="label-1" style="background-color: var(--blue-6);"><code>blue-6</code></div>
+				<div class="label-1" style="background-color: var(--blue-7);"><code>blue-7</code></div>
+			</section>
+
+			<section class="colour">
+				<div class="label-1" style="background-color: var(--green-1); color: var(--neutral-8);"><code>green-1</code>
+				</div>
+				<div class="label-1" style="background-color: var(--green-2); color: var(--neutral-8);"><code>green-2</code>
+				</div>
+				<div class="label-1" style="background-color: var(--green-3); color: var(--neutral-8);"><code>green-3</code>
+				</div>
+				<div class="label-1" style="background-color: var(--green-4);"><code>green-4</code></div>
+				<div class="label-1" style="background-color: var(--green-5);"><code>green-5</code></div>
+				<div class="label-1" style="background-color: var(--green-6);"><code>green-6</code></div>
+				<div class="label-1" style="background-color: var(--green-7);"><code>green-7</code></div>
+			</section>
+
+			<section class="colour">
+				<div class="label-1" style="background-color: var(--yellow-1);"><code>yellow-1</code></div>
+				<div class="label-1" style="background-color: var(--yellow-2);"><code>yellow-2</code></div>
+				<div class="label-1" style="background-color: var(--yellow-3);"><code>yellow-3</code></div>
+				<div class="label-1" style="background-color: var(--yellow-4);"><code>yellow-4</code></div>
+				<div class="label-1" style="background-color: var(--yellow-5);"><code>yellow-5</code></div>
+				<div class="label-1" style="background-color: var(--yellow-6);"><code>yellow-6</code></div>
+				<div class="label-1" style="background-color: var(--yellow-7);"><code>yellow-7</code></div>
+			</section>
+		</article>
+
+		<article class="typography" id="typography">
+			<section>
+				<p class="font-weight-1">Font Weight 1</p>
+				<p class="font-weight-2">Font Weight 2</p>
+				<p class="font-weight-3">Font Weight 3</p>
+			</section>
+			<section>
+				<p class="font-size-1">Font Size 1</p>
+				<p class="font-size-2">Font Size 2</p>
+				<p class="font-size-3">Font Size 3</p>
+				<p class="font-size-4">Font Size 4</p>
+				<p class="font-size-5">Font Size 5</p>
+				<p class="font-size-6">Font Size 6</p>
+				<p class="font-size-7">Font Size 7</p>
+				<p class="font-size-8">Font Size 8</p>
+				<p class="font-size-9">Font Size 9</p>
+			</section>
+			<section>
+				<p class="line-height-1">Line Height 1</p>
+				<p class="line-height-2">Line Height 2</p>
+				<p class="line-height-3">Line Height 3</p>
+				<p class="line-height-4">Line Height 4</p>
+				<p class="line-height-5">Line Height 5</p>
+			</section>
+			<section>
+				<p class="letter-spacing-1">Letter Spacing 1</p>
+				<p class="letter-spacing-2">Letter Spacing 2</p>
+				<p class="letter-spacing-3">Letter Spacing 3</p>
+				<p class="letter-spacing-4">Letter Spacing 4</p>
+				<p class="letter-spacing-5">Letter Spacing 5</p>
+			</section>
+		</article>
+
+		<article class="text-styles" id="text-styles">
+			<section>
+				<p class="heading-1">Heading 1</p>
+				<p class="heading-2">Heading 2</p>
+				<p class="heading-3">Heading 3</p>
+				<p class="heading-4">Heading 4</p>
+				<p class="heading-5">Heading 5</p>
+				<p class="heading-6">Heading 6</p>
+			</section>
+
+			<section>
+				<p class="alt-heading-1">Alt-heading 1</p>
+				<p class="alt-heading-2">Alt-heading 2</p>
+				<p class="alt-heading-3">Alt-heading 3</p>
+				<p class="alt-heading-4">Alt-heading 4</p>
+				<p class="alt-heading-5">Alt-heading 5</p>
+				<p class="alt-heading-6">Alt-heading 6</p>
+			</section>
+
+			<section>
+				<p class="body-1">Body 1</p>
+				<p class="body-2">Body 2</p>
+				<p class="body-3">Body 3</p>
+				<p class="body-4">Body 4</p>
+			</section>
+
+			<section>
+				<p class="link-1">Link 1</p>
+				<p class="link-2">Link 2</p>
+				<p class="link-3">Link 3</p>
+				<p class="link-4">Link 4</p>
+			</section>
+
+			<section>
+				<p class="button-1">Button 1</p>
+				<p class="button-2">Button 2</p>
+				<p class="button-3">Button 3</p>
+				<p class="button-4">Button 4</p>
+			</section>
+
+			<section>
+				<p class="input-1">Input 1</p>
+				<p class="input-2">Input 2</p>
+				<p class="input-3">Input 3</p>
+				<p class="input-4">Input 4</p>
+			</section>
+
+			<section>
+				<p class="label-1">Label 1</p>
+				<p class="label-2">Label 2</p>
+				<p class="label-3">Label 3</p>
+				<p class="label-4">Label 4</p>
+			</section>
+		</article>
+
+		<article class="buttons" id="buttons">
+			<div class="btn-selector">
+				<fieldset id="button-colour">
+					<legend class="label-2"><code>button</code> colour</legend>
+					<label class="label-1" for="colour-neutral">
+						Neutral
+						<input type="radio" name="colour" id="colour-neutral" value="neutral" checked>
+					</label>
+
+					<label class="label-1" for="colour-red">
+						Red
+						<input type="radio" name="colour" id="colour-red" value="red">
+					</label>
+
+					<label class="label-1" for="colour-blue">
+						Blue
+						<input type="radio" name="colour" id="colour-blue" value="blue">
+					</label>
+
+					<label class="label-1" for="colour-green">
+						Green
+						<input type="radio" name="colour" id="colour-green" value="green">
+					</label>
+
+					<label class="label-1" for="colour-yellow">
+						Yellow
+						<input type="radio" name="colour" id="colour-yellow" value="yellow">
+					</label>
+				</fieldset>
+
+				<fieldset class="label-2" id="button-variant">
+					<legend><code>button</code> variant</legend>
+					<label class="label-1" for="primary">
+						Primary
+						<input type="radio" name="variant" id="primary" value="primary" checked>
+					</label>
+
+					<label class="label-1" for="secondary">
+						Secondary
+						<input type="radio" name="variant" id="secondary" value="secondary">
+					</label>
+
+					<label class="label-1" for="ghost">
+						Ghost
+						<input type="radio" name="variant" id="ghost" value="ghost">
+					</label>
+				</fieldset>
 			</div>
-			<div class="label-1" style="background-color: var(--neutral-2); color: var(--neutral-8);"><code>neutral-2</code>
-			</div>
-			<div class="label-1" style="background-color: var(--neutral-3); color: var(--neutral-8);"><code>neutral-3</code>
-			</div>
-			<div class="label-1" style="background-color: var(--neutral-4); color: var(--neutral-8);"><code>neutral-4</code>
-			</div>
-			<div class="label-1" style="background-color: var(--neutral-5);"><code>neutral-5</code></div>
-			<div class="label-1" style="background-color: var(--neutral-6);"><code>neutral-6</code></div>
-			<div class="label-1" style="background-color: var(--neutral-7);"><code>neutral-7</code></div>
-			<div class="label-1" style="background-color: var(--neutral-8);"><code>neutral-8</code></div>
-		</section>
 
-		<section class="colour">
-			<div class="label-1" style="background-color: var(--red-1); color: var(--neutral-8);"><code>red-1</code></div>
-			<div class="label-1" style="background-color: var(--red-2); color: var(--neutral-8);"><code>red-2</code></div>
-			<div class="label-1" style="background-color: var(--red-3); color: var(--neutral-8);"><code>red-3</code></div>
-			<div class="label-1" style="background-color: var(--red-4);"><code>red-4</code></div>
-			<div class="label-1" style="background-color: var(--red-5);"><code>red-5</code></div>
-			<div class="label-1" style="background-color: var(--red-6);"><code>red-6</code></div>
-			<div class="label-1" style="background-color: var(--red-7);"><code>red-7</code></div>
-		</section>
+			<button class="button-1 primary neutral">Button 1</button>
+			<button class="button-2 primary neutral">Button 2</button>
+			<button class="button-3 primary neutral">Button 3</button>
+			<button class="button-4 primary neutral">Button 4</button>
+		</article>
 
-		<section class="colour">
-			<div class="label-1" style="background-color: var(--blue-1); color: var(--neutral-8);"><code>blue-1</code></div>
-			<div class="label-1" style="background-color: var(--blue-2); color: var(--neutral-8);"><code>blue-2</code></div>
-			<div class="label-1" style="background-color: var(--blue-3); color: var(--neutral-8);"><code>blue-3</code></div>
-			<div class="label-1" style="background-color: var(--blue-4);"><code>blue-4</code></div>
-			<div class="label-1" style="background-color: var(--blue-5);"><code>blue-5</code></div>
-			<div class="label-1" style="background-color: var(--blue-6);"><code>blue-6</code></div>
-			<div class="label-1" style="background-color: var(--blue-7);"><code>blue-7</code></div>
-		</section>
+	</main>
 
-		<section class="colour">
-			<div class="label-1" style="background-color: var(--green-1); color: var(--neutral-8);"><code>green-1</code></div>
-			<div class="label-1" style="background-color: var(--green-2); color: var(--neutral-8);"><code>green-2</code></div>
-			<div class="label-1" style="background-color: var(--green-3); color: var(--neutral-8);"><code>green-3</code></div>
-			<div class="label-1" style="background-color: var(--green-4);"><code>green-4</code></div>
-			<div class="label-1" style="background-color: var(--green-5);"><code>green-5</code></div>
-			<div class="label-1" style="background-color: var(--green-6);"><code>green-6</code></div>
-			<div class="label-1" style="background-color: var(--green-7);"><code>green-7</code></div>
-		</section>
-
-		<section class="colour">
-			<div class="label-1" style="background-color: var(--yellow-1);"><code>yellow-1</code></div>
-			<div class="label-1" style="background-color: var(--yellow-2);"><code>yellow-2</code></div>
-			<div class="label-1" style="background-color: var(--yellow-3);"><code>yellow-3</code></div>
-			<div class="label-1" style="background-color: var(--yellow-4);"><code>yellow-4</code></div>
-			<div class="label-1" style="background-color: var(--yellow-5);"><code>yellow-5</code></div>
-			<div class="label-1" style="background-color: var(--yellow-6);"><code>yellow-6</code></div>
-			<div class="label-1" style="background-color: var(--yellow-7);"><code>yellow-7</code></div>
-		</section>
-	</article>
-
-	<article class="typography" id="typography">
-		<section>
-			<p class="font-weight-1">Font Weight 1</p>
-			<p class="font-weight-2">Font Weight 2</p>
-			<p class="font-weight-3">Font Weight 3</p>
-		</section>
-		<section>
-			<p class="font-size-1">Font Size 1</p>
-			<p class="font-size-2">Font Size 2</p>
-			<p class="font-size-3">Font Size 3</p>
-			<p class="font-size-4">Font Size 4</p>
-			<p class="font-size-5">Font Size 5</p>
-			<p class="font-size-6">Font Size 6</p>
-			<p class="font-size-7">Font Size 7</p>
-			<p class="font-size-8">Font Size 8</p>
-			<p class="font-size-9">Font Size 9</p>
-		</section>
-		<section>
-			<p class="line-height-1">Line Height 1</p>
-			<p class="line-height-2">Line Height 2</p>
-			<p class="line-height-3">Line Height 3</p>
-			<p class="line-height-4">Line Height 4</p>
-			<p class="line-height-5">Line Height 5</p>
-		</section>
-		<section>
-			<p class="letter-spacing-1">Letter Spacing 1</p>
-			<p class="letter-spacing-2">Letter Spacing 2</p>
-			<p class="letter-spacing-3">Letter Spacing 3</p>
-			<p class="letter-spacing-4">Letter Spacing 4</p>
-			<p class="letter-spacing-5">Letter Spacing 5</p>
-		</section>
-	</article>
-
-	<article class="text-styles" id="text-styles">
-		<section>
-			<p class="heading-1">Heading 1</p>
-			<p class="heading-2">Heading 2</p>
-			<p class="heading-3">Heading 3</p>
-			<p class="heading-4">Heading 4</p>
-			<p class="heading-5">Heading 5</p>
-			<p class="heading-6">Heading 6</p>
-		</section>
-
-		<section>
-			<p class="alt-heading-1">Alt-heading 1</p>
-			<p class="alt-heading-2">Alt-heading 2</p>
-			<p class="alt-heading-3">Alt-heading 3</p>
-			<p class="alt-heading-4">Alt-heading 4</p>
-			<p class="alt-heading-5">Alt-heading 5</p>
-			<p class="alt-heading-6">Alt-heading 6</p>
-		</section>
-
-		<section>
-			<p class="body-1">Body 1</p>
-			<p class="body-2">Body 2</p>
-			<p class="body-3">Body 3</p>
-			<p class="body-4">Body 4</p>
-		</section>
-
-		<section>
-			<p class="link-1">Link 1</p>
-			<p class="link-2">Link 2</p>
-			<p class="link-3">Link 3</p>
-			<p class="link-4">Link 4</p>
-		</section>
-
-		<section>
-			<p class="button-1">Button 1</p>
-			<p class="button-2">Button 2</p>
-			<p class="button-3">Button 3</p>
-			<p class="button-4">Button 4</p>
-		</section>
-
-		<section>
-			<p class="input-1">Input 1</p>
-			<p class="input-2">Input 2</p>
-			<p class="input-3">Input 3</p>
-			<p class="input-4">Input 4</p>
-		</section>
-
-		<section>
-			<p class="label-1">Label 1</p>
-			<p class="label-2">Label 2</p>
-			<p class="label-3">Label 3</p>
-			<p class="label-4">Label 4</p>
-		</section>
-	</article>
-
-	<article class="buttons" id="buttons">
-		<div class="btn-selector">
-			<fieldset id="button-colour">
-				<legend class="label-2"><code>button</code> colour</legend>
-				<label class="label-1" for="colour-neutral">
-					Neutral
-					<input type="radio" name="colour" id="colour-neutral" value="neutral" checked>
-				</label>
-
-				<label class="label-1" for="colour-red">
-					Red
-					<input type="radio" name="colour" id="colour-red" value="red">
-				</label>
-
-				<label class="label-1" for="colour-blue">
-					Blue
-					<input type="radio" name="colour" id="colour-blue" value="blue">
-				</label>
-
-				<label class="label-1" for="colour-green">
-					Green
-					<input type="radio" name="colour" id="colour-green" value="green">
-				</label>
-
-				<label class="label-1" for="colour-yellow">
-					Yellow
-					<input type="radio" name="colour" id="colour-yellow" value="yellow">
-				</label>
-			</fieldset>
-
-			<fieldset class="label-2" id="button-variant">
-				<legend><code>button</code> variant</legend>
-				<label class="label-1" for="primary">
-					Primary
-					<input type="radio" name="variant" id="primary" value="primary" checked>
-				</label>
-
-				<label class="label-1" for="secondary">
-					Secondary
-					<input type="radio" name="variant" id="secondary" value="secondary">
-				</label>
-
-				<label class="label-1" for="ghost">
-					Ghost
-					<input type="radio" name="variant" id="ghost" value="ghost">
-				</label>
-			</fieldset>
-		</div>
-
-		<button class="button-1 primary neutral">Button 1</button>
-		<button class="button-2 primary neutral">Button 2</button>
-		<button class="button-3 primary neutral">Button 3</button>
-		<button class="button-4 primary neutral">Button 4</button>
-	</article>
+	<footer>
+		<p><a class="link-4" href="https://github.com/joshdales/tundra-css">github.com/joshdales/tundra-css</a></p>
+	</footer>
 
 	<script>
 		const btns = document.querySelectorAll(".buttons button")

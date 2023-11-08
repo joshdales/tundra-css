@@ -48,12 +48,47 @@
 			border-radius: var(--radius-3);
 			border: 2px solid var(--neutral-1);
 		}
+
+		header {
+			border-block-end: 1px solid var(--neutral-7);
+			display: sticky;
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+
+			& ul {
+				list-style: none;
+				margin: var(--space-5);
+				padding: 0;
+				display: flex;
+			}
+		}
 	</style>
 </head>
 
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#colours" class="button button-1 ghost blue">Colours</a>
+				</li>
+				<li>
+					<a href="#typography" class="button button-1 ghost blue">Typography</a>
+				</li>
+				<li>
+					<a href="#text-styles" class="button button-1 ghost blue">Text Styles</a>
+				</li>
+				<li>
+					<a href="#buttons" class="button button-1 ghost blue">Buttons</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-	<article class="colours">
+	<article class="colours" id="colours">
 		<section class="colour">
 			<div class="label-1" style="background-color: var(--neutral-1); color: var(--neutral-8);"><code>neutral-1</code>
 			</div>
@@ -110,7 +145,7 @@
 		</section>
 	</article>
 
-	<article class="typography">
+	<article class="typography" id="typography">
 		<section>
 			<p class="font-weight-1">Font Weight 1</p>
 			<p class="font-weight-2">Font Weight 2</p>
@@ -143,7 +178,7 @@
 		</section>
 	</article>
 
-	<article class="text-styles">
+	<article class="text-styles" id="text-styles">
 		<section>
 			<p class="heading-1">Heading 1</p>
 			<p class="heading-2">Heading 2</p>
@@ -198,7 +233,7 @@
 		</section>
 	</article>
 
-	<article class="buttons">
+	<article class="buttons" id="buttons">
 		<div class="btn-selector">
 			<fieldset id="button-colour">
 				<legend class="label-2"><code>button</code> colour</legend>

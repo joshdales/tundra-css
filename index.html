@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css">
 	<link rel="stylesheet" href="index.css">
 	<style>
+		body {
+			background-color: var(--neutral-7);
+		}
+
 		body,
 		main,
 		.typography,
@@ -55,7 +59,8 @@
 		}
 
 		header {
-			border-block-end: 1px solid var(--neutral-7);
+			background-color: var(--neutral-8);
+			border-block-end: 1px solid var(--neutral-6);
 		}
 
 		nav {
@@ -76,7 +81,8 @@
 
 		footer {
 			text-align: center;
-			border-block-start: 1px solid var(--neutral-7);
+			background-color: var(--neutral-8);
+			border-block-start: 1px solid var(--neutral-6);
 
 			& p {
 				margin: var(--space-6);
@@ -276,6 +282,13 @@
 			<button class="button-2 primary neutral">Button 2</button>
 			<button class="button-3 primary neutral">Button 3</button>
 			<button class="button-4 primary neutral">Button 4</button>
+		</article>
+
+		<article id="inputs">
+			<input class="input-1" type="text" value="Input 1">
+			<input class="input-2" type="text" value="Input 2">
+			<input class="input-3" type="text" value="Input 3">
+			<input class="input-4" type="text" value="Input 4">
 		</article>
 
 	</main>

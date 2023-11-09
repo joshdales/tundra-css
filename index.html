@@ -63,6 +63,8 @@
 		header {
 			background-color: var(--neutral-8);
 			border-block-end: 1px solid var(--neutral-6);
+			position: sticky;
+			top: 0;
 		}
 
 		nav {
@@ -98,6 +100,10 @@
 			padding-block: var(--space-11);
 			padding-inline: var(--space-12);
 		}
+
+		h2 {
+			margin-block-start: 0;
+		}
 	</style>
 </head>
 
@@ -124,6 +130,7 @@
 	<main>
 
 		<article class="colours" id="colours">
+			<h2 class="alt-heading">Colour palette</h2>
 			<section class="colour">
 				<div class="label-1" style="background-color: var(--neutral-1); color: var(--neutral-8);"><code>neutral-1</code>
 				</div>
@@ -184,6 +191,7 @@
 		</article>
 
 		<article class="text-styles" id="text-styles">
+			<h2 class="alt-heading">Text styles</h2>
 			<section>
 				<p class="heading-1">Heading 1</p>
 				<p class="heading-2">Heading 2</p>
@@ -239,6 +247,8 @@
 		</article>
 
 		<article class="buttons" id="buttons">
+			<h2 class="alt-heading">Buttons</h2>
+
 			<div class="btn-selector">
 				<fieldset id="button-colour">
 					<legend class="label-2"><code>button</code> colour</legend>
@@ -294,6 +304,7 @@
 		</article>
 
 		<article id="inputs">
+			<h2 class="alt-heading">Inputs</h2>
 			<input class="input-1" type="text" placeholder="Input 1">
 			<input class="input-2" type="text" placeholder="Input 2">
 			<input class="input-3" type="text" placeholder="Input 3">
@@ -303,7 +314,7 @@
 	</main>
 
 	<footer>
-		<p><a class="link-4" href="https://github.com/joshdales/tundra-css">github.com/joshdales/tundra-css</a></p>
+		<h3><a class="link-4" href="https://github.com/joshdales/tundra-css">github.com/joshdales/tundra-css</a></h3>
 	</footer>
 
 	<script>

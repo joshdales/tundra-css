@@ -48,6 +48,11 @@ button,
 		&:active {
 			background-color: var(--btn-3);
 		}
+
+		&:disabled {
+			background-color: var(--neutral-5);
+			border-color: var(--neutral-5);
+		}
 	}
 
 	&.secondary {
@@ -66,6 +71,12 @@ button,
 			color: var(--btn-3);
 			border-color: var(--btn-3);
 		}
+
+		&:disabled {
+			background-color: var(--neutral-5);
+			color: var(--neutral-4);
+			border-color: var(--neutral-4);
+		}
 	}
 
 	&.ghost {
@@ -80,6 +91,15 @@ button,
 
 		&:active {
 			border-color: var(--btn-3);
+		}
+
+		&:disabled {
+			color: var(--neutral-5);
+
+			&:hover {
+				background-color: var(--neutral-7);
+				border-color: var(--neutral-7);
+			}
 		}
 	}
 

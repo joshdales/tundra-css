@@ -60,19 +60,50 @@
 			border: 2px solid var(--neutral-1);
 		}
 
-		@keyframes add-shadow {
+		@keyframes header {
+			from {
+				height: calc(var(--space-13) * 2);
+			}
+
 			to {
 				box-shadow: 0 var(--space-1) var(--space-2) calc(var(--space-1) * -1) rgba(0, 0, 0, .2),
 					var(--space-2) var(--space-1) var(--space-3) var(--space-1) rgba(0, 0, 0, .1);
+				height: var(--space-13);
 			}
 		}
 
 		header {
+			display: flex;
+			flex-direction: column;
 			background-color: var(--neutral-8);
 			border-block-end: 1px solid var(--neutral-6);
 			position: sticky;
 			top: 0;
-			animation: add-shadow linear both;
+			animation: header linear both;
+		}
+
+		@keyframes title {
+			from {
+				margin-block-start: var(--space-3);
+				margin-inline-start: 0;
+				width: 100%;
+			}
+		}
+
+		h1 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			animation: title linear both;
+			height: var(--space-13);
+			width: var(--space-14);
+			margin-block: 0;
+			margin-inline-start: var(--space-14);
+		}
+
+		header,
+		h1 {
 			animation-timeline: scroll();
 			animation-range: 0 var(--space-14);
 		}
@@ -80,6 +111,8 @@
 		nav {
 			display: flex;
 			justify-content: center;
+			height: fit-content;
+			margin-block-start: auto;
 
 			& ul {
 				list-style: none;
@@ -119,6 +152,7 @@
 
 <body>
 	<header>
+		<h1 class="heading-5">Tundra</h1>
 		<nav>
 			<ul>
 				<li>

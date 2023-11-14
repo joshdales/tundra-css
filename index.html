@@ -60,11 +60,20 @@
 			border: 2px solid var(--neutral-1);
 		}
 
+		@keyframes add-shadow {
+			to {
+				box-shadow: 0 var(--space-1) var(--space-2) calc(var(--space-1) * -1) rgba(0, 0, 0, .2);
+			}
+		}
+
 		header {
 			background-color: var(--neutral-8);
 			border-block-end: 1px solid var(--neutral-6);
 			position: sticky;
 			top: 0;
+			animation: add-shadow linear both;
+			animation-timeline: scroll();
+			animation-range: 0 var(--space-14);
 		}
 
 		nav {

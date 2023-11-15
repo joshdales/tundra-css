@@ -486,7 +486,7 @@ button.yellow,
 
 input.input-1 {
   background-color: var(--neutral-8);
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
   caret-color: var(--accent, var(--neutral-4));
   outline: none;
@@ -516,7 +516,7 @@ input.input-1:disabled {
 }
 input.input-2 {
   background-color: var(--neutral-8);
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
   caret-color: var(--accent, var(--neutral-4));
   outline: none;
@@ -546,7 +546,7 @@ input.input-2:disabled {
 }
 input.input-3 {
   background-color: var(--neutral-8);
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
   caret-color: var(--accent, var(--neutral-4));
   outline: none;
@@ -576,7 +576,7 @@ input.input-3:disabled {
 }
 input.input-4 {
   background-color: var(--neutral-8);
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
   caret-color: var(--accent, var(--neutral-4));
   outline: none;

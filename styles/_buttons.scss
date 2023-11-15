@@ -1,7 +1,7 @@
 @mixin _base {
 	cursor: pointer;
 	box-sizing: border-box;
-	border: 1.5px var(--btn-2) solid;
+	border: 1.5px solid;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;

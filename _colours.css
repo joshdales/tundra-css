@@ -12,11 +12,12 @@
 	/* Reds */
 	--red-1: oklch(40% 0.18 25);
 	--red-2: oklch(45% 0.2 25);
-	--red-3: oklch(55% 0.24 25);
-	--red-4: oklch(65% 0.24 25);
-	--red-5: oklch(75% 0.19 25);
-	--red-6: oklch(85% 0.105 25);
-	--red-7: oklch(90% 0.066 25);
+	--red-3: oklch(50% 0.2274 25);
+	--red-4: oklch(60% 0.24 25);
+	--red-5: oklch(70% 0.24 25);
+	--red-6: oklch(80% 0.138 25);
+	--red-7: oklch(90% 0.0663 25);
+	--red-8: oklch(95% 0.0315 25);
 	--red: var(--red-4);
 
 	/* Greens */
@@ -27,6 +28,7 @@
 	--green-5: oklch(70% 0.15 165);
 	--green-6: oklch(80% 0.15 165);
 	--green-7: oklch(90% 0.15 165);
+	--green-8: oklch(95% 0.08 165);
 	--green: var(--green-4);
 
 	/* Blues */
@@ -36,7 +38,8 @@
 	--blue-4: oklch(60% 0.2 255);
 	--blue-5: oklch(70% 0.17 255);
 	--blue-6: oklch(80% 0.111 255);
-	--blue-7: oklch(90% 0.054 255);
+	--blue-7: oklch(90% 0.0533 255);
+	--blue-8: oklch(95% 0.0261 255);
 	--blue: var(--blue-4);
 
 	/* Yellows */
@@ -47,44 +50,49 @@
 	--yellow-5: oklch(89% 0.129 80);
 	--yellow-6: oklch(92% 0.092 80);
 	--yellow-7: oklch(95% 0.056 80);
+	--yellow-8: oklch(97% 0.0337 80);
 	--yellow: var(--yellow-4);
 }
 
 /* When Display-P3 is not supported. */
 @supports not (color: color(display-p3 1 1 1)) {
 	:root {
-		--neutral-8: #f4f9ff;
+		--neutral-8: oklch(98% 0.0097 250);
 
-		--red-1: #8a0012;
-		--red-2: #a30018;
-		--red-3: #d50022;
-		--red-4: #ff333c;
-		--red-5: #ff847d;
-		--red-6: #ffbab3;
-		--red-7: #ffd1cd;
+		--red-1: oklch(40% 0.16 25);
+		--red-2: oklch(45% 0.2 25);
+		--red-3: oklch(50% 0.2274 25);
+		--red-4: oklch(60% 0.24 25);
+		--red-5: oklch(70% 0.19 25);
+		--red-6: oklch(80% 0.1142 25);
+		--red-7: oklch(90% 0.0511 25);
+		--red-8: oklch(95% 0.0239 25);
 
-		--green-1: #004631;
-		--green-2: #00563c;
-		--green-3: #007654;
-		--green-4: #00976d;
-		--green-5: #00ba87;
-		--green-6: #41dca5;
-		--green-7: #6afdc5;
+		--green-1: oklch(35% 0.0729 165);
+		--green-2: oklch(40% 0.0837 165);
+		--green-3: oklch(50% 0.1044 165);
+		--green-4: oklch(60% 0.1251 165);
+		--green-5: oklch(70% 0.1469 165);
+		--green-6: oklch(80% 0.15 165);
+		--green-7: oklch(90% 0.15 165);
+		--green-8: oklch(95% 0.0739 165);
 
-		--blue-1: #003974;
-		--blue-2: #00468c;
-		--blue-3: #0061be;
-		--blue-4: #007df2;
-		--blue-5: #53a0ff;
-		--blue-6: #91c1ff;
-		--blue-7: #c9e0ff;
+		--blue-1: oklch(35% 0.1142 255);
+		--blue-2: oklch(40% 0.1316 255);
+		--blue-3: oklch(50% 0.1643 255);
+		--blue-4: oklch(60% 0.1969 255);
+		--blue-5: oklch(70% 0.1588 255);
+		--blue-6: oklch(80% 0.1022 255);
+		--blue-7: oklch(90% 0.0489 255);
+		--blue-8: oklch(95% 0.0239 255);
 
-		--yellow-1: #cd9200;
-		--yellow-2: #dfa11a;
-		--yellow-3: #f0b135;
-		--yellow-4: #ffc251;
-		--yellow-5: #ffd48a;
-		--yellow-6: #ffe0ad;
-		--yellow-7: #ffeccd;
+		--yellow-1: oklch(70% 0.1447 80);
+		--yellow-2: oklch(75% 0.15 80);
+		--yellow-3: oklch(80% 0.15 80);
+		--yellow-4: oklch(85% 0.1436 80);
+		--yellow-5: oklch(89% 0.1033 80);
+		--yellow-6: oklch(92% 0.0739 80);
+		--yellow-7: oklch(95% 0.0457 80);
+		--yellow-8: oklch(97% 0.0261 80);
 	}
 }

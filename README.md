@@ -1,7 +1,5 @@
 # Tundra
-An easy to use, comprehensive but not overwhelming, CSS design system.
-
-Currently under construction 🏗️.
+A comprehensive but not overwhelming CSS design system.
 
 ## Usage
 You can apply one of the class provided and then customise it as you need with the variables. You should try as much as possible to only use the provided classes and variables. Keep it simple, and don't overthink things.
@@ -54,7 +52,7 @@ There are a series of classes for text, along with others for buttons, and text 
 	- Accent: `.red`, `.green`, `.blue`, `.yellow`
 
 ## Compatibility
-This has mostly been built with newer devices in mind - a lot of the colour pallet uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢
+This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢
 
 ## SCSS
 There are SCSS variables and mixins provided which you can use if you want to override or change things up. But you shouldn't really need them.

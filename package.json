@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.css",
   "exports": {
-    ".": "./index.css"
+    ".": "./index.css",
+    "./styles/*": "./styles/*"
   },
   "scripts": {
     "build": "sass --no-source-map ./styles/index.scss ./index.css"
   },
   "keywords": [],
   "author": "joshdales",
+  "url": "https://github.com/joshdales/tundra-css",
+  "bugs": {
+    "url": "https://github.com/joshdales/tundra-css/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.69.5"

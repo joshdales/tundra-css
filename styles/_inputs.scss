@@ -1,0 +1,65 @@
+input {
+	background-color: var(--neutral-8);
+	border: 1px solid var(--neutral-6);
+	border-radius: var(--radius-1);
+	caret-color: var(--accent, var(--neutral-4));
+	outline: none;
+	padding-inline: var(--padding-x);
+	padding-block: var(--padding-y);
+
+	&::placeholder {
+		color: var(--neutral-4);
+	}
+
+	&:hover {
+		background-color: var(--neutral-7);
+		border-color: var(--accent, var(--neutral-5));
+		box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250 / 10%);
+	}
+
+	&:focus,
+	&:active {
+		background-color: var(--neutral-8);
+		border-color: var(--accent, var(--neutral-4));
+	}
+
+	&.input-1 {
+		--padding-y: var(--space-2);
+		--padding-x: var(--space-3);
+	}
+
+	&.input-2 {
+		--padding-y: var(--space-3);
+		--padding-x: var(--space-4);
+	}
+
+	&.input-3 {
+		--padding-y: var(--space-4);
+		--padding-x: var(--space-4);
+	}
+
+	&.input-4 {
+		--padding-y: var(--space-4);
+		--padding-x: var(--space-5);
+	}
+
+	&.red {
+		--accent: var(--red);
+	}
+
+	&.blue {
+		--accent: var(--blue);
+	}
+
+	&.green {
+		--accent: var(--green);
+	}
+
+	&.yellow {
+		--accent: var(--yellow);
+	}
+
+	&:disabled {
+		background-color: var(--neutral-6);
+	}
+}

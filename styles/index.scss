@@ -103,6 +103,11 @@
 	--letter-spacing-5: #{typography.$letter-spacing-5};
 }
 
+html {
+	background-color: var(--neutral-8);
+	color: var(--neutral-1);
+}
+
 // Text: Heading
 .heading-1 {
 	@include text.heading(1);

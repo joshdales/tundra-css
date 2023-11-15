@@ -1,5 +1,5 @@
 {
-  "name": "tundra",
+  "name": "tundra-css",
   "version": "0.1.0",
   "description": "",
   "main": "index.css",
@@ -7,8 +7,7 @@
     ".": "./index.css"
   },
   "scripts": {
-    "build": "sass ./styles/index.scss ./index.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass --no-source-map ./styles/index.scss ./index.css"
   },
   "keywords": [],
   "author": "joshdales",

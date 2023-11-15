@@ -44,7 +44,7 @@
 	}
 }
 
-@mixin primary($level: null) {
+@mixin filled($level: null) {
 	@include _base;
 
 	@if $level {
@@ -69,7 +69,7 @@
 	}
 }
 
-@mixin secondary ($level: null) {
+@mixin outline ($level: null) {
 	@include _base;
 
 	@if $level {

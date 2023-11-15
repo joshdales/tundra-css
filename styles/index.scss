@@ -255,12 +255,12 @@ button,
 		@include buttons.size(4);
 	}
 
-	&.primary {
-		@include buttons.primary;
+	&.filled {
+		@include buttons.filled;
 	}
 
-	&.secondary {
-		@include buttons.secondary;
+	&.outline {
+		@include buttons.outline;
 	}
 
 	&.ghost {

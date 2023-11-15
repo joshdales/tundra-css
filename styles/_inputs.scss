@@ -1,4 +1,6 @@
-input {
+@use './text';
+
+@mixin base {
 	background-color: var(--neutral-8);
 	border: 1px solid var(--neutral-6);
 	border-radius: var(--radius-1);
@@ -23,43 +25,33 @@ input {
 		border-color: var(--accent, var(--neutral-4));
 	}
 
-	&.input-1 {
+	&:disabled {
+		background-color: var(--neutral-6);
+	}
+}
+
+/// For use with text based inputs.
+@mixin text($level) {
+	@include base;
+	@include text.input($level);
+
+	@if $level ==1 {
 		--padding-y: var(--space-2);
 		--padding-x: var(--space-3);
 	}
 
-	&.input-2 {
+	@if $level ==2 {
 		--padding-y: var(--space-3);
 		--padding-x: var(--space-4);
 	}
 
-	&.input-3 {
+	@if $level ==3 {
 		--padding-y: var(--space-4);
 		--padding-x: var(--space-4);
 	}
 
-	&.input-4 {
+	@if $level ==4 {
 		--padding-y: var(--space-4);
 		--padding-x: var(--space-5);
-	}
-
-	&.red {
-		--accent: var(--red);
-	}
-
-	&.blue {
-		--accent: var(--blue);
-	}
-
-	&.green {
-		--accent: var(--green);
-	}
-
-	&.yellow {
-		--accent: var(--yellow);
-	}
-
-	&:disabled {
-		background-color: var(--neutral-6);
 	}
 }

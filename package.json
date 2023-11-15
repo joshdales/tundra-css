@@ -1,0 +1,19 @@
+{
+  "name": "tundra",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.css",
+  "exports": {
+    ".": "./index.css"
+  },
+  "scripts": {
+    "build": "sass ./styles/index.scss ./index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "joshdales",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

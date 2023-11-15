@@ -1,0 +1,53 @@
+// Neutrals
+$neutral-1: oklch(20% 0.01 250);
+$neutral-2: oklch(35% 0.01 250);
+$neutral-3: oklch(45% 0.01 250);
+$neutral-4: oklch(55% 0.01 250);
+$neutral-5: oklch(85% 0.01 250);
+$neutral-6: oklch(90% 0.01 250);
+$neutral-7: oklch(95% 0.01 250);
+$neutral-8: oklch(98% 0.01 250);
+
+// Reds
+$red-1: oklch(40% 0.18 25);
+$red-2: oklch(45% 0.2 25);
+$red-3: oklch(50% 0.2274 25);
+$red-4: oklch(60% 0.24 25);
+$red-5: oklch(70% 0.24 25);
+$red-6: oklch(80% 0.138 25);
+$red-7: oklch(90% 0.0663 25);
+$red-8: oklch(95% 0.0315 25);
+$red: $red-4;
+
+// Greens
+$green-1: oklch(35% 0.1 165);
+$green-2: oklch(40% 0.11 165);
+$green-3: oklch(50% 0.14 165);
+$green-4: oklch(60% 0.15 165);
+$green-5: oklch(70% 0.15 165);
+$green-6: oklch(80% 0.15 165);
+$green-7: oklch(90% 0.15 165);
+$green-8: oklch(95% 0.08 165);
+$green: $green-4;
+
+// Blues
+$blue-1: oklch(35% 0.14 255);
+$blue-2: oklch(40% 0.16 255);
+$blue-3: oklch(50% 0.2 255);
+$blue-4: oklch(60% 0.2 255);
+$blue-5: oklch(70% 0.17 255);
+$blue-6: oklch(80% 0.111 255);
+$blue-7: oklch(90% 0.0533 255);
+$blue-8: oklch(95% 0.0261 255);
+$blue: $blue-4;
+
+// Yellows
+$yellow-1: oklch(70% 0.15 80);
+$yellow-2: oklch(75% 0.15 80);
+$yellow-3: oklch(80% 0.15 80);
+$yellow-4: oklch(85% 0.15 80);
+$yellow-5: oklch(89% 0.129 80);
+$yellow-6: oklch(92% 0.092 80);
+$yellow-7: oklch(95% 0.056 80);
+$yellow-8: oklch(97% 0.0337 80);
+$yellow: $yellow-4;

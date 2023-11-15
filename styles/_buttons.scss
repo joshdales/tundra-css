@@ -1,0 +1,128 @@
+@mixin _base {
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 1.5px solid;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-1);
+	padding-inline: var(--padding-x);
+	padding-block: var(--padding-y);
+	border-radius: var(--radius-1);
+	text-decoration: none;
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+@mixin size($level) {
+	@if $level ==1 {
+		@extend .button-1;
+		--padding-y: var(--space-1);
+		--padding-x: var(--space-2);
+	}
+
+	@else if $level ==2 {
+		@extend .button-2;
+		--padding-y: var(--space-2);
+		--padding-x: var(--space-3);
+	}
+
+	@else if $level ==3 {
+		@extend .button-3;
+		--padding-y: var(--space-3);
+		--padding-x: var(--space-4);
+	}
+
+	@else if $level ==4 {
+		@extend .button-4;
+		--padding-y: var(--space-4);
+		--padding-x: var(--space-5);
+	}
+}
+
+@mixin filled($level: null) {
+	@include _base;
+
+	@if $level {
+		@include size($level);
+	}
+
+	background-color: var(--btn-2, var(--neutral-1));
+	color: var(--neutral-8);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-1, var(--neutral-2));
+	}
+
+	&:active {
+		background-color: var(--btn-3, var(--neutral-3));
+	}
+
+	&:disabled {
+		background-color: var(--neutral-5);
+		border-color: var(--neutral-5);
+	}
+}
+
+@mixin outline ($level: null) {
+	@include _base;
+
+	@if $level {
+		@include size($level);
+	}
+
+	background-color: var(--neutral-8);
+	color: var(--btn-2, var(--neutral-2));
+	border-color: var(--btn-2, var(--neutral-2));
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-4, var(--neutral-7));
+		color: var(--btn-1, var(--neutral-1));
+		border-color: var(--btn-1, var(--neutral-1));
+	}
+
+	&:active {
+		color: var(--btn-3, var(--neutral-3));
+		border-color: var(--btn-3, var(--neutral-3));
+	}
+
+	&:disabled {
+		background-color: var(--neutral-5);
+		color: var(--neutral-4);
+		border-color: var(--neutral-4);
+	}
+}
+
+@mixin ghost($level: null) {
+	@include _base;
+
+	@if $level {
+		@include size($level);
+	}
+
+	border-color: transparent;
+	background-color: transparent;
+	color: var(--btn-1, var(--neutral-2));
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-4, var(--neutral-7));
+	}
+
+	&:active {
+		border-color: var(--btn-3, var(--neutral-3));
+	}
+
+	&:disabled {
+		color: var(--neutral-5);
+
+		&:hover {
+			background-color: var(--neutral-7);
+			border-color: var(--neutral-7);
+		}
+	}
+}

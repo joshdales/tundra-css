@@ -1,6 +1,6 @@
 @use './text';
 
-@mixin base {
+@mixin _base {
 	background-color: var(--neutral-8);
 	border: 1px solid var(--neutral-6);
 	border-radius: var(--radius-1);
@@ -32,7 +32,7 @@
 
 /// For use with text based inputs.
 @mixin text($level) {
-	@include base;
+	@include _base;
 	@include text.input($level);
 
 	@if $level ==1 {

@@ -1,6 +1,6 @@
 @use './text';
 
-@mixin base {
+@mixin _base {
 	cursor: pointer;
 	box-sizing: border-box;
 	border: 1.5px var(--btn-2) solid;
@@ -45,7 +45,7 @@
 }
 
 @mixin primary($level: null) {
-	@include base;
+	@include _base;
 
 	@if $level {
 		@include size($level);
@@ -70,7 +70,7 @@
 }
 
 @mixin secondary ($level: null) {
-	@include base;
+	@include _base;
 
 	@if $level {
 		@include size($level);
@@ -100,7 +100,7 @@
 }
 
 @mixin ghost($level: null) {
-	@include base;
+	@include _base;
 
 	@if $level {
 		@include size($level);

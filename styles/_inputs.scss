@@ -31,26 +31,33 @@
 }
 
 /// For use with text based inputs.
-@mixin text($level) {
+@mixin text($level: null) {
 	@include _base;
-	@include text.input($level);
+
+	@if $level {
+		@include text.input($level);
+	}
 
 	@if $level ==1 {
+		@extend .input-1;
 		--padding-y: var(--space-2);
 		--padding-x: var(--space-3);
 	}
 
 	@if $level ==2 {
+		@extend .input-2;
 		--padding-y: var(--space-3);
 		--padding-x: var(--space-4);
 	}
 
 	@if $level ==3 {
+		@extend .input-3;
 		--padding-y: var(--space-4);
 		--padding-x: var(--space-4);
 	}
 
 	@if $level ==4 {
+		@extend .input-4;
 		--padding-y: var(--space-4);
 		--padding-x: var(--space-5);
 	}

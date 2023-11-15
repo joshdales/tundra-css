@@ -235,28 +235,32 @@
   letter-spacing: var(--letter-spacing-4);
 }
 
-.button-1 {
+.button-1, button.button-1,
+.button.button-1 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-2);
 }
 
-.button-2 {
+.button-2, button.button-2,
+.button.button-2 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-3);
 }
 
-.button-3 {
+.button-3, button.button-3,
+.button.button-3 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-4);
 }
 
-.button-4 {
+.button-4, button.button-4,
+.button.button-4 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
@@ -291,28 +295,28 @@
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-1 {
+.input-1, input.input-1 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-2);
   letter-spacing: var(--letter-spacing-5);
 }
 
-.input-2 {
+.input-2, input.input-2 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-3);
   letter-spacing: var(--letter-spacing-4);
 }
 
-.input-3 {
+.input-3, input.input-3 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-4);
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-4 {
+.input-4, input.input-4 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-5);
@@ -321,37 +325,21 @@
 
 button.button-1,
 .button.button-1 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-2);
   --padding-y: var(--space-1);
   --padding-x: var(--space-2);
 }
 button.button-2,
 .button.button-2 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-3);
   --padding-y: var(--space-2);
   --padding-x: var(--space-3);
 }
 button.button-3,
 .button.button-3 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-4);
   --padding-y: var(--space-3);
   --padding-x: var(--space-4);
 }
 button.button-4,
 .button.button-4 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-5);
   --padding-y: var(--space-4);
   --padding-x: var(--space-5);
 }

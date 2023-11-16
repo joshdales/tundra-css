@@ -5,6 +5,10 @@
 	* {
 		margin: 0;
 	}
+
+	a {
+		cursor: pointer;
+	}
 }
 
 
@@ -12,4 +16,6 @@
 
 :root {
 	--accent: var(--green);
+	--foreground: var(--neutral-1);
+	--background: var(--neutral-8);
 }

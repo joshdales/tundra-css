@@ -10,12 +10,10 @@
   "scripts": {
     "build": "sass --no-source-map ./styles/index.scss ./index.css"
   },
-  "keywords": [],
+  "keywords": ["tundra", "css", "scss"],
   "author": "joshdales",
-  "url": "https://github.com/joshdales/tundra-css",
-  "bugs": {
-    "url": "https://github.com/joshdales/tundra-css/issues"
-  },
+  "repository": "https://github.com/joshdales/tundra-css",
+  "bugs": "https://github.com/joshdales/tundra-css/issues",
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.69.5"

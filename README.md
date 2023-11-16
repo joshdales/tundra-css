@@ -1,10 +1,7 @@
 # Tundra
 A comprehensive but not overwhelming CSS design system.
 
-## Usage
-You can apply one of the class provided and then customise it as you need with the variables. You should try as much as possible to only use the provided classes and variables. Keep it simple, and don't overthink things.
-
-### Naming conventions
+## Naming conventions
 Variable names are prefixed with a number 0 -> 999. <br />
 Colours go from dark -> light, and sizes goes from small -> large.
 
@@ -50,6 +47,26 @@ There are a series of classes for text, along with others for buttons, and text 
 - Inputs - Text based inputs
 	- Text styles: `input-1` - `input-4`
 	- Accent: `.red`, `.green`, `.blue`, `.yellow`
+
+## Usage
+You can apply one of the class provided and then customise it as you need with the variables. You should try as much as possible to only use the provided classes and variables. Keep it simple, and don't overthink things.
+
+Install via npm
+```
+npm install tundra-css
+```
+You can then import it from your node modules into a css file, if you do add it as a layer.
+
+```css
+@import 'node_modules/tundra-css' layer(tundra);
+```
+Or link to the stylesheet.
+
+```html
+<link rel="stylesheet" href="node_modules/tundra/index.css" />
+```
+
+Or you could access it via a CDN: https://unpkg.com/tundra-css@0.1.0/index.css
 
 ## Compatibility
 This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢

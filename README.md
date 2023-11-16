@@ -19,8 +19,8 @@ There are a series of css variables for the following:
 	- `--space-1` - `--space-14`
 
 To be honest you probably won't need to use these variables as you can just the classes for the text styles which are various combinations of these, but I'm including them for completeness sake.
-- Font Weight (1-3)
-	- `--font-weight-1` - `--font-weight-3`
+- Font Weight (1-4)
+	- `--font-weight-1` - `--font-weight-4`
 - Font Size (1-9)
 	- `--font-size-1` - `--font-size-9`
 - Line height (1-5)
@@ -55,13 +55,13 @@ Install via npm
 ```
 npm install tundra-css
 ```
-You can then import it from your node modules into a css file, if you do add it as a layer.
 
+You can then import it from your node modules into a css file, if you do add it as a layer.
 ```css
 @import 'node_modules/tundra-css' layer(tundra);
 ```
-Or link to the stylesheet.
 
+Or link to the stylesheet.
 ```html
 <link rel="stylesheet" href="node_modules/tundra/index.css" />
 ```

@@ -1,0 +1,15 @@
+@import 'modern-normalize' layer(normalize);
+@import 'tundra-css' layer(tundra);
+
+@layer reset {
+	* {
+		margin: 0;
+	}
+}
+
+
+/* Any global styles should come after this */
+
+:root {
+	--accent: var(--green);
+}

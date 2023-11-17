@@ -1,21 +1,21 @@
 <script lang="ts">
-	const colours = ['neutral', 'red', 'green', 'blue', 'yellow'];
-	const colourMap = colours.map((colour) => new Array(8).fill(colour));
+	const colours = ['neutral', 'red', 'green', 'blue', 'yellow']
+	const colour_map = colours.map((colour) => new Array(8).fill(colour))
 
 	function generate_fg(colour: string, index: number) {
 		if (colour === 'yellow') {
-			return 'neutral-1';
+			return 'neutral-1'
 		}
 
-		return `var(--neutral-${index > 3 ? 1 : 8})`;
+		return `var(--neutral-${index > 3 ? 1 : 8})`
 	}
 
 	function generate_bg(colour: string, index: number): string {
-		return `var(--${colour}-${index + 1})`;
+		return `var(--${colour}-${index + 1})`
 	}
 </script>
 
-{#each colourMap as colour}
+{#each colour_map as colour}
 	<div class="colour">
 		{#each colour as item, index}
 			<div

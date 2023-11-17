@@ -1,10 +1,10 @@
 <script lang="ts">
 	interface iProps {
-		href: string;
-		title: string;
-		desc: string;
+		href: string
+		title: string
+		desc: string
 	}
-	let { href, title, desc } = $props<iProps>();
+	let { href, title, desc } = $props<iProps>()
 </script>
 
 <a {href}>

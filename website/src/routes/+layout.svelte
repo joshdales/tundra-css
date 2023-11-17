@@ -4,8 +4,8 @@
 
 	let is_not_home_page = $derived($page.route.id !== '/')
 
-	let header_height: number
-	let current_position: number = 0
+	let header_height: number = $state(0)
+	let current_position: number = $state(0)
 	let prev_position: number = 0
 
 	function shouldHideHeader(currentYPosition: number): boolean {

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte'
 	interface iProps {
 		colour: string
 		level: number
@@ -17,8 +18,17 @@
 		}
 	}
 
+	const dispatch = createEventDispatcher()
+
 	function copy_value() {
-		navigator.clipboard.writeText(value)
+		navigator.clipboard
+			.writeText(value)
+			.then(() => {
+				dispatch('copied_value', { value, success: true })
+			})
+			.catch(() => {
+				dispatch('copied_value', { value, success: false })
+			})
 	}
 </script>
 
@@ -45,14 +55,16 @@
 		padding: var(--space-2);
 		cursor: pointer;
 		background-color: var(--neutral-8);
-		transition: all 0.1s ease-out;
+		transition:
+			transform 0.1s ease-out,
+			box-shadow 0.1s ease-out;
 		position: relative;
 	}
 
 	.colour:hover {
+		z-index: 1;
 		transform: scale(1.15);
 		box-shadow: 0 var(--space-1) var(--space-2) var(--space-2) rgba(0, 0, 0, 0.1);
-		z-index: 1;
 	}
 
 	.colour:hover span {

@@ -3,6 +3,8 @@
 	const colour_map = ['neutral', 'red', 'green', 'blue', 'yellow'].map((colour) =>
 		new Array(8).fill(colour),
 	)
+
+	// TODO: Handle the clicked event to display a notification
 </script>
 
 <main>

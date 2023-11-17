@@ -6,6 +6,13 @@
 </script>
 
 <main>
+	<h1>Colour Palette</h1>
+	<p>
+		A list of all colours that are available as variables. All of the colours are defined in OKLCH,
+		some of them are on the P3 colour gamut, but there are fallbacks for monitors that don't support
+		that. Click on one of the colour swatches and copy its raw value to your clipboard.
+	</p>
+
 	{#each colour_map as colour}
 		<div class="colour">
 			{#each colour as item, index}
@@ -17,8 +24,14 @@
 
 <style>
 	main {
-		max-width: 1200px;
+		max-width: 1400px;
+		padding-block: var(--space-8);
+		padding-inline: var(--space-10);
 		margin: auto;
+	}
+
+	p {
+		margin-block: var(--space-5);
 	}
 
 	.colour {

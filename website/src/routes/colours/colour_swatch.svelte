@@ -70,6 +70,10 @@
 		padding-inline: var(--space-2);
 	}
 
+	code {
+		display: block;
+	}
+
 	span {
 		opacity: 0;
 		margin-block-start: var(--space-1);

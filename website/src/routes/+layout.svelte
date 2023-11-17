@@ -1,6 +1,29 @@
-<script>
+<script lang="ts">
+	import { page } from '$app/stores';
 	import '../app.css';
+
+	const isNotHomePage = $derived($page.route.id !== '/');
+
+	let headerHeight: number;
+	let currentPosition: number = 0;
+	let prevPosition: number = 0;
+
+	function shouldHideHeader(currentYPosition: number): boolean {
+		const positionDelta = prevPosition - currentPosition;
+		prevPosition = currentYPosition;
+		return positionDelta < 0;
+	}
+
+	let hide: boolean = $derived(shouldHideHeader(currentPosition));
 </script>
+
+<svelte:window bind:scrollY={currentPosition} />
+
+{#if isNotHomePage}
+	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
+		<p class="alt-heading-3">Tundra</p>
+	</header>
+{/if}
 
 <slot />
 
@@ -13,9 +36,25 @@
 </footer>
 
 <style>
+	header {
+		position: sticky;
+		z-index: 2;
+		background-color: var(--neutral-8);
+		top: 0;
+		transition: top 0.5s;
+		color: var(--green);
+		padding-inline: var(--space-4);
+		padding-block: var(--space-6);
+	}
+
+	header.hide {
+		top: var(--header-height);
+	}
+
 	footer {
 		text-align: center;
 		padding-block: var(--space-4);
+		margin-block-start: auto;
 	}
 
 	a {

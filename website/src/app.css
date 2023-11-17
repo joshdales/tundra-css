@@ -19,3 +19,8 @@
 	--foreground: var(--neutral-1);
 	--background: var(--neutral-8);
 }
+
+html,
+body {
+	height: 100%;
+}

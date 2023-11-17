@@ -21,7 +21,7 @@
 
 {#if is_not_home_page}
 	<header bind:clientHeight={header_height} style="--header-height:-{header_height}px" class:hide>
-		<a href="/" class="alt-heading-3">Tundra</a>
+		<a href="/" class="heading-3">Tundra</a>
 	</header>
 {/if}
 

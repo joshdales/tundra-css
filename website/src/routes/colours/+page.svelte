@@ -8,7 +8,7 @@
 </script>
 
 <main>
-	<h1>Colour Palette</h1>
+	<h1 class="alt-heading-5">Colour Palette</h1>
 	<p>
 		A list of all colours that are available as variables. All of the colours are defined in OKLCH,
 		some of them are on the P3 colour gamut, but there are fallbacks for monitors that don't support

@@ -13,14 +13,41 @@
 	function generate_bg(colour: string, index: number): string {
 		return `var(--${colour}-${index + 1})`
 	}
+
+	function copy_on_enter(event: KeyboardEvent) {
+		if (event.key === 'Enter') {
+			copy_value(event)
+		}
+	}
+
+	function copy_value(event: MouseEvent | KeyboardEvent) {
+		if (!event.currentTarget) {
+			return
+		}
+		// @ts-ignore - doesn't recognise id as a property but it is there.
+		const id = event.currentTarget.id as string
+
+		const element = document.getElementById(id)
+		if (!element) {
+			return
+		}
+		const value = getComputedStyle(element).getPropertyValue(`--${id}`)
+		navigator.clipboard.writeText(value)
+	}
 </script>
 
 {#each colour_map as colour}
 	<div class="colour">
 		{#each colour as item, index}
 			<div
-				class=" colour-item"
+				class="colour-item"
+				id={`${item}-${index + 1}`}
 				style="--bg: {generate_bg(item, index)}; --fg: {generate_fg(item, index)}"
+				data-colour={generate_bg(item, index)}
+				on:click={copy_value}
+				on:keydown={copy_on_enter}
+				role="button"
+				tabindex="0"
 			>
 				{item}-{index + 1}
 			</div>

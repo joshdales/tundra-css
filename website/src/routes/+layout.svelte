@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'
 	import '../app.css'
 
-	const is_not_home_page = $derived($page.route.id !== '/')
+	let is_not_home_page = $derived($page.route.id !== '/')
 
 	let header_height: number
 	let current_position: number = 0

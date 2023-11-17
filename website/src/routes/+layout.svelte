@@ -43,7 +43,7 @@
 		top: 0;
 		transition: top 0.5s;
 		color: var(--green);
-		padding-inline: var(--space-4);
+		padding-inline: var(--space-10);
 		padding-block: var(--space-6);
 	}
 

@@ -5,7 +5,11 @@
 <div class="grid">
 	<header>
 		<h1 class="heading-6">Tundra CSS</h1>
-		<p class="body-4">Hello there how are you?</p>
+		<p class="body-4">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore asperiores
+			itaque maxime error iste ullam reiciendis? Asperiores incidunt eum quam, repudiandae,
+			accusamus odio aut ipsum, repellat quia accusantium magni?
+		</p>
 	</header>
 
 	<main>
@@ -15,6 +19,7 @@
 			incidunt, dolores, ad suscipit!
 		</p>
 
+		<h2 class="alt-heading-4">Foundations</h2>
 		<nav>
 			<ul>
 				<li>
@@ -41,6 +46,12 @@
 						desc="The foundational elements that build up the text styles."
 					/>
 				</li>
+			</ul>
+		</nav>
+
+		<h2 class="alt-heading-4">Elements</h2>
+		<nav>
+			<ul>
 				<li>
 					<LinkCard
 						href="/text"
@@ -93,15 +104,27 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin-block-start: var(--space-14);
+		padding-block-start: var(--space-14);
+		max-width: 800px;
+		padding-inline-end: var(--space-12);
+	}
+
+	nav,
+	h2 {
+		width: 100%;
 	}
 
 	ul {
-		margin-block-start: var(--space-4);
+		margin-block-end: var(--space-4);
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-3);
 		list-style: none;
 		padding: 0;
+	}
+
+	h2 {
+		margin-block-start: var(--space-10);
+		margin-block-end: var(--space-3);
 	}
 </style>

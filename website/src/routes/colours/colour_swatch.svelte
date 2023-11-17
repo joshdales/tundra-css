@@ -33,7 +33,7 @@
 >
 	<div class="swatch" />
 	<p class="label-2">
-		<code>--{colour}-{level}</code>
+		<code>{colour}-{level}</code>
 		<span class="label-1">{value}</span>
 	</p>
 </div>
@@ -42,7 +42,7 @@
 	.colour {
 		display: flex;
 		flex-direction: column;
-		padding: var(--space-1);
+		padding: var(--space-2);
 		cursor: pointer;
 		background-color: var(--neutral-8);
 		transition: all 0.1s ease-out;
@@ -50,9 +50,8 @@
 	}
 
 	.colour:hover {
-		transform: scale(1.1);
-		box-shadow: 0 0 var(--space-2) var(--space-2) rgba(0, 0, 0, 0.1);
-		border-radius: var(--radius-1);
+		transform: scale(1.15);
+		box-shadow: 0 var(--space-1) var(--space-2) var(--space-2) rgba(0, 0, 0, 0.1);
 		z-index: 1;
 	}
 
@@ -62,7 +61,6 @@
 
 	.swatch {
 		height: var(--space-14);
-		width: var(--space-14);
 		background-color: var(--bg);
 	}
 
@@ -74,5 +72,6 @@
 
 	span {
 		opacity: 0;
+		margin-block-start: var(--space-1);
 	}
 </style>

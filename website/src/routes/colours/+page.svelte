@@ -17,11 +17,31 @@
 
 <style>
 	main {
-		display: grid;
-		max-width: calc(var(--space-2) * 3 + var(--space-14) * 8);
+		max-width: 1200px;
+		margin: auto;
 	}
+
 	.colour {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
 		gap: var(--space-1);
+	}
+
+	@media screen and (max-width: 1100px) {
+		.colour {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.colour {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.colour {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 </style>

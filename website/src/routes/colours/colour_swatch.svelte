@@ -5,11 +5,11 @@
 		level: number
 	}
 	let { colour, level } = $props<iProps>()
-	let value: string = $state('')
+	let colour_value: string = $state('')
 	let element: HTMLDivElement
 
 	$effect(() => {
-		value = getComputedStyle(element).getPropertyValue(`--${colour}-${level}`)
+		colour_value = getComputedStyle(element).getPropertyValue(`--${colour}-${level}`)
 	})
 
 	function copy_on_enter(event: KeyboardEvent) {
@@ -21,6 +21,7 @@
 	const dispatch = createEventDispatcher()
 
 	function copy_value() {
+		const value = `var(--${colour}-${level})`
 		navigator.clipboard
 			.writeText(value)
 			.then(() => {
@@ -44,7 +45,7 @@
 	<div class="swatch" />
 	<p class="label-2">
 		<code>{colour}-{level}</code>
-		<span class="label-1">{value}</span>
+		<span class="label-1">{colour_value}</span>
 	</p>
 </div>
 

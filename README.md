@@ -66,7 +66,9 @@ Or link to the stylesheet.
 <link rel="stylesheet" href="node_modules/tundra/index.css" />
 ```
 
-Or you could access it via a CDN: https://unpkg.com/tundra-css@latest/index.css
+Or you could access it via a CDN:
+- https://unpkg.com/tundra-css/index.css
+- https://cdn.jsdelivr.net/npm/tundra-css/index.min.css
 
 ## Compatibility
 This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢

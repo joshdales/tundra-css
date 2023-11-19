@@ -5,22 +5,22 @@
 		level: number
 	}
 	let { colour, level } = $props<iProps>()
-	let colour_value: string = $state('')
+	let colourValue: string = $state('')
 	let element: HTMLDivElement
 
 	$effect(() => {
-		colour_value = getComputedStyle(element).getPropertyValue(`--${colour}-${level}`)
+		colourValue = getComputedStyle(element).getPropertyValue(`--${colour}-${level}`)
 	})
 
-	function copy_on_enter(event: KeyboardEvent) {
+	function copyOnEnter(event: KeyboardEvent) {
 		if (event.key === 'Enter') {
-			copy_value()
+			copyValue()
 		}
 	}
 
 	const dispatch = createEventDispatcher()
 
-	function copy_value() {
+	function copyValue() {
 		const value = `var(--${colour}-${level})`
 		navigator.clipboard
 			.writeText(value)
@@ -37,15 +37,15 @@
 	bind:this={element}
 	class="colour"
 	style="--bg: var(--{colour}-{level});"
-	on:click={copy_value}
-	on:keydown={copy_on_enter}
+	on:click={copyValue}
+	on:keydown={copyOnEnter}
 	role="button"
 	tabindex="0"
 >
 	<div class="swatch" />
 	<p class="label-2">
 		<code>{colour}-{level}</code>
-		<span class="label-1">{colour_value}</span>
+		<span class="label-1">{colourValue}</span>
 	</p>
 </div>
 

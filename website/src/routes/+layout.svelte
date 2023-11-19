@@ -2,25 +2,25 @@
 	import { page } from '$app/stores'
 	import '../app.css'
 
-	let is_not_home_page = $derived($page.route.id !== '/')
+	let isNotHomePage = $derived($page.route.id !== '/')
 
-	let header_height: number = $state(0)
-	let current_position: number = $state(0)
-	let prev_position: number = 0
+	let headerHeight: number = $state(0)
+	let currentPosition: number = $state(0)
+	let prevPosition: number = 0
 
 	function shouldHideHeader(currentYPosition: number): boolean {
-		const positionDelta = prev_position - current_position
-		prev_position = currentYPosition
+		const positionDelta = prevPosition - currentPosition
+		prevPosition = currentYPosition
 		return positionDelta < 0
 	}
 
-	let hide: boolean = $derived(shouldHideHeader(current_position))
+	let hide: boolean = $derived(shouldHideHeader(currentPosition))
 </script>
 
-<svelte:window bind:scrollY={current_position} />
+<svelte:window bind:scrollY={currentPosition} />
 
-{#if is_not_home_page}
-	<header bind:clientHeight={header_height} style="--header-height:-{header_height}px" class:hide>
+{#if isNotHomePage}
+	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
 		<a href="/" class="heading-3">Tundra</a>
 	</header>
 {/if}

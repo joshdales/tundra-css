@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ColourSwatch from './colour_swatch.svelte'
-	const colour_map = ['neutral', 'red', 'green', 'blue', 'yellow'].map((colour) =>
+	const colourMap = ['neutral', 'red', 'green', 'blue', 'yellow'].map((colour) =>
 		new Array(8).fill(colour),
 	)
 
@@ -15,7 +15,7 @@
 		that. Click on one of the colour swatches and copy its raw value to your clipboard.
 	</p>
 
-	{#each colour_map as colour}
+	{#each colourMap as colour}
 		<div class="colour">
 			{#each colour as item, index}
 				<ColourSwatch colour={item} level={index + 1} />

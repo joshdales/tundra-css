@@ -12,7 +12,7 @@
 </script>
 
 <div bind:this={element} class="space" style="--space:var(--space-{level})">
-	<p class="label-3">
+	<p class="label-2">
 		<code>space-{level}</code>
 		{spaceValue}
 	</p>

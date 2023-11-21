@@ -1,25 +1,25 @@
 <script>
-	// import SpaceMarker from './space_marker.svelte'
-
+	import RadiusMarker from './radius_marker.svelte'
 	const radiusMap = new Array(5).fill('radius')
 </script>
 
 <main>
 	<h1 class="alt-heading-5">Radius</h1>
 
-	<p class="body-4">Round out the corners, smoothe things over</p>
+	<p class="body-4">Round out the corners, smooth things over.</p>
 
-	<sectiosn>
+	<section>
 		{#each radiusMap as _, index}
-			<code>radius-{index + 1}</code>
+			<RadiusMarker level={index + 1} />
 		{/each}
-	</sectiosn>
+	</section>
 </main>
 
 <style>
 	p {
 		margin-block: var(--space-5);
 	}
+
 	section {
 		display: flex;
 		flex-direction: column;

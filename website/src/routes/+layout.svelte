@@ -36,6 +36,13 @@
 </footer>
 
 <style>
+	:global(main) {
+		max-width: 1400px;
+		padding-block: var(--space-8);
+		padding-inline: var(--space-10);
+		margin: auto;
+	}
+
 	header {
 		position: sticky;
 		z-index: 2;

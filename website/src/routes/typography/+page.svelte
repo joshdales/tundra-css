@@ -1,10 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
-	import FontSize from './font_size.svelte'
-	import FontWeight from './font_weight.svelte'
-	import LetterSpacing from './letter_spacing.svelte'
-	import LineHeight from './line_height.svelte'
+	import DesignToken from '$lib/components/design_token.svelte'
 
 	let selectedToken = $state($page.url.searchParams.get('token') || '')
 
@@ -30,18 +27,6 @@
 	<fieldset name="typography">
 		<legend class="alt-heading-3">Token type</legend>
 
-		<label class:active={selectedToken === 'font-weight'} class="label-4" for="token-font-weight">
-			Font Weight
-			<input
-				bind:group={selectedToken}
-				type="radio"
-				name="typography"
-				value="font-weight"
-				id="token-font-weight"
-				hidden
-			/>
-		</label>
-
 		<label class:active={selectedToken === 'font-size'} class="label-4" for="token-font-size">
 			Font Size
 			<input
@@ -50,6 +35,18 @@
 				name="typography"
 				value="font-size"
 				id="token-font-size"
+				hidden
+			/>
+		</label>
+
+		<label class:active={selectedToken === 'font-weight'} class="label-4" for="token-font-weight">
+			Font Weight
+			<input
+				bind:group={selectedToken}
+				type="radio"
+				name="typography"
+				value="font-weight"
+				id="token-font-weight"
 				hidden
 			/>
 		</label>
@@ -83,28 +80,38 @@
 		</label>
 	</fieldset>
 
-	{#if selectedToken === 'font-weight'}
-		<section>
-			{#each new Array(4).fill(selectedToken) as _, index}
-				<FontWeight level={index + 1} />
-			{/each}
-		</section>
-	{:else if selectedToken === 'font-size'}
+	{#if selectedToken === 'font-size'}
 		<section>
 			{#each new Array(9).fill(selectedToken) as _, index}
-				<FontSize level={index + 1} />
+				<DesignToken property={selectedToken} level={index + 1}>
+					<p class="token" style="--size: var(--font-size-{index + 1}">Lorem ipsum</p>
+				</DesignToken>
+			{/each}
+		</section>
+	{:else if selectedToken === 'font-weight'}
+		<section>
+			{#each new Array(4).fill(selectedToken) as _, index}
+				<DesignToken property={selectedToken} level={index + 1}>
+					<p class="token" style="--weight: var(--font-weight-{index + 1}">Lorem ipsum</p>
+				</DesignToken>
 			{/each}
 		</section>
 	{:else if selectedToken === 'line-height'}
 		<section>
 			{#each new Array(5).fill(selectedToken) as _, index}
-				<LineHeight level={index + 1} />
+				<DesignToken property={selectedToken} level={index + 1}>
+					<p class="token line-height" style="--height: var(--line-height-{index + 1}">
+						Lorem ipsum
+					</p>
+				</DesignToken>
 			{/each}
 		</section>
 	{:else if selectedToken === 'letter-spacing'}
 		<section>
 			{#each new Array(5).fill(selectedToken) as _, index}
-				<LetterSpacing level={index + 1} />
+				<DesignToken property={selectedToken} level={index + 1}>
+					<p class="token" style="--spacing: var(--letter-spacing-{index + 1}">Lorem ipsum</p>
+				</DesignToken>
 			{/each}
 		</section>
 	{:else}
@@ -153,5 +160,16 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		margin-block-start: var(--space-7);
+	}
+
+	.token {
+		font-size: var(--size, var(--font-size-5));
+		font-weight: var(--weight, var(--font-weight-2));
+		letter-spacing: var(--spacing, var(--letter-spacing-2));
+		line-height: var(--height, var(--line-height-2));
+	}
+
+	.line-height {
+		border-block: 1.5px solid var(--red-6);
 	}
 </style>

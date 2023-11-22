@@ -30,14 +30,14 @@
 					/>
 				</li>
 				<li>
+					<LinkCard href="/radius" title="Radius" desc="How round do you want those corners?" />
+				</li>
+				<li>
 					<LinkCard
 						href="/spacing"
 						title="Spacing"
 						desc="The scale that you should use for every time you need a measurement."
 					/>
-				</li>
-				<li>
-					<LinkCard href="/radius" title="Radius" desc="How round do you want those corners?" />
 				</li>
 				<li>
 					<LinkCard
@@ -54,13 +54,6 @@
 			<ul>
 				<li>
 					<LinkCard
-						href="/text"
-						title="Text"
-						desc="The different types of text and how they look"
-					/>
-				</li>
-				<li>
-					<LinkCard
 						href="/buttons"
 						title="Buttons"
 						desc="The colour palette and colour based variables that are open to you"
@@ -71,6 +64,13 @@
 						href="/inputs"
 						title="Inputs"
 						desc="For when someone needs to type some text into a box"
+					/>
+				</li>
+				<li>
+					<LinkCard
+						href="/text"
+						title="Text"
+						desc="The different types of text and how they look"
 					/>
 				</li>
 			</ul>

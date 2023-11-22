@@ -1,7 +1,5 @@
 <script>
-	import SpaceMarker from './space_marker.svelte'
-
-	const spacingMap = new Array(14).fill('space')
+	import DesignToken from '$lib/components/design_token.svelte'
 </script>
 
 <main>
@@ -12,8 +10,10 @@
 	</p>
 
 	<section>
-		{#each spacingMap as _, index}
-			<SpaceMarker level={index + 1} />
+		{#each new Array(14).fill('space') as property, index}
+			<DesignToken {property} level={index + 1} on:copied_value>
+				<div style="--space: var(--space-{index + 1})" />
+			</DesignToken>
 		{/each}
 	</section>
 
@@ -33,5 +33,12 @@
 		grid-template-columns: repeat(5, 1fr);
 		gap: var(--space-4);
 		margin-block: auto;
+	}
+
+	div {
+		height: var(--space);
+		width: var(--space);
+		background-color: var(--red-6);
+		margin: auto;
 	}
 </style>

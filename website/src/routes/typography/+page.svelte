@@ -81,10 +81,10 @@
 	</fieldset>
 
 	{#if selectedToken === 'font-size'}
-		<section>
+		<section style="--grid: 4">
 			{#each new Array(9).fill(selectedToken) as _, index}
 				<DesignToken property={selectedToken} level={index + 1}>
-					<p class="token" style="--size: var(--font-size-{index + 1}">Lorem ipsum</p>
+					<p class="token font-size" style="--size: var(--font-size-{index + 1}">Lorem ipsum</p>
 				</DesignToken>
 			{/each}
 		</section>
@@ -92,7 +92,9 @@
 		<section>
 			{#each new Array(4).fill(selectedToken) as _, index}
 				<DesignToken property={selectedToken} level={index + 1}>
-					<p class="token" style="--weight: var(--font-weight-{index + 1}">Lorem ipsum</p>
+					<p class="token font-weight" style="--weight: var(--font-weight-{index + 1}">
+						Lorem ipsum
+					</p>
 				</DesignToken>
 			{/each}
 		</section>
@@ -110,12 +112,14 @@
 		<section>
 			{#each new Array(5).fill(selectedToken) as _, index}
 				<DesignToken property={selectedToken} level={index + 1}>
-					<p class="token" style="--spacing: var(--letter-spacing-{index + 1}">Lorem ipsum</p>
+					<p class="token letter-spacing" style="--spacing: var(--letter-spacing-{index + 1}">
+						Lorem ipsum
+					</p>
 				</DesignToken>
 			{/each}
 		</section>
 	{:else}
-		<p class="body-4">Select a token to see it's options</p>
+		<p class="body-4 empty">Select a token to see it's options</p>
 	{/if}
 </main>
 
@@ -129,13 +133,17 @@
 		padding: 0;
 	}
 
+	legend {
+		margin-block-end: var(--space-4);
+	}
+
 	label {
 		cursor: pointer;
 		color: var(--foreground);
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
 		padding-inline: var(--space-6);
-		border-top: 0.5px solid transparent;
+		border: 1.5px solid var(--neutral-6);
 		text-align: center;
 		transition:
 			all 0.1s ease-in-out,
@@ -146,19 +154,19 @@
 	label:hover {
 		border-color: var(--blue-8);
 		background-color: oklch(from var(--blue-8) l c h / 40%);
+	}
+
+	label:hover {
 		box-shadow:
 			0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
 			0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
 			inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-7) l c h / 10%);
-	}
-
-	label:hover {
 		transform: translate(0, calc(var(--space-1) * -1));
 	}
 
 	section {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(var(--grid, 5), 1fr);
 		margin-block-start: var(--space-7);
 	}
 
@@ -171,5 +179,10 @@
 
 	.line-height {
 		border-block: 1.5px solid var(--red-6);
+	}
+
+	.empty {
+		margin-block: var(--space-14);
+		text-align: center;
 	}
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ColourSwatch from './colour_swatch.svelte'
+	import DesignToken from '$lib/components/design_token.svelte'
 	const colourMap = ['neutral', 'red', 'green', 'blue', 'yellow'].map((colour) =>
 		new Array(8).fill(colour),
 	)
@@ -18,7 +18,9 @@
 	{#each colourMap as colour}
 		<div class="colour">
 			{#each colour as item, index}
-				<ColourSwatch colour={item} level={index + 1} />
+				<DesignToken property={item} level={index + 1} on:copied_value>
+					<div class="colour-block" />
+				</DesignToken>
 			{/each}
 		</div>
 	{/each}
@@ -51,5 +53,11 @@
 		.colour {
 			grid-template-columns: repeat(1, 1fr);
 		}
+	}
+
+	.colour-block {
+		height: 100%;
+		width: 100%;
+		background-color: var(--prop);
 	}
 </style>

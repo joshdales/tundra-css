@@ -1,8 +1,22 @@
 <script lang="ts">
-	let selectedToken = $state('')
-	function updateSelectedToken(event: Event) {
-		selectedToken = (event.target as HTMLInputElement).value
+	import { goto } from '$app/navigation'
+	import { page } from '$app/stores'
+
+	let selectedToken = $state($page.url.searchParams.get('token') || '')
+
+	function updateSelectedToken(event: Event & { currentTarget: EventTarget & HTMLInputElement }) {
+		selectedToken = event.currentTarget.value
 	}
+
+	$effect(() => {
+		const token = $page.url.searchParams.get('token')
+		if (token && !selectedToken) {
+			selectedToken = token
+		} else if (selectedToken && selectedToken !== token) {
+			$page.url.searchParams.set('token', selectedToken)
+			goto($page.url, { replaceState: true })
+		}
+	})
 </script>
 
 <main>
@@ -13,27 +27,55 @@
 		to access these directly but the variables are available in case that you do.
 	</p>
 
-	<fieldset name="typography" on:change={updateSelectedToken}>
+	<fieldset name="typography">
 		<legend class="alt-heading-3">Token type</legend>
 
 		<label class="label-4" for="token-font-weight">
 			Font Weight
-			<input type="radio" name="typography" value="font-weight" id="token-font-weight" />
+			<input
+				bind:group={selectedToken}
+				on:change={updateSelectedToken}
+				type="radio"
+				name="typography"
+				value="font-weight"
+				id="token-font-weight"
+			/>
 		</label>
 
 		<label class="label-4" for="token-font-size">
 			Font Size
-			<input type="radio" name="typography" value="font-size" id="token-font-size" />
+			<input
+				bind:group={selectedToken}
+				on:change={updateSelectedToken}
+				type="radio"
+				name="typography"
+				value="font-size"
+				id="token-font-size"
+			/>
 		</label>
 
 		<label class="label-4" for="token-line-height">
 			Line Height
-			<input type="radio" name="typography" value="line-height" id="token-line-height" />
+			<input
+				bind:group={selectedToken}
+				on:change={updateSelectedToken}
+				type="radio"
+				name="typography"
+				value="line-height"
+				id="token-line-height"
+			/>
 		</label>
 
 		<label class="label-4" for="token-letter-spacing">
 			Letter Spacing
-			<input type="radio" name="typography" value="letter-spacing" id="token-letter-spacing" />
+			<input
+				bind:group={selectedToken}
+				on:change={updateSelectedToken}
+				type="radio"
+				name="typography"
+				value="letter-spacing"
+				id="token-letter-spacing"
+			/>
 		</label>
 	</fieldset>
 

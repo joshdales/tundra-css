@@ -84,6 +84,7 @@
 		grid-template-columns: 1.5fr 2fr;
 		min-height: 100vh;
 		min-height: 100lvh;
+		gap: var(--space-12);
 	}
 
 	header {
@@ -91,7 +92,7 @@
 		top: 0;
 		height: fit-content;
 		padding-block: var(--space-14);
-		padding-inline: var(--space-12);
+		padding-inline-start: var(--space-12);
 	}
 
 	h1 {
@@ -106,6 +107,7 @@
 		justify-content: center;
 		padding-block-start: var(--space-14);
 		max-width: 800px;
+		padding-inline-start: 0;
 		padding-inline-end: var(--space-12);
 	}
 

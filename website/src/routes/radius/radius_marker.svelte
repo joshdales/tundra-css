@@ -1,15 +1,14 @@
 <script lang="ts">
+	import DesignToken from '$lib/components/design_token.svelte'
 	interface iProps {
 		level: number
 	}
 	const { level } = $props<iProps>()
 </script>
 
-<div style="--radius: var(--radius-{level})">
-	<p class="label-2">
-		<code>radius-{level}</code>
-	</p>
-</div>
+<DesignToken property="radius" {level}>
+	<div style="--radius: var(--radius-{level})" />
+</DesignToken>
 
 <style>
 	div:before {

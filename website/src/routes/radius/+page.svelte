@@ -21,8 +21,8 @@
 	}
 
 	section {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
 		gap: var(--space-4);
 	}
 </style>

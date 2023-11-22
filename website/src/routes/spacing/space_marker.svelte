@@ -6,7 +6,7 @@
 	const { level } = $props<iProps>()
 </script>
 
-<DesignToken property="space" {level}>
+<DesignToken property="space" {level} on:copied_value>
 	<div style="--space: var(--space-{level})" />
 </DesignToken>
 

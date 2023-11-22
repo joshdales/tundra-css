@@ -6,7 +6,7 @@
 	const { level } = $props<iProps>()
 </script>
 
-<DesignToken property="radius" {level}>
+<DesignToken property="radius" {level} on:copied_value>
 	<div style="--radius: var(--radius-{level})" />
 </DesignToken>
 

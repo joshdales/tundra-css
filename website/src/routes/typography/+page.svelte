@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
+	import FontSize from './font_size.svelte'
+	import FontWeight from './font_weight.svelte'
+	import LetterSpacing from './letter_spacing.svelte'
+	import LineHeight from './line_height.svelte'
 
 	let selectedToken = $state($page.url.searchParams.get('token') || '')
 
@@ -79,7 +83,33 @@
 		</label>
 	</fieldset>
 
-	{selectedToken}
+	{#if selectedToken === 'font-weight'}
+		<section>
+			{#each new Array(4).fill(selectedToken) as _, index}
+				<FontWeight level={index + 1} />
+			{/each}
+		</section>
+	{:else if selectedToken === 'font-size'}
+		<section>
+			{#each new Array(9).fill(selectedToken) as _, index}
+				<FontSize level={index + 1} />
+			{/each}
+		</section>
+	{:else if selectedToken === 'line-height'}
+		<section>
+			{#each new Array(5).fill(selectedToken) as _, index}
+				<LineHeight level={index + 1} />
+			{/each}
+		</section>
+	{:else if selectedToken === 'letter-spacing'}
+		<section>
+			{#each new Array(5).fill(selectedToken) as _, index}
+				<LetterSpacing level={index + 1} />
+			{/each}
+		</section>
+	{:else}
+		<p class="body-4">Select a token to see it's options</p>
+	{/if}
 </main>
 
 <style>
@@ -117,5 +147,11 @@
 
 	label:hover {
 		transform: translate(0, calc(var(--space-1) * -1));
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		margin-block-start: var(--space-7);
 	}
 </style>

@@ -7,8 +7,8 @@
 	<h1 class="alt-heading-5">Buttons</h1>
 
 	<p class="body-4">
-		These are all the token that the text styles are made from. In general you probably won't need
-		to access these directly but the variables are available in case that you do.
+		Apply the class for the button variant and the accent colour that you want the button to be. Add
+		a <code>button-*</code> class to change the size.
 	</p>
 
 	<fieldset name="variant">
@@ -96,21 +96,37 @@
 		</label>
 	</fieldset>
 
-	<button class="button-1 {variant} {colour}"> Lorem ipsum </button>
+	<div class="btn-group">
+		<button class="button-1 {variant} {colour}"> Button 1 </button>
 
-	<button class="button-2 {variant} {colour}"> Lorem ipsum </button>
+		<button class="button-2 {variant} {colour}"> Button 2 </button>
 
-	<button class="button-3 {variant} {colour}"> Lorem ipsum </button>
+		<button class="button-3 {variant} {colour}"> Button 3 </button>
 
-	<button class="button-4 {variant} {colour}"> Lorem ipsum </button>
+		<button class="button-4 {variant} {colour}"> Button 4 </button>
+	</div>
+
+	<section class="disabled">
+		<h3>Disabled buttons</h3>
+		<p>When buttons are disabled they look the same no matter what their accent colour.</p>
+		<div class="btn-group">
+			<button class="button-2 filled" disabled> Lorem ipsum </button>
+			<button class="button-2 outline" disabled> Lorem ipsum </button>
+			<button class="button-2 ghost" disabled> Lorem ipsum </button>
+		</div>
+	</section>
 </main>
 
 <style>
+	.btn-group,
 	fieldset {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: var(--space-6);
 		margin-block: var(--space-4);
+	}
+
+	fieldset {
 		border: none;
 		padding: 0;
 	}
@@ -146,25 +162,8 @@
 		transform: translate(0, calc(var(--space-1) * -1));
 	}
 
-	section {
-		display: grid;
-		grid-template-columns: repeat(var(--grid, 5), 1fr);
-		margin-block-start: var(--space-7);
-	}
-
-	.token {
-		font-size: var(--size, var(--font-size-5));
-		font-weight: var(--weight, var(--font-weight-2));
-		letter-spacing: var(--spacing, var(--letter-spacing-2));
-		line-height: var(--height, var(--line-height-2));
-	}
-
-	.line-height {
-		border-block: 1.5px solid var(--red-6);
-	}
-
-	.empty {
-		margin-block: var(--space-14);
-		text-align: center;
+	button {
+		width: fit-content;
+		height: fit-content;
 	}
 </style>

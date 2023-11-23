@@ -5,21 +5,18 @@
 <div class="grid">
 	<header>
 		<h1 class="heading-6">Tundra CSS</h1>
+		<p class="body-4">A comprehensive but not overwhelming CSS design system.</p>
 		<p class="body-4">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore asperiores
-			itaque maxime error iste ullam reiciendis? Asperiores incidunt eum quam, repudiandae,
-			accusamus odio aut ipsum, repellat quia accusantium magni?
+			Its not a complete framework with utility classes for every property that you might want, like
+			Tailwind or Tachyons or what have you. It is a smaller selection of variables and classes, and
+			SCSS mixins it you want them. This should give you the building blocks to get a relatively
+			nice looking project without having to go through too much trouble.
 		</p>
 	</header>
 
 	<main>
-		<p>
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ipsa magni sequi. Aliquam
-			laborum maxime, molestias est sit quasi assumenda ipsam veniam sint nihil quod perspiciatis
-			incidunt, dolores, ad suscipit!
-		</p>
-
 		<h2 class="alt-heading-4">Foundations</h2>
+		<p class="body-3">The variables used to make up the larger elements.</p>
 		<nav>
 			<ul>
 				<li>
@@ -50,6 +47,9 @@
 		</nav>
 
 		<h2 class="alt-heading-4">Elements</h2>
+		<p class="body-3">
+			You can apply classes to the following elements to the systems appearances.
+		</p>
 		<nav>
 			<ul>
 				<li>
@@ -127,6 +127,19 @@
 
 	h2 {
 		margin-block-start: var(--space-10);
+		margin-block-end: var(--space-2);
+	}
+
+	h2:first-of-type {
+		margin-block-start: 0;
+	}
+
+	.body-3 {
+		width: 100%;
 		margin-block-end: var(--space-3);
+	}
+
+	header p {
+		margin-block: var(--space-6);
 	}
 </style>

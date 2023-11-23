@@ -22,5 +22,13 @@
 
 html,
 body {
-	min-height: 100%;
+	min-height: 100lvh;
+}
+
+main {
+	width: 100%;
+	max-width: 1400px;
+	padding-block: var(--space-8);
+	padding-inline: var(--space-10);
+	margin: auto;
 }

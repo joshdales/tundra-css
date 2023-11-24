@@ -1,10 +1,13 @@
 {
   "name": "tundra-css",
   "version": "0.3.0",
-  "description": "",
+  "description": "A simple CSS Design system",
   "main": "index.css",
   "exports": {
     ".": "./index.css",
+    "./css": "./index.css",
+    "./scss": "./index.scss",
+    "./styles": "./styles/index.scss",
     "./styles/*": "./styles/*"
   },
   "scripts": {

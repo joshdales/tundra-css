@@ -1,4 +1,5 @@
 <script lang="ts">
+	let selectedStyle = ''
 	const headings = new Array(6)
 	const text = new Array(4)
 </script>
@@ -8,9 +9,15 @@
 
 	<p>Apply the text style class to add those typography variables.</p>
 
-	<label for="text-style-select">
+	<label class="label4" for="text-style-select">
 		View the text styles
-		<select class="input-4" name="text-style" id="text-style-select">
+		<select
+			bind:value={selectedStyle}
+			class="input-4"
+			name="text-style"
+			id="text-style-select"
+			placeholder="Select text style"
+		>
 			<option value="heading">Heading</option>
 			<option value="alt-heading">Alt Heading</option>
 			<option value="body">Body</option>
@@ -22,52 +29,17 @@
 	</label>
 
 	<section>
-		<h2>Heading</h2>
-		{#each headings as _, index}
-			<p class="heading-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Alt Heading</h2>
-		{#each headings as _, index}
-			<p class="alt-heading-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Body</h2>
-		{#each text as _, index}
-			<p class="body-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Link</h2>
-		{#each text as _, index}
-			<p class="link-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Button</h2>
-		{#each text as _, index}
-			<p class="button-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Label</h2>
-		{#each text as _, index}
-			<p class="label-{index + 1}">Lorem ipsum</p>
-		{/each}
-	</section>
-
-	<section>
-		<h2>Input</h2>
-		{#each text as _, index}
-			<p class="input-{index + 1}">Lorem ipsum</p>
-		{/each}
+		{#if selectedStyle === 'heading' || selectedStyle === 'alt-heading'}
+			{#each headings as _, index}
+				<p class="{selectedStyle}-{index + 1}">Lorem ipsum</p>
+			{/each}
+		{:else if selectedStyle}
+			{#each text as _, index}
+				<p class="{selectedStyle}-{index + 1}">Lorem ipsum</p>
+			{/each}
+		{:else}
+			<p>nothing selected yet</p>
+		{/if}
 	</section>
 </main>
 
@@ -79,5 +51,14 @@
 		display: flex;
 		flex-direction: column;
 		margin-block: var(--space-10);
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+	}
+
+	select {
+		width: fit-content;
 	}
 </style>

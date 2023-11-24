@@ -7,7 +7,7 @@
 <main>
 	<h1>Text Styles</h1>
 
-	<p>Apply the text style class to add those typography variables.</p>
+	<p class="body-4">Apply the text style class to add those typography variables.</p>
 
 	<label class="label4" for="text-style-select">
 		View the text styles
@@ -38,7 +38,7 @@
 				<p class="{selectedStyle}-{index + 1}">Lorem ipsum</p>
 			{/each}
 		{:else}
-			<p>nothing selected yet</p>
+			<p class="body-4">Nothing selected yet</p>
 		{/if}
 	</section>
 </main>

@@ -11,46 +11,6 @@
 		a <code>button-*</code> class to change the size.
 	</p>
 
-	<fieldset name="variant">
-		<legend class="alt-heading-3">Variant</legend>
-
-		<label class:active={variant === 'filled'} class="label-4" for="buttons-filled">
-			Filled
-			<input
-				bind:group={variant}
-				type="radio"
-				name="buttons"
-				value="filled"
-				id="buttons-filled"
-				hidden
-			/>
-		</label>
-
-		<label class:active={variant === 'outline'} class="label-4" for="buttons-outline">
-			Outline
-			<input
-				bind:group={variant}
-				type="radio"
-				name="buttons"
-				value="outline"
-				id="buttons-outline"
-				hidden
-			/>
-		</label>
-
-		<label class:active={variant === 'ghost'} class="label-4" for="buttons-ghost">
-			Ghost
-			<input
-				bind:group={variant}
-				type="radio"
-				name="buttons"
-				value="ghost"
-				id="buttons-ghost"
-				hidden
-			/>
-		</label>
-	</fieldset>
-
 	<fieldset name="accent">
 		<legend class="alt-heading-3">Accent</legend>
 
@@ -96,16 +56,42 @@
 		</label>
 	</fieldset>
 
+	<h2 class="alt-heading-4">Filled</h2>
+
 	<div class="btn-group">
-		<button class="button-1 {variant} {colour}"> Button 1 </button>
+		<button class="button-1 filled {colour}"> Button 1 </button>
 
-		<button class="button-2 {variant} {colour}"> Button 2 </button>
+		<button class="button-2 filled {colour}"> Button 2 </button>
 
-		<button class="button-3 {variant} {colour}"> Button 3 </button>
+		<button class="button-3 filled {colour}"> Button 3 </button>
 
-		<button class="button-4 {variant} {colour}"> Button 4 </button>
+		<button class="button-4 filled {colour}"> Button 4 </button>
 	</div>
 
+	<h2 class="alt-heading-4">Outline</h2>
+
+	<div class="btn-group">
+		<button class="button-1 outline {colour}"> Button 1 </button>
+
+		<button class="button-2 outline {colour}"> Button 2 </button>
+
+		<button class="button-3 outline {colour}"> Button 3 </button>
+
+		<button class="button-4 outline {colour}"> Button 4 </button>
+	</div>
+
+
+	<h2 class="alt-heading-4">Ghost</h2>
+
+	<div class="btn-group">
+		<button class="button-1 ghost {colour}"> Button 1 </button>
+
+		<button class="button-2 ghost {colour}"> Button 2 </button>
+
+		<button class="button-3 ghost {colour}"> Button 3 </button>
+
+		<button class="button-4 ghost {colour}"> Button 4 </button>
+	</div>
 	<section class="disabled">
 		<h3>Disabled buttons</h3>
 		<p>When buttons are disabled they look the same no matter what their accent colour.</p>

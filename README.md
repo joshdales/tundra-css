@@ -1,6 +1,8 @@
 # Tundra
 A comprehensive but not overwhelming CSS design system.
 
+Just a note that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.
+
 ## Naming conventions
 Variable names are prefixed with a number 0 -> 999. <br />
 Colours go from dark -> light, and sizes goes from small -> large.
@@ -71,7 +73,9 @@ Or you could access it via a CDN:
 - https://cdn.jsdelivr.net/npm/tundra-css/index.min.css
 
 ## Compatibility
-This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢
+This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢.
+
+Should be good as long as your browser has been updated since 2016.
 
 ## SCSS
 There are SCSS variables and mixins provided which you can use if you want to override or change things up. But you shouldn't really need them.

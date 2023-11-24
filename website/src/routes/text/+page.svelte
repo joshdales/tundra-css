@@ -8,6 +8,19 @@
 
 	<p>Apply the text style class to add those typography variables.</p>
 
+	<label for="text-style-select">
+		View the text styles
+		<select class="input-4" name="text-style" id="text-style-select">
+			<option value="heading">Heading</option>
+			<option value="alt-heading">Alt Heading</option>
+			<option value="body">Body</option>
+			<option value="link">Link</option>
+			<option value="button">Button</option>
+			<option value="label">Label</option>
+			<option value="input">Input</option>
+		</select>
+	</label>
+
 	<section>
 		<h2>Heading</h2>
 		{#each headings as _, index}

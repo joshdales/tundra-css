@@ -16,8 +16,6 @@
 		})
 	})
 
-	let isNotHomePage = $derived($page.route.id !== '/')
-
 	let headerHeight: number = $state(0)
 	let currentPosition: number = $state(0)
 	let prevPosition: number = 0
@@ -33,7 +31,7 @@
 
 <svelte:window bind:scrollY={currentPosition} />
 
-{#if isNotHomePage}
+{#if !$page.data.hideHeader}
 	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
 		<a href="/" class="heading-3">Tundra</a>
 	</header>

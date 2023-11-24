@@ -420,3 +420,48 @@ select {
 		--yellow-8: oklch(97% 0.0261 80);
 	}
 }
+
+@supports not (color: oklch(60% 0.15 165)) {
+	:root {
+		--neutral-1: #13161a;
+		--neutral-2: #373b40;
+		--neutral-3: #51565b;
+		--neutral-4: #6d7277;
+		--neutral-5: #c9ced4;
+		--neutral-6: #d9dfe5;
+		--neutral-7: #eaeff5;
+		--neutral-8: #f4f9ff;
+		--red-1: #8a0012;
+		--red-2: #a30018;
+		--red-3: #bc001d;
+		--red-4: #ee0b2a;
+		--red-5: #ff635f;
+		--red-6: #ffa098;
+		--red-7: #ffd1cd;
+		--red-8: #ffe9e6;
+		--blue-1: #003974;
+		--blue-2: #00468c;
+		--blue-3: #0061be;
+		--blue-4: #007df2;
+		--blue-5: #53a0ff;
+		--blue-6: #91c1ff;
+		--blue-7: #c9e0ff;
+		--blue-8: #e4f0ff;
+		--green-1: #004631;
+		--green-2: #00563c;
+		--green-3: #007654;
+		--green-4: #00976d;
+		--green-5: #00ba87;
+		--green-6: #41dca5;
+		--green-7: #6afdc5;
+		--green-8: #c0ffe2;
+		--yellow-1: #cd9200;
+		--yellow-2: #dfa11a;
+		--yellow-3: #f0b135;
+		--yellow-4: #ffc251;
+		--yellow-5: #ffd48a;
+		--yellow-6: #ffe0ad;
+		--yellow-7: #ffeccd;
+		--yellow-8: #fff4e1;
+	}
+}

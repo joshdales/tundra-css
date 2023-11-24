@@ -1,6 +1,12 @@
 <script lang="ts">
-	let variant = $state('filled')
 	let colour = $state('')
+
+	function copyClasses(event: MouseEvent) {
+		const element = event.target as HTMLButtonElement
+		const classes = element.className.replace(/(svelte-\w+)/, '')
+		navigator.clipboard.writeText(classes)
+		// TODO: Display copy notification
+	}
 </script>
 
 <main>
@@ -59,39 +65,39 @@
 	<h2 class="alt-heading-4">Filled</h2>
 
 	<div class="btn-group">
-		<button class="button-1 filled {colour}"> Button 1 </button>
+		<button class="button-1 filled {colour}" on:click={copyClasses}> Button 1 </button>
 
-		<button class="button-2 filled {colour}"> Button 2 </button>
+		<button class="button-2 filled {colour}" on:click={copyClasses}> Button 2 </button>
 
-		<button class="button-3 filled {colour}"> Button 3 </button>
+		<button class="button-3 filled {colour}" on:click={copyClasses}> Button 3 </button>
 
-		<button class="button-4 filled {colour}"> Button 4 </button>
+		<button class="button-4 filled {colour}" on:click={copyClasses}> Button 4 </button>
 	</div>
 
 	<h2 class="alt-heading-4">Outline</h2>
 
 	<div class="btn-group">
-		<button class="button-1 outline {colour}"> Button 1 </button>
+		<button class="button-1 outline {colour}" on:click={copyClasses}> Button 1 </button>
 
-		<button class="button-2 outline {colour}"> Button 2 </button>
+		<button class="button-2 outline {colour}" on:click={copyClasses}> Button 2 </button>
 
-		<button class="button-3 outline {colour}"> Button 3 </button>
+		<button class="button-3 outline {colour}" on:click={copyClasses}> Button 3 </button>
 
-		<button class="button-4 outline {colour}"> Button 4 </button>
+		<button class="button-4 outline {colour}" on:click={copyClasses}> Button 4 </button>
 	</div>
-
 
 	<h2 class="alt-heading-4">Ghost</h2>
 
 	<div class="btn-group">
-		<button class="button-1 ghost {colour}"> Button 1 </button>
+		<button class="button-1 ghost {colour}" on:click={copyClasses}> Button 1 </button>
 
-		<button class="button-2 ghost {colour}"> Button 2 </button>
+		<button class="button-2 ghost {colour}" on:click={copyClasses}> Button 2 </button>
 
-		<button class="button-3 ghost {colour}"> Button 3 </button>
+		<button class="button-3 ghost {colour}" on:click={copyClasses}> Button 3 </button>
 
-		<button class="button-4 ghost {colour}"> Button 4 </button>
+		<button class="button-4 ghost {colour}" on:click={copyClasses}> Button 4 </button>
 	</div>
+
 	<section class="disabled">
 		<h3>Disabled buttons</h3>
 		<p>When buttons are disabled they look the same no matter what their accent colour.</p>

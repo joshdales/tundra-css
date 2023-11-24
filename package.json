@@ -12,6 +12,7 @@
   },
   "keywords": ["tundra", "css", "scss", "design system"],
   "author": "joshdales",
+  "homepage": "https://tundra.joshdales.dev",
   "repository": "https://github.com/joshdales/tundra-css",
   "bugs": "https://github.com/joshdales/tundra-css/issues",
   "license": "MIT",

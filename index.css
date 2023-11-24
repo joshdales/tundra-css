@@ -301,28 +301,32 @@ html {
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-1, input.input-1 {
+.input-1, input.input-1,
+select.input-1 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-2);
   letter-spacing: var(--letter-spacing-5);
 }
 
-.input-2, input.input-2 {
+.input-2, input.input-2,
+select.input-2 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-3);
   letter-spacing: var(--letter-spacing-4);
 }
 
-.input-3, input.input-3 {
+.input-3, input.input-3,
+select.input-3 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-4);
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-4, input.input-4 {
+.input-4, input.input-4,
+select.input-4 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-5);
@@ -573,7 +577,8 @@ button.yellow,
   --btn-4: var(--yellow-8);
 }
 
-input.input-1 {
+input.input-1,
+select.input-1 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -588,22 +593,28 @@ input.input-1 {
   --padding-y: var(--space-2);
   --padding-x: var(--space-3);
 }
-input.input-1::placeholder {
+input.input-1::placeholder,
+select.input-1::placeholder {
   color: var(--neutral-4);
 }
-input.input-1:hover {
+input.input-1:hover,
+select.input-1:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-1:focus, input.input-1:active {
+input.input-1:focus, input.input-1:active,
+select.input-1:focus,
+select.input-1:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-1:disabled {
+input.input-1:disabled,
+select.input-1:disabled {
   background-color: var(--neutral-6);
 }
-input.input-2 {
+input.input-2,
+select.input-2 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -618,22 +629,28 @@ input.input-2 {
   --padding-y: var(--space-3);
   --padding-x: var(--space-4);
 }
-input.input-2::placeholder {
+input.input-2::placeholder,
+select.input-2::placeholder {
   color: var(--neutral-4);
 }
-input.input-2:hover {
+input.input-2:hover,
+select.input-2:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-2:focus, input.input-2:active {
+input.input-2:focus, input.input-2:active,
+select.input-2:focus,
+select.input-2:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-2:disabled {
+input.input-2:disabled,
+select.input-2:disabled {
   background-color: var(--neutral-6);
 }
-input.input-3 {
+input.input-3,
+select.input-3 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -648,22 +665,28 @@ input.input-3 {
   --padding-y: var(--space-4);
   --padding-x: var(--space-4);
 }
-input.input-3::placeholder {
+input.input-3::placeholder,
+select.input-3::placeholder {
   color: var(--neutral-4);
 }
-input.input-3:hover {
+input.input-3:hover,
+select.input-3:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-3:focus, input.input-3:active {
+input.input-3:focus, input.input-3:active,
+select.input-3:focus,
+select.input-3:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-3:disabled {
+input.input-3:disabled,
+select.input-3:disabled {
   background-color: var(--neutral-6);
 }
-input.input-4 {
+input.input-4,
+select.input-4 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -678,31 +701,40 @@ input.input-4 {
   --padding-y: var(--space-4);
   --padding-x: var(--space-5);
 }
-input.input-4::placeholder {
+input.input-4::placeholder,
+select.input-4::placeholder {
   color: var(--neutral-4);
 }
-input.input-4:hover {
+input.input-4:hover,
+select.input-4:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-4:focus, input.input-4:active {
+input.input-4:focus, input.input-4:active,
+select.input-4:focus,
+select.input-4:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-4:disabled {
+input.input-4:disabled,
+select.input-4:disabled {
   background-color: var(--neutral-6);
 }
-input.red {
+input.red,
+select.red {
   --accent: var(--red);
 }
-input.blue {
+input.blue,
+select.blue {
   --accent: var(--blue);
 }
-input.green {
+input.green,
+select.green {
   --accent: var(--green);
 }
-input.yellow {
+input.yellow,
+select.yellow {
   --accent: var(--yellow);
 }
 
@@ -734,5 +766,49 @@ input.yellow {
     --yellow-6: oklch(92% 0.0739 80);
     --yellow-7: oklch(95% 0.0457 80);
     --yellow-8: oklch(97% 0.0261 80);
+  }
+}
+@supports not (color: oklch(60% 0.15 165)) {
+  :root {
+    --neutral-1: #13161a;
+    --neutral-2: #373b40;
+    --neutral-3: #51565b;
+    --neutral-4: #6d7277;
+    --neutral-5: #c9ced4;
+    --neutral-6: #d9dfe5;
+    --neutral-7: #eaeff5;
+    --neutral-8: #f4f9ff;
+    --red-1: #8a0012;
+    --red-2: #a30018;
+    --red-3: #bc001d;
+    --red-4: #ee0b2a;
+    --red-5: #ff635f;
+    --red-6: #ffa098;
+    --red-7: #ffd1cd;
+    --red-8: #ffe9e6;
+    --blue-1: #003974;
+    --blue-2: #00468c;
+    --blue-3: #0061be;
+    --blue-4: #007df2;
+    --blue-5: #53a0ff;
+    --blue-6: #91c1ff;
+    --blue-7: #c9e0ff;
+    --blue-8: #e4f0ff;
+    --green-1: #004631;
+    --green-2: #00563c;
+    --green-3: #007654;
+    --green-4: #00976d;
+    --green-5: #00ba87;
+    --green-6: #41dca5;
+    --green-7: #6afdc5;
+    --green-8: #c0ffe2;
+    --yellow-1: #cd9200;
+    --yellow-2: #dfa11a;
+    --yellow-3: #f0b135;
+    --yellow-4: #ffc251;
+    --yellow-5: #ffd48a;
+    --yellow-6: #ffe0ad;
+    --yellow-7: #ffeccd;
+    --yellow-8: #fff4e1;
   }
 }

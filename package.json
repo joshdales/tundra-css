@@ -1,18 +1,30 @@
 {
   "name": "tundra-css",
-  "version": "0.2.2",
-  "description": "",
+  "version": "0.3.0",
+  "description": "A simple CSS Design system",
   "main": "index.css",
   "exports": {
     ".": "./index.css",
+    "./css": "./index.css",
+    "./scss": "./index.scss",
+    "./styles": "./styles/index.scss",
     "./styles/*": "./styles/*"
   },
   "scripts": {
-    "build": "sass --no-source-map ./styles/index.scss ./index.css"
+    "build": "sass --no-source-map ./index.scss ./index.css"
   },
-  "keywords": ["tundra", "css", "scss"],
+  "keywords": [
+    "tundra",
+    "css",
+    "scss",
+    "design system"
+  ],
   "author": "joshdales",
-  "repository": "https://github.com/joshdales/tundra-css",
+  "homepage": "https://tundra.joshdales.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshdales/tundra-css.git"
+  },
   "bugs": "https://github.com/joshdales/tundra-css/issues",
   "license": "MIT",
   "devDependencies": {

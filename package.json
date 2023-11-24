@@ -13,10 +13,18 @@
   "scripts": {
     "build": "sass --no-source-map ./index.scss ./index.css"
   },
-  "keywords": ["tundra", "css", "scss", "design system"],
+  "keywords": [
+    "tundra",
+    "css",
+    "scss",
+    "design system"
+  ],
   "author": "joshdales",
   "homepage": "https://tundra.joshdales.dev",
-  "repository": "https://github.com/joshdales/tundra-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshdales/tundra-css.git"
+  },
   "bugs": "https://github.com/joshdales/tundra-css/issues",
   "license": "MIT",
   "devDependencies": {

@@ -301,28 +301,32 @@ html {
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-1, input.input-1 {
+.input-1, input.input-1,
+select.input-1 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-2);
   letter-spacing: var(--letter-spacing-5);
 }
 
-.input-2, input.input-2 {
+.input-2, input.input-2,
+select.input-2 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-3);
   letter-spacing: var(--letter-spacing-4);
 }
 
-.input-3, input.input-3 {
+.input-3, input.input-3,
+select.input-3 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-4);
   letter-spacing: var(--letter-spacing-3);
 }
 
-.input-4, input.input-4 {
+.input-4, input.input-4,
+select.input-4 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-5);
@@ -573,7 +577,8 @@ button.yellow,
   --btn-4: var(--yellow-8);
 }
 
-input.input-1 {
+input.input-1,
+select.input-1 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -588,22 +593,28 @@ input.input-1 {
   --padding-y: var(--space-2);
   --padding-x: var(--space-3);
 }
-input.input-1::placeholder {
+input.input-1::placeholder,
+select.input-1::placeholder {
   color: var(--neutral-4);
 }
-input.input-1:hover {
+input.input-1:hover,
+select.input-1:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-1:focus, input.input-1:active {
+input.input-1:focus, input.input-1:active,
+select.input-1:focus,
+select.input-1:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-1:disabled {
+input.input-1:disabled,
+select.input-1:disabled {
   background-color: var(--neutral-6);
 }
-input.input-2 {
+input.input-2,
+select.input-2 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -618,22 +629,28 @@ input.input-2 {
   --padding-y: var(--space-3);
   --padding-x: var(--space-4);
 }
-input.input-2::placeholder {
+input.input-2::placeholder,
+select.input-2::placeholder {
   color: var(--neutral-4);
 }
-input.input-2:hover {
+input.input-2:hover,
+select.input-2:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-2:focus, input.input-2:active {
+input.input-2:focus, input.input-2:active,
+select.input-2:focus,
+select.input-2:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-2:disabled {
+input.input-2:disabled,
+select.input-2:disabled {
   background-color: var(--neutral-6);
 }
-input.input-3 {
+input.input-3,
+select.input-3 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -648,22 +665,28 @@ input.input-3 {
   --padding-y: var(--space-4);
   --padding-x: var(--space-4);
 }
-input.input-3::placeholder {
+input.input-3::placeholder,
+select.input-3::placeholder {
   color: var(--neutral-4);
 }
-input.input-3:hover {
+input.input-3:hover,
+select.input-3:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-3:focus, input.input-3:active {
+input.input-3:focus, input.input-3:active,
+select.input-3:focus,
+select.input-3:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-3:disabled {
+input.input-3:disabled,
+select.input-3:disabled {
   background-color: var(--neutral-6);
 }
-input.input-4 {
+input.input-4,
+select.input-4 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -678,31 +701,40 @@ input.input-4 {
   --padding-y: var(--space-4);
   --padding-x: var(--space-5);
 }
-input.input-4::placeholder {
+input.input-4::placeholder,
+select.input-4::placeholder {
   color: var(--neutral-4);
 }
-input.input-4:hover {
+input.input-4:hover,
+select.input-4:hover {
   background-color: var(--neutral-7);
   border-color: var(--accent, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-4:focus, input.input-4:active {
+input.input-4:focus, input.input-4:active,
+select.input-4:focus,
+select.input-4:active {
   background-color: var(--neutral-8);
   border-color: var(--accent, var(--neutral-4));
 }
-input.input-4:disabled {
+input.input-4:disabled,
+select.input-4:disabled {
   background-color: var(--neutral-6);
 }
-input.red {
+input.red,
+select.red {
   --accent: var(--red);
 }
-input.blue {
+input.blue,
+select.blue {
   --accent: var(--blue);
 }
-input.green {
+input.green,
+select.green {
   --accent: var(--green);
 }
-input.yellow {
+input.yellow,
+select.yellow {
   --accent: var(--yellow);
 }
 

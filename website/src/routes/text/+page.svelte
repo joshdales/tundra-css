@@ -9,7 +9,7 @@
 
 	<p class="body-4">Apply the text style class to add those typography variables.</p>
 
-	<label class="label4" for="text-style-select">
+	<label class="label-2" for="text-style-select">
 		View the text styles
 		<select
 			bind:value={selectedStyle}
@@ -47,6 +47,7 @@
 	h2 {
 		margin-block-end: var(--space-3);
 	}
+
 	section {
 		display: flex;
 		flex-direction: column;
@@ -56,9 +57,11 @@
 	label {
 		display: flex;
 		flex-direction: column;
+		margin-block-start: var(--space-4);
 	}
 
 	select {
+		margin-block-start: var(--space-2);
 		width: fit-content;
 	}
 </style>

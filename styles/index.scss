@@ -361,7 +361,8 @@ button,
 }
 
 // Elements: Text-based inputs
-input {
+input,
+select {
 	&.input-1 {
 		@include inputs.text(1);
 	}

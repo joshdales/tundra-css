@@ -1,5 +1,5 @@
 <script>
-	import LinkCard from './link_card.svelte'
+	import LinkCard from '$lib/components/link_card.svelte'
 </script>
 
 <div class="grid">

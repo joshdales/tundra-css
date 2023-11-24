@@ -8,9 +8,9 @@
     "./styles/*": "./styles/*"
   },
   "scripts": {
-    "build": "sass --no-source-map ./styles/index.scss ./index.css"
+    "build": "sass --no-source-map ./index.scss ./index.css"
   },
-  "keywords": ["tundra", "css", "scss"],
+  "keywords": ["tundra", "css", "scss", "design system"],
   "author": "joshdales",
   "repository": "https://github.com/joshdales/tundra-css",
   "bugs": "https://github.com/joshdales/tundra-css/issues",

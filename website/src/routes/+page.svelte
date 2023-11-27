@@ -111,6 +111,20 @@
 		padding-inline-end: var(--space-12);
 	}
 
+	@media screen and (max-width: 700px) {
+		header,
+		main {
+			grid-column: 1 / 3;
+			padding-block: 0;
+			padding-inline: var(--space-8);
+		}
+
+		header {
+			position: static;
+			padding-block-start: var(--space-12);
+		}
+	}
+
 	nav,
 	h2 {
 		width: 100%;

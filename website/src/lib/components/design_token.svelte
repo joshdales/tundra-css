@@ -1,9 +1,5 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
-	interface iProps {
-		property: string
-		level: number
-	}
 	export let property: string
 	export let level: number
 	let element: HTMLDivElement

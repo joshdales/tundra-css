@@ -62,7 +62,7 @@
 				<li>
 					<LinkCard
 						href="/inputs"
-						title="Inputs"
+						title="Inputs (text)"
 						desc="For when someone needs to type some text into a box"
 					/>
 				</li>

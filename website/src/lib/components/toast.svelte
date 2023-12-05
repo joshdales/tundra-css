@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
+	const dispatch = createEventDispatcher()
 
-	interface iProps {
-		type: 'success' | 'danger'
-		close?: () => void
-	}
-
-	const { type, close } = $props<iProps>()
+	export let type: 'success' | 'danger'
+	export let showClose = false
 </script>
 
 <aside>
@@ -24,8 +21,8 @@
 		<slot />
 	</div>
 
-	{#if close}
-		<button class="button-1 ghost" onclick={close}>
+	{#if showClose}
+		<button class="button-1 ghost" on:click={() => dispatch('close')}>
 			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm4.707,14.293a1,1,0,1,1-1.414,1.414L12,13.414,8.707,16.707a1,1,0,1,1-1.414-1.414L10.586,12,7.293,8.707A1,1,0,1,1,8.707,7.293L12,10.586l3.293-3.293a1,1,0,1,1,1.414,1.414L13.414,12Z"

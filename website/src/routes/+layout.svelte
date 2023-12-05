@@ -16,8 +16,8 @@
 		})
 	})
 
-	let headerHeight: number = $state(0)
-	let currentPosition: number = $state(0)
+	let headerHeight: number = 0
+	let currentPosition: number = 0
 	let prevPosition: number = 0
 
 	function shouldHideHeader(currentYPosition: number): boolean {
@@ -26,7 +26,7 @@
 		return positionDelta < 0
 	}
 
-	let hide: boolean = $derived(shouldHideHeader(currentPosition))
+	$: hide = shouldHideHeader(currentPosition)
 </script>
 
 <svelte:window bind:scrollY={currentPosition} />

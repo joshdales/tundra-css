@@ -4,13 +4,11 @@
 		property: string
 		level: number
 	}
-	let { property, level } = $props<iProps>()
-	let colourValue: string = $state('')
+	export let property: string
+	export let level: number
 	let element: HTMLDivElement
 
-	$effect(() => {
-		colourValue = getComputedStyle(element).getPropertyValue(`--${property}-${level}`)
-	})
+	$: colourValue = element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`)
 
 	function copyOnEnter(event: KeyboardEvent) {
 		if (event.key === 'Enter') {

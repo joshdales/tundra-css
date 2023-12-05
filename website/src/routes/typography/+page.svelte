@@ -3,9 +3,9 @@
 	import { page } from '$app/stores'
 	import DesignToken from '$lib/components/design_token.svelte'
 
-	let selectedToken = $state($page.url.searchParams.get('token') || '')
+	let selectedToken = $page.url.searchParams.get('token') || ''
 
-	$effect(() => {
+	$: {
 		const token = $page.url.searchParams.get('token')
 		if (token && !selectedToken) {
 			selectedToken = token
@@ -13,7 +13,7 @@
 			$page.url.searchParams.set('token', selectedToken)
 			goto($page.url, { replaceState: true })
 		}
-	})
+	}
 </script>
 
 <main>

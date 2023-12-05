@@ -1,5 +1,5 @@
 <script lang="ts">
-	let colour = $state('')
+	let colour = ''
 
 	function copyClasses(event: MouseEvent) {
 		const element = event.target as HTMLButtonElement

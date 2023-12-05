@@ -27,7 +27,7 @@
 					/>
 				</li>
 				<li>
-					<LinkCard href="/radius" title="Radius" desc="How round do you want those corners?" />
+					<LinkCard href="/radius" title="Radius" desc="Smoothing out the edges." />
 				</li>
 				<li>
 					<LinkCard

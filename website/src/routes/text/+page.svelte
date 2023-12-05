@@ -44,7 +44,7 @@
 </main>
 
 <style>
-	h2 {
+	h1 {
 		margin-block-end: var(--space-3);
 	}
 

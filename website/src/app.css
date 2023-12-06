@@ -1,0 +1,34 @@
+@import 'modern-normalize' layer(normalize);
+@import 'tundra-css' layer(tundra);
+
+@layer reset {
+	* {
+		margin: 0;
+	}
+
+	a {
+		cursor: pointer;
+	}
+}
+
+
+/* Any global styles should come after this */
+
+:root {
+	--accent: var(--green);
+	--foreground: var(--neutral-1);
+	--background: var(--neutral-8);
+}
+
+html,
+body {
+	min-height: 100lvh;
+}
+
+main {
+	width: 100%;
+	max-width: 1400px;
+	padding-block: var(--space-8);
+	padding-inline: var(--space-10);
+	margin: auto;
+}

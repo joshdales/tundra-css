@@ -4,7 +4,7 @@
 	background-color: var(--neutral-8);
 	border: 1.5px solid var(--neutral-6);
 	border-radius: var(--radius-1);
-	caret-color: var(--accent, var(--neutral-4));
+	caret-color: var(--inpt-1, var(--neutral-4));
 	outline: none;
 	padding-inline: var(--padding-x);
 	padding-block: var(--padding-y);
@@ -14,14 +14,14 @@
 	}
 
 	&:hover {
-		border-color: var(--accent, var(--neutral-5));
+		border-color: var(--inpt-2, var(--neutral-5));
 		box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250 / 10%);
 	}
 
 	&:focus,
 	&:active {
 		background-color: var(--neutral-8);
-		border-color: var(--accent, var(--neutral-4));
+		border-color: var(--inpt-1, var(--neutral-4));
 	}
 
 	&:disabled {

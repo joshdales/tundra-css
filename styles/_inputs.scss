@@ -14,7 +14,6 @@
 	}
 
 	&:hover {
-		background-color: var(--neutral-7);
 		border-color: var(--accent, var(--neutral-5));
 		box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250 / 10%);
 	}

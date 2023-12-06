@@ -29,5 +29,8 @@
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.69.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

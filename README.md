@@ -1,7 +1,8 @@
 # Tundra
 A comprehensive but not overwhelming CSS design system.
 
-Just a note that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.
+> [!NOTE]
+> Just to say that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.
 
 ## Naming conventions
 Variable names are prefixed with a number 0 -> 999. <br />
@@ -9,7 +10,7 @@ Colours go from dark -> light, and sizes goes from small -> large.
 
 ### Variables
 There are a series of css variables for the following:
-- Colours (1-8, and there is a unitless variable for each as well)
+- Colours (1-8, and there is a unit-less variable for each as well which is the 4th value in the scale)
 	- `--neutral-1` - `--neutral-8`
 	- `--red`, `--red-1` - `--red-8`
 	- `--blue`, `--blue-1` - `--blue-8`
@@ -37,17 +38,17 @@ There are a series of classes for text, along with others for buttons, and text 
 - Alt-Headings - levels of alternative headings, good for subheadings, or if you just want something a little thinner.
 	- Text styles: `.alt-heading-1` - `.alt-heading-6`
 - Body - text for paragraphs
-	Text styles: `.body-1` - `body-4`
+	Text styles: `.body-1` - `.body-4`
 - Link - for you links, it comes underlined.
 	- Text styles: `.link-1` - `.link-4`
 - Buttons - 4 button sizes, along with different styled variations
-	- Text sizes: `button-1` - `.button-4`
-	- Variations: `.filled`, `outline`, `.ghost`
+	- Text sizes: `.button-1` - `.button-4`
+	- Variations: `.filled`, `.outline`, `.ghost`
 	- Accent: `.red`, `.green`, `.blue`, `.yellow` (the yellow accent isn't really accessible with white text but I've included it for completeness).
 - Labels - For labelling inputs, or anything else that you want
 	- Text styles: `.label-1` - `.label-4`
 - Inputs - Text based inputs
-	- Text styles: `input-1` - `input-4`
+	- Text styles: `.input-1` - `.input-4`
 	- Accent: `.red`, `.green`, `.blue`, `.yellow`
 
 ## Usage
@@ -73,9 +74,9 @@ Or you could access it via a CDN:
 - https://cdn.jsdelivr.net/npm/tundra-css/index.min.css
 
 ## Compatibility
-This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, I've provided fallbacks for that if your monitor doesn't support it. Though if you bowser doesn't support the `@supports` rule I guess that you are out of luck 😢.
+This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, however I've provided fallbacks for that if your display doesn't support it.
 
-Should be good as long as your browser has been updated since 2016.
+Though if you bowser doesn't support custom properties or the `@supports` rule I guess that you are out of luck 😢. Should be good as long as your browser has been updated since 2016.
 
 ## SCSS
 There are SCSS variables and mixins provided which you can use if you want to override or change things up. But you shouldn't really need them.

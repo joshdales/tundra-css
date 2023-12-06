@@ -373,19 +373,23 @@ select {
 	}
 
 	&.red {
-		--accent: var(--red);
+		--inpt-1: var(--red-4);
+		--inpt-2: var(--red-3);
 	}
 
 	&.blue {
-		--accent: var(--blue);
+		--inpt-1: var(--blue-4);
+		--inpt-2: var(--blue-3);
 	}
 
 	&.green {
-		--accent: var(--green);
+		--inpt-1: var(--green-4);
+		--inpt-2: var(--green-3);
 	}
 
 	&.yellow {
-		--accent: var(--yellow);
+		--inpt-1: var(--yellow-4);
+		--inpt-2: var(--yellow-3);
 	}
 }
 

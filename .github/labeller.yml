@@ -1,0 +1,10 @@
+website:
+  any:
+  - changed-files:
+    - any-glob-to-any-file: 'website/*'
+  - base-branch: '^website/'
+
+styles:
+  any:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/*'

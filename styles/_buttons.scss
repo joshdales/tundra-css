@@ -91,9 +91,12 @@
 	}
 
 	&:disabled {
-		background-color: var(--neutral-5);
-		color: var(--neutral-4);
-		border-color: var(--neutral-4);
+		color: var(--neutral-5);
+		border-color: var(--neutral-5);
+
+		&:hover {
+			background-color: var(--neutral-7);
+		}
 	}
 }
 

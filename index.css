@@ -505,9 +505,12 @@ button.outline:active,
 }
 button.outline:disabled,
 .button.outline:disabled {
-  background-color: var(--neutral-5);
-  color: var(--neutral-4);
-  border-color: var(--neutral-4);
+  color: var(--neutral-5);
+  border-color: var(--neutral-5);
+}
+button.outline:disabled:hover,
+.button.outline:disabled:hover {
+  background-color: var(--neutral-7);
 }
 button.ghost,
 .button.ghost {

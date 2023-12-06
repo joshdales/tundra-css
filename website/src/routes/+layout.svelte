@@ -29,6 +29,10 @@
 	$: hide = shouldHideHeader(currentPosition)
 </script>
 
+<svelte:head>
+	<title>Tundra CSS</title>
+</svelte:head>
+
 <svelte:window bind:scrollY={currentPosition} />
 
 {#if !$page.data.hideHeader}

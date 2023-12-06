@@ -1,11 +1,30 @@
 <script lang="ts">
+	import CopyToaster from '$lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
+
 	let colour = ''
+	let copiedClasses: CopiedValue | undefined
 
 	function copyClasses(event: MouseEvent) {
 		const element = event.target as HTMLButtonElement
-		const classes = element.className.replace(/(svelte-\w+)/, '')
-		navigator.clipboard.writeText(classes)
-		// TODO: Display copy notification
+		let classList: string[] = []
+		element.classList.forEach((value, index) => {
+			// Svelte adds it's own class at the end, so if we remove the last one we should just
+			// get the classes that we care about
+			if (index === element.classList.length - 1) {
+				return
+			}
+			classList.push(value)
+		})
+		const classes = classList.join(' ')
+		navigator.clipboard
+			.writeText(classes)
+			.then(() => {
+				copiedClasses = { success: true, value: classes }
+			})
+			.catch(() => {
+				copiedClasses = { success: false, value: classes }
+			})
 	}
 </script>
 
@@ -108,6 +127,8 @@
 		</div>
 	</section>
 </main>
+
+<CopyToaster copiedValue={copiedClasses} />
 
 <style>
 	.btn-group,

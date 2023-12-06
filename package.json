@@ -2,6 +2,9 @@
   "name": "tundra-css",
   "version": "0.4.0",
   "description": "A simple CSS Design system",
+  "author": "joshdales",
+  "homepage": "https://tundra.joshdales.dev",
+  "license": "MIT",
   "main": "index.css",
   "exports": {
     ".": "./index.css",
@@ -13,23 +16,20 @@
   "scripts": {
     "build": "sass --no-source-map ./index.scss ./index.css"
   },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
   "keywords": [
     "tundra",
     "css",
     "scss",
     "design system"
   ],
-  "author": "joshdales",
-  "homepage": "https://tundra.joshdales.dev",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshdales/tundra-css.git"
   },
   "bugs": "https://github.com/joshdales/tundra-css/issues",
-  "license": "MIT",
-  "devDependencies": {
-    "sass": "^1.69.5"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }

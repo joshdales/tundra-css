@@ -2,8 +2,11 @@
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
 	import DesignToken from '$lib/components/design_token.svelte'
+	import Toaster from '$lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 
 	let selectedToken = $page.url.searchParams.get('token') || ''
+	let copiedValue: CopiedValue | undefined
 
 	$: {
 		const token = $page.url.searchParams.get('token')
@@ -83,7 +86,11 @@
 	{#if selectedToken === 'font-size'}
 		<section style="--grid: 4">
 			{#each new Array(9).fill(selectedToken) as _, index}
-				<DesignToken property={selectedToken} level={index + 1}>
+				<DesignToken
+					property={selectedToken}
+					level={index + 1}
+					on:copied_value={(ev) => (copiedValue = ev.detail)}
+				>
 					<p class="token font-size" style="--size: var(--font-size-{index + 1}">Lorem ipsum</p>
 				</DesignToken>
 			{/each}
@@ -91,7 +98,11 @@
 	{:else if selectedToken === 'font-weight'}
 		<section>
 			{#each new Array(4).fill(selectedToken) as _, index}
-				<DesignToken property={selectedToken} level={index + 1}>
+				<DesignToken
+					property={selectedToken}
+					level={index + 1}
+					on:copied_value={(ev) => (copiedValue = ev.detail)}
+				>
 					<p class="token font-weight" style="--weight: var(--font-weight-{index + 1}">
 						Lorem ipsum
 					</p>
@@ -101,7 +112,11 @@
 	{:else if selectedToken === 'line-height'}
 		<section>
 			{#each new Array(5).fill(selectedToken) as _, index}
-				<DesignToken property={selectedToken} level={index + 1}>
+				<DesignToken
+					property={selectedToken}
+					level={index + 1}
+					on:copied_value={(ev) => (copiedValue = ev.detail)}
+				>
 					<p class="token line-height" style="--height: var(--line-height-{index + 1}">
 						Lorem ipsum
 					</p>
@@ -111,7 +126,11 @@
 	{:else if selectedToken === 'letter-spacing'}
 		<section>
 			{#each new Array(5).fill(selectedToken) as _, index}
-				<DesignToken property={selectedToken} level={index + 1}>
+				<DesignToken
+					property={selectedToken}
+					level={index + 1}
+					on:copied_value={(ev) => (copiedValue = ev.detail)}
+				>
 					<p class="token letter-spacing" style="--spacing: var(--letter-spacing-{index + 1}">
 						Lorem ipsum
 					</p>
@@ -122,6 +141,8 @@
 		<p class="body-4 empty">Select a token to see it's options</p>
 	{/if}
 </main>
+
+<Toaster {copiedValue} />
 
 <style>
 	fieldset {

@@ -6,7 +6,7 @@
 		new Array(8).fill(colour),
 	)
 
-	let copiedColour: CopiedValue | undefined
+	let copiedValue: CopiedValue | undefined
 </script>
 
 <main>
@@ -23,7 +23,7 @@
 				<DesignToken
 					property={item}
 					level={index + 1}
-					on:copied_value={(ev) => (copiedColour = ev.detail)}
+					on:copied_value={(ev) => (copiedValue = ev.detail)}
 				>
 					<div class="colour-block" />
 				</DesignToken>
@@ -32,7 +32,7 @@
 	{/each}
 </main>
 
-<Toaster copiedValue={copiedColour} />
+<Toaster {copiedValue} />
 
 <style>
 	.body-4 {

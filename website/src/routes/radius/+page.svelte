@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
 	import DesignToken from '$lib/components/design_token.svelte'
+	import Toaster from '$lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 
-	// TODO: Handle the clicked event to display a notification
+	let copiedValue: CopiedValue | undefined
 </script>
 
 <main>
@@ -11,12 +13,14 @@
 
 	<section>
 		{#each new Array(5).fill('radius') as property, index}
-			<DesignToken {property} level={index + 1} on:copied_value>
+			<DesignToken {property} level={index + 1} on:copied_value={(ev) => (copiedValue = ev.detail)}>
 				<div style="--radius: var(--radius-{index + 1})" />
 			</DesignToken>
 		{/each}
 	</section>
 </main>
+
+<Toaster {copiedValue} />
 
 <style>
 	p {

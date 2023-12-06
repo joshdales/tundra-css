@@ -3,7 +3,7 @@
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 
 	let colour = ''
-	let copiedClasses: CopiedValue | undefined
+	let copiedValue: CopiedValue | undefined
 
 	function copyClasses(event: MouseEvent) {
 		const element = event.target as HTMLButtonElement
@@ -20,10 +20,10 @@
 		navigator.clipboard
 			.writeText(classes)
 			.then(() => {
-				copiedClasses = { success: true, value: classes }
+				copiedValue = { success: true, value: classes }
 			})
 			.catch(() => {
-				copiedClasses = { success: false, value: classes }
+				copiedValue = { success: false, value: classes }
 			})
 	}
 </script>
@@ -128,7 +128,7 @@
 	</section>
 </main>
 
-<CopyToaster copiedValue={copiedClasses} />
+<CopyToaster {copiedValue} />
 
 <style>
 	.btn-group,

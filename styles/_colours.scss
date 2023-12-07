@@ -53,7 +53,16 @@ $yellow-8: oklch(98% 0.022 80);
 $yellow: $yellow-4;
 
 // Create colour scales for the following:
-$cyan: oklch(70% 0.15 190);
+$cyan-1: oklch(35% 0.08 190);
+$cyan-2: oklch(40% 0.093 190);
+$cyan-3: oklch(50% 0.11 190);
+$cyan-4: oklch(60% 0.13 190);
+$cyan-5: oklch(70% 0.15 190);
+$cyan-6: oklch(80% 0.15 190);
+$cyan-7: oklch(95% 0.08 190);
+$cyan-8: oklch(98% 0.0315 190);
+$cyan: $cyan-4;
+
 $purple: oklch(70% 0.19 300);
 $orange: oklch(70% 0.2 45);
 $pink: oklch(70% 0.21 0);

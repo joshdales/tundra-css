@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use 'spacing' as *;
 
 // Font Weights
@@ -6,16 +7,23 @@ $font-weight-2: 500;
 $font-weight-3: 700;
 $font-weight-4: 800;
 
+@function convertPxToRem($value, $base: 16) {
+	$unitless-value: math.div($value, 1px);
+	$conversion: math.div($unitless-value, $base);
+	$rem: $conversion * 1rem;
+	@return $rem;
+}
+
 // Font Sizes
-$font-size-1: $space-3;
-$font-size-2: $space-4;
-$font-size-3: $space-5;
-$font-size-4: $space-6;
-$font-size-5: $space-7;
-$font-size-6: $space-8;
-$font-size-7: $space-9;
-$font-size-8: $space-10;
-$font-size-9: $space-12;
+$font-size-1: convertPxToRem($space-3);
+$font-size-2: convertPxToRem($space-4);
+$font-size-3: convertPxToRem($space-5);
+$font-size-4: convertPxToRem($space-6);
+$font-size-5: convertPxToRem($space-7);
+$font-size-6: convertPxToRem($space-8);
+$font-size-7: convertPxToRem($space-9);
+$font-size-8: convertPxToRem($space-10);
+$font-size-9: convertPxToRem($space-12);
 
 // Line Heights
 $line-height-1: 1.0;

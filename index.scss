@@ -363,11 +363,18 @@ button,
 		--btn-4: var(--red-8);
 	}
 
-	&.blue {
-		--btn-1: var(--blue-2);
-		--btn-2: var(--blue-3);
-		--btn-3: var(--blue-4);
-		--btn-4: var(--blue-8);
+	&.orange {
+		--btn-1: var(--orange-3);
+		--btn-2: var(--orange-4);
+		--btn-3: var(--orange-5);
+		--btn-4: var(--orange-8);
+	}
+
+	&.yellow {
+		--btn-1: var(--yellow-1);
+		--btn-2: var(--yellow-2);
+		--btn-3: var(--yellow-3);
+		--btn-4: var(--yellow-8);
 	}
 
 	&.green {
@@ -377,11 +384,32 @@ button,
 		--btn-4: var(--green-8);
 	}
 
-	&.yellow {
-		--btn-1: var(--yellow-1);
-		--btn-2: var(--yellow-2);
-		--btn-3: var(--yellow-3);
-		--btn-4: var(--yellow-8);
+	&.cyan {
+		--btn-1: var(--cyan-3);
+		--btn-2: var(--cyan-4);
+		--btn-3: var(--cyan-5);
+		--btn-4: var(--cyan-8);
+	}
+
+	&.blue {
+		--btn-1: var(--blue-2);
+		--btn-2: var(--blue-3);
+		--btn-3: var(--blue-4);
+		--btn-4: var(--blue-8);
+	}
+
+	&.purple {
+		--btn-1: var(--purple-2);
+		--btn-2: var(--purple-3);
+		--btn-3: var(--purple-4);
+		--btn-4: var(--purple-8);
+	}
+
+	&.pink {
+		--btn-1: var(--pink-3);
+		--btn-2: var(--pink-4);
+		--btn-3: var(--pink-5);
+		--btn-4: var(--pink-8);
 	}
 }
 

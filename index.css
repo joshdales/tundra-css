@@ -1,5 +1,6 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
+  /* Neutral */
   --neutral-1: oklch(20% 0.01 250);
   --neutral-2: oklch(35% 0.01 250);
   --neutral-3: oklch(45% 0.01 250);
@@ -8,6 +9,7 @@
   --neutral-6: oklch(90% 0.01 250);
   --neutral-7: oklch(95% 0.01 250);
   --neutral-8: oklch(98% 0.01 250);
+  /* Red */
   --red-1: oklch(40% 0.18 25);
   --red-2: oklch(45% 0.2 25);
   --red-3: oklch(50% 0.2274 25);
@@ -16,6 +18,7 @@
   --red-6: oklch(80% 0.138 25);
   --red-7: oklch(90% 0.0663 25);
   --red-8: oklch(95% 0.0315 25);
+  /* Orange */
   --orange-1: oklch(50% 0.1616 45);
   --orange-2: oklch(55% 0.1616 45);
   --orange-3: oklch(60% 0.1942 45);
@@ -24,6 +27,7 @@
   --orange-6: oklch(80% 0.1556 45);
   --orange-7: oklch(87% 0.0952 45);
   --orange-8: oklch(95% 0.0342 45);
+  /* Yellow */
   --yellow-1: oklch(70% 0.15 80);
   --yellow-2: oklch(75% 0.15 80);
   --yellow-3: oklch(80% 0.15 80);
@@ -32,6 +36,7 @@
   --yellow-6: oklch(92% 0.092 80);
   --yellow-7: oklch(95% 0.056 80);
   --yellow-8: oklch(98% 0.022 80);
+  /* Green */
   --green-1: oklch(35% 0.1 165);
   --green-2: oklch(40% 0.11 165);
   --green-3: oklch(50% 0.14 165);
@@ -40,6 +45,7 @@
   --green-6: oklch(80% 0.15 165);
   --green-7: oklch(95% 0.08 165);
   --green-8: oklch(98% 0.0315 165);
+  /* Cyan */
   --cyan-1: oklch(35% 0.08 190);
   --cyan-2: oklch(40% 0.093 190);
   --cyan-3: oklch(50% 0.11 190);
@@ -48,6 +54,7 @@
   --cyan-6: oklch(80% 0.15 190);
   --cyan-7: oklch(95% 0.08 190);
   --cyan-8: oklch(98% 0.0315 190);
+  /* Blue */
   --blue-1: oklch(35% 0.14 255);
   --blue-2: oklch(40% 0.16 255);
   --blue-3: oklch(50% 0.2 255);
@@ -56,6 +63,7 @@
   --blue-6: oklch(80% 0.111 255);
   --blue-7: oklch(90% 0.0533 255);
   --blue-8: oklch(95% 0.0261 255);
+  /* Purple */
   --purple-1: oklch(30% 0.1664 300);
   --purple-2: oklch(40% 0.19 300);
   --purple-3: oklch(50% 0.19 300);
@@ -64,6 +72,7 @@
   --purple-6: oklch(80% 0.13 300);
   --purple-7: oklch(90% 0.0625 300);
   --purple-8: oklch(95% 0.0304 300);
+  /* Pink */
   --pink-1: oklch(30% 0.1398 350);
   --pink-2: oklch(40% 0.17 350);
   --pink-3: oklch(50% 0.17 350);
@@ -72,15 +81,13 @@
   --pink-6: oklch(80% 0.17 350);
   --pink-7: oklch(90% 0.0816 350);
   --pink-8: oklch(95% 0.0386 350);
-  --red: var(--red-4);
-  --blue: var(--blue-4);
-  --green: var(--green-4);
-  --yellow: var(--yellow-4);
+  /* Radius */
   --radius-1: 3px;
   --radius-2: 6px;
   --radius-3: 12px;
   --radius-4: 24px;
   --radius-5: 48px;
+  /* Space */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -95,10 +102,12 @@
   --space-12: 48px;
   --space-13: 64px;
   --space-14: 128px;
+  /* Font Weight */
   --font-weight-1: 400;
   --font-weight-2: 500;
   --font-weight-3: 700;
   --font-weight-4: 800;
+  /* Font Size */
   --font-size-1: 0.75rem;
   --font-size-2: 0.875rem;
   --font-size-3: 1rem;
@@ -108,11 +117,13 @@
   --font-size-7: 1.75rem;
   --font-size-8: 2rem;
   --font-size-9: 3rem;
+  /* Line Height */
   --line-height-1: 1;
   --line-height-2: 1.05;
   --line-height-3: 1.15;
   --line-height-4: 1.25;
   --line-height-5: 1.5;
+  /* Letter Spacing */
   --letter-spacing-1: -0.04em;
   --letter-spacing-2: -0.02em;
   --letter-spacing-3: 0em;
@@ -125,6 +136,7 @@ html {
   color: var(--neutral-1);
 }
 
+/* Text: Heading */
 .heading-1 {
   font-weight: var(--font-weight-3);
   font-size: var(--font-size-4);
@@ -167,6 +179,7 @@ html {
   letter-spacing: var(--letter-spacing-2);
 }
 
+/* Text: Alt Heading */
 .alt-heading-1 {
   font-weight: var(--font-weight-2);
   font-size: var(--font-size-4);
@@ -209,6 +222,7 @@ html {
   letter-spacing: var(--letter-spacing-1);
 }
 
+/* Text: Body */
 .body-1 {
   line-height: var(--line-height-5);
   font-size: var(--font-size-1);
@@ -237,6 +251,7 @@ html {
   letter-spacing: var(--letter-spacing-2);
 }
 
+/* Text: Link */
 .link-1 {
   cursor: pointer;
   text-decoration: underline;
@@ -273,6 +288,7 @@ html {
   letter-spacing: var(--letter-spacing-4);
 }
 
+/* Text: Button */
 .button-1, button.button-1,
 .button.button-1 {
   line-height: var(--line-height-4);
@@ -305,6 +321,7 @@ html {
   font-size: var(--font-size-5);
 }
 
+/* Text: Label */
 .label-1 {
   font-weight: var(--font-weight-2);
   line-height: var(--line-height-3);
@@ -333,6 +350,7 @@ html {
   letter-spacing: var(--letter-spacing-3);
 }
 
+/* Text: Input */
 .input-1, input.input-1,
 select.input-1 {
   font-weight: var(--font-weight-1);
@@ -365,6 +383,7 @@ select.input-4 {
   letter-spacing: var(--letter-spacing-2);
 }
 
+/* Text: Extra emphasis */
 .heading-1 b,
 .heading-1 strong,
 .heading-2 b,
@@ -448,6 +467,7 @@ select.input-4 {
   font-weight: var(--font-weight-2);
 }
 
+/* Elements: Buttons */
 button.button-1,
 .button.button-1 {
   --padding-y: var(--space-1);
@@ -640,6 +660,7 @@ button.pink,
   --btn-4: var(--pink-8);
 }
 
+/* Elements: Text-based inputs */
 input.input-1,
 select.input-1 {
   background-color: var(--neutral-8);
@@ -821,6 +842,7 @@ select.pink {
   --inpt-2: var(--pink-5);
 }
 
+/* Fallbacks*/
 @supports not (color: color(display-p3 1 1 1)) {
   :root {
     --neutral-8: oklch(98% 0.0097 250);

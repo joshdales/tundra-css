@@ -64,6 +64,14 @@
   --purple-6: oklch(80% 0.13 300);
   --purple-7: oklch(90% 0.0625 300);
   --purple-8: oklch(95% 0.0304 300);
+  --pink-1: oklch(30% 0.1398 350);
+  --pink-2: oklch(40% 0.17 350);
+  --pink-3: oklch(50% 0.17 350);
+  --pink-4: oklch(60% 0.17 350);
+  --pink-5: oklch(70% 0.17 350);
+  --pink-6: oklch(80% 0.17 350);
+  --pink-7: oklch(90% 0.0816 350);
+  --pink-8: oklch(95% 0.0386 350);
   --red: var(--red-4);
   --blue: var(--blue-4);
   --green: var(--green-4);

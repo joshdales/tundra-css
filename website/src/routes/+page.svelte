@@ -16,7 +16,7 @@
 
 	<main>
 		<h2 class="alt-heading-4">Foundations</h2>
-		<p class="body-3">The variables used to make up the larger elements.</p>
+		<p class="body-3">The foundational variables that are used to make up elements.</p>
 		<nav>
 			<ul>
 				<li>
@@ -48,7 +48,8 @@
 
 		<h2 class="alt-heading-4">Elements</h2>
 		<p class="body-3">
-			You can apply classes to the following elements to the systems appearances.
+			You can apply classes to the following elements to easily adjust the available elements
+			appearance.
 		</p>
 		<nav>
 			<ul>

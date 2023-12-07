@@ -37,6 +37,8 @@
 		a <code>button-*</code> class to change the size.
 	</p>
 
+	<p class="body-4">Click on a button to copy it's classes.</p>
+
 	<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
 
 	<h2 class="alt-heading-4">Filled</h2>

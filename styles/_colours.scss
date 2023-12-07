@@ -19,27 +19,15 @@ $red-7: oklch(90% 0.0663 25);
 $red-8: oklch(95% 0.0315 25);
 $red: $red-4;
 
-// Greens
-$green-1: oklch(35% 0.1 165);
-$green-2: oklch(40% 0.11 165);
-$green-3: oklch(50% 0.14 165);
-$green-4: oklch(60% 0.15 165);
-$green-5: oklch(70% 0.15 165);
-$green-6: oklch(80% 0.15 165);
-$green-7: oklch(95% 0.08 165);
-$green-8: oklch(98% 0.0315 165);
-$green: $green-4;
-
-// Blues
-$blue-1: oklch(35% 0.14 255);
-$blue-2: oklch(40% 0.16 255);
-$blue-3: oklch(50% 0.2 255);
-$blue-4: oklch(60% 0.2 255);
-$blue-5: oklch(70% 0.17 255);
-$blue-6: oklch(80% 0.111 255);
-$blue-7: oklch(90% 0.0533 255);
-$blue-8: oklch(95% 0.0261 255);
-$blue: $blue-4;
+// Oranges
+$orange-1: oklch(50% 0.1616 45);
+$orange-2: oklch(55% 0.1616 45);
+$orange-3: oklch(60% 0.1942 45);
+$orange-4: oklch(65% 0.2 45);
+$orange-5: oklch(70% 0.2 45);
+$orange-6: oklch(80% 0.1556 45);
+$orange-7: oklch(87% 0.0952 45);
+$orange-8: oklch(95% 0.0342 45);
 
 // Yellows
 $yellow-1: oklch(70% 0.15 80);
@@ -52,7 +40,17 @@ $yellow-7: oklch(95% 0.056 80);
 $yellow-8: oklch(98% 0.022 80);
 $yellow: $yellow-4;
 
-// Create colour scales for the following:
+// Greens
+$green-1: oklch(35% 0.1 165);
+$green-2: oklch(40% 0.11 165);
+$green-3: oklch(50% 0.14 165);
+$green-4: oklch(60% 0.15 165);
+$green-5: oklch(70% 0.15 165);
+$green-6: oklch(80% 0.15 165);
+$green-7: oklch(95% 0.08 165);
+$green-8: oklch(98% 0.0315 165);
+$green: $green-4;
+
 $cyan-1: oklch(35% 0.08 190);
 $cyan-2: oklch(40% 0.093 190);
 $cyan-3: oklch(50% 0.11 190);
@@ -61,7 +59,17 @@ $cyan-5: oklch(70% 0.15 190);
 $cyan-6: oklch(80% 0.15 190);
 $cyan-7: oklch(95% 0.08 190);
 $cyan-8: oklch(98% 0.0315 190);
-$cyan: $cyan-4;
+
+// Blues
+$blue-1: oklch(35% 0.14 255);
+$blue-2: oklch(40% 0.16 255);
+$blue-3: oklch(50% 0.2 255);
+$blue-4: oklch(60% 0.2 255);
+$blue-5: oklch(70% 0.17 255);
+$blue-6: oklch(80% 0.111 255);
+$blue-7: oklch(90% 0.0533 255);
+$blue-8: oklch(95% 0.0261 255);
+$blue: $blue-4;
 
 $purple-1: oklch(30% 0.1664 300);
 $purple-2: oklch(40% 0.19 300);
@@ -71,14 +79,5 @@ $purple-5: oklch(70% 0.19 300);
 $purple-6: oklch(80% 0.13 300);
 $purple-7: oklch(90% 0.0625 300);
 $purple-8: oklch(95% 0.0304 300);
-
-$orange-1: oklch(50% 0.1616 45);
-$orange-2: oklch(55% 0.1616 45);
-$orange-3: oklch(60% 0.1942 45);
-$orange-4: oklch(65% 0.2 45);
-$orange-5: oklch(70% 0.2 45);
-$orange-6: oklch(80% 0.1556 45);
-$orange-7: oklch(87% 0.0952 45);
-$orange-8: oklch(95% 0.0342 45);
 
 $pink-5: oklch(70% 0.17 350);

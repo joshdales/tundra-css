@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<h1>Inputs (Text)</h1>
+	<h1>Inputs (text)</h1>
 
 	<p>
 		Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,

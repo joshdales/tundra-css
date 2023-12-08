@@ -14,8 +14,10 @@
 	<p class="body-4">
 		A list of all colours that are available as variables. All of the colours are defined in OKLCH,
 		some of them are on the P3 colour gamut, but there are fallbacks for monitors that don't support
-		that. Click on one of the colour swatches and copy its raw value to your clipboard.
+		that.
 	</p>
+
+	<p class="body-4">Click on one of the colour swatches to copy its variable to your clipboard.</p>
 
 	{#each colourMap as colour}
 		<div class="colour">

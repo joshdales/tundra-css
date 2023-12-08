@@ -27,6 +27,11 @@
 		to access these directly but the variables are available in case that you do.
 	</p>
 
+	<p class="body-4">
+		Select the typography token that you want to see and click on one of the tiles to copy its
+		variable to your clipboard.
+	</p>
+
 	<fieldset name="typography">
 		<legend class="alt-heading-3">Token type</legend>
 

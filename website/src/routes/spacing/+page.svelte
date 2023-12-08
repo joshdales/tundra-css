@@ -10,8 +10,10 @@
 	<h1 class="alt-heading-5">Spacing</h1>
 
 	<p class="body-4">
-		Use these variables for setting any kind of space; padding, margins, gaps, etc.<br />
+		Use these variables for setting any kind of space; padding, margins, gaps, etc.
 	</p>
+
+	<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
 
 	<section>
 		{#each new Array(14).fill('space') as property, index}

@@ -11,6 +11,8 @@
 
 	<p class="body-4">Round out the corners, smooth things over.</p>
 
+	<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
+
 	<section>
 		{#each new Array(5).fill('radius') as property, index}
 			<DesignToken {property} level={index + 1} on:copied_value={(ev) => (copiedValue = ev.detail)}>

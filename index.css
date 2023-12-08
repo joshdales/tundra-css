@@ -1,14 +1,14 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
   /* Neutral */
-  --neutral-1: oklch(20% 0.01 200);
-  --neutral-2: oklch(35% 0.01 200);
-  --neutral-3: oklch(45% 0.01 200);
-  --neutral-4: oklch(55% 0.01 200);
-  --neutral-5: oklch(85% 0.01 200);
-  --neutral-6: oklch(90% 0.01 200);
-  --neutral-7: oklch(95% 0.01 200);
-  --neutral-8: oklch(98% 0.01 200);
+  --neutral-1: oklch(20% 0.01 250);
+  --neutral-2: oklch(35% 0.01 250);
+  --neutral-3: oklch(45% 0.01 250);
+  --neutral-4: oklch(55% 0.01 250);
+  --neutral-5: oklch(85% 0.01 250);
+  --neutral-6: oklch(90% 0.01 250);
+  --neutral-7: oklch(95% 0.01 250);
+  --neutral-8: oklch(98% 0.01 250);
   /* Red */
   --red-1: oklch(40% 0.18 25);
   --red-2: oklch(45% 0.2 25);
@@ -28,13 +28,13 @@
   --orange-7: oklch(87% 0.0952 45);
   --orange-8: oklch(95% 0.0342 45);
   /* Yellow */
-  --yellow-1: oklch(70% 0.15 80);
-  --yellow-2: oklch(75% 0.15 80);
-  --yellow-3: oklch(80% 0.15 80);
-  --yellow-4: oklch(85% 0.15 80);
-  --yellow-5: oklch(89% 0.129 80);
-  --yellow-6: oklch(92% 0.092 80);
-  --yellow-7: oklch(95% 0.056 80);
+  --yellow-1: oklch(50% 0.1191 80);
+  --yellow-2: oklch(55% 0.1305 80);
+  --yellow-3: oklch(65% 0.15 80);
+  --yellow-4: oklch(75% 0.15 80);
+  --yellow-5: oklch(85% 0.15 80);
+  --yellow-6: oklch(89% 0.129 80);
+  --yellow-7: oklch(92% 0.092 80);
   --yellow-8: oklch(98% 0.022 80);
   /* Green */
   --green-1: oklch(35% 0.1 165);
@@ -612,9 +612,9 @@ button.red,
 }
 button.orange,
 .button.orange {
-  --btn-1: var(--orange-3);
-  --btn-2: var(--orange-4);
-  --btn-3: var(--orange-5);
+  --btn-1: var(--orange-1);
+  --btn-2: var(--orange-2);
+  --btn-3: var(--orange-3);
   --btn-4: var(--orange-8);
 }
 button.yellow,
@@ -633,9 +633,9 @@ button.green,
 }
 button.cyan,
 .button.cyan {
-  --btn-1: var(--cyan-3);
-  --btn-2: var(--cyan-4);
-  --btn-3: var(--cyan-5);
+  --btn-1: var(--cyan-2);
+  --btn-2: var(--cyan-3);
+  --btn-3: var(--cyan-4);
   --btn-4: var(--cyan-8);
 }
 button.blue,
@@ -654,9 +654,9 @@ button.purple,
 }
 button.pink,
 .button.pink {
-  --btn-1: var(--pink-3);
-  --btn-2: var(--pink-4);
-  --btn-3: var(--pink-5);
+  --btn-1: var(--pink-2);
+  --btn-2: var(--pink-3);
+  --btn-3: var(--pink-3);
   --btn-4: var(--pink-8);
 }
 

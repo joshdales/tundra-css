@@ -1,4 +1,5 @@
-name: "Pull Request Labeler"
+name: Pull Request Labeller
+
 on:
 - pull_request_target
 
@@ -10,5 +11,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v5
-      with:
-        configuration-path: ".github/labeller.yml"

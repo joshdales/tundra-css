@@ -1,14 +1,14 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
   /* Neutral */
-  --neutral-1: oklch(20% 0.01 250);
-  --neutral-2: oklch(35% 0.01 250);
-  --neutral-3: oklch(45% 0.01 250);
-  --neutral-4: oklch(55% 0.01 250);
-  --neutral-5: oklch(85% 0.01 250);
-  --neutral-6: oklch(90% 0.01 250);
-  --neutral-7: oklch(95% 0.01 250);
-  --neutral-8: oklch(98% 0.01 250);
+  --neutral-1: oklch(20% 0.01 200);
+  --neutral-2: oklch(35% 0.01 200);
+  --neutral-3: oklch(45% 0.01 200);
+  --neutral-4: oklch(55% 0.01 200);
+  --neutral-5: oklch(85% 0.01 200);
+  --neutral-6: oklch(90% 0.01 200);
+  --neutral-7: oklch(95% 0.01 200);
+  --neutral-8: oklch(98% 0.01 200);
   /* Red */
   --red-1: oklch(40% 0.18 25);
   --red-2: oklch(45% 0.2 25);
@@ -20,11 +20,11 @@
   --red-8: oklch(95% 0.0315 25);
   /* Orange */
   --orange-1: oklch(50% 0.1616 45);
-  --orange-2: oklch(55% 0.1616 45);
+  --orange-2: oklch(55% 0.1942 45);
   --orange-3: oklch(60% 0.1942 45);
-  --orange-4: oklch(65% 0.2 45);
-  --orange-5: oklch(70% 0.2 45);
-  --orange-6: oklch(80% 0.1556 45);
+  --orange-4: oklch(70% 0.2 45);
+  --orange-5: oklch(77% 0.1833 45);
+  --orange-6: oklch(83% 0.1289 45);
   --orange-7: oklch(87% 0.0952 45);
   --orange-8: oklch(95% 0.0342 45);
   /* Yellow */
@@ -56,19 +56,19 @@
   --cyan-8: oklch(98% 0.0315 190);
   /* Blue */
   --blue-1: oklch(35% 0.14 255);
-  --blue-2: oklch(40% 0.16 255);
-  --blue-3: oklch(50% 0.2 255);
-  --blue-4: oklch(60% 0.2 255);
-  --blue-5: oklch(70% 0.17 255);
+  --blue-2: oklch(40% 0.15 255);
+  --blue-3: oklch(50% 0.15 255);
+  --blue-4: oklch(60% 0.15 255);
+  --blue-5: oklch(70% 0.15 255);
   --blue-6: oklch(80% 0.111 255);
   --blue-7: oklch(90% 0.0533 255);
   --blue-8: oklch(95% 0.0261 255);
   /* Purple */
   --purple-1: oklch(30% 0.1664 300);
-  --purple-2: oklch(40% 0.19 300);
-  --purple-3: oklch(50% 0.19 300);
-  --purple-4: oklch(60% 0.19 300);
-  --purple-5: oklch(70% 0.19 300);
+  --purple-2: oklch(40% 0.15 300);
+  --purple-3: oklch(50% 0.15 300);
+  --purple-4: oklch(60% 0.15 300);
+  --purple-5: oklch(70% 0.15 300);
   --purple-6: oklch(80% 0.13 300);
   --purple-7: oklch(90% 0.0625 300);
   --purple-8: oklch(95% 0.0304 300);

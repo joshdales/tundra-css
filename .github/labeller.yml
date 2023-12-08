@@ -1,8 +1,8 @@
 website:
   - changed-files:
-    - any-glob-to-any-file: 'website/*'
-  - base-branch: '^website/'
+    - any-glob-to-any-file: ['website/*', 'website/**/*']
+  - base-branch: 'website'
 
 styles:
   - changed-files:
-    - any-glob-to-any-file: ['index.scss', 'styles/*']
+    - any-glob-to-any-file: ['*.scss', 'styles/*', 'styles/**/*']

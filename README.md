@@ -10,12 +10,16 @@ Colours go from dark -> light, and sizes goes from small -> large.
 
 ### Variables
 There are a series of css variables for the following:
-- Colours (1-8, and there is a unit-less variable for each as well which is the 4th value in the scale)
+- Colours (1-8)
 	- `--neutral-1` - `--neutral-8`
-	- `--red`, `--red-1` - `--red-8`
-	- `--blue`, `--blue-1` - `--blue-8`
-	- `--green`, `--green-1` - `--green-8`
-	- `--yellow`, `--yellow-1` - `--yellow-8`
+	- `--red-1` - `--red-8`
+	- `--orange-1` - `--orange-8`
+	- `--yellow-1` - `--yellow-8`
+	- `--green-1` - `--green-8`
+	- `--cyan-1` - `--cyan-8`
+	- `--blue-1` - `--blue-8`
+	- `--purple-1` - `--purple-8`
+	- `--pink-1` - `--pink-8`
 - Radius (1-4)
 	- `--radius-1` -`--radius-4`
 - Space (1-14)
@@ -44,12 +48,12 @@ There are a series of classes for text, along with others for buttons, and text 
 - Buttons - 4 button sizes, along with different styled variations
 	- Text sizes: `.button-1` - `.button-4`
 	- Variations: `.filled`, `.outline`, `.ghost`
-	- Accent: `.red`, `.green`, `.blue`, `.yellow` (the yellow accent isn't really accessible with white text but I've included it for completeness).
+	- Accent: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
 - Labels - For labelling inputs, or anything else that you want
 	- Text styles: `.label-1` - `.label-4`
 - Inputs - Text based inputs
 	- Text styles: `.input-1` - `.input-4`
-	- Accent: `.red`, `.green`, `.blue`, `.yellow`
+	- Accent: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
 
 ## Usage
 You can apply one of the class provided and then customise it as you need with the variables. You should try as much as possible to only use the provided classes and variables. Keep it simple, and don't overthink things.

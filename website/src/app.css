@@ -15,7 +15,7 @@
 /* Any global styles should come after this */
 
 :root {
-	--accent: var(--green);
+	--accent: var(--green-4);
 	--foreground: var(--neutral-1);
 	--background: var(--neutral-8);
 }

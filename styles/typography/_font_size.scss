@@ -1,5 +1,5 @@
 @use 'sass:math';
-@use 'spacing' as *;
+@use '../spacing' as *;
 
 @function convertPxToRem($value, $base: 16) {
 	$unitless-value: math.div($value, 1px);

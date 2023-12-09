@@ -26,6 +26,6 @@ jobs:
       - name: Check CSS is up to date
         run: |
           if ! git diff --quiet index.css; then
-            echo "The index.css has changes after running the buid command. Please commit those changes."
+            echo "The index.css has changes after running the build command. Please commit those changes."
             exit 1
           fi

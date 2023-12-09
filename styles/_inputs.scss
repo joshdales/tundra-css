@@ -1,5 +1,3 @@
-@use './text';
-
 @mixin _base {
 	background-color: var(--neutral-8);
 	border: 1.5px solid var(--neutral-6);
@@ -32,10 +30,6 @@
 /// For use with text based inputs.
 @mixin text($level: null) {
 	@include _base;
-
-	@if $level {
-		@include text.input($level);
-	}
 
 	@if $level ==1 {
 		@extend .input-1;

@@ -9,7 +9,7 @@ Styles:
 
 Colours:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_colours.scss'
+    - any-glob-to-any-file: 'styles/colours/*'
 
 Radius:
   - changed-files:

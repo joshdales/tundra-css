@@ -1,143 +1,137 @@
-@use 'styles/buttons';
-@use 'styles/colours';
-@use 'styles/inputs';
-@use 'styles/radius';
-@use 'styles/spacing';
-@use 'styles/text';
-@use 'styles/typography';
+@use 'styles' as *;
 
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 
 :root {
 	/* Neutral */
-	--neutral-1: #{colours.$neutral-1};
-	--neutral-2: #{colours.$neutral-2};
-	--neutral-3: #{colours.$neutral-3};
-	--neutral-4: #{colours.$neutral-4};
-	--neutral-5: #{colours.$neutral-5};
-	--neutral-6: #{colours.$neutral-6};
-	--neutral-7: #{colours.$neutral-7};
-	--neutral-8: #{colours.$neutral-8};
+	--neutral-1: #{$neutral-1};
+	--neutral-2: #{$neutral-2};
+	--neutral-3: #{$neutral-3};
+	--neutral-4: #{$neutral-4};
+	--neutral-5: #{$neutral-5};
+	--neutral-6: #{$neutral-6};
+	--neutral-7: #{$neutral-7};
+	--neutral-8: #{$neutral-8};
 	/* Red */
-	--red-1: #{colours.$red-1};
-	--red-2: #{colours.$red-2};
-	--red-3: #{colours.$red-3};
-	--red-4: #{colours.$red-4};
-	--red-5: #{colours.$red-5};
-	--red-6: #{colours.$red-6};
-	--red-7: #{colours.$red-7};
-	--red-8: #{colours.$red-8};
+	--red-1: #{$red-1};
+	--red-2: #{$red-2};
+	--red-3: #{$red-3};
+	--red-4: #{$red-4};
+	--red-5: #{$red-5};
+	--red-6: #{$red-6};
+	--red-7: #{$red-7};
+	--red-8: #{$red-8};
 	/* Orange */
-	--orange-1: #{colours.$orange-1};
-	--orange-2: #{colours.$orange-2};
-	--orange-3: #{colours.$orange-3};
-	--orange-4: #{colours.$orange-4};
-	--orange-5: #{colours.$orange-5};
-	--orange-6: #{colours.$orange-6};
-	--orange-7: #{colours.$orange-7};
-	--orange-8: #{colours.$orange-8};
+	--orange-1: #{$orange-1};
+	--orange-2: #{$orange-2};
+	--orange-3: #{$orange-3};
+	--orange-4: #{$orange-4};
+	--orange-5: #{$orange-5};
+	--orange-6: #{$orange-6};
+	--orange-7: #{$orange-7};
+	--orange-8: #{$orange-8};
 	/* Yellow */
-	--yellow-1: #{colours.$yellow-1};
-	--yellow-2: #{colours.$yellow-2};
-	--yellow-3: #{colours.$yellow-3};
-	--yellow-4: #{colours.$yellow-4};
-	--yellow-5: #{colours.$yellow-5};
-	--yellow-6: #{colours.$yellow-6};
-	--yellow-7: #{colours.$yellow-7};
-	--yellow-8: #{colours.$yellow-8};
+	--yellow-1: #{$yellow-1};
+	--yellow-2: #{$yellow-2};
+	--yellow-3: #{$yellow-3};
+	--yellow-4: #{$yellow-4};
+	--yellow-5: #{$yellow-5};
+	--yellow-6: #{$yellow-6};
+	--yellow-7: #{$yellow-7};
+	--yellow-8: #{$yellow-8};
 	/* Green */
-	--green-1: #{colours.$green-1};
-	--green-2: #{colours.$green-2};
-	--green-3: #{colours.$green-3};
-	--green-4: #{colours.$green-4};
-	--green-5: #{colours.$green-5};
-	--green-6: #{colours.$green-6};
-	--green-7: #{colours.$green-7};
-	--green-8: #{colours.$green-8};
+	--green-1: #{$green-1};
+	--green-2: #{$green-2};
+	--green-3: #{$green-3};
+	--green-4: #{$green-4};
+	--green-5: #{$green-5};
+	--green-6: #{$green-6};
+	--green-7: #{$green-7};
+	--green-8: #{$green-8};
 	/* Cyan */
-	--cyan-1: #{colours.$cyan-1};
-	--cyan-2: #{colours.$cyan-2};
-	--cyan-3: #{colours.$cyan-3};
-	--cyan-4: #{colours.$cyan-4};
-	--cyan-5: #{colours.$cyan-5};
-	--cyan-6: #{colours.$cyan-6};
-	--cyan-7: #{colours.$cyan-7};
-	--cyan-8: #{colours.$cyan-8};
+	--cyan-1: #{$cyan-1};
+	--cyan-2: #{$cyan-2};
+	--cyan-3: #{$cyan-3};
+	--cyan-4: #{$cyan-4};
+	--cyan-5: #{$cyan-5};
+	--cyan-6: #{$cyan-6};
+	--cyan-7: #{$cyan-7};
+	--cyan-8: #{$cyan-8};
 	/* Blue */
-	--blue-1: #{colours.$blue-1};
-	--blue-2: #{colours.$blue-2};
-	--blue-3: #{colours.$blue-3};
-	--blue-4: #{colours.$blue-4};
-	--blue-5: #{colours.$blue-5};
-	--blue-6: #{colours.$blue-6};
-	--blue-7: #{colours.$blue-7};
-	--blue-8: #{colours.$blue-8};
+	--blue-1: #{$blue-1};
+	--blue-2: #{$blue-2};
+	--blue-3: #{$blue-3};
+	--blue-4: #{$blue-4};
+	--blue-5: #{$blue-5};
+	--blue-6: #{$blue-6};
+	--blue-7: #{$blue-7};
+	--blue-8: #{$blue-8};
 	/* Purple */
-	--purple-1: #{colours.$purple-1};
-	--purple-2: #{colours.$purple-2};
-	--purple-3: #{colours.$purple-3};
-	--purple-4: #{colours.$purple-4};
-	--purple-5: #{colours.$purple-5};
-	--purple-6: #{colours.$purple-6};
-	--purple-7: #{colours.$purple-7};
-	--purple-8: #{colours.$purple-8};
+	--purple-1: #{$purple-1};
+	--purple-2: #{$purple-2};
+	--purple-3: #{$purple-3};
+	--purple-4: #{$purple-4};
+	--purple-5: #{$purple-5};
+	--purple-6: #{$purple-6};
+	--purple-7: #{$purple-7};
+	--purple-8: #{$purple-8};
 	/* Pink */
-	--pink-1: #{colours.$pink-1};
-	--pink-2: #{colours.$pink-2};
-	--pink-3: #{colours.$pink-3};
-	--pink-4: #{colours.$pink-4};
-	--pink-5: #{colours.$pink-5};
-	--pink-6: #{colours.$pink-6};
-	--pink-7: #{colours.$pink-7};
-	--pink-8: #{colours.$pink-8};
+	--pink-1: #{$pink-1};
+	--pink-2: #{$pink-2};
+	--pink-3: #{$pink-3};
+	--pink-4: #{$pink-4};
+	--pink-5: #{$pink-5};
+	--pink-6: #{$pink-6};
+	--pink-7: #{$pink-7};
+	--pink-8: #{$pink-8};
 	/* Radius */
-	--radius-1: #{radius.$radius-1};
-	--radius-2: #{radius.$radius-2};
-	--radius-3: #{radius.$radius-3};
-	--radius-4: #{radius.$radius-4};
-	--radius-5: #{radius.$radius-5};
+	--radius-1: #{$radius-1};
+	--radius-2: #{$radius-2};
+	--radius-3: #{$radius-3};
+	--radius-4: #{$radius-4};
+	--radius-5: #{$radius-5};
 	/* Space */
-	--space-1: #{spacing.$space-1};
-	--space-2: #{spacing.$space-2};
-	--space-3: #{spacing.$space-3};
-	--space-4: #{spacing.$space-4};
-	--space-5: #{spacing.$space-5};
-	--space-6: #{spacing.$space-6};
-	--space-7: #{spacing.$space-7};
-	--space-8: #{spacing.$space-8};
-	--space-9: #{spacing.$space-9};
-	--space-10: #{spacing.$space-10};
-	--space-11: #{spacing.$space-11};
-	--space-12: #{spacing.$space-12};
-	--space-13: #{spacing.$space-13};
-	--space-14: #{spacing.$space-14};
+	--space-1: #{$space-1};
+	--space-2: #{$space-2};
+	--space-3: #{$space-3};
+	--space-4: #{$space-4};
+	--space-5: #{$space-5};
+	--space-6: #{$space-6};
+	--space-7: #{$space-7};
+	--space-8: #{$space-8};
+	--space-9: #{$space-9};
+	--space-10: #{$space-10};
+	--space-11: #{$space-11};
+	--space-12: #{$space-12};
+	--space-13: #{$space-13};
+	--space-14: #{$space-14};
 	/* Font Weight */
-	--font-weight-1: #{typography.$font-weight-1};
-	--font-weight-2: #{typography.$font-weight-2};
-	--font-weight-3: #{typography.$font-weight-3};
-	--font-weight-4: #{typography.$font-weight-4};
+	--font-weight-1: #{$font-weight-1};
+	--font-weight-2: #{$font-weight-2};
+	--font-weight-3: #{$font-weight-3};
+	--font-weight-4: #{$font-weight-4};
 	/* Font Size */
-	--font-size-1: #{typography.$font-size-1};
-	--font-size-2: #{typography.$font-size-2};
-	--font-size-3: #{typography.$font-size-3};
-	--font-size-4: #{typography.$font-size-4};
-	--font-size-5: #{typography.$font-size-5};
-	--font-size-6: #{typography.$font-size-6};
-	--font-size-7: #{typography.$font-size-7};
-	--font-size-8: #{typography.$font-size-8};
-	--font-size-9: #{typography.$font-size-9};
+	--font-size-1: #{$font-size-1};
+	--font-size-2: #{$font-size-2};
+	--font-size-3: #{$font-size-3};
+	--font-size-4: #{$font-size-4};
+	--font-size-5: #{$font-size-5};
+	--font-size-6: #{$font-size-6};
+	--font-size-7: #{$font-size-7};
+	--font-size-8: #{$font-size-8};
+	--font-size-9: #{$font-size-9};
 	/* Line Height */
-	--line-height-1: #{typography.$line-height-1};
-	--line-height-2: #{typography.$line-height-2};
-	--line-height-3: #{typography.$line-height-3};
-	--line-height-4: #{typography.$line-height-4};
-	--line-height-5: #{typography.$line-height-5};
+	--line-height-1: #{$line-height-1};
+	--line-height-2: #{$line-height-2};
+	--line-height-3: #{$line-height-3};
+	--line-height-4: #{$line-height-4};
+	--line-height-5: #{$line-height-5};
 	/* Letter Spacing */
-	--letter-spacing-1: #{typography.$letter-spacing-1};
-	--letter-spacing-2: #{typography.$letter-spacing-2};
-	--letter-spacing-3: #{typography.$letter-spacing-3};
-	--letter-spacing-4: #{typography.$letter-spacing-4};
-	--letter-spacing-5: #{typography.$letter-spacing-5};
+	--letter-spacing-1: #{$letter-spacing-1};
+	--letter-spacing-2: #{$letter-spacing-2};
+	--letter-spacing-3: #{$letter-spacing-3};
+	--letter-spacing-4: #{$letter-spacing-4};
+	--letter-spacing-5: #{$letter-spacing-5};
 }
 
 html {
@@ -147,137 +141,137 @@ html {
 
 /* Text: Heading */
 .heading-1 {
-	@include text.heading(1);
+	@include heading(1);
 }
 
 .heading-2 {
-	@include text.heading(2);
+	@include heading(2);
 }
 
 .heading-3 {
-	@include text.heading(3);
+	@include heading(3);
 }
 
 .heading-4 {
-	@include text.heading(4);
+	@include heading(4);
 }
 
 .heading-5 {
-	@include text.heading(5);
+	@include heading(5);
 }
 
 .heading-6 {
-	@include text.heading(6);
+	@include heading(6);
 }
 
 /* Text: Alt Heading */
 .alt-heading-1 {
-	@include text.alt_heading(1);
+	@include alt_heading(1);
 }
 
 .alt-heading-2 {
-	@include text.alt_heading(2);
+	@include alt_heading(2);
 }
 
 .alt-heading-3 {
-	@include text.alt_heading(3);
+	@include alt_heading(3);
 }
 
 .alt-heading-4 {
-	@include text.alt_heading(4);
+	@include alt_heading(4);
 }
 
 .alt-heading-5 {
-	@include text.alt_heading(5);
+	@include alt_heading(5);
 }
 
 .alt-heading-6 {
-	@include text.alt_heading(6);
+	@include alt_heading(6);
 }
 
 /* Text: Body */
 .body-1 {
-	@include text.body(1);
+	@include body(1);
 }
 
 .body-2 {
-	@include text.body(2);
+	@include body(2);
 }
 
 .body-3 {
-	@include text.body(3);
+	@include body(3);
 }
 
 .body-4 {
-	@include text.body(4);
+	@include body(4);
 }
 
 /* Text: Link */
 .link-1 {
-	@include text.link(1);
+	@include link(1);
 }
 
 .link-2 {
-	@include text.link(2);
+	@include link(2);
 }
 
 .link-3 {
-	@include text.link(3);
+	@include link(3);
 }
 
 .link-4 {
-	@include text.link(4);
+	@include link(4);
 }
 
 /* Text: Button */
 .button-1 {
-	@include text.button(1);
+	@include button(1);
 }
 
 .button-2 {
-	@include text.button(2);
+	@include button(2);
 }
 
 .button-3 {
-	@include text.button(3);
+	@include button(3);
 }
 
 .button-4 {
-	@include text.button(4);
+	@include button(4);
 }
 
 /* Text: Label */
 .label-1 {
-	@include text.label(1);
+	@include label(1);
 }
 
 .label-2 {
-	@include text.label(2);
+	@include label(2);
 }
 
 .label-3 {
-	@include text.label(3);
+	@include label(3);
 }
 
 .label-4 {
-	@include text.label(4);
+	@include label(4);
 }
 
 /* Text: Input */
 .input-1 {
-	@include text.input(1);
+	@include input(1);
 }
 
 .input-2 {
-	@include text.input(2);
+	@include input(2);
 }
 
 .input-3 {
-	@include text.input(3);
+	@include input(3);
 }
 
 .input-4 {
-	@include text.input(4);
+	@include input(4);
 }
 
 /* Text: Extra emphasis */
@@ -340,31 +334,31 @@ html {
 button,
 .button {
 	&.button-1 {
-		@include buttons.size(1);
+		@include size(1);
 	}
 
 	&.button-2 {
-		@include buttons.size(2);
+		@include size(2);
 	}
 
 	&.button-3 {
-		@include buttons.size(3);
+		@include size(3);
 	}
 
 	&.button-4 {
-		@include buttons.size(4);
+		@include size(4);
 	}
 
 	&.filled {
-		@include buttons.filled;
+		@include filled;
 	}
 
 	&.outline {
-		@include buttons.outline;
+		@include outline;
 	}
 
 	&.ghost {
-		@include buttons.ghost;
+		@include ghost;
 	}
 
 	&.red {
@@ -428,19 +422,19 @@ button,
 input,
 select {
 	&.input-1 {
-		@include inputs.text(1);
+		@include text(1);
 	}
 
 	&.input-2 {
-		@include inputs.text(2);
+		@include text(2);
 	}
 
 	&.input-3 {
-		@include inputs.text(3);
+		@include text(3);
 	}
 
 	&.input-4 {
-		@include inputs.text(4);
+		@include text(4);
 	}
 
 	&.red {

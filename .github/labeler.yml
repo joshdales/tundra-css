@@ -1,9 +1,9 @@
-website:
+Website:
   - changed-files:
     - any-glob-to-any-file: ['website/*', 'website/**/*']
   - base-branch: 'website'
 
-styles:
+Styles:
   - changed-files:
     - any-glob-to-any-file: ['index.css', 'index.scss', 'styles/*', 'styles/**/*']
 

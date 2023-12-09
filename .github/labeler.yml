@@ -5,4 +5,4 @@ website:
 
 styles:
   - changed-files:
-    - any-glob-to-any-file: ['*.scss', 'styles/*', 'styles/**/*']
+    - any-glob-to-any-file: ['index.css', 'index.scss', 'styles/*', 'styles/**/*']

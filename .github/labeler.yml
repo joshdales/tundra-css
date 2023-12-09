@@ -6,3 +6,31 @@ website:
 styles:
   - changed-files:
     - any-glob-to-any-file: ['index.css', 'index.scss', 'styles/*', 'styles/**/*']
+
+Colours:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_colours.scss'
+
+Radius:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_radius.scss'
+
+Spacing:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_spacing.scss'
+
+Typography:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_typography.scss'
+
+Text:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/text/*'
+
+Buttons:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_buttons.scss'
+
+Inputs:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_inputs.scss'

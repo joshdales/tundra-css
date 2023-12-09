@@ -21,7 +21,7 @@ Spacing:
 
 Typography:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_typography.scss'
+    - any-glob-to-any-file: 'styles/typography/*'
 
 Text:
   - changed-files:

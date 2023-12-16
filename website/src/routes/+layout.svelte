@@ -75,7 +75,7 @@
 
 	a {
 		position: relative;
-		color: var(--green);
+		color: var(--accent);
 		text-decoration: none;
 		padding-block-end: var(--space-1);
 	}

@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
 	const dispatch = createEventDispatcher()
-	const colours = ['red', 'blue', 'green', 'yellow']
+	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
 	export let selectedColour: string
 
 	$: dispatch('accent', selectedColour)
 </script>
 
-<fieldset name="accent" style="--num-colours: {colours.length}">
+<fieldset name="accent">
 	<legend class="alt-heading-3">Accent</legend>
 
 	{#each colours as colour}
@@ -27,15 +27,25 @@
 
 <style>
 	fieldset {
+		--columns: 4;
 		display: grid;
-		grid-template-columns: repeat(var(--num-colours), 1fr);
+		grid-template-columns: repeat(var(--columns), 1fr);
 		gap: var(--space-6);
-		margin-block: var(--space-4);
-	}
-
-	fieldset {
+		margin-block: var(--space-6);
 		border: none;
 		padding: 0;
+	}
+
+	@media screen and (max-width: 500px) {
+		fieldset {
+			--columns: 3;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		fieldset {
+			--columns: 2;
+		}
 	}
 
 	legend {

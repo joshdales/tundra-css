@@ -92,10 +92,17 @@
 
 <style>
 	.btn-group {
+		--columns: 4;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(var(--columns), 1fr);
 		gap: var(--space-6);
 		margin-block: var(--space-4);
+	}
+
+	@media screen and (max-width: 600px) {
+		.btn-group {
+			--columns: 2;
+		}
 	}
 
 	button {

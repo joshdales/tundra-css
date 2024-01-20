@@ -8,7 +8,8 @@
 
 	<p>
 		Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,
-		and combine it with the label class on the label element.
+		and combine it with the label class on the label element. If you don't include a class for the colour
+		then the accent colours with be greyscale.
 	</p>
 
 	<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
@@ -32,6 +33,12 @@
 		Input 4
 		<input class="input-4 {selectedColour}" type="text" placeholder="Input 4" id="input4" />
 	</label>
+
+	<h2>Customisation</h2>
+	<p class="body-4">
+		In order to make your own variations of the inputs you just need to make a class that overrides
+		the accent variables: <code>inpt-1</code> - <code>inpt-3</code> with your preferred values.
+	</p>
 </main>
 
 <style>

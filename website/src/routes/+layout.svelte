@@ -45,9 +45,9 @@
 
 <footer>
 	<h3>
-		<a class="link-4" href="https://github.com/joshdales/tundra-css"
-			>github.com/joshdales/tundra-css</a
-		>
+		<a class="link-4" href="https://github.com/joshdales/tundra-css">
+			github.com/joshdales/tundra-css
+		</a>
 	</h3>
 </footer>
 

@@ -32,3 +32,11 @@ main {
 	padding-inline: var(--space-10);
 	margin: auto;
 }
+
+code {
+	background-color: var(--neutral-7);
+	color: var(--accent);
+	padding-inline: var(--space-2);
+	padding-block: var(--space-1);
+	border-radius: var(--radius-1);
+}

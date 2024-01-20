@@ -1,5 +1,5 @@
 # Tundra
-An opinionated and relatively comprehensive, but not overwhelming, CSS design system.
+An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 
 > [!NOTE]
 > Just to say that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.

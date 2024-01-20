@@ -5,12 +5,15 @@
 <div class="grid">
 	<header>
 		<h1 class="heading-6">Tundra CSS</h1>
-		<p class="body-4">A comprehensive but not overwhelming CSS design system.</p>
+		<p class="body-4">
+			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
+		</p>
 		<p class="body-4">
 			Its not a complete framework with utility classes for every property that you might want, like
-			Tailwind or Tachyons or what have you. It is a smaller selection of variables and classes, and
-			SCSS mixins it you want them. This should give you the building blocks to get a relatively
-			nice looking project without having to go through too much trouble.
+			Tailwind or Tachyons or what have you. It is a smaller selection of variables and classes that
+			effect multiple properties, and there are some SCSS mixins it you want them. This should give
+			you the building blocks to get a relatively nice looking project without having to go through
+			too much trouble. Or even just use it as a reference.
 		</p>
 	</header>
 

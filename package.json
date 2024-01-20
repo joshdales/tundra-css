@@ -1,7 +1,7 @@
 {
   "name": "tundra-css",
   "version": "0.5.0",
-  "description": "A simple CSS Design system",
+  "description": "An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.",
   "author": "joshdales",
   "homepage": "https://tundra.joshdales.dev",
   "license": "MIT",

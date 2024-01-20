@@ -44,7 +44,7 @@ There are also these ones related to typography, though to be honest you probabl
 	- `--letter-spacing-1` - `--letter-spacing-5`
 
 ### Classes
-There are a series of classes for text, along with others for buttons, and text inputs.
+There are a series of classes for text, along with others elements like buttons, and text inputs.
 - Headings - 6 levels of headings
 	- Text styles: `.heading-1` - `.heading-6`
 - Alt-Headings - 6 levels of alterative headings

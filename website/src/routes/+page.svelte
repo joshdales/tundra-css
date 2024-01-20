@@ -5,20 +5,29 @@
 <div class="grid">
 	<header>
 		<h1 class="heading-6">Tundra CSS</h1>
-		<p class="body-4">A comprehensive but not overwhelming CSS design system.</p>
 		<p class="body-4">
-			Its not a complete framework with utility classes for every property that you might want, like
-			Tailwind or Tachyons or what have you. It is a smaller selection of variables and classes, and
-			SCSS mixins it you want them. This should give you the building blocks to get a relatively
-			nice looking project without having to go through too much trouble.
+			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 		</p>
+
+		<p class="body-4">
+			Its not a complete framework of utility classes for every property that you might want like
+			Tailwind or Tachyons or what have you. It is a smaller selection of variables and a few
+			classes that effect multiple properties to style specific things (and there are some SCSS
+			mixins it you want them). This should give you the building blocks to get a relatively nice
+			looking project without having to go through too much trouble.
+		</p>
+
+		<p>Or maybe you just want to use it as a reference, that's cool too.</p>
 	</header>
 
 	<main>
 		<h2 class="alt-heading-4">Foundations</h2>
-		<p class="body-3">The foundational variables that are used to make up elements.</p>
+		<p class="body-3">
+			The foundational properties that are used to make up styles for the elements.
+		</p>
+
 		<nav>
-			<ul>
+			<menu>
 				<li>
 					<LinkCard
 						href="/colours"
@@ -43,7 +52,7 @@
 						desc="The foundational elements that build up the text styles."
 					/>
 				</li>
-			</ul>
+			</menu>
 		</nav>
 
 		<h2 class="alt-heading-4">Elements</h2>
@@ -51,8 +60,9 @@
 			You can apply classes to the following elements to easily adjust the available elements
 			appearance.
 		</p>
+
 		<nav>
-			<ul>
+			<menu>
 				<li>
 					<LinkCard
 						href="/buttons"
@@ -74,7 +84,7 @@
 						desc="The different types of text and how they look"
 					/>
 				</li>
-			</ul>
+			</menu>
 		</nav>
 	</main>
 </div>
@@ -131,7 +141,7 @@
 		width: 100%;
 	}
 
-	ul {
+	menu {
 		margin-block-end: var(--space-4);
 		display: flex;
 		flex-direction: column;

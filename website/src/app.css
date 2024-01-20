@@ -4,9 +4,21 @@
 @layer reset {
 	* {
 		margin: 0;
+		position: relative;
 	}
 
-	a {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		text-wrap: pretty;
+	}
+
+	a,
+	label {
 		cursor: pointer;
 	}
 }
@@ -31,4 +43,12 @@ main {
 	padding-block: var(--space-8);
 	padding-inline: var(--space-10);
 	margin: auto;
+}
+
+code {
+	background-color: var(--neutral-7);
+	color: var(--accent);
+	padding-inline: var(--space-2);
+	padding-block: var(--space-1);
+	border-radius: var(--radius-1);
 }

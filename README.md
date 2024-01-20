@@ -1,15 +1,23 @@
 # Tundra
-A comprehensive but not overwhelming CSS design system.
+An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 
 > [!NOTE]
 > Just to say that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.
 
-## Naming conventions
-Variable names are prefixed with a number 0 -> 999. <br />
-Colours go from dark -> light, and sizes goes from small -> large.
+## Naming
+I've aimed to name everything with the same numerical scale convention, there are no `small`, `medium`,`large`, etc sizes everything just uses sequentially increasing numbers. <br />
+The property names are suffixed by a number 0 -> 999 or whatever the highest number in that scale might be.
 
-### Variables
-There are a series of css variables for the following:
+- The colours go from dark -> light, I felt like this made the most sense as #000000 is black.
+- The size and typography tokens go from small -> large.
+- Element classes go from small -> large, eg. a button or inputs gets larger as you increase the size.
+- Text classes go from small -> large.
+
+## Usage
+You can apply one of the class provided and/or then customise it as you need with the variables. Ideally where you can try to only use the provided classes and variables, keep it simple and don't overthink things.
+
+### Custom-Properties / Variables
+There are a series of css custom properties for the following:
 - Colours (1-8)
 	- `--neutral-1` - `--neutral-8`
 	- `--red-1` - `--red-8`
@@ -25,7 +33,7 @@ There are a series of css variables for the following:
 - Space (1-14)
 	- `--space-1` - `--space-14`
 
-To be honest you probably won't need to use these variables as you can just the classes for the text styles which are various combinations of these, but I'm including them for completeness sake.
+There are also these ones related to typography, though to be honest you probably won't need to use them as you can just use the text style classes which are just various combinations of these:
 - Font Weight (1-4)
 	- `--font-weight-1` - `--font-weight-4`
 - Font Size (1-9)
@@ -36,34 +44,32 @@ To be honest you probably won't need to use these variables as you can just the 
 	- `--letter-spacing-1` - `--letter-spacing-5`
 
 ### Classes
-There are a series of classes for text, along with others for buttons, and text inputs.
+There are a series of classes for text, along with others elements like buttons, and text inputs.
 - Headings - 6 levels of headings
 	- Text styles: `.heading-1` - `.heading-6`
-- Alt-Headings - levels of alternative headings, good for subheadings, or if you just want something a little thinner.
+- Alt-Headings - 6 levels of alterative headings
 	- Text styles: `.alt-heading-1` - `.alt-heading-6`
-- Body - text for paragraphs
-	Text styles: `.body-1` - `.body-4`
-- Link - for you links, it comes underlined.
+- Body - text for paragraphs and other large bodies of text
+	- Text styles: `.body-1` - `.body-4`
+- Link - for your links, underlined by default
 	- Text styles: `.link-1` - `.link-4`
 - Buttons - 4 button sizes, along with different styled variations
-	- Text sizes: `.button-1` - `.button-4`
+	- Text style and button sizes: `.button-1` - `.button-4`
 	- Variations: `.filled`, `.outline`, `.ghost`
-	- Accent: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
+	- Accent colours: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
 - Labels - For labelling inputs, or anything else that you want
 	- Text styles: `.label-1` - `.label-4`
 - Inputs - Text based inputs
-	- Text styles: `.input-1` - `.input-4`
-	- Accent: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
+	- Text styles and input sizes: `.input-1` - `.input-4`
+	- Accent colours: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
 
-## Usage
-You can apply one of the class provided and then customise it as you need with the variables. You should try as much as possible to only use the provided classes and variables. Keep it simple, and don't overthink things.
-
-Install via npm
+## Installation
+Install via npm (or your preferred package manager):
 ```
 npm install tundra-css
 ```
 
-You can then import it from your node modules into a css file, if you do add it as a layer.
+You can then import it from your node modules into a css file, if you do I recommend that you add it as a layer so that you can override anything that you need.
 ```css
 @import 'node_modules/tundra-css' layer(tundra);
 ```
@@ -83,4 +89,4 @@ This has been built with newer devices in mind - a lot of the colour palette use
 Though if you bowser doesn't support custom properties or the `@supports` rule I guess that you are out of luck 😢. Should be good as long as your browser has been updated since 2016.
 
 ## SCSS
-There are SCSS variables and mixins provided which you can use if you want to override or change things up. But you shouldn't really need them.
+There are SCSS variables and mixins provided which you can use if you want to override or change things up. They are there if you want them, the variables are names the same as the custom properties .

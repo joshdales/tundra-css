@@ -34,7 +34,8 @@
 
 	<p class="body-4">
 		Apply the class for the button variant and the accent colour that you want the button to be. Add
-		a <code>button-*</code> class to change the size.
+		a <code>button-*</code> class to change the size, and a class for the colour it add that accent otherwise
+		the button will be greyscale.
 	</p>
 
 	<p class="body-4">Click on a button to copy it's classes.</p>
@@ -86,6 +87,12 @@
 			<button class="button-2 ghost" disabled> Lorem ipsum </button>
 		</div>
 	</section>
+
+	<h2>Customisation</h2>
+	<p class="body-4">
+		In order to make your own button variations you just need to make a class that overrides the
+		accent variables: <code>btn-1</code> - <code>btn-4</code> with your preferred values.
+	</p>
 </main>
 
 <CopyToaster {copiedValue} />

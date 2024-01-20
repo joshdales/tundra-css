@@ -13,7 +13,7 @@
 		View the text styles
 		<select
 			bind:value={selectedStyle}
-			class="input-4"
+			class="input-2"
 			name="text-style"
 			id="text-style-select"
 			placeholder="Select text style"
@@ -31,11 +31,11 @@
 	<section>
 		{#if selectedStyle === 'heading' || selectedStyle === 'alt-heading'}
 			{#each headings as _, index}
-				<p class="{selectedStyle}-{index + 1}">Lorem ipsum</p>
+				<p class="{selectedStyle}-{index + 1}">Lorem ipsum <strong>dolor</strong></p>
 			{/each}
 		{:else if selectedStyle}
 			{#each text as _, index}
-				<p class="{selectedStyle}-{index + 1}">Lorem ipsum</p>
+				<p class="{selectedStyle}-{index + 1}">Lorem ipsum <strong>dolor</strong></p>
 			{/each}
 		{:else}
 			<p class="body-4">Nothing selected yet</p>
@@ -62,6 +62,7 @@
 
 	select {
 		margin-block-start: var(--space-2);
-		width: fit-content;
+		width: 100%;
+		max-width: 300px;
 	}
 </style>

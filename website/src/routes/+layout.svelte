@@ -45,9 +45,9 @@
 
 <footer>
 	<h3>
-		<a class="link-4" href="https://github.com/joshdales/tundra-css"
-			>github.com/joshdales/tundra-css</a
-		>
+		<a class="link-4" href="https://github.com/joshdales/tundra-css">
+			github.com/joshdales/tundra-css
+		</a>
 	</h3>
 </footer>
 
@@ -61,6 +61,17 @@
 		color: var(--green);
 		padding-inline: var(--space-10);
 		padding-block: var(--space-6);
+		animation: add-shadow linear both;
+		animation-timeline: scroll();
+		animation-range: 0 var(--space-14);
+	}
+
+	@keyframes add-shadow {
+		to {
+			box-shadow:
+				0 var(--space-1) var(--space-2) calc(var(--space-1) * -1) rgba(0, 0, 0, 0.2),
+				var(--space-2) var(--space-1) var(--space-3) var(--space-1) rgba(0, 0, 0, 0.1);
+		}
 	}
 
 	header.hide {

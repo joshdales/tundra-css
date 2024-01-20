@@ -50,6 +50,7 @@
 	.token {
 		display: flex;
 		flex-direction: column;
+		/* align-items: center; */
 		padding: var(--space-2);
 		cursor: pointer;
 		background-color: var(--neutral-8);
@@ -66,7 +67,7 @@
 	}
 
 	.token:hover span {
-		opacity: 1;
+		visibility: visible;
 	}
 
 	.swatch {
@@ -85,10 +86,13 @@
 
 	code {
 		display: block;
+		background-color: var(--neutral-8);
+		color: var(--neutral-0);
+		padding: 0;
 	}
 
 	span {
-		opacity: 0;
+		visibility: hidden;
 		margin-block-start: var(--space-1);
 	}
 </style>

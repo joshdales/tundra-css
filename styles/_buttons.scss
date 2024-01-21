@@ -67,7 +67,7 @@
 	}
 }
 
-@mixin outline ($level: null) {
+@mixin outline($level: null) {
 	@include _base;
 
 	@if $level {

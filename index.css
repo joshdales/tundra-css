@@ -138,88 +138,88 @@ html {
 
 /* Text: Heading */
 .heading-1 {
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-2);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-2 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-5);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-3 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-4 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-5 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
   letter-spacing: var(--letter-spacing-3);
 }
 
+.heading-2 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-3);
+}
+
+.heading-3 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+
+.heading-4 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+
+.heading-5 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-8);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-1);
+}
+
 .heading-6 {
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-2);
   font-size: var(--font-size-9);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-1);
 }
 
 /* Text: Alt Heading */
 .alt-heading-1 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-2 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-5);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-3 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-6);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-4 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-7);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-5 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-8);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  letter-spacing: var(--letter-spacing-3);
 }
 
 .alt-heading-6 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-9);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  letter-spacing: var(--letter-spacing-2);
 }
 
 /* Text: Body */
@@ -384,35 +384,35 @@ select.input-4 {
 }
 
 /* Text: Extra emphasis */
-.heading-1 b,
-.heading-1 strong,
-.heading-2 b,
-.heading-2 strong,
-.heading-3 b,
-.heading-3 strong,
-.heading-3 b,
-.heading-3 strong,
-.heading-4 b,
-.heading-4 strong,
-.heading-5 b,
-.heading-5 strong,
-.heading-6 b,
-.heading-6 strong {
-  font-weight: var(--font-weight-4);
-}
-
 .alt-heading-1 b,
 .alt-heading-1 strong,
 .alt-heading-2 b,
 .alt-heading-2 strong,
 .alt-heading-3 b,
 .alt-heading-3 strong,
+.alt-heading-3 b,
+.alt-heading-3 strong,
 .alt-heading-4 b,
 .alt-heading-4 strong,
-.alt-heading- b,
-.alt-heading- strong,
+.alt-heading-5 b,
+.alt-heading-5 strong,
 .alt-heading-6 b,
-.alt-heading-6 strong,
+.alt-heading-6 strong {
+  font-weight: var(--font-weight-4);
+}
+
+.heading-1 b,
+.heading-1 strong,
+.heading-2 b,
+.heading-2 strong,
+.heading-3 b,
+.heading-3 strong,
+.heading-4 b,
+.heading-4 strong,
+.heading- b,
+.heading- strong,
+.heading-6 b,
+.heading-6 strong,
 .body-1 b,
 .body-1 strong,
 .link-1 b,

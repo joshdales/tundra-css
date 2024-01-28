@@ -405,10 +405,8 @@ select.input-4 {
 .heading-3 strong,
 .heading-4 b,
 .heading-4 strong,
-.heading- b,
-.heading- strong,
-.heading- b,
-.heading- strong,
+.heading-5 b,
+.heading-5 strong,
 .heading-6 b,
 .heading-6 strong,
 .body-1 b,
@@ -494,8 +492,9 @@ button.filled,
   background-color: var(--btn-2, var(--neutral-1));
   color: var(--neutral-8);
 }
-button.filled:disabled,
-.button.filled:disabled {
+button.filled:disabled, button.filled[aria-disabled=true],
+.button.filled:disabled,
+.button.filled[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.filled:hover, button.filled:focus,
@@ -507,8 +506,9 @@ button.filled:active,
 .button.filled:active {
   background-color: var(--btn-3, var(--neutral-3));
 }
-button.filled:disabled,
-.button.filled:disabled {
+button.filled:disabled, button.filled[aria-disabled=true],
+.button.filled:disabled,
+.button.filled[aria-disabled=true] {
   background-color: var(--neutral-5);
   border-color: var(--neutral-5);
 }
@@ -529,8 +529,9 @@ button.outline,
   color: var(--btn-2, var(--neutral-2));
   border-color: var(--btn-2, var(--neutral-2));
 }
-button.outline:disabled,
-.button.outline:disabled {
+button.outline:disabled, button.outline[aria-disabled=true],
+.button.outline:disabled,
+.button.outline[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.outline:hover, button.outline:focus,
@@ -545,13 +546,15 @@ button.outline:active,
   color: var(--btn-3, var(--neutral-3));
   border-color: var(--btn-3, var(--neutral-3));
 }
-button.outline:disabled,
-.button.outline:disabled {
+button.outline:disabled, button.outline[aria-disabled=true],
+.button.outline:disabled,
+.button.outline[aria-disabled=true] {
   color: var(--neutral-5);
   border-color: var(--neutral-5);
 }
-button.outline:disabled:hover,
-.button.outline:disabled:hover {
+button.outline:disabled:hover, button.outline[aria-disabled=true]:hover,
+.button.outline:disabled:hover,
+.button.outline[aria-disabled=true]:hover {
   background-color: var(--neutral-7);
 }
 button.ghost,
@@ -571,8 +574,9 @@ button.ghost,
   background-color: transparent;
   color: var(--btn-2, var(--neutral-2));
 }
-button.ghost:disabled,
-.button.ghost:disabled {
+button.ghost:disabled, button.ghost[aria-disabled=true],
+.button.ghost:disabled,
+.button.ghost[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.ghost:hover, button.ghost:focus,
@@ -584,12 +588,14 @@ button.ghost:active,
 .button.ghost:active {
   border-color: var(--btn-3, var(--neutral-3));
 }
-button.ghost:disabled,
-.button.ghost:disabled {
+button.ghost:disabled, button.ghost[aria-disabled=true],
+.button.ghost:disabled,
+.button.ghost[aria-disabled=true] {
   color: var(--neutral-5);
 }
-button.ghost:disabled:hover,
-.button.ghost:disabled:hover {
+button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
+.button.ghost:disabled:hover,
+.button.ghost[aria-disabled=true]:hover {
   background-color: var(--neutral-7);
   border-color: var(--neutral-7);
 }
@@ -678,8 +684,9 @@ select.input-1:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-1:disabled,
-select.input-1:disabled {
+input.input-1:disabled, input.input-1[aria-disabled=true],
+select.input-1:disabled,
+select.input-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-2,
@@ -709,8 +716,9 @@ select.input-2:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-2:disabled,
-select.input-2:disabled {
+input.input-2:disabled, input.input-2[aria-disabled=true],
+select.input-2:disabled,
+select.input-2[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-3,
@@ -740,8 +748,9 @@ select.input-3:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-3:disabled,
-select.input-3:disabled {
+input.input-3:disabled, input.input-3[aria-disabled=true],
+select.input-3:disabled,
+select.input-3[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-4,
@@ -771,8 +780,9 @@ select.input-4:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-4:disabled,
-select.input-4:disabled {
+input.input-4:disabled, input.input-4[aria-disabled=true],
+select.input-4:disabled,
+select.input-4[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.red,
@@ -816,7 +826,7 @@ select.pink {
   --inpt-2: var(--pink-5);
 }
 
-/* Fallbacks*/
+/* Fallbacks */
 @supports not (color: color(display-p3 1 1 1)) {
   :root {
     --neutral-8: oklch(98% 0.0097 250);

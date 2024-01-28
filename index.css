@@ -138,88 +138,88 @@ html {
 
 /* Text: Heading */
 .heading-1 {
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-2);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-2 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-5);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-3 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-4 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.heading-5 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
   letter-spacing: var(--letter-spacing-3);
 }
 
+.heading-2 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-3);
+}
+
+.heading-3 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+
+.heading-4 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+
+.heading-5 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-8);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-1);
+}
+
 .heading-6 {
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-2);
   font-size: var(--font-size-9);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-1);
 }
 
 /* Text: Alt Heading */
 .alt-heading-1 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-2 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-5);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-3 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-6);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-4 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-7);
   line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-5 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-8);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  letter-spacing: var(--letter-spacing-3);
 }
 
 .alt-heading-6 {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
   font-size: var(--font-size-9);
   line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  letter-spacing: var(--letter-spacing-2);
 }
 
 /* Text: Body */
@@ -289,32 +289,28 @@ html {
 }
 
 /* Text: Button */
-.button-1, button.button-1,
-.button.button-1 {
+.button-1 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-2);
 }
 
-.button-2, button.button-2,
-.button.button-2 {
+.button-2 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-3);
 }
 
-.button-3, button.button-3,
-.button.button-3 {
+.button-3 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-4);
 }
 
-.button-4, button.button-4,
-.button.button-4 {
+.button-4 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
@@ -384,12 +380,27 @@ select.input-4 {
 }
 
 /* Text: Extra emphasis */
+.alt-heading-1 b,
+.alt-heading-1 strong,
+.alt-heading-2 b,
+.alt-heading-2 strong,
+.alt-heading-3 b,
+.alt-heading-3 strong,
+.alt-heading-3 b,
+.alt-heading-3 strong,
+.alt-heading-4 b,
+.alt-heading-4 strong,
+.alt-heading-5 b,
+.alt-heading-5 strong,
+.alt-heading-6 b,
+.alt-heading-6 strong {
+  font-weight: var(--font-weight-4);
+}
+
 .heading-1 b,
 .heading-1 strong,
 .heading-2 b,
 .heading-2 strong,
-.heading-3 b,
-.heading-3 strong,
 .heading-3 b,
 .heading-3 strong,
 .heading-4 b,
@@ -397,22 +408,7 @@ select.input-4 {
 .heading-5 b,
 .heading-5 strong,
 .heading-6 b,
-.heading-6 strong {
-  font-weight: var(--font-weight-4);
-}
-
-.alt-heading-1 b,
-.alt-heading-1 strong,
-.alt-heading-2 b,
-.alt-heading-2 strong,
-.alt-heading-3 b,
-.alt-heading-3 strong,
-.alt-heading-4 b,
-.alt-heading-4 strong,
-.alt-heading- b,
-.alt-heading- strong,
-.alt-heading-6 b,
-.alt-heading-6 strong,
+.heading-6 strong,
 .body-1 b,
 .body-1 strong,
 .link-1 b,
@@ -424,21 +420,13 @@ select.input-4 {
 .link-4 b,
 .link-4 strong,
 .button-1 b,
-.button.button-1 b,
 .button-1 strong,
-.button.button-1 strong,
 .button-2 b,
-.button.button-2 b,
 .button-2 strong,
-.button.button-2 strong,
 .button-3 b,
-.button.button-3 b,
 .button-3 strong,
-.button.button-3 strong,
 .button-4 b,
-.button.button-4 b,
 .button-4 strong,
-.button.button-4 strong,
 .label-1 b,
 .label-1 strong,
 .label-2 b,
@@ -504,8 +492,9 @@ button.filled,
   background-color: var(--btn-2, var(--neutral-1));
   color: var(--neutral-8);
 }
-button.filled:disabled,
-.button.filled:disabled {
+button.filled:disabled, button.filled[aria-disabled=true],
+.button.filled:disabled,
+.button.filled[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.filled:hover, button.filled:focus,
@@ -517,8 +506,9 @@ button.filled:active,
 .button.filled:active {
   background-color: var(--btn-3, var(--neutral-3));
 }
-button.filled:disabled,
-.button.filled:disabled {
+button.filled:disabled, button.filled[aria-disabled=true],
+.button.filled:disabled,
+.button.filled[aria-disabled=true] {
   background-color: var(--neutral-5);
   border-color: var(--neutral-5);
 }
@@ -539,8 +529,9 @@ button.outline,
   color: var(--btn-2, var(--neutral-2));
   border-color: var(--btn-2, var(--neutral-2));
 }
-button.outline:disabled,
-.button.outline:disabled {
+button.outline:disabled, button.outline[aria-disabled=true],
+.button.outline:disabled,
+.button.outline[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.outline:hover, button.outline:focus,
@@ -555,13 +546,15 @@ button.outline:active,
   color: var(--btn-3, var(--neutral-3));
   border-color: var(--btn-3, var(--neutral-3));
 }
-button.outline:disabled,
-.button.outline:disabled {
+button.outline:disabled, button.outline[aria-disabled=true],
+.button.outline:disabled,
+.button.outline[aria-disabled=true] {
   color: var(--neutral-5);
   border-color: var(--neutral-5);
 }
-button.outline:disabled:hover,
-.button.outline:disabled:hover {
+button.outline:disabled:hover, button.outline[aria-disabled=true]:hover,
+.button.outline:disabled:hover,
+.button.outline[aria-disabled=true]:hover {
   background-color: var(--neutral-7);
 }
 button.ghost,
@@ -581,8 +574,9 @@ button.ghost,
   background-color: transparent;
   color: var(--btn-2, var(--neutral-2));
 }
-button.ghost:disabled,
-.button.ghost:disabled {
+button.ghost:disabled, button.ghost[aria-disabled=true],
+.button.ghost:disabled,
+.button.ghost[aria-disabled=true] {
   cursor: not-allowed;
 }
 button.ghost:hover, button.ghost:focus,
@@ -594,12 +588,14 @@ button.ghost:active,
 .button.ghost:active {
   border-color: var(--btn-3, var(--neutral-3));
 }
-button.ghost:disabled,
-.button.ghost:disabled {
+button.ghost:disabled, button.ghost[aria-disabled=true],
+.button.ghost:disabled,
+.button.ghost[aria-disabled=true] {
   color: var(--neutral-5);
 }
-button.ghost:disabled:hover,
-.button.ghost:disabled:hover {
+button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
+.button.ghost:disabled:hover,
+.button.ghost[aria-disabled=true]:hover {
   background-color: var(--neutral-7);
   border-color: var(--neutral-7);
 }
@@ -688,8 +684,9 @@ select.input-1:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-1:disabled,
-select.input-1:disabled {
+input.input-1:disabled, input.input-1[aria-disabled=true],
+select.input-1:disabled,
+select.input-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-2,
@@ -719,8 +716,9 @@ select.input-2:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-2:disabled,
-select.input-2:disabled {
+input.input-2:disabled, input.input-2[aria-disabled=true],
+select.input-2:disabled,
+select.input-2[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-3,
@@ -750,8 +748,9 @@ select.input-3:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-3:disabled,
-select.input-3:disabled {
+input.input-3:disabled, input.input-3[aria-disabled=true],
+select.input-3:disabled,
+select.input-3[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-4,
@@ -781,8 +780,9 @@ select.input-4:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-4:disabled,
-select.input-4:disabled {
+input.input-4:disabled, input.input-4[aria-disabled=true],
+select.input-4:disabled,
+select.input-4[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.red,
@@ -826,7 +826,7 @@ select.pink {
   --inpt-2: var(--pink-5);
 }
 
-/* Fallbacks*/
+/* Fallbacks */
 @supports not (color: color(display-p3 1 1 1)) {
   :root {
     --neutral-8: oklch(98% 0.0097 250);

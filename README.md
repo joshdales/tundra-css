@@ -47,7 +47,7 @@ There are also these ones related to typography, though to be honest you probabl
 There are a series of classes for text, along with others elements like buttons, and text inputs.
 - Headings - 6 levels of headings
 	- Text styles: `.heading-1` - `.heading-6`
-- Alt-Headings - 6 levels of alterative headings
+- Alt-Headings - 6 levels of alterative headings that is a little heavier
 	- Text styles: `.alt-heading-1` - `.alt-heading-6`
 - Body - text for paragraphs and other large bodies of text
 	- Text styles: `.body-1` - `.body-4`

@@ -1,4 +1,4 @@
-@mixin link($level) {
+@mixin text($level) {
 	cursor: pointer;
 	text-decoration: underline;
 	font-weight: var(--font-weight-2);

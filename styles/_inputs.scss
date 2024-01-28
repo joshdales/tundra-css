@@ -22,7 +22,8 @@
 		border-color: var(--inpt-1, var(--neutral-4));
 	}
 
-	&:disabled {
+	&:disabled,
+	&[aria-disabled="true"] {
 		background-color: var(--neutral-6);
 	}
 }

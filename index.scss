@@ -141,137 +141,137 @@ html {
 
 /* Text: Heading */
 .heading-1 {
-	@include heading(1);
+	@include heading-text(1);
 }
 
 .heading-2 {
-	@include heading(2);
+	@include heading-text(2);
 }
 
 .heading-3 {
-	@include heading(3);
+	@include heading-text(3);
 }
 
 .heading-4 {
-	@include heading(4);
+	@include heading-text(4);
 }
 
 .heading-5 {
-	@include heading(5);
+	@include heading-text(5);
 }
 
 .heading-6 {
-	@include heading(6);
+	@include heading-text(6);
 }
 
 /* Text: Alt Heading */
 .alt-heading-1 {
-	@include alt_heading(1);
+	@include alt-heading-text(1);
 }
 
 .alt-heading-2 {
-	@include alt_heading(2);
+	@include alt-heading-text(2);
 }
 
 .alt-heading-3 {
-	@include alt_heading(3);
+	@include alt-heading-text(3);
 }
 
 .alt-heading-4 {
-	@include alt_heading(4);
+	@include alt-heading-text(4);
 }
 
 .alt-heading-5 {
-	@include alt_heading(5);
+	@include alt-heading-text(5);
 }
 
 .alt-heading-6 {
-	@include alt_heading(6);
+	@include alt-heading-text(6);
 }
 
 /* Text: Body */
 .body-1 {
-	@include body(1);
+	@include body-text(1);
 }
 
 .body-2 {
-	@include body(2);
+	@include body-text(2);
 }
 
 .body-3 {
-	@include body(3);
+	@include body-text(3);
 }
 
 .body-4 {
-	@include body(4);
+	@include body-text(4);
 }
 
 /* Text: Link */
 .link-1 {
-	@include link(1);
+	@include link-text(1);
 }
 
 .link-2 {
-	@include link(2);
+	@include link-text(2);
 }
 
 .link-3 {
-	@include link(3);
+	@include link-text(3);
 }
 
 .link-4 {
-	@include link(4);
+	@include link-text(4);
 }
 
 /* Text: Button */
 .button-1 {
-	@include button(1);
+	@include button-text(1);
 }
 
 .button-2 {
-	@include button(2);
+	@include button-text(2);
 }
 
 .button-3 {
-	@include button(3);
+	@include button-text(3);
 }
 
 .button-4 {
-	@include button(4);
+	@include button-text(4);
 }
 
 /* Text: Label */
 .label-1 {
-	@include label(1);
+	@include label-text(1);
 }
 
 .label-2 {
-	@include label(2);
+	@include label-text(2);
 }
 
 .label-3 {
-	@include label(3);
+	@include label-text(3);
 }
 
 .label-4 {
-	@include label(4);
+	@include label-text(4);
 }
 
 /* Text: Input */
 .input-1 {
-	@include input(1);
+	@include input-text(1);
 }
 
 .input-2 {
-	@include input(2);
+	@include input-text(2);
 }
 
 .input-3 {
-	@include input(3);
+	@include input-text(3);
 }
 
 .input-4 {
-	@include input(4);
+	@include input-text(4);
 }
 
 /* Text: Extra emphasis */
@@ -334,31 +334,31 @@ html {
 button,
 .button {
 	&.button-1 {
-		@include size(1);
+		@include button-size(1);
 	}
 
 	&.button-2 {
-		@include size(2);
+		@include button-size(2);
 	}
 
 	&.button-3 {
-		@include size(3);
+		@include button-size(3);
 	}
 
 	&.button-4 {
-		@include size(4);
+		@include button-size(4);
 	}
 
 	&.filled {
-		@include filled;
+		@include button-filled;
 	}
 
 	&.outline {
-		@include outline;
+		@include button-outline;
 	}
 
 	&.ghost {
-		@include ghost;
+		@include button-ghost;
 	}
 
 	&.red {

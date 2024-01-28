@@ -1,7 +1,7 @@
-@forward 'alt-heading';
-@forward 'body';
-@forward 'button';
-@forward 'heading';
-@forward 'input';
-@forward 'label';
-@forward 'link';
+@forward 'alt-heading' as alt-heading-*;
+@forward 'body' as body-*;
+@forward 'button' as button-*;
+@forward 'heading' as heading-*;
+@forward 'input' as input-*;
+@forward 'label' as label-*;
+@forward 'link' as link-*;

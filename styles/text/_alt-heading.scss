@@ -1,4 +1,4 @@
-@mixin alt-heading($level) {
+@mixin text($level) {
 	font-weight: var(--font-weight-3);
 
 	@if $level ==1 {

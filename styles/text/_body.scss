@@ -1,4 +1,4 @@
-@mixin body($level) {
+@mixin text($level) {
 	line-height: var(--line-height-5);
 
 	@if $level ==1 {

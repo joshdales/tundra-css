@@ -1,4 +1,4 @@
-@mixin button($level) {
+@mixin text($level) {
 	line-height: var(--line-height-4);
 	font-weight: var(--font-weight-2);
 	letter-spacing: var(--letter-spacing-5);

@@ -289,32 +289,28 @@ html {
 }
 
 /* Text: Button */
-.button-1, button.button-1,
-.button.button-1 {
+.button-1 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-2);
 }
 
-.button-2, button.button-2,
-.button.button-2 {
+.button-2 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-3);
 }
 
-.button-3, button.button-3,
-.button.button-3 {
+.button-3 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-4);
 }
 
-.button-4, button.button-4,
-.button.button-4 {
+.button-4 {
   line-height: var(--line-height-4);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-5);
@@ -411,6 +407,8 @@ select.input-4 {
 .heading-4 strong,
 .heading- b,
 .heading- strong,
+.heading- b,
+.heading- strong,
 .heading-6 b,
 .heading-6 strong,
 .body-1 b,
@@ -424,21 +422,13 @@ select.input-4 {
 .link-4 b,
 .link-4 strong,
 .button-1 b,
-.button.button-1 b,
 .button-1 strong,
-.button.button-1 strong,
 .button-2 b,
-.button.button-2 b,
 .button-2 strong,
-.button.button-2 strong,
 .button-3 b,
-.button.button-3 b,
 .button-3 strong,
-.button.button-3 strong,
 .button-4 b,
-.button.button-4 b,
 .button-4 strong,
-.button.button-4 strong,
 .label-1 b,
 .label-1 strong,
 .label-2 b,

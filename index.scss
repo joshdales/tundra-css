@@ -293,8 +293,7 @@ html {
 .heading-2,
 .heading-3,
 .heading-4,
-.heading-,
-.heading-,
+.heading-5,
 .heading-6,
 .body-1,
 .link-1,
@@ -478,7 +477,7 @@ select {
 	}
 }
 
-/* Fallbacks*/
+/* Fallbacks */
 
 // When Display-P3 is not supported use these values.
 @supports not (color: color(display-p3 1 1 1)) {

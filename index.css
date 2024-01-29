@@ -136,12 +136,95 @@ html {
   color: var(--neutral-1);
 }
 
-/* Text: Heading */
+/* Text */
 .heading-1 {
   font-weight: var(--font-weight-2);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
   letter-spacing: var(--letter-spacing-3);
+}
+.heading-1 b,
+.heading-1 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.alt-heading-1 {
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-4);
+}
+.alt-heading-1 b,
+.alt-heading-1 strong {
+  font-weight: var(--font-size-4);
+}
+
+.body-1 {
+  line-height: var(--line-height-5);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-2);
+  letter-spacing: var(--letter-spacing-4);
+}
+.body-1 b,
+.body-1 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.link-1 {
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-1);
+  letter-spacing: var(--letter-spacing-5);
+}
+.link-1 b,
+.link-1 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.button-1 {
+  line-height: var(--line-height-4);
+  font-weight: var(--font-weight-2);
+  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size-2);
+}
+.button-1 b,
+.button-1 strong {
+  font-weight: var(--font-weight-2);
+}
+
+.label-1 {
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-3);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--letter-spacing-5);
+}
+.label-1 b,
+.label-1 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.input-1, input.input-4,
+select.input-4, input.input-3,
+select.input-3, input.input-2,
+select.input-2, input.input-1,
+select.input-1 {
+  font-weight: var(--font-weight-1);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--letter-spacing-5);
+}
+.input-1 b, input.input-4 b,
+select.input-4 b, input.input-3 b,
+select.input-3 b, input.input-2 b,
+select.input-2 b,
+.input-1 strong,
+input.input-4 strong,
+select.input-4 strong,
+input.input-3 strong,
+select.input-3 strong,
+input.input-2 strong,
+select.input-2 strong {
+  font-weight: var(--font-weight-2);
 }
 
 .heading-2 {
@@ -150,41 +233,9 @@ html {
   line-height: var(--line-height-5);
   letter-spacing: var(--letter-spacing-3);
 }
-
-.heading-3 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
-}
-
-.heading-4 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
-}
-
-.heading-5 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
-}
-
-.heading-6 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-9);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
-}
-
-/* Text: Alt Heading */
-.alt-heading-1 {
+.heading-2 b,
+.heading-2 strong {
   font-weight: var(--font-weight-3);
-  font-size: var(--font-size-4);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
 }
 
 .alt-heading-2 {
@@ -193,41 +244,9 @@ html {
   line-height: var(--line-height-5);
   letter-spacing: var(--letter-spacing-4);
 }
-
-.alt-heading-3 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.alt-heading-4 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.alt-heading-5 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-3);
-}
-
-.alt-heading-6 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-9);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-2);
-}
-
-/* Text: Body */
-.body-1 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-1);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-4);
+.alt-heading-2 b,
+.alt-heading-2 strong {
+  font-weight: var(--font-size-4);
 }
 
 .body-2 {
@@ -236,64 +255,20 @@ html {
   font-weight: var(--font-weight-1);
   letter-spacing: var(--letter-spacing-4);
 }
-
-.body-3 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-3);
-  font-weight: var(--font-weight-1);
-  letter-spacing: var(--letter-spacing-3);
-}
-
-.body-4 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-4);
-  font-weight: var(--font-weight-1);
-  letter-spacing: var(--letter-spacing-2);
-}
-
-/* Text: Link */
-.link-1 {
-  cursor: pointer;
-  text-decoration: underline;
+.body-2 b,
+.body-2 strong {
   font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-1);
-  letter-spacing: var(--letter-spacing-5);
 }
 
 .link-2 {
-  cursor: pointer;
-  text-decoration: underline;
   font-weight: var(--font-weight-2);
   line-height: var(--line-height-4);
   font-size: var(--font-size-2);
   letter-spacing: var(--letter-spacing-5);
 }
-
-.link-3 {
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.link-4 {
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-/* Text: Button */
-.button-1 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-2);
+.link-2 b,
+.link-2 strong {
+  font-weight: var(--font-weight-3);
 }
 
 .button-2 {
@@ -302,27 +277,9 @@ html {
   letter-spacing: var(--letter-spacing-5);
   font-size: var(--font-size-3);
 }
-
-.button-3 {
-  line-height: var(--line-height-4);
+.button-2 b,
+.button-2 strong {
   font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-4);
-}
-
-.button-4 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-5);
-}
-
-/* Text: Label */
-.label-1 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-2);
-  letter-spacing: var(--letter-spacing-5);
 }
 
 .label-2 {
@@ -331,12 +288,152 @@ html {
   font-size: var(--font-size-3);
   letter-spacing: var(--letter-spacing-4);
 }
+.label-2 b,
+.label-2 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.input-2 {
+  font-weight: var(--font-weight-1);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-3);
+  letter-spacing: var(--letter-spacing-4);
+}
+.input-2 b,
+.input-2 strong {
+  font-weight: var(--font-weight-2);
+}
+
+.heading-3 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+.heading-3 b,
+.heading-3 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.alt-heading-3 {
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-4);
+}
+.alt-heading-3 b,
+.alt-heading-3 strong {
+  font-weight: var(--font-size-4);
+}
+
+.body-3 {
+  line-height: var(--line-height-5);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-1);
+  letter-spacing: var(--letter-spacing-2);
+}
+.body-3 b,
+.body-3 strong {
+  font-weight: var(--font-weight-2);
+}
+
+.link-3 {
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-3);
+  letter-spacing: var(--letter-spacing-4);
+}
+.link-3 b,
+.link-3 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.button-3 {
+  line-height: var(--line-height-4);
+  font-weight: var(--font-weight-2);
+  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size-4);
+}
+.button-3 b,
+.button-3 strong {
+  font-weight: var(--font-weight-2);
+}
 
 .label-3 {
   font-weight: var(--font-weight-2);
   line-height: var(--line-height-3);
   font-size: var(--font-size-4);
   letter-spacing: var(--letter-spacing-4);
+}
+.label-3 b,
+.label-3 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.input-3 {
+  font-weight: var(--font-weight-1);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+  letter-spacing: var(--letter-spacing-3);
+}
+.input-3 b,
+.input-3 strong {
+  font-weight: var(--font-weight-2);
+}
+
+.heading-4 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-2);
+}
+.heading-4 b,
+.heading-4 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.alt-heading-4 {
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-5);
+  letter-spacing: var(--letter-spacing-4);
+}
+.alt-heading-4 b,
+.alt-heading-4 strong {
+  font-weight: var(--font-size-4);
+}
+
+.body-4 {
+  line-height: var(--line-height-5);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-1);
+  letter-spacing: var(--letter-spacing-2);
+}
+.body-4 b,
+.body-4 strong {
+  font-weight: var(--font-weight-2);
+}
+
+.link-4 {
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+  letter-spacing: var(--letter-spacing-4);
+}
+.link-4 b,
+.link-4 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.button-4 {
+  line-height: var(--line-height-4);
+  font-weight: var(--font-weight-2);
+  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size-5);
+}
+.button-4 b,
+.button-4 strong {
+  font-weight: var(--font-weight-2);
 }
 
 .label-4 {
@@ -345,114 +442,64 @@ html {
   font-size: var(--font-size-5);
   letter-spacing: var(--letter-spacing-3);
 }
-
-/* Text: Input */
-.input-1, input.input-1,
-select.input-1 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-2);
-  letter-spacing: var(--letter-spacing-5);
-}
-
-.input-2, input.input-2,
-select.input-2 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-4);
-}
-
-.input-3, input.input-3,
-select.input-3 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-3);
-}
-
-.input-4, input.input-4,
-select.input-4 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-5);
-  letter-spacing: var(--letter-spacing-2);
-}
-
-/* Text: Extra emphasis */
-.alt-heading-1 b,
-.alt-heading-1 strong,
-.alt-heading-2 b,
-.alt-heading-2 strong,
-.alt-heading-3 b,
-.alt-heading-3 strong,
-.alt-heading-3 b,
-.alt-heading-3 strong,
-.alt-heading-4 b,
-.alt-heading-4 strong,
-.alt-heading-5 b,
-.alt-heading-5 strong,
-.alt-heading-6 b,
-.alt-heading-6 strong {
-  font-weight: var(--font-weight-4);
-}
-
-.heading-1 b,
-.heading-1 strong,
-.heading-2 b,
-.heading-2 strong,
-.heading-3 b,
-.heading-3 strong,
-.heading-4 b,
-.heading-4 strong,
-.heading-5 b,
-.heading-5 strong,
-.heading-6 b,
-.heading-6 strong,
-.body-1 b,
-.body-1 strong,
-.link-1 b,
-.link-1 strong,
-.link-2 b,
-.link-2 strong,
-.link-3 b,
-.link-3 strong,
-.link-4 b,
-.link-4 strong,
-.button-1 b,
-.button-1 strong,
-.button-2 b,
-.button-2 strong,
-.button-3 b,
-.button-3 strong,
-.button-4 b,
-.button-4 strong,
-.label-1 b,
-.label-1 strong,
-.label-2 b,
-.label-2 strong,
-.label-3 b,
-.label-3 strong,
 .label-4 b,
 .label-4 strong {
   font-weight: var(--font-weight-3);
 }
 
-.body-2 b,
-.body-2 strong,
-.body-3 b,
-.body-3 strong,
-.body-4 b,
-.body-4 strong,
-.input-1 b,
-.input-1 strong,
-.input-2 b,
-.input-2 strong,
-.input-3 b,
-.input-3 strong,
+.input-4 {
+  font-weight: var(--font-weight-1);
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-5);
+  letter-spacing: var(--letter-spacing-2);
+}
 .input-4 b,
 .input-4 strong {
   font-weight: var(--font-weight-2);
+}
+
+.heading-5 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-8);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-1);
+}
+.heading-5 b,
+.heading-5 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.alt-heading-5 {
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-8);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-3);
+}
+.alt-heading-5 b,
+.alt-heading-5 strong {
+  font-weight: var(--font-size-4);
+}
+
+.heading-6 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-9);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-1);
+}
+.heading-6 b,
+.heading-6 strong {
+  font-weight: var(--font-weight-3);
+}
+
+.alt-heading-6 {
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-9);
+  line-height: var(--line-height-4);
+  letter-spacing: var(--letter-spacing-2);
+}
+.alt-heading-6 b,
+.alt-heading-6 strong {
+  font-weight: var(--font-size-4);
 }
 
 /* Elements: Buttons */
@@ -463,18 +510,18 @@ button.button-1,
 }
 button.button-2,
 .button.button-2 {
-  --padding-y: var(--space-2);
-  --padding-x: var(--space-3);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 button.button-3,
 .button.button-3 {
-  --padding-y: var(--space-3);
-  --padding-x: var(--space-4);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 button.button-4,
 .button.button-4 {
-  --padding-y: var(--space-4);
-  --padding-x: var(--space-5);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 button.filled,
 .button.filled {
@@ -657,8 +704,11 @@ button.pink,
 }
 
 /* Elements: Text-based inputs */
-input.input-1,
-select.input-1 {
+input.input-1, input.input-4, input.input-3, input.input-2,
+select.input-1,
+select.input-4,
+select.input-3,
+select.input-2 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -669,24 +719,42 @@ select.input-1 {
   --padding-y: var(--space-1);
   --padding-x: var(--space-2);
 }
-input.input-1::placeholder,
-select.input-1::placeholder {
+input.input-1::placeholder, input.input-4::placeholder, input.input-3::placeholder, input.input-2::placeholder,
+select.input-1::placeholder,
+select.input-4::placeholder,
+select.input-3::placeholder,
+select.input-2::placeholder {
   color: var(--neutral-4);
 }
-input.input-1:hover,
-select.input-1:hover {
+input.input-1:hover, input.input-4:hover, input.input-3:hover, input.input-2:hover,
+select.input-1:hover,
+select.input-4:hover,
+select.input-3:hover,
+select.input-2:hover {
   border-color: var(--inpt-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-1:focus, input.input-1:active,
+input.input-1:focus, input.input-4:focus, input.input-3:focus, input.input-2:focus, input.input-1:active, input.input-4:active, input.input-3:active, input.input-2:active,
 select.input-1:focus,
-select.input-1:active {
+select.input-4:focus,
+select.input-3:focus,
+select.input-2:focus,
+select.input-1:active,
+select.input-4:active,
+select.input-3:active,
+select.input-2:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-1:disabled, input.input-1[aria-disabled=true],
+input.input-1:disabled, input.input-4:disabled, input.input-3:disabled, input.input-2:disabled, input.input-1[aria-disabled=true], input[aria-disabled=true].input-4, input[aria-disabled=true].input-3, input[aria-disabled=true].input-2,
 select.input-1:disabled,
-select.input-1[aria-disabled=true] {
+select.input-4:disabled,
+select.input-3:disabled,
+select.input-2:disabled,
+select.input-1[aria-disabled=true],
+select[aria-disabled=true].input-4,
+select[aria-disabled=true].input-3,
+select[aria-disabled=true].input-2 {
   background-color: var(--neutral-6);
 }
 input.input-2,
@@ -698,8 +766,8 @@ select.input-2 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-2);
-  --padding-x: var(--space-3);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 input.input-2::placeholder,
 select.input-2::placeholder {
@@ -730,8 +798,8 @@ select.input-3 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-3);
-  --padding-x: var(--space-4);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 input.input-3::placeholder,
 select.input-3::placeholder {
@@ -762,8 +830,8 @@ select.input-4 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-4);
-  --padding-x: var(--space-5);
+  --padding-y: var(--space-1);
+  --padding-x: var(--space-2);
 }
 input.input-4::placeholder,
 select.input-4::placeholder {

@@ -139,213 +139,46 @@ html {
 	color: var(--neutral-1);
 }
 
-/* Text: Heading */
-.heading-1 {
-	@include heading-text(1);
-}
-
-.heading-2 {
-	@include heading-text(2);
-}
-
-.heading-3 {
-	@include heading-text(3);
-}
-
-.heading-4 {
-	@include heading-text(4);
-}
-
-.heading-5 {
-	@include heading-text(5);
-}
-
-.heading-6 {
-	@include heading-text(6);
-}
-
-/* Text: Alt Heading */
-.alt-heading-1 {
-	@include alt-heading-text(1);
-}
-
-.alt-heading-2 {
-	@include alt-heading-text(2);
-}
-
-.alt-heading-3 {
-	@include alt-heading-text(3);
-}
-
-.alt-heading-4 {
-	@include alt-heading-text(4);
-}
-
-.alt-heading-5 {
-	@include alt-heading-text(5);
-}
-
-.alt-heading-6 {
-	@include alt-heading-text(6);
-}
-
-/* Text: Body */
-.body-1 {
-	@include body-text(1);
-}
-
-.body-2 {
-	@include body-text(2);
-}
-
-.body-3 {
-	@include body-text(3);
-}
-
-.body-4 {
-	@include body-text(4);
-}
-
-/* Text: Link */
-.link-1 {
-	@include link-text(1);
-}
-
-.link-2 {
-	@include link-text(2);
-}
-
-.link-3 {
-	@include link-text(3);
-}
-
-.link-4 {
-	@include link-text(4);
-}
-
-/* Text: Button */
-.button-1 {
-	@include button-text(1);
-}
-
-.button-2 {
-	@include button-text(2);
-}
-
-.button-3 {
-	@include button-text(3);
-}
-
-.button-4 {
-	@include button-text(4);
-}
-
-/* Text: Label */
-.label-1 {
-	@include label-text(1);
-}
-
-.label-2 {
-	@include label-text(2);
-}
-
-.label-3 {
-	@include label-text(3);
-}
-
-.label-4 {
-	@include label-text(4);
-}
-
-/* Text: Input */
-.input-1 {
-	@include input-text(1);
-}
-
-.input-2 {
-	@include input-text(2);
-}
-
-.input-3 {
-	@include input-text(3);
-}
-
-.input-4 {
-	@include input-text(4);
-}
-
-/* Text: Extra emphasis */
-.alt-heading-1,
-.alt-heading-2,
-.alt-heading-3,
-.alt-heading-3,
-.alt-heading-4,
-.alt-heading-5,
-.alt-heading-6 {
-
-	b,
-	strong {
-		font-weight: var(--font-weight-4);
+/* Text */
+@for $level from 1 through 6 {
+	.heading-#{$level} {
+		@include heading-text($level);
 	}
-}
 
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4,
-.heading-5,
-.heading-6,
-.body-1,
-.link-1,
-.link-2,
-.link-3,
-.link-4,
-.button-1,
-.button-2,
-.button-3,
-.button-4,
-.label-1,
-.label-2,
-.label-3,
-.label-4 {
-
-	b,
-	strong {
-		font-weight: var(--font-weight-3);
+	.alt-heading-#{$level} {
+		@include alt-heading-text($level);
 	}
-}
 
-.body-2,
-.body-3,
-.body-4,
-.input-1,
-.input-2,
-.input-3,
-.input-4 {
+	@if $level < 5 {
+		.body-#{$level} {
+			@include body-text($level);
+		}
 
-	b,
-	strong {
-		font-weight: var(--font-weight-2);
+		.link-#{$level} {
+			@include link-text($level);
+		}
+
+		.button-#{$level} {
+			@include button-text($level);
+		}
+
+		.label-#{$level} {
+			@include label-text($level);
+		}
+
+		.input-#{$level} {
+			@include input-text($level);
+		}
 	}
 }
 
 /* Elements: Buttons */
 button,
 .button {
-	&.button-1 {
-		@include button-size(1);
-	}
-
-	&.button-2 {
-		@include button-size(2);
-	}
-
-	&.button-3 {
-		@include button-size(3);
-	}
-
-	&.button-4 {
-		@include button-size(4);
+	@for $level from 1 through 4 {
+		&.button-#{$level} {
+			@include button-size(1);
+		}
 	}
 
 	&.filled {
@@ -420,20 +253,10 @@ button,
 /* Elements: Text-based inputs */
 input,
 select {
-	&.input-1 {
-		@include text(1);
-	}
-
-	&.input-2 {
-		@include text(2);
-	}
-
-	&.input-3 {
-		@include text(3);
-	}
-
-	&.input-4 {
-		@include text(4);
+	@for $level from 1 through 4 {
+		&.input-#{$level} {
+			@include text(1);
+		}
 	}
 
 	&.red {

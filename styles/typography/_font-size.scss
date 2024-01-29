@@ -1,19 +1,13 @@
 @use 'sass:math';
+@use '../utils/text.scss' as utils;
 @use '../spacing' as *;
 
-@function convertPxToRem($value, $base: 16) {
-	$unitless-value: math.div($value, 1px);
-	$conversion: math.div($unitless-value, $base);
-	$rem: $conversion * 1rem;
-	@return $rem;
-}
-
-$font-size-1: convertPxToRem($space-3);
-$font-size-2: convertPxToRem($space-4);
-$font-size-3: convertPxToRem($space-5);
-$font-size-4: convertPxToRem($space-6);
-$font-size-5: convertPxToRem($space-7);
-$font-size-6: convertPxToRem($space-8);
-$font-size-7: convertPxToRem($space-9);
-$font-size-8: convertPxToRem($space-10);
-$font-size-9: convertPxToRem($space-12);
+$font-size-1: utils.convert_px_to_rem($space-3);
+$font-size-2: utils.convert_px_to_rem($space-4);
+$font-size-3: utils.convert_px_to_rem($space-5);
+$font-size-4: utils.convert_px_to_rem($space-6);
+$font-size-5: utils.convert_px_to_rem($space-7);
+$font-size-6: utils.convert_px_to_rem($space-8);
+$font-size-7: utils.convert_px_to_rem($space-9);
+$font-size-8: utils.convert_px_to_rem($space-10);
+$font-size-9: utils.convert_px_to_rem($space-12);

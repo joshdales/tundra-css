@@ -1,0 +1,16 @@
+@use 'sass:math';
+
+@mixin bold_text($value) {
+
+	b,
+	strong {
+		font-weight: $value;
+	}
+}
+
+@function convert_px_to_rem($value, $base: 16) {
+	$unitless-value: math.div($value, 1px);
+	$conversion: math.div($unitless-value, $base);
+	$rem: $conversion * 1rem;
+	@return $rem;
+}

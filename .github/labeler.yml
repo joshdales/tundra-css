@@ -5,7 +5,7 @@ Website:
 
 Styles:
   - changed-files:
-    - any-glob-to-any-file: ['index.css', 'index.scss', 'styles/*', 'styles/**/*']
+    - any-glob-to-any-file: ['index.css', 'index.scss']
 
 Colours:
   - changed-files:

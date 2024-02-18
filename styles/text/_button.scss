@@ -1,3 +1,5 @@
+@use '../utils/text' as utils;
+
 @mixin text($level) {
 	line-height: var(--line-height-4);
 	font-weight: var(--font-weight-2);
@@ -18,4 +20,6 @@
 	@else if $level ==4 {
 		font-size: var(--font-size-5);
 	}
+
+	@include utils.bold_text(var(--font-weight-2))
 }

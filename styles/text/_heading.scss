@@ -1,3 +1,5 @@
+@use '../utils/text' as utils;
+
 @mixin text($level) {
 	font-weight: var(--font-weight-2);
 
@@ -36,4 +38,6 @@
 		line-height: var(--line-height-4);
 		letter-spacing: var(--letter-spacing-1);
 	}
+
+	@include utils.bold_text(var(--font-weight-3))
 }

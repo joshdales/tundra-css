@@ -134,11 +134,6 @@
 	--letter-spacing-5: #{$letter-spacing-5};
 }
 
-html {
-	background-color: var(--neutral-8);
-	color: var(--neutral-1);
-}
-
 /* Text */
 @for $level from 1 through 6 {
 	.heading-#{$level} {

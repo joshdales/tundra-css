@@ -131,11 +131,6 @@
   --letter-spacing-5: 0.04em;
 }
 
-html {
-  background-color: var(--neutral-8);
-  color: var(--neutral-1);
-}
-
 /* Text */
 .heading-1 {
   font-weight: var(--font-weight-2);

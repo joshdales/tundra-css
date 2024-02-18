@@ -203,27 +203,15 @@ html {
   font-weight: var(--font-weight-3);
 }
 
-.input-1, input.input-4,
-select.input-4, input.input-3,
-select.input-3, input.input-2,
-select.input-2, input.input-1,
+.input-1, input.input-1,
 select.input-1 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-2);
   letter-spacing: var(--letter-spacing-5);
 }
-.input-1 b, input.input-4 b,
-select.input-4 b, input.input-3 b,
-select.input-3 b, input.input-2 b,
-select.input-2 b,
-.input-1 strong,
-input.input-4 strong,
-select.input-4 strong,
-input.input-3 strong,
-select.input-3 strong,
-input.input-2 strong,
-select.input-2 strong {
+.input-1 b,
+.input-1 strong {
   font-weight: var(--font-weight-2);
 }
 
@@ -293,7 +281,8 @@ select.input-2 strong {
   font-weight: var(--font-weight-3);
 }
 
-.input-2 {
+.input-2, input.input-2,
+select.input-2 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-3);
@@ -370,7 +359,8 @@ select.input-2 strong {
   font-weight: var(--font-weight-3);
 }
 
-.input-3 {
+.input-3, input.input-3,
+select.input-3 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-4);
@@ -447,7 +437,8 @@ select.input-2 strong {
   font-weight: var(--font-weight-3);
 }
 
-.input-4 {
+.input-4, input.input-4,
+select.input-4 {
   font-weight: var(--font-weight-1);
   line-height: var(--line-height-4);
   font-size: var(--font-size-5);
@@ -704,11 +695,8 @@ button.pink,
 }
 
 /* Elements: Text-based inputs */
-input.input-1, input.input-4, input.input-3, input.input-2,
-select.input-1,
-select.input-4,
-select.input-3,
-select.input-2 {
+input.input-1,
+select.input-1 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
@@ -719,42 +707,24 @@ select.input-2 {
   --padding-y: var(--space-1);
   --padding-x: var(--space-2);
 }
-input.input-1::placeholder, input.input-4::placeholder, input.input-3::placeholder, input.input-2::placeholder,
-select.input-1::placeholder,
-select.input-4::placeholder,
-select.input-3::placeholder,
-select.input-2::placeholder {
+input.input-1::placeholder,
+select.input-1::placeholder {
   color: var(--neutral-4);
 }
-input.input-1:hover, input.input-4:hover, input.input-3:hover, input.input-2:hover,
-select.input-1:hover,
-select.input-4:hover,
-select.input-3:hover,
-select.input-2:hover {
+input.input-1:hover,
+select.input-1:hover {
   border-color: var(--inpt-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
-input.input-1:focus, input.input-4:focus, input.input-3:focus, input.input-2:focus, input.input-1:active, input.input-4:active, input.input-3:active, input.input-2:active,
+input.input-1:focus, input.input-1:active,
 select.input-1:focus,
-select.input-4:focus,
-select.input-3:focus,
-select.input-2:focus,
-select.input-1:active,
-select.input-4:active,
-select.input-3:active,
-select.input-2:active {
+select.input-1:active {
   background-color: var(--neutral-8);
   border-color: var(--inpt-1, var(--neutral-4));
 }
-input.input-1:disabled, input.input-4:disabled, input.input-3:disabled, input.input-2:disabled, input.input-1[aria-disabled=true], input[aria-disabled=true].input-4, input[aria-disabled=true].input-3, input[aria-disabled=true].input-2,
+input.input-1:disabled, input.input-1[aria-disabled=true],
 select.input-1:disabled,
-select.input-4:disabled,
-select.input-3:disabled,
-select.input-2:disabled,
-select.input-1[aria-disabled=true],
-select[aria-disabled=true].input-4,
-select[aria-disabled=true].input-3,
-select[aria-disabled=true].input-2 {
+select.input-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input.input-2,
@@ -766,8 +736,8 @@ select.input-2 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-1);
-  --padding-x: var(--space-2);
+  --padding-y: var(--space-2);
+  --padding-x: var(--space-3);
 }
 input.input-2::placeholder,
 select.input-2::placeholder {
@@ -798,8 +768,8 @@ select.input-3 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-1);
-  --padding-x: var(--space-2);
+  --padding-y: var(--space-3);
+  --padding-x: var(--space-4);
 }
 input.input-3::placeholder,
 select.input-3::placeholder {
@@ -830,8 +800,8 @@ select.input-4 {
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  --padding-y: var(--space-1);
-  --padding-x: var(--space-2);
+  --padding-y: var(--space-4);
+  --padding-x: var(--space-5);
 }
 input.input-4::placeholder,
 select.input-4::placeholder {

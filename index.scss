@@ -255,7 +255,7 @@ input,
 select {
 	@for $level from 1 through 4 {
 		&.input-#{$level} {
-			@include text(1);
+			@include input-text-based($level);
 		}
 	}
 

@@ -1,6 +1,5 @@
-@use 'sass:math';
-@use '../utils/text.scss' as utils;
 @use '../spacing' as *;
+@use '../utils/text.scss' as utils;
 
 $font-size-1: utils.convert_px_to_rem($space-3);
 $font-size-2: utils.convert_px_to_rem($space-4);

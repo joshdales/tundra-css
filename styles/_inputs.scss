@@ -1,3 +1,5 @@
+@use "./utils/status" as utils;
+
 @mixin _base {
 	background-color: var(--neutral-8);
 	border: 1.5px solid var(--neutral-6);
@@ -22,8 +24,7 @@
 		border-color: var(--inpt-1, var(--neutral-4));
 	}
 
-	&:disabled,
-	&[aria-disabled="true"] {
+	@include utils.disabled {
 		background-color: var(--neutral-6);
 	}
 }

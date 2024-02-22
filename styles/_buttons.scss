@@ -51,15 +51,15 @@
 @mixin filled() {
 	@include _base;
 
-	background-color: var(--btn-2, var(--neutral-1));
+	background-color: var(--accent-2, var(--neutral-1));
 	color: var(--neutral-8);
 
 	@include _viewing {
-		background-color: var(--btn-1, var(--neutral-2));
+		background-color: var(--accent-1, var(--neutral-2));
 	}
 
 	&:active {
-		background-color: var(--btn-3, var(--neutral-3));
+		background-color: var(--accent-3, var(--neutral-3));
 	}
 
 	@include utils.disabled {
@@ -77,18 +77,18 @@
 	@include _base;
 
 	background-color: var(--neutral-8);
-	color: var(--btn-2, var(--neutral-2));
-	border-color: var(--btn-2, var(--neutral-2));
+	color: var(--accent-2, var(--neutral-2));
+	border-color: var(--accent-2, var(--neutral-2));
 
 	@include _viewing {
-		background-color: var(--btn-4, var(--neutral-7));
-		color: var(--btn-1, var(--neutral-1));
-		border-color: var(--btn-1, var(--neutral-1));
+		background-color: var(--accent-4, var(--neutral-7));
+		color: var(--accent-1, var(--neutral-1));
+		border-color: var(--accent-1, var(--neutral-1));
 	}
 
 	&:active {
-		color: var(--btn-3, var(--neutral-3));
-		border-color: var(--btn-3, var(--neutral-3));
+		color: var(--accent-3, var(--neutral-3));
+		border-color: var(--accent-3, var(--neutral-3));
 	}
 
 	@include utils.disabled {
@@ -106,14 +106,14 @@
 
 	border-color: transparent;
 	background-color: transparent;
-	color: var(--btn-2, var(--neutral-2));
+	color: var(--accent-2, var(--neutral-2));
 
 	@include _viewing {
-		background-color: var(--btn-4, var(--neutral-7));
+		background-color: var(--accent-4, var(--neutral-7));
 	}
 
 	&:active {
-		border-color: var(--btn-3, var(--neutral-3));
+		border-color: var(--accent-3, var(--neutral-3));
 	}
 
 	@include utils.disabled {

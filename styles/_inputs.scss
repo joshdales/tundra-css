@@ -1,4 +1,4 @@
-@use "./utils/status" as utils;
+@use "./utils" as utils;
 
 @mixin _base {
 	background-color: var(--neutral-8);

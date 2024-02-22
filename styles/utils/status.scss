@@ -1,0 +1,7 @@
+@mixin disabled {
+
+	&:disabled,
+	&[aria-disabled="true"] {
+		@content;
+	}
+}

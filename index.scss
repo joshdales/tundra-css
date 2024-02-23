@@ -172,7 +172,7 @@ button,
 .button {
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
-			@include button-size(1);
+			@include button-size($level);
 		}
 	}
 

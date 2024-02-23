@@ -690,9 +690,9 @@ button.purple,
 button.pink,
 .button.pink {
   --accent-1: var(--pink-2);
-  --btn-2: var(--pink-3);
-  --btn-3: var(--pink-3);
-  --btn-4: var(--pink-8);
+  --accent-2: var(--pink-3);
+  --accent-3: var(--pink-3);
+  --accent-4: var(--pink-8);
 }
 
 /* Elements: Text-based inputs */

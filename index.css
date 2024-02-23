@@ -522,7 +522,7 @@ button.filled,
   padding-block: var(--padding-y);
   border-radius: var(--radius-1);
   text-decoration: none;
-  background-color: var(--btn-2, var(--neutral-1));
+  background-color: var(--accent-2, var(--neutral-1));
   color: var(--neutral-8);
 }
 button.filled:disabled, button.filled[aria-disabled=true],
@@ -530,20 +530,26 @@ button.filled:disabled, button.filled[aria-disabled=true],
 .button.filled[aria-disabled=true] {
   cursor: not-allowed;
 }
-button.filled:hover, button.filled:focus,
-.button.filled:hover,
-.button.filled:focus {
-  background-color: var(--btn-1, var(--neutral-2));
+button.filled:focus, button.filled:hover,
+.button.filled:focus,
+.button.filled:hover {
+  background-color: var(--accent-1, var(--neutral-2));
 }
 button.filled:active,
 .button.filled:active {
-  background-color: var(--btn-3, var(--neutral-3));
+  background-color: var(--accent-3, var(--neutral-3));
 }
 button.filled:disabled, button.filled[aria-disabled=true],
 .button.filled:disabled,
 .button.filled[aria-disabled=true] {
   background-color: var(--neutral-5);
   border-color: var(--neutral-5);
+}
+button.filled:disabled:hover, button.filled[aria-disabled=true]:hover,
+.button.filled:disabled:hover,
+.button.filled[aria-disabled=true]:hover {
+  background-color: var(--neutral-7);
+  color: var(--neutral-7);
 }
 button.outline,
 .button.outline {
@@ -559,25 +565,25 @@ button.outline,
   border-radius: var(--radius-1);
   text-decoration: none;
   background-color: var(--neutral-8);
-  color: var(--btn-2, var(--neutral-2));
-  border-color: var(--btn-2, var(--neutral-2));
+  color: var(--accent-2, var(--neutral-2));
+  border-color: var(--accent-2, var(--neutral-2));
 }
 button.outline:disabled, button.outline[aria-disabled=true],
 .button.outline:disabled,
 .button.outline[aria-disabled=true] {
   cursor: not-allowed;
 }
-button.outline:hover, button.outline:focus,
-.button.outline:hover,
-.button.outline:focus {
-  background-color: var(--btn-4, var(--neutral-7));
-  color: var(--btn-1, var(--neutral-1));
-  border-color: var(--btn-1, var(--neutral-1));
+button.outline:focus, button.outline:hover,
+.button.outline:focus,
+.button.outline:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+  color: var(--accent-1, var(--neutral-1));
+  border-color: var(--accent-1, var(--neutral-1));
 }
 button.outline:active,
 .button.outline:active {
-  color: var(--btn-3, var(--neutral-3));
-  border-color: var(--btn-3, var(--neutral-3));
+  color: var(--accent-3, var(--neutral-3));
+  border-color: var(--accent-3, var(--neutral-3));
 }
 button.outline:disabled, button.outline[aria-disabled=true],
 .button.outline:disabled,
@@ -605,21 +611,21 @@ button.ghost,
   text-decoration: none;
   border-color: transparent;
   background-color: transparent;
-  color: var(--btn-2, var(--neutral-2));
+  color: var(--accent-2, var(--neutral-2));
 }
 button.ghost:disabled, button.ghost[aria-disabled=true],
 .button.ghost:disabled,
 .button.ghost[aria-disabled=true] {
   cursor: not-allowed;
 }
-button.ghost:hover, button.ghost:focus,
-.button.ghost:hover,
-.button.ghost:focus {
-  background-color: var(--btn-4, var(--neutral-7));
+button.ghost:focus, button.ghost:hover,
+.button.ghost:focus,
+.button.ghost:hover {
+  background-color: var(--accent-4, var(--neutral-7));
 }
 button.ghost:active,
 .button.ghost:active {
-  border-color: var(--btn-3, var(--neutral-3));
+  border-color: var(--accent-3, var(--neutral-3));
 }
 button.ghost:disabled, button.ghost[aria-disabled=true],
 .button.ghost:disabled,
@@ -634,59 +640,59 @@ button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
 }
 button.red,
 .button.red {
-  --btn-1: var(--red-2);
-  --btn-2: var(--red-3);
-  --btn-3: var(--red-4);
-  --btn-4: var(--red-8);
+  --accent-1: var(--red-2);
+  --accent-2: var(--red-3);
+  --accent-3: var(--red-4);
+  --accent-4: var(--red-8);
 }
 button.orange,
 .button.orange {
-  --btn-1: var(--orange-1);
-  --btn-2: var(--orange-2);
-  --btn-3: var(--orange-3);
-  --btn-4: var(--orange-8);
+  --accent-1: var(--orange-1);
+  --accent-2: var(--orange-2);
+  --accent-3: var(--orange-3);
+  --accent-4: var(--orange-8);
 }
 button.yellow,
 .button.yellow {
-  --btn-1: var(--yellow-1);
-  --btn-2: var(--yellow-2);
-  --btn-3: var(--yellow-3);
-  --btn-4: var(--yellow-8);
+  --accent-1: var(--yellow-1);
+  --accent-2: var(--yellow-2);
+  --accent-3: var(--yellow-3);
+  --accent-4: var(--yellow-8);
 }
 button.green,
 .button.green {
-  --btn-1: var(--green-2);
-  --btn-2: var(--green-3);
-  --btn-3: var(--green-4);
-  --btn-4: var(--green-8);
+  --accent-1: var(--green-2);
+  --accent-2: var(--green-3);
+  --accent-3: var(--green-4);
+  --accent-4: var(--green-8);
 }
 button.cyan,
 .button.cyan {
-  --btn-1: var(--cyan-2);
-  --btn-2: var(--cyan-3);
-  --btn-3: var(--cyan-4);
-  --btn-4: var(--cyan-8);
+  --accent-1: var(--cyan-2);
+  --accent-2: var(--cyan-3);
+  --accent-3: var(--cyan-4);
+  --accent-4: var(--cyan-8);
 }
 button.blue,
 .button.blue {
-  --btn-1: var(--blue-2);
-  --btn-2: var(--blue-3);
-  --btn-3: var(--blue-4);
-  --btn-4: var(--blue-8);
+  --accent-1: var(--blue-2);
+  --accent-2: var(--blue-3);
+  --accent-3: var(--blue-4);
+  --accent-4: var(--blue-8);
 }
 button.purple,
 .button.purple {
-  --btn-1: var(--purple-2);
-  --btn-2: var(--purple-3);
-  --btn-3: var(--purple-4);
-  --btn-4: var(--purple-8);
+  --accent-1: var(--purple-2);
+  --accent-2: var(--purple-3);
+  --accent-3: var(--purple-4);
+  --accent-4: var(--purple-8);
 }
 button.pink,
 .button.pink {
-  --btn-1: var(--pink-2);
-  --btn-2: var(--pink-3);
-  --btn-3: var(--pink-3);
-  --btn-4: var(--pink-8);
+  --accent-1: var(--pink-2);
+  --accent-2: var(--pink-3);
+  --accent-3: var(--pink-3);
+  --accent-4: var(--pink-8);
 }
 
 /* Elements: Text-based inputs */
@@ -695,7 +701,7 @@ select.input-1 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
-  caret-color: var(--inpt-1, var(--neutral-4));
+  caret-color: var(--accent-1, var(--neutral-4));
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
@@ -708,14 +714,14 @@ select.input-1::placeholder {
 }
 input.input-1:hover,
 select.input-1:hover {
-  border-color: var(--inpt-2, var(--neutral-5));
+  border-color: var(--accent-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
 input.input-1:focus, input.input-1:active,
 select.input-1:focus,
 select.input-1:active {
   background-color: var(--neutral-8);
-  border-color: var(--inpt-1, var(--neutral-4));
+  border-color: var(--accent-1, var(--neutral-4));
 }
 input.input-1:disabled, input.input-1[aria-disabled=true],
 select.input-1:disabled,
@@ -727,7 +733,7 @@ select.input-2 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
-  caret-color: var(--inpt-1, var(--neutral-4));
+  caret-color: var(--accent-1, var(--neutral-4));
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
@@ -740,14 +746,14 @@ select.input-2::placeholder {
 }
 input.input-2:hover,
 select.input-2:hover {
-  border-color: var(--inpt-2, var(--neutral-5));
+  border-color: var(--accent-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
 input.input-2:focus, input.input-2:active,
 select.input-2:focus,
 select.input-2:active {
   background-color: var(--neutral-8);
-  border-color: var(--inpt-1, var(--neutral-4));
+  border-color: var(--accent-1, var(--neutral-4));
 }
 input.input-2:disabled, input.input-2[aria-disabled=true],
 select.input-2:disabled,
@@ -759,7 +765,7 @@ select.input-3 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
-  caret-color: var(--inpt-1, var(--neutral-4));
+  caret-color: var(--accent-1, var(--neutral-4));
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
@@ -772,14 +778,14 @@ select.input-3::placeholder {
 }
 input.input-3:hover,
 select.input-3:hover {
-  border-color: var(--inpt-2, var(--neutral-5));
+  border-color: var(--accent-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
 input.input-3:focus, input.input-3:active,
 select.input-3:focus,
 select.input-3:active {
   background-color: var(--neutral-8);
-  border-color: var(--inpt-1, var(--neutral-4));
+  border-color: var(--accent-1, var(--neutral-4));
 }
 input.input-3:disabled, input.input-3[aria-disabled=true],
 select.input-3:disabled,
@@ -791,7 +797,7 @@ select.input-4 {
   background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
-  caret-color: var(--inpt-1, var(--neutral-4));
+  caret-color: var(--accent-1, var(--neutral-4));
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
@@ -804,14 +810,14 @@ select.input-4::placeholder {
 }
 input.input-4:hover,
 select.input-4:hover {
-  border-color: var(--inpt-2, var(--neutral-5));
+  border-color: var(--accent-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
 }
 input.input-4:focus, input.input-4:active,
 select.input-4:focus,
 select.input-4:active {
   background-color: var(--neutral-8);
-  border-color: var(--inpt-1, var(--neutral-4));
+  border-color: var(--accent-1, var(--neutral-4));
 }
 input.input-4:disabled, input.input-4[aria-disabled=true],
 select.input-4:disabled,
@@ -820,43 +826,43 @@ select.input-4[aria-disabled=true] {
 }
 input.red,
 select.red {
-  --inpt-1: var(--red-3);
-  --inpt-2: var(--red-4);
+  --accent-1: var(--red-3);
+  --accent-2: var(--red-4);
 }
 input.orange,
 select.orange {
-  --inpt-1: var(--orange-4);
-  --inpt-2: var(--orange-5);
+  --accent-1: var(--orange-4);
+  --accent-2: var(--orange-5);
 }
 input.yellow,
 select.yellow {
-  --inpt-1: var(--yellow-4);
-  --inpt-2: var(--yellow-5);
+  --accent-1: var(--yellow-4);
+  --accent-2: var(--yellow-5);
 }
 input.green,
 select.green {
-  --inpt-1: var(--green-3);
-  --inpt-2: var(--green-4);
+  --accent-1: var(--green-3);
+  --accent-2: var(--green-4);
 }
 input.cyan,
 select.cyan {
-  --inpt-1: var(--cyan-4);
-  --inpt-2: var(--cyan-5);
+  --accent-1: var(--cyan-4);
+  --accent-2: var(--cyan-5);
 }
 input.blue,
 select.blue {
-  --inpt-1: var(--blue-4);
-  --inpt-2: var(--blue-5);
+  --accent-1: var(--blue-4);
+  --accent-2: var(--blue-5);
 }
 input.purple,
 select.purple {
-  --inpt-1: var(--purple-4);
-  --inpt-2: var(--purple-5);
+  --accent-1: var(--purple-4);
+  --accent-2: var(--purple-5);
 }
 input.pink,
 select.pink {
-  --inpt-1: var(--pink-4);
-  --inpt-2: var(--pink-5);
+  --accent-1: var(--pink-4);
+  --accent-2: var(--pink-5);
 }
 
 /* Fallbacks */

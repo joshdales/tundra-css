@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
 	import { page } from '$app/stores'
+	import NavMenu from '$lib/components/nav_menu.svelte'
 	import '../app.css'
 
 	onNavigate((navigation) => {
@@ -36,8 +37,10 @@
 <svelte:window bind:scrollY={currentPosition} />
 
 {#if !$page.data.hideHeader}
-	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
+	<header bind:clientHeight={headerHeight} style="--header-height:{headerHeight}px" class:hide>
 		<a href="/" class="alt-heading-3">Tundra CSS</a>
+
+		<NavMenu />
 	</header>
 {/if}
 
@@ -55,6 +58,8 @@
 	header {
 		position: sticky;
 		z-index: 2;
+		display: flex;
+		justify-content: space-between;
 		background-color: var(--neutral-8);
 		top: 0;
 		transition: top 0.5s;
@@ -75,7 +80,7 @@
 	}
 
 	header.hide {
-		top: var(--header-height);
+		top: calc(var(--header-height) * -1);
 	}
 
 	footer {

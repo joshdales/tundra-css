@@ -171,7 +171,9 @@
 button,
 .button,
 [role="button"],
-input[type="button"] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
 			@include button-size($level);

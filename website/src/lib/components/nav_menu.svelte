@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
 	let showMenu = false
+
+	function hideMenu() {
+		showMenu = false
+	}
 </script>
 
 <nav>
@@ -10,26 +14,41 @@
 	{#if showMenu}
 		<menu>
 			<li>
-				<a class="link-1" href="/colours">Colours</a>
+				<a on:click={hideMenu} class="link-3" href="/colours">Colours</a>
 			</li>
 			<li>
-				<a class="link-1" href="/radius">Radius</a>
+				<a on:click={hideMenu} class="link-3" href="/radius">Radius</a>
 			</li>
 			<li>
-				<a class="link-1" href="/spacing">Spacing</a>
+				<a on:click={hideMenu} class="link-3" href="/spacing">Spacing</a>
 			</li>
 			<li>
-				<a class="link-1" href="/typography">Typography</a>
+				<a on:click={hideMenu} class="link-3" href="/typography">Typography</a>
 			</li>
+
 			<hr />
+
 			<li>
-				<a class="link-1" href="/buttons">Buttons</a>
+				<a on:click={hideMenu} class="link-3" href="/buttons">Buttons</a>
 			</li>
 			<li>
-				<a class="link-1" href="/inputs">Inputs</a>
+				<a on:click={hideMenu} class="link-3" href="/inputs">Inputs</a>
 			</li>
 			<li>
-				<a class="link-1" href="/text">Text</a>
+				<a on:click={hideMenu} class="link-3" href="/text">Text</a>
+			</li>
+
+			<hr />
+
+			<li>
+				<a
+					class="link-3 external"
+					href="https://github.com/joshdales/tundra-css"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					github
+				</a>
 			</li>
 		</menu>
 	{/if}
@@ -41,6 +60,7 @@
 	}
 
 	button {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-self: center;
@@ -78,8 +98,8 @@
 
 		&.show::before,
 		&.show::after {
-			top: unset;
-			bottom: unset;
+			top: var(--space-5);
+			bottom: var(--space-5);
 		}
 
 		&.show::before {
@@ -90,15 +110,47 @@
 		}
 	}
 
+	hr {
+		margin-block: var(--space-3);
+	}
+
 	menu {
+		width: calc(var(--space-14) * 1.5);
 		list-style: none;
 		position: absolute;
-		top: 100%;
+		top: var(--header-height);
 		right: 0;
 		background-color: var(--neutral-8);
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-1);
-		padding: 0;
+		gap: var(--space-3);
+		padding: var(--space-8);
+	}
+
+	a {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		text-decoration: none;
+		color: var(--accent);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.external {
+		&::after {
+			transition: margin 150ms ease-in;
+			content: '→';
+			margin-inline-start: var(--space-1);
+			transform: rotate(-45deg);
+		}
+	}
+
+	@media (prefers-reduced-motion) {
+		button {
+			transition: none;
+		}
 	}
 </style>

@@ -4,7 +4,6 @@
 @layer reset {
 	* {
 		margin: 0;
-		position: relative;
 	}
 
 	h1,
@@ -32,6 +31,10 @@
 	--background: var(--neutral-8);
 }
 
+html {
+	color: var(--foreground);
+}
+
 html,
 body {
 	min-height: 100lvh;
@@ -51,4 +54,8 @@ code {
 	padding-inline: var(--space-2);
 	padding-block: var(--space-1);
 	border-radius: var(--radius-1);
+}
+
+hr {
+	border: 0.5px solid var(--neutral-6);
 }

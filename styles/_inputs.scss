@@ -31,7 +31,7 @@
 
 /// For text based inputs.
 /// eg. [type="text"], [type="password"], [type="number"], select, etc.
-@mixin text_based($level: null) {
+@mixin text_entry($level: null) {
 	@include _base;
 
 	@if $level ==1 {

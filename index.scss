@@ -249,7 +249,7 @@ input[type="submit"] {
 	}
 }
 
-/* Elements: Text-based inputs */
+/* Elements: Text-entry inputs */
 input[type="date"],
 input[type="datetime-local"],
 input[type="month"],
@@ -262,10 +262,11 @@ input[type="time"],
 input[type="url"],
 input[type="week"],
 select,
+textarea,
 [role="textbox"] {
 	@for $level from 1 through 4 {
 		&.input-#{$level} {
-			@include input-text-based($level);
+			@include input-text-entry($level);
 		}
 	}
 

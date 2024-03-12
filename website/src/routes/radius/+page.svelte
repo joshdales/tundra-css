@@ -7,7 +7,7 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Radius</h1>
+	<h1 class="heading-5">Radius</h1>
 
 	<p class="body-4">Round out the corners, smooth things over.</p>
 

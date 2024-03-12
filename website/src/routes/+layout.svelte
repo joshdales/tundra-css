@@ -37,7 +37,7 @@
 
 {#if !$page.data.hideHeader}
 	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
-		<a href="/" class="heading-3">Tundra CSS</a>
+		<a href="/" class="alt-heading-3">Tundra CSS</a>
 	</header>
 {/if}
 

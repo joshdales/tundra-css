@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Typography</h1>
+	<h1 class="heading-5">Typography</h1>
 
 	<p class="body-4">
 		These are all the token that the text styles are made from. In general you probably won't need
@@ -33,7 +33,7 @@
 	</p>
 
 	<fieldset name="typography">
-		<legend class="alt-heading-3">Token type</legend>
+		<legend class="heading-3">Token type</legend>
 
 		<label class:active={selectedToken === 'font-size'} class="label-4" for="token-font-size">
 			Font Size

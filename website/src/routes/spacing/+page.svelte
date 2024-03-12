@@ -7,7 +7,7 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Spacing</h1>
+	<h1 class="heading-5">Spacing</h1>
 
 	<p class="body-4">
 		Use these variables for setting any kind of space; padding, margins, gaps, etc.

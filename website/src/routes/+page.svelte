@@ -4,7 +4,7 @@
 
 <div class="grid">
 	<header>
-		<h1 class="heading-6">Tundra CSS</h1>
+		<h1 class="alt-heading-6">Tundra CSS</h1>
 		<p class="body-4">
 			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 		</p>
@@ -21,7 +21,7 @@
 	</header>
 
 	<main>
-		<h2 class="alt-heading-4">Foundations</h2>
+		<h2 class="heading-4">Foundations</h2>
 		<p class="body-3">
 			The foundational properties that are used to make up styles for the elements.
 		</p>
@@ -55,7 +55,7 @@
 			</menu>
 		</nav>
 
-		<h2 class="alt-heading-4">Elements</h2>
+		<h2 class="heading-4">Elements</h2>
 		<p class="body-3">
 			You can apply classes to the following elements to easily adjust the available elements
 			appearance.

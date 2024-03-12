@@ -5,7 +5,7 @@
 </script>
 
 <a {href}>
-	<h3 class="alt-heading-2">{title}</h3>
+	<h3 class="heading-2">{title}</h3>
 	<p class="label-1">{desc}</p>
 </a>
 

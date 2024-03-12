@@ -30,7 +30,7 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Buttons</h1>
+	<h1 class="heading-5">Buttons</h1>
 
 	<p class="body-4">
 		Apply the class for the button variant and the accent colour that you want the button to be. Add
@@ -42,7 +42,7 @@
 
 	<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
 
-	<h2 class="alt-heading-4">Filled</h2>
+	<h2 class="heading-4">Filled</h2>
 
 	<div class="btn-group">
 		<button class="button-1 filled {selectedColour}" on:click={copyClasses}> Button 1 </button>
@@ -54,7 +54,7 @@
 		<button class="button-4 filled {selectedColour}" on:click={copyClasses}> Button 4 </button>
 	</div>
 
-	<h2 class="alt-heading-4">Outline</h2>
+	<h2 class="heading-4">Outline</h2>
 
 	<div class="btn-group">
 		<button class="button-1 outline {selectedColour}" on:click={copyClasses}> Button 1 </button>
@@ -66,7 +66,7 @@
 		<button class="button-4 outline {selectedColour}" on:click={copyClasses}> Button 4 </button>
 	</div>
 
-	<h2 class="alt-heading-4">Ghost</h2>
+	<h2 class="heading-4">Ghost</h2>
 
 	<div class="btn-group">
 		<button class="button-1 ghost {selectedColour}" on:click={copyClasses}> Button 1 </button>
@@ -88,10 +88,10 @@
 		</div>
 	</section>
 
-	<h2>Customisation</h2>
+	<h2 class="heading-4">Customisation</h2>
 	<p class="body-4">
 		In order to make your own button variations you just need to make a class that overrides the
-		accent variables: <code>btn-1</code> - <code>btn-4</code> with your preferred values.
+		accent variables: <code>accent-1</code> - <code>accent-4</code> with your preferred values.
 	</p>
 </main>
 

@@ -13,7 +13,7 @@
 
 	<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
 
-	<section>
+	<section class="swatch-grid">
 		{#each new Array(5).fill('radius') as property, index}
 			<DesignToken {property} level={index + 1} on:copied_value={(ev) => (copiedValue = ev.detail)}>
 				<div style="--radius: var(--radius-{index + 1})" />
@@ -27,30 +27,6 @@
 <style>
 	p {
 		margin-block: var(--space-5);
-	}
-
-	section {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: var(--space-4);
-	}
-
-	@media screen and (max-width: 1100px) {
-		section {
-			grid-template-columns: repeat(4, 1fr);
-		}
-	}
-
-	@media screen and (max-width: 600px) {
-		section {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media screen and (max-width: 400px) {
-		section {
-			grid-template-columns: repeat(1, 1fr);
-		}
 	}
 
 	div:before {

@@ -28,7 +28,7 @@
 	<p class="body-4">Click on one of the colour swatches to copy its variable to your clipboard.</p>
 
 	{#each colourMap as colour}
-		<div class="colour">
+		<div class="swatch-grid">
 			{#each colour as item, index}
 				<DesignToken
 					property={item}
@@ -49,28 +49,8 @@
 		margin-block: var(--space-5);
 	}
 
-	.colour {
-		display: grid;
-		grid-template-columns: repeat(8, 1fr);
-		gap: var(--space-1);
-	}
-
-	@media screen and (max-width: 1100px) {
-		.colour {
-			grid-template-columns: repeat(4, 1fr);
-		}
-	}
-
-	@media screen and (max-width: 600px) {
-		.colour {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media screen and (max-width: 400px) {
-		.colour {
-			grid-template-columns: repeat(1, 1fr);
-		}
+	.swatch-grid {
+		--columns: 8;
 	}
 
 	.colour-block {

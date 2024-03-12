@@ -8,7 +8,7 @@
 	}
 }
 
-@mixin _base {
+@mixin base {
 	cursor: pointer;
 	box-sizing: border-box;
 	border: 1.5px solid;
@@ -48,8 +48,10 @@
 	}
 }
 
-@mixin filled() {
-	@include _base;
+@mixin filled($include_base: false) {
+	@if $include_base {
+		@include base;
+	}
 
 	background-color: var(--accent-2, var(--neutral-1));
 	color: var(--neutral-8);
@@ -73,8 +75,10 @@
 	}
 }
 
-@mixin outline() {
-	@include _base;
+@mixin outline($include_base: false) {
+	@if $include_base {
+		@include base;
+	}
 
 	background-color: var(--neutral-8);
 	color: var(--accent-2, var(--neutral-2));
@@ -101,8 +105,10 @@
 	}
 }
 
-@mixin ghost() {
-	@include _base;
+@mixin ghost($include_base: false) {
+	@if $include_base {
+		@include base;
+	}
 
 	border-color: transparent;
 	background-color: transparent;

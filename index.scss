@@ -169,7 +169,13 @@
 
 /* Elements: Buttons */
 button,
-.button {
+.button,
+[role="button"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include button-base;
+
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
 			@include button-size($level);
@@ -245,12 +251,16 @@ button,
 	}
 }
 
-/* Elements: Text-based inputs */
+/* Elements: Text-entry inputs */
 input,
-select {
+select,
+textarea,
+[role="textbox"] {
+	@include input-base;
+
 	@for $level from 1 through 4 {
 		&.input-#{$level} {
-			@include input-text-based($level);
+			@include input-text-entry($level);
 		}
 	}
 

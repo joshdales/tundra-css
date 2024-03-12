@@ -174,6 +174,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+	@include button-base;
+
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
 			@include button-size($level);
@@ -250,20 +252,12 @@ input[type="submit"] {
 }
 
 /* Elements: Text-entry inputs */
-input[type="date"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
+input,
 select,
 textarea,
 [role="textbox"] {
+	@include input-base;
+
 	@for $level from 1 through 4 {
 		&.input-#{$level} {
 			@include input-text-entry($level);

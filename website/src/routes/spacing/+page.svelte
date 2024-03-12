@@ -38,6 +38,24 @@
 		margin-block: auto;
 	}
 
+	@media screen and (max-width: 1100px) {
+		section {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		section {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		section {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
 	div {
 		height: var(--space);
 		width: var(--space);

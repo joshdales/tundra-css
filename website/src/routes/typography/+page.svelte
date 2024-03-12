@@ -196,6 +196,28 @@
 		margin-block-start: var(--space-7);
 	}
 
+	@media screen and (max-width: 1100px) {
+		section {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		fieldset {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		section {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		section {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
 	.token {
 		font-size: var(--size, var(--font-size-5));
 		font-weight: var(--weight, var(--font-weight-2));

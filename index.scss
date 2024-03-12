@@ -170,7 +170,8 @@
 /* Elements: Buttons */
 button,
 .button,
-[role="button"] {
+[role="button"],
+input[type="button"] {
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
 			@include button-size($level);

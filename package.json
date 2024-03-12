@@ -29,8 +29,5 @@
     "type": "git",
     "url": "git+https://github.com/joshdales/tundra-css.git"
   },
-  "bugs": "https://github.com/joshdales/tundra-css/issues",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "bugs": "https://github.com/joshdales/tundra-css/issues"
 }

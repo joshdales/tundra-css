@@ -1,6 +1,6 @@
 @use "./utils" as utils;
 
-@mixin _base {
+@mixin base {
 	background-color: var(--neutral-8);
 	border: 1.5px solid var(--neutral-6);
 	border-radius: var(--radius-1);
@@ -31,8 +31,10 @@
 
 /// For text based inputs.
 /// eg. [type="text"], [type="password"], [type="number"], select, etc.
-@mixin text_entry($level: null) {
-	@include _base;
+@mixin text_entry($level: null, $include_base: false) {
+	@if $include_base {
+		@include base;
+	}
 
 	@if $level ==1 {
 		@extend .input-1;

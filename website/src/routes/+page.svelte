@@ -49,7 +49,7 @@
 					<LinkCard
 						href="/typography"
 						title="Typography"
-						desc="The foundational elements that build up the text styles."
+						desc="The parts that build up the text styles."
 					/>
 				</li>
 			</menu>
@@ -64,17 +64,13 @@
 		<nav>
 			<menu>
 				<li>
-					<LinkCard
-						href="/buttons"
-						title="Buttons"
-						desc="The colour palette and colour based variables that are open to you"
-					/>
+					<LinkCard href="/buttons" title="Buttons" desc="The available options for clicking" />
 				</li>
 				<li>
 					<LinkCard
 						href="/inputs"
-						title="Inputs (text)"
-						desc="For when someone needs to type some text into a box"
+						title="Text Entry Inputs"
+						desc="For when someone needs to type into a box"
 					/>
 				</li>
 				<li>

@@ -90,8 +90,19 @@
 	}
 
 	a {
-		padding-block-end: var(--space-1);
 		display: flex;
 		justify-content: center;
+	}
+
+	header a {
+		gap: var(--space-2);
+
+		&::after {
+			content: none;
+		}
+
+		&::before {
+			content: '←';
+		}
 	}
 </style>

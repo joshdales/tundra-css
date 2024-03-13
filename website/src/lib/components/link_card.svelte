@@ -12,6 +12,7 @@
 <style>
 	a {
 		display: grid;
+		row-gap: var(--space-1);
 		grid-template-columns: 1fr auto;
 		grid-template-areas:
 			'title indicator'
@@ -31,6 +32,7 @@
 	a::after {
 		grid-area: indicator;
 		align-self: center;
+		font-size: var(--font-size-5);
 	}
 
 	a:hover,
@@ -63,6 +65,5 @@
 
 	p {
 		grid-area: desc;
-		margin-block-end: var(--space-1);
 	}
 </style>

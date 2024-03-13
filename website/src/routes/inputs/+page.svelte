@@ -37,7 +37,7 @@
 	<h2>Customisation</h2>
 	<p class="body-4">
 		In order to make your own variations of the inputs you just need to make a class that overrides
-		the accent variables: <code>accent-1</code> or <code>accent-2</code> with your preferred values.
+		the accent variables: <code>--accent-1</code> or <code>--accent-2</code> with your preferred values.
 	</p>
 </main>
 
@@ -56,5 +56,9 @@
 
 	input {
 		margin-block-start: var(--space-1);
+	}
+
+	code {
+		text-wrap: nowrap;
 	}
 </style>

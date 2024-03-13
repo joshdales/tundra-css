@@ -17,7 +17,7 @@
 			looking project without having to go through too much trouble.
 		</p>
 
-		<p>Or maybe you just want to use it as a reference, that's cool too.</p>
+		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
 	</header>
 
 	<main>

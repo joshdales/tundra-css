@@ -83,6 +83,13 @@
 		top: calc(var(--header-height) * -1);
 	}
 
+	header,
+	header.hide {
+		&:has(menu) {
+			top: 0;
+		}
+	}
+
 	footer {
 		text-align: center;
 		padding-block: var(--space-4);

@@ -60,6 +60,24 @@ hr {
 	border: 0.5px solid var(--neutral-6);
 }
 
+a {
+	color: var(--accent);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&::after {
+		content: '→';
+		margin-inline-start: var(--space-2);
+	}
+
+	&.external::after {
+		transform: rotate(-45deg);
+	}
+}
+
 .swatch-grid {
 	display: grid;
 	grid-template-columns: repeat(var(--columns, 5), 1fr);

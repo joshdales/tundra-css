@@ -90,24 +90,8 @@
 	}
 
 	a {
-		position: relative;
-		color: var(--accent);
-		text-decoration: none;
 		padding-block-end: var(--space-1);
 		display: flex;
 		justify-content: center;
-	}
-
-	.external {
-		&::after {
-			transition: margin 150ms ease-in;
-			content: '→';
-			margin-inline-start: var(--space-2);
-			transform: rotate(-45deg);
-		}
-
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 </style>

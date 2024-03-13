@@ -131,21 +131,6 @@
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		text-decoration: none;
-		color: var(--accent);
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
-	.external {
-		&::after {
-			transition: margin 150ms ease-in;
-			content: '→';
-			margin-inline-start: var(--space-1);
-			transform: rotate(-45deg);
-		}
 	}
 
 	@media (prefers-reduced-motion) {

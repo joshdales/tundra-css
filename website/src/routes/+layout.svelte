@@ -48,7 +48,7 @@
 
 <footer>
 	<h3>
-		<a class="link-4" href="https://github.com/joshdales/tundra-css">
+		<a class="link-4 external" href="https://github.com/joshdales/tundra-css">
 			github.com/joshdales/tundra-css
 		</a>
 	</h3>
@@ -96,7 +96,9 @@
 		padding-block-end: var(--space-1);
 		display: flex;
 		justify-content: center;
+	}
 
+	.external {
 		&::after {
 			transition: margin 150ms ease-in;
 			content: '→';

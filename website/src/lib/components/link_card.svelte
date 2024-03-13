@@ -11,7 +11,11 @@
 
 <style>
 	a {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			'title indicator'
+			'desc indicator';
 		flex-direction: column;
 		text-decoration: none;
 		color: var(--foreground);
@@ -24,6 +28,11 @@
 			transform 0.3s ease-in;
 	}
 
+	a::after {
+		grid-area: indicator;
+		align-self: center;
+	}
+
 	a:hover,
 	a:focus {
 		box-shadow:
@@ -33,6 +42,7 @@
 		background-color: oklch(from var(--blue-8) l c h / 40%);
 		border-color: var(--blue-8);
 		transform: translate(0, calc(var(--space-1) * -1));
+		text-decoration: none;
 	}
 
 	@media (prefers-reduced-motion) {
@@ -47,7 +57,12 @@
 		border-color: var(--blue-6);
 	}
 
+	h3 {
+		grid-area: title;
+	}
+
 	p {
+		grid-area: desc;
 		margin-block-end: var(--space-1);
 	}
 </style>

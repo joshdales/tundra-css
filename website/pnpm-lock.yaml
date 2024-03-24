@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   tundra-css:
-    specifier: ^0.6.0
-    version: 0.6.0
+    specifier: ^0.6.1
+    version: 0.6.1
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -1980,8 +1980,8 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tundra-css@0.6.0:
-    resolution: {integrity: sha512-WswtqjHIbPMMoKU1NZhq/9RXAClkdVNTOcyhtFY5UbwkWDKqHXjxU51N/DKUdA6iOBD1r9ASUMZ7rSi+08DOWQ==}
+  /tundra-css@0.6.1:
+    resolution: {integrity: sha512-nyQ7DFZlgMINhKQcVBlF3MLVsW3x/oQpuKvdSKe1+/l1zgJsNmJ7FVN+Hno+z5lSX90cVje5Rq3xvr4IL6OBTQ==}
     dev: false
 
   /type-check@0.4.0:

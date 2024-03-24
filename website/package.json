@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"modern-normalize": "^2.0.0",
-		"tundra-css": "^0.6.0"
+		"tundra-css": "^0.6.1"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.1",

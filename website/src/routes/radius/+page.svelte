@@ -7,13 +7,13 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Radius</h1>
+	<h1 class="heading-5">Radius</h1>
 
 	<p class="body-4">Round out the corners, smooth things over.</p>
 
 	<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
 
-	<section>
+	<section class="swatch-grid">
 		{#each new Array(5).fill('radius') as property, index}
 			<DesignToken {property} level={index + 1} on:copied_value={(ev) => (copiedValue = ev.detail)}>
 				<div style="--radius: var(--radius-{index + 1})" />
@@ -27,12 +27,6 @@
 <style>
 	p {
 		margin-block: var(--space-5);
-	}
-
-	section {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: var(--space-4);
 	}
 
 	div:before {

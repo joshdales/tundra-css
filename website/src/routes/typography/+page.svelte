@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<h1 class="alt-heading-5">Typography</h1>
+	<h1 class="heading-5">Typography</h1>
 
 	<p class="body-4">
 		These are all the token that the text styles are made from. In general you probably won't need
@@ -33,7 +33,7 @@
 	</p>
 
 	<fieldset name="typography">
-		<legend class="alt-heading-3">Token type</legend>
+		<legend class="heading-3">Token type</legend>
 
 		<label class:active={selectedToken === 'font-size'} class="label-4" for="token-font-size">
 			Font Size
@@ -89,7 +89,7 @@
 	</fieldset>
 
 	{#if selectedToken === 'font-size'}
-		<section style="--grid: 4">
+		<section class="swatch-grid" style="--columns: 4">
 			{#each new Array(9).fill(selectedToken) as _, index}
 				<DesignToken
 					property={selectedToken}
@@ -101,7 +101,7 @@
 			{/each}
 		</section>
 	{:else if selectedToken === 'font-weight'}
-		<section>
+		<section class="swatch-grid" style="--columns: 4">
 			{#each new Array(4).fill(selectedToken) as _, index}
 				<DesignToken
 					property={selectedToken}
@@ -115,7 +115,7 @@
 			{/each}
 		</section>
 	{:else if selectedToken === 'line-height'}
-		<section>
+		<section class="swatch-grid">
 			{#each new Array(5).fill(selectedToken) as _, index}
 				<DesignToken
 					property={selectedToken}
@@ -129,7 +129,7 @@
 			{/each}
 		</section>
 	{:else if selectedToken === 'letter-spacing'}
-		<section>
+		<section class="swatch-grid">
 			{#each new Array(5).fill(selectedToken) as _, index}
 				<DesignToken
 					property={selectedToken}
@@ -190,10 +190,10 @@
 		transform: translate(0, calc(var(--space-1) * -1));
 	}
 
-	section {
-		display: grid;
-		grid-template-columns: repeat(var(--grid, 5), 1fr);
-		margin-block-start: var(--space-7);
+	@media screen and (max-width: 600px) {
+		fieldset {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	.token {

@@ -4,7 +4,7 @@
 
 <div class="grid">
 	<header>
-		<h1 class="heading-6">Tundra CSS</h1>
+		<h1 class="alt-heading-6">Tundra CSS</h1>
 		<p class="body-4">
 			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 		</p>
@@ -17,11 +17,11 @@
 			looking project without having to go through too much trouble.
 		</p>
 
-		<p>Or maybe you just want to use it as a reference, that's cool too.</p>
+		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
 	</header>
 
 	<main>
-		<h2 class="alt-heading-4">Foundations</h2>
+		<h2 class="heading-4">Foundations</h2>
 		<p class="body-3">
 			The foundational properties that are used to make up styles for the elements.
 		</p>
@@ -49,13 +49,13 @@
 					<LinkCard
 						href="/typography"
 						title="Typography"
-						desc="The foundational elements that build up the text styles."
+						desc="The parts that build up the text styles."
 					/>
 				</li>
 			</menu>
 		</nav>
 
-		<h2 class="alt-heading-4">Elements</h2>
+		<h2 class="heading-4">Elements</h2>
 		<p class="body-3">
 			You can apply classes to the following elements to easily adjust the available elements
 			appearance.
@@ -64,17 +64,13 @@
 		<nav>
 			<menu>
 				<li>
-					<LinkCard
-						href="/buttons"
-						title="Buttons"
-						desc="The colour palette and colour based variables that are open to you"
-					/>
+					<LinkCard href="/buttons" title="Buttons" desc="The available options for clicking" />
 				</li>
 				<li>
 					<LinkCard
 						href="/inputs"
-						title="Inputs (text)"
-						desc="For when someone needs to type some text into a box"
+						title="Text Entry Inputs"
+						desc="For when someone needs to type into a box"
 					/>
 				</li>
 				<li>

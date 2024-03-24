@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
 	import { page } from '$app/stores'
+	import NavMenu from '$lib/components/nav_menu.svelte'
 	import '../app.css'
 
 	onNavigate((navigation) => {
@@ -36,8 +37,10 @@
 <svelte:window bind:scrollY={currentPosition} />
 
 {#if !$page.data.hideHeader}
-	<header bind:clientHeight={headerHeight} style="--header-height:-{headerHeight}px" class:hide>
-		<a href="/" class="heading-3">Tundra CSS</a>
+	<header bind:clientHeight={headerHeight} style="--header-height:{headerHeight}px" class:hide>
+		<a href="/" class="alt-heading-3">Tundra CSS</a>
+
+		<NavMenu />
 	</header>
 {/if}
 
@@ -45,7 +48,7 @@
 
 <footer>
 	<h3>
-		<a class="link-4" href="https://github.com/joshdales/tundra-css">
+		<a class="link-4 external" href="https://github.com/joshdales/tundra-css">
 			github.com/joshdales/tundra-css
 		</a>
 	</h3>
@@ -55,6 +58,8 @@
 	header {
 		position: sticky;
 		z-index: 2;
+		display: flex;
+		justify-content: space-between;
 		background-color: var(--neutral-8);
 		top: 0;
 		transition: top 0.5s;
@@ -75,7 +80,14 @@
 	}
 
 	header.hide {
-		top: var(--header-height);
+		top: calc(var(--header-height) * -1);
+	}
+
+	header,
+	header.hide {
+		&:has(menu) {
+			top: 0;
+		}
 	}
 
 	footer {
@@ -85,13 +97,19 @@
 	}
 
 	a {
-		position: relative;
-		color: var(--accent);
-		text-decoration: none;
-		padding-block-end: var(--space-1);
+		display: flex;
+		justify-content: center;
 	}
 
-	a:hover {
-		text-decoration: underline;
+	header a {
+		gap: var(--space-2);
+
+		&::after {
+			content: none;
+		}
+
+		&::before {
+			content: '←';
+		}
 	}
 </style>

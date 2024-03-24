@@ -4,7 +4,6 @@
 @layer reset {
 	* {
 		margin: 0;
-		position: relative;
 	}
 
 	h1,
@@ -32,9 +31,16 @@
 	--background: var(--neutral-8);
 }
 
+html {
+	color: var(--foreground);
+}
+
 html,
 body {
-	min-height: 100lvh;
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 main {
@@ -42,7 +48,7 @@ main {
 	max-width: 1400px;
 	padding-block: var(--space-8);
 	padding-inline: var(--space-10);
-	margin: auto;
+	margin-inline: auto;
 }
 
 code {
@@ -51,4 +57,51 @@ code {
 	padding-inline: var(--space-2);
 	padding-block: var(--space-1);
 	border-radius: var(--radius-1);
+}
+
+hr {
+	border: 0.5px solid var(--neutral-6);
+}
+
+a {
+	display: flex;
+	gap: var(--space-2);
+	color: var(--accent);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&::after {
+		content: '→';
+	}
+
+	&.external::after {
+		transform: rotate(-45deg);
+	}
+}
+
+.swatch-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--columns, 5), 1fr);
+	gap: var(--space-1);
+}
+
+@media screen and (max-width: 1100px) {
+	.swatch-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.swatch-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.swatch-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

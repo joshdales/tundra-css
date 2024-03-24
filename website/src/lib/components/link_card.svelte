@@ -5,13 +5,18 @@
 </script>
 
 <a {href}>
-	<h3 class="alt-heading-2">{title}</h3>
+	<h3 class="heading-2">{title}</h3>
 	<p class="label-1">{desc}</p>
 </a>
 
 <style>
 	a {
-		display: flex;
+		display: grid;
+		row-gap: var(--space-1);
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			'title indicator'
+			'desc indicator';
 		flex-direction: column;
 		text-decoration: none;
 		color: var(--foreground);
@@ -24,6 +29,12 @@
 			transform 0.3s ease-in;
 	}
 
+	a::after {
+		grid-area: indicator;
+		align-self: center;
+		font-size: var(--font-size-5);
+	}
+
 	a:hover,
 	a:focus {
 		box-shadow:
@@ -33,6 +44,7 @@
 		background-color: oklch(from var(--blue-8) l c h / 40%);
 		border-color: var(--blue-8);
 		transform: translate(0, calc(var(--space-1) * -1));
+		text-decoration: none;
 	}
 
 	@media (prefers-reduced-motion) {
@@ -47,7 +59,11 @@
 		border-color: var(--blue-6);
 	}
 
+	h3 {
+		grid-area: title;
+	}
+
 	p {
-		margin-block-end: var(--space-1);
+		grid-area: desc;
 	}
 </style>

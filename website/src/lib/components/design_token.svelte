@@ -50,10 +50,11 @@
 	.token {
 		display: flex;
 		flex-direction: column;
-		/* align-items: center; */
+		align-items: unset;
 		padding: var(--space-2);
 		cursor: pointer;
-		background-color: var(--neutral-8);
+		background-color: #fff;
+		border: none;
 		transition:
 			transform 0.1s ease-out,
 			box-shadow 0.1s ease-out;
@@ -86,7 +87,7 @@
 
 	code {
 		display: block;
-		background-color: var(--neutral-8);
+		background-color: #fff;
 		color: var(--neutral-0);
 		padding: 0;
 	}

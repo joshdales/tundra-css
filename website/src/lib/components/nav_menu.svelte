@@ -1,12 +1,26 @@
 <script lang="ts">
 	let showMenu = false
 
+	let navRef: HTMLElement
+
+	function handleOutsideClick(event: MouseEvent) {
+		if (!showMenu) {
+			return
+		}
+
+		if (!navRef.contains(event.target as Node | null)) {
+			hideMenu()
+		}
+	}
+
 	function hideMenu() {
 		showMenu = false
 	}
 </script>
 
-<nav>
+<svelte:window on:click={handleOutsideClick} />
+
+<nav bind:this={navRef}>
 	<button class="button-1 ghost" class:show={showMenu} on:click={() => (showMenu = !showMenu)}>
 		<div />
 	</button>

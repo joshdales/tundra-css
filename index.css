@@ -627,8 +627,8 @@ input[type=reset].filled:disabled:hover,
 input[type=reset].filled[aria-disabled=true]:hover,
 input[type=submit].filled:disabled:hover,
 input[type=submit].filled[aria-disabled=true]:hover {
-  background-color: var(--neutral-7);
-  color: var(--neutral-7);
+  background-color: var(--neutral-6);
+  border-color: var(--neutral-6);
 }
 button.outline,
 .button.outline,

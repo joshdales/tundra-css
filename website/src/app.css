@@ -37,7 +37,10 @@ html {
 
 html,
 body {
-	min-height: 100lvh;
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 main {
@@ -45,7 +48,7 @@ main {
 	max-width: 1400px;
 	padding-block: var(--space-8);
 	padding-inline: var(--space-10);
-	margin: auto;
+	margin-inline: auto;
 }
 
 code {
@@ -61,9 +64,9 @@ hr {
 }
 
 a {
-  display: flex;
-  gap: var(--space-2);
-  color: var(--accent);
+	display: flex;
+	gap: var(--space-2);
+	color: var(--accent);
 	text-decoration: none;
 
 	&:hover {

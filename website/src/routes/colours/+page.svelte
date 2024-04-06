@@ -2,6 +2,7 @@
 	import DesignToken from '$lib/components/design_token.svelte'
 	import Toaster from '$lib/components/copy_toaster.svelte'
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
+	import TokenDescription from '$lib/components/token_description.svelte'
 	const colourMap = [
 		'neutral',
 		'red',
@@ -18,14 +19,17 @@
 </script>
 
 <main>
-	<h1 class="heading-5">Colour Palette</h1>
-	<p class="body-4">
-		A list of all colours that are available as variables. All of the colours are defined in OKLCH,
-		some of them are on the P3 colour gamut, but there are fallbacks for monitors that don't support
-		that.
-	</p>
+	<TokenDescription title="Colour Palette">
+		<p class="body-4">
+			A list of all colours that are available as variables. All of the colours are defined in
+			OKLCH, some of them are on the P3 colour gamut, but there are fallbacks for monitors that
+			don't support that.
+		</p>
 
-	<p class="body-4">Click on one of the colour swatches to copy its variable to your clipboard.</p>
+		<p class="body-4">
+			Click on one of the colour swatches to copy its variable to your clipboard.
+		</p>
+	</TokenDescription>
 
 	{#each colourMap as colour}
 		<div class="swatch-grid">
@@ -45,10 +49,6 @@
 <Toaster {copiedValue} />
 
 <style>
-	.body-4 {
-		margin-block: var(--space-5);
-	}
-
 	.swatch-grid {
 		--columns: 8;
 	}

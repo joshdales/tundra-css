@@ -49,7 +49,7 @@
 				<a on:click={hideMenu} class="link-3" href="/inputs">Inputs</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/text">Text</a>
+				<a on:click={hideMenu} class="link-3" href="/text-styles">Text Styles</a>
 			</li>
 
 			<hr />
@@ -132,13 +132,15 @@
 		width: calc(var(--space-14) * 1.5);
 		list-style: none;
 		position: absolute;
-		top: var(--header-height);
+		top: calc(var(--space-1) + var(--header-height));
 		right: 0;
-		background-color: var(--neutral-8);
+		background-color: #fff;
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-3);
 		padding: var(--space-8);
+		border-radius: var(--radius-2);
+		box-shadow: var(--space-2) var(--space-1) var(--space-3) var(--space-1) rgba(0, 0, 0, 0.1);
 	}
 
 	a {

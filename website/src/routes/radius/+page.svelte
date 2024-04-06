@@ -2,16 +2,17 @@
 	import DesignToken from '$lib/components/design_token.svelte'
 	import Toaster from '$lib/components/copy_toaster.svelte'
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
+	import TokenDescription from '$lib/components/token_description.svelte'
 
 	let copiedValue: CopiedValue | undefined
 </script>
 
 <main>
-	<h1 class="heading-5">Radius</h1>
+	<TokenDescription title="Radius">
+		<p class="body-4">Round out the corners, smooth things over.</p>
 
-	<p class="body-4">Round out the corners, smooth things over.</p>
-
-	<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
+		<p class="body-4">Click on one of the tiles to copy its variable to your clipboard.</p>
+	</TokenDescription>
 
 	<section class="swatch-grid">
 		{#each new Array(5).fill('radius') as property, index}
@@ -25,10 +26,6 @@
 <Toaster {copiedValue} />
 
 <style>
-	p {
-		margin-block: var(--space-5);
-	}
-
 	div:before {
 		content: '';
 		display: block;

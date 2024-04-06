@@ -1,14 +1,27 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
+	import { goto } from '$app/navigation'
+	import { page } from '$app/stores'
+
 	const dispatch = createEventDispatcher()
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
 	export let selectedColour: string
 
 	$: dispatch('accent', selectedColour)
+
+	$: {
+		const pageColour = $page.url.searchParams.get('colour')
+		if (pageColour && !selectedColour) {
+			selectedColour = pageColour
+		} else if (selectedColour && selectedColour !== pageColour) {
+			$page.url.searchParams.set('colour', selectedColour)
+			goto($page.url, { replaceState: true })
+		}
+	}
 </script>
 
 <fieldset name="accent">
-	<legend class="alt-heading-3">Accent</legend>
+	<legend class="alt-heading-2">Accent</legend>
 
 	{#each colours as colour}
 		<label class:active={selectedColour === colour} class="label-4" for="colours-{colour}">
@@ -69,7 +82,7 @@
 	.active,
 	label:hover {
 		border-color: var(--blue-8);
-		background-color: oklch(from var(--blue-8) l c h / 40%);
+		background-color: oklch(from var(--blue-8) l c h / 30%);
 	}
 
 	label:hover {

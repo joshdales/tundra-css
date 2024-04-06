@@ -31,8 +31,8 @@
 		position: sticky;
 		z-index: 2;
 		display: flex;
-		width: 100%;
-		max-width: 1400px;
+		align-items: center;
+		max-width: 1450px;
 		justify-content: space-between;
 		top: var(--space-2);
 		transition: top 0.7s ease-in-out;

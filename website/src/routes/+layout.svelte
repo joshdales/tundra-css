@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
 	import { page } from '$app/stores'
-	import NavHeader from '$lib/components/nav_header/nav_header.svelte'
+	import NavHeader from '$lib/components/header/nav_header.svelte'
 	import '../app.css'
 
 	onNavigate((navigation) => {

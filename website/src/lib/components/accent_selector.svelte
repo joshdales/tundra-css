@@ -21,7 +21,7 @@
 </script>
 
 <fieldset name="accent">
-	<legend class="alt-heading-3">Accent</legend>
+	<legend class="alt-heading-2">Accent</legend>
 
 	{#each colours as colour}
 		<label class:active={selectedColour === colour} class="label-4" for="colours-{colour}">

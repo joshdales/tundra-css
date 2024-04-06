@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TokenDescription from '$lib/components/token_description.svelte'
 	import AccentSelector from '$lib/components/accent_selector.svelte'
 	import CopyToaster from '$lib/components/copy_toaster.svelte'
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
@@ -30,17 +31,17 @@
 </script>
 
 <main>
-	<h1 class="heading-5">Buttons</h1>
+	<TokenDescription title="Buttons">
+		<p class="body-4">
+			Apply the class for the button variant and the accent colour that you want the button to be.
+			Add a <code>button-*</code> class to change the size, and a class for the colour it add that accent
+			otherwise the button will be greyscale.
+		</p>
 
-	<p class="body-4">
-		Apply the class for the button variant and the accent colour that you want the button to be. Add
-		a <code>button-*</code> class to change the size, and a class for the colour it add that accent otherwise
-		the button will be greyscale.
-	</p>
+		<p class="body-4">Click on a button to copy it's classes.</p>
 
-	<p class="body-4">Click on a button to copy it's classes.</p>
-
-	<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+	</TokenDescription>
 
 	<h2 class="heading-4">Filled</h2>
 
@@ -79,8 +80,12 @@
 	</div>
 
 	<section class="disabled">
-		<h3>Disabled buttons</h3>
-		<p>When buttons are disabled they look the same no matter what their accent colour.</p>
+		<h3 class="alt-heading-3">Disabled buttons</h3>
+
+		<p class="body-4">
+			When buttons are disabled they look the same no matter what their accent colour.
+		</p>
+
 		<div class="btn-group">
 			<button class="button-2 filled" disabled> Lorem ipsum </button>
 			<button class="button-2 outline" disabled> Lorem ipsum </button>

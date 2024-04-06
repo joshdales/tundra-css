@@ -1,18 +1,19 @@
 <script>
 	import AccentSelector from '$lib/components/accent_selector.svelte'
+	import TokenDescription from '$lib/components/token_description.svelte'
 	let selectedColour = ''
 </script>
 
 <main>
-	<h1 class="heading-5">Inputs (text)</h1>
+	<TokenDescription title="Inputs (text)">
+		<p class="body-4 desc">
+			Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,
+			and combine it with the label class on the label element. If you don't include a class for the
+			colour then the accent colours with be greyscale.
+		</p>
 
-	<p class="body-4">
-		Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,
-		and combine it with the label class on the label element. If you don't include a class for the colour
-		then the accent colours with be greyscale.
-	</p>
-
-	<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+	</TokenDescription>
 
 	<label for="input1" class="label-1">
 		Input 1
@@ -34,7 +35,8 @@
 		<input class="input-4 {selectedColour}" type="text" placeholder="Input 4" id="input4" />
 	</label>
 
-	<h2>Customisation</h2>
+	<h2 class="heading-4">Customisation</h2>
+
 	<p class="body-4">
 		In order to make your own variations of the inputs you just need to make a class that overrides
 		the accent variables: <code>--accent-1</code> or <code>--accent-2</code> with your preferred values.
@@ -42,8 +44,8 @@
 </main>
 
 <style>
-	p {
-		margin-block: var(--space-6) var(--space-8);
+	.desc {
+		margin-block: var(--space-4);
 	}
 
 	label {
@@ -51,6 +53,10 @@
 		flex-direction: column;
 		margin-block: var(--space-6);
 		cursor: pointer;
+
+		&:last-of-type {
+			margin-block-end: var(--space-10);
+		}
 	}
 
 	input {

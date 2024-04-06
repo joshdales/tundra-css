@@ -4,6 +4,7 @@
 	import DesignToken from '$lib/components/design_token.svelte'
 	import Toaster from '$lib/components/copy_toaster.svelte'
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
+	import TokenDescription from '$lib/components/token_description.svelte'
 
 	let selectedToken = $page.url.searchParams.get('token') || ''
 	let copiedValue: CopiedValue | undefined
@@ -20,73 +21,73 @@
 </script>
 
 <main>
-	<h1 class="heading-5">Typography</h1>
+	<TokenDescription title="Typography">
+		<p class="body-4">
+			These are all the token that the text styles are made from. In general you probably won't need
+			to access these directly but the variables are available in case that you do.
+		</p>
 
-	<p class="body-4">
-		These are all the token that the text styles are made from. In general you probably won't need
-		to access these directly but the variables are available in case that you do.
-	</p>
+		<p class="body-4">
+			Select the typography token that you want to see and click on one of the tiles to copy its
+			variable to your clipboard.
+		</p>
 
-	<p class="body-4">
-		Select the typography token that you want to see and click on one of the tiles to copy its
-		variable to your clipboard.
-	</p>
+		<fieldset name="typography">
+			<legend class="heading-3">Token type</legend>
 
-	<fieldset name="typography">
-		<legend class="heading-3">Token type</legend>
+			<label class:active={selectedToken === 'font-size'} class="label-4" for="token-font-size">
+				Font Size
+				<input
+					bind:group={selectedToken}
+					type="radio"
+					name="typography"
+					value="font-size"
+					id="token-font-size"
+					hidden
+				/>
+			</label>
 
-		<label class:active={selectedToken === 'font-size'} class="label-4" for="token-font-size">
-			Font Size
-			<input
-				bind:group={selectedToken}
-				type="radio"
-				name="typography"
-				value="font-size"
-				id="token-font-size"
-				hidden
-			/>
-		</label>
+			<label class:active={selectedToken === 'font-weight'} class="label-4" for="token-font-weight">
+				Font Weight
+				<input
+					bind:group={selectedToken}
+					type="radio"
+					name="typography"
+					value="font-weight"
+					id="token-font-weight"
+					hidden
+				/>
+			</label>
 
-		<label class:active={selectedToken === 'font-weight'} class="label-4" for="token-font-weight">
-			Font Weight
-			<input
-				bind:group={selectedToken}
-				type="radio"
-				name="typography"
-				value="font-weight"
-				id="token-font-weight"
-				hidden
-			/>
-		</label>
+			<label class:active={selectedToken === 'line-height'} class="label-4" for="token-line-height">
+				Line Height
+				<input
+					bind:group={selectedToken}
+					type="radio"
+					name="typography"
+					value="line-height"
+					id="token-line-height"
+					hidden
+				/>
+			</label>
 
-		<label class:active={selectedToken === 'line-height'} class="label-4" for="token-line-height">
-			Line Height
-			<input
-				bind:group={selectedToken}
-				type="radio"
-				name="typography"
-				value="line-height"
-				id="token-line-height"
-				hidden
-			/>
-		</label>
-
-		<label
-			class:active={selectedToken === 'letter-spacing'}
-			class="label-4"
-			for="token-letter-spacing"
-		>
-			Letter Spacing
-			<input
-				bind:group={selectedToken}
-				type="radio"
-				name="typography"
-				value="letter-spacing"
-				id="token-letter-spacing"
-				hidden
-			/>
-		</label>
-	</fieldset>
+			<label
+				class:active={selectedToken === 'letter-spacing'}
+				class="label-4"
+				for="token-letter-spacing"
+			>
+				Letter Spacing
+				<input
+					bind:group={selectedToken}
+					type="radio"
+					name="typography"
+					value="letter-spacing"
+					id="token-letter-spacing"
+					hidden
+				/>
+			</label>
+		</fieldset>
+	</TokenDescription>
 
 	{#if selectedToken === 'font-size'}
 		<section class="swatch-grid" style="--columns: 4">

@@ -31,8 +31,10 @@
 		position: sticky;
 		z-index: 2;
 		display: flex;
+		width: 100%;
+		max-width: 1400px;
 		justify-content: space-between;
-		top: var(--space-6);
+		top: var(--space-2);
 		transition: top 0.7s ease-in-out;
 		color: var(--green);
 		padding-inline: var(--space-10);
@@ -41,7 +43,7 @@
 		background-color: #fff;
 		border-radius: var(--radius-3);
 		margin-inline: auto;
-		margin-block: var(--space-6);
+		margin-block: var(--space-2);
 		animation: change-position linear both;
 		animation-timeline: scroll();
 		animation-range: 0 var(--space-14);

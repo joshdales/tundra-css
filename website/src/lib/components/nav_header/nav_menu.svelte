@@ -132,9 +132,9 @@
 		width: calc(var(--space-14) * 1.5);
 		list-style: none;
 		position: absolute;
-		top: calc(var(--space-3) + var(--header-height));
-		right: var(--space-10);
-		background-color: var(--neutral-8);
+		top: calc(var(--space-1) + var(--header-height));
+		right: 0;
+		background-color: #fff;
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-3);

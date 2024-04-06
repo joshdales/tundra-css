@@ -4,9 +4,9 @@
 </script>
 
 <main>
-	<h1>Inputs (text)</h1>
+	<h1 class="heading-5">Inputs (text)</h1>
 
-	<p>
+	<p class="body-4">
 		Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,
 		and combine it with the label class on the label element. If you don't include a class for the colour
 		then the accent colours with be greyscale.
@@ -43,8 +43,7 @@
 
 <style>
 	p {
-		margin-block-start: var(--space-6);
-		margin-block-end: var(--space-8);
+		margin-block: var(--space-6) var(--space-8);
 	}
 
 	label {

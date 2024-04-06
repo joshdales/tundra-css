@@ -75,8 +75,8 @@
 				</li>
 				<li>
 					<LinkCard
-						href="/text"
-						title="Text"
+						href="/text-styles"
+						title="Text Styles"
 						desc="The different types of text and how they look"
 					/>
 				</li>

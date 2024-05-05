@@ -785,7 +785,7 @@ textarea:active,
 [role=textbox]:focus,
 [role=textbox]:active {
   background-color: var(--neutral-8);
-  border-color: var(--accent-1, var(--neutral-4));
+  border-color: var(--accent-3, var(--neutral-4));
 }
 input:disabled, input[aria-disabled=true],
 select:disabled,

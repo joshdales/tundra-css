@@ -49,6 +49,9 @@
 				<a on:click={hideMenu} class="link-3" href="/inputs">Inputs</a>
 			</li>
 			<li>
+				<a on:click={hideMenu} class="link-3" href="/checkboxes">Checkboxes</a>
+			</li>
+			<li>
 				<a on:click={hideMenu} class="link-3" href="/text-styles">Text Styles</a>
 			</li>
 

@@ -75,6 +75,13 @@
 				</li>
 				<li>
 					<LinkCard
+						href="/checkboxes"
+						title="Checkboxes and Radios"
+						desc="Confirmation and selection"
+					/>
+				</li>
+				<li>
+					<LinkCard
 						href="/text-styles"
 						title="Text Styles"
 						desc="The different types of text and how they look"

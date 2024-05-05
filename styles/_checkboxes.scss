@@ -22,6 +22,10 @@
 		border-color: var(--accent-2, var(--neutral-2));
 	}
 
+	&:active {
+		border-color: var(--accent-3, var(--neutral-3));
+	}
+
 	&:hover {
 		border-color: var(--accent-1, var(--neutral-1));
 	}
@@ -81,6 +85,10 @@
 			background-color: var(--accent-2, var(--neutral-2));
 		}
 	}
+
+	&:active {
+		background-color: var(--accent-3, var(--neutral-3));
+	}
 }
 
 @mixin radio($level: null) {
@@ -103,15 +111,20 @@
 		--size: var(--space-6);
 	}
 
-	&:checked {
-		background-color: var(--neutral-8);
+	&::before {
+		height: 70%;
+		width: 70%;
+		border-radius: var(--radius-5);
+		background-color: var(--accent-2, var(--neutral-2));
+	}
 
-		&::before {
-			content: '';
-			height: 70%;
-			width: 70%;
-			border-radius: var(--radius-5);
-			background-color: var(--accent-2, var(--neutral-2));
-		}
+	&:checked::before {
+		content: '';
+		background-color: var(--accent-2, var(--neutral-2));
+	}
+
+	&:active::before {
+		content: '';
+		background-color: var(--accent-3, var(--neutral-3));
 	}
 }

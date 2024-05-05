@@ -1,0 +1,130 @@
+@use "./utils" as utils;
+
+@mixin base {
+	appearance: none;
+	position: relative;
+	height: var(--size);
+	width: var(--size);
+	cursor: pointer;
+	border: 1px solid var(--neutral-6);
+
+	&::before,
+	&::after {
+		position: absolute;
+		inset: 0;
+		z-index: 1;
+		margin: auto;
+		height: 15%;
+		border-radius: var(--radius-1);
+	}
+
+	&:checked {
+		border-color: var(--accent-2, var(--neutral-2));
+	}
+
+	&:active {
+		border-color: var(--accent-3, var(--neutral-3));
+	}
+
+	&:hover {
+		border-color: var(--accent-1, var(--neutral-1));
+	}
+
+	@include utils.disabled {
+		background-color: var(--neutral-6);
+	}
+}
+
+@mixin checkbox($level: null) {
+	@include base;
+
+	@if $level ==1 {
+		--size: var(--space-4);
+	}
+
+	@if $level ==2 {
+		--size: var(--space-5);
+	}
+
+	@if $level ==3 {
+		--size: var(--space-6);
+	}
+
+	@if $level ==4 {
+		--size: var(--space-7);
+	}
+
+	&:checked {
+		background-color: var(--accent-2, var(--neutral-2));
+
+		&::before,
+		&::after {
+			content: '';
+			background-color: var(--neutral-8);
+		}
+
+		&::before {
+			transform: rotate(50deg);
+			width: 45%;
+			margin-bottom: 30%;
+			margin-left: 5%;
+		}
+
+		&::after {
+			transform: rotate(310deg);
+			width: 80%;
+			margin-bottom: 45%;
+			margin-left: 20%;
+		}
+	}
+
+	&:indeterminate {
+		&::before {
+			content: '';
+			width: 80%;
+			background-color: var(--accent-2, var(--neutral-2));
+		}
+	}
+
+	&:active {
+		background-color: var(--accent-3, var(--neutral-3));
+	}
+}
+
+@mixin radio($level: null) {
+	@include base;
+	border-radius: var(--radius-5);
+
+	@if $level ==1 {
+		--size: var(--space-4);
+	}
+
+	@if $level ==2 {
+		--size: var(--space-5);
+	}
+
+	@if $level ==3 {
+		--size: var(--space-6);
+	}
+
+	@if $level ==4 {
+		--size: var(--space-7);
+	}
+
+	&::before {
+		height: 70%;
+		width: 70%;
+		border-radius: var(--radius-5);
+		background-color: var(--accent-2, var(--neutral-2));
+	}
+
+	&:checked::before {
+		content: '';
+		background-color: var(--accent-2, var(--neutral-2));
+	}
+
+	&:active::before {
+		content: '';
+		background-color: var(--accent-3, var(--neutral-3));
+	}
+}

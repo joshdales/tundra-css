@@ -16,6 +16,7 @@
 	&:hover {
 		border-color: var(--accent-2, var(--neutral-5));
 		box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250 / 10%);
+		background-color: var(--accent-4, var(--neutral-7));
 	}
 
 	&:focus,

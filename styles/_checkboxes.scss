@@ -6,7 +6,7 @@
 	height: var(--size);
 	width: var(--size);
 	cursor: pointer;
-	border: 1px solid var(--neutral-6);
+	border: 1.5px solid var(--neutral-6);
 
 	&::before,
 	&::after {
@@ -27,6 +27,10 @@
 	}
 
 	&:hover {
+		background-color: var(--accent-4, var(--neutral-7));
+	}
+
+	&:focus {
 		border-color: var(--accent-1, var(--neutral-1));
 	}
 
@@ -112,8 +116,9 @@
 	}
 
 	&::before {
-		height: 70%;
-		width: 70%;
+		height: calc(var(--size) - 0.5em);
+		width: auto;
+		aspect-ratio: 1;
 		border-radius: var(--radius-5);
 		background-color: var(--accent-2, var(--neutral-2));
 	}

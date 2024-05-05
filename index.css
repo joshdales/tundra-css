@@ -830,7 +830,7 @@ input[type=checkbox].checkbox-1 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   --size: var(--space-4);
 }
 input[type=checkbox].checkbox-1::before, input[type=checkbox].checkbox-1::after {
@@ -848,6 +848,9 @@ input[type=checkbox].checkbox-1:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-1:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=checkbox].checkbox-1:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=checkbox].checkbox-1:disabled, input[type=checkbox].checkbox-1[aria-disabled=true] {
@@ -886,7 +889,7 @@ input[type=checkbox].checkbox-2 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   --size: var(--space-5);
 }
 input[type=checkbox].checkbox-2::before, input[type=checkbox].checkbox-2::after {
@@ -904,6 +907,9 @@ input[type=checkbox].checkbox-2:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-2:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=checkbox].checkbox-2:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-2[aria-disabled=true] {
@@ -942,7 +948,7 @@ input[type=checkbox].checkbox-3 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   --size: var(--space-6);
 }
 input[type=checkbox].checkbox-3::before, input[type=checkbox].checkbox-3::after {
@@ -960,6 +966,9 @@ input[type=checkbox].checkbox-3:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-3:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=checkbox].checkbox-3:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-3[aria-disabled=true] {
@@ -998,7 +1007,7 @@ input[type=checkbox].checkbox-4 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   --size: var(--space-7);
 }
 input[type=checkbox].checkbox-4::before, input[type=checkbox].checkbox-4::after {
@@ -1016,6 +1025,9 @@ input[type=checkbox].checkbox-4:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-4:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=checkbox].checkbox-4:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-4[aria-disabled=true] {
@@ -1055,7 +1067,7 @@ input[type=radio].radio-1 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-5);
   --size: var(--space-4);
 }
@@ -1074,14 +1086,18 @@ input[type=radio].radio-1:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-1:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=radio].radio-1:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=radio].radio-1:disabled, input[type=radio].radio-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-1::before {
-  height: 70%;
-  width: 70%;
+  height: calc(var(--size) - 0.5em);
+  width: auto;
+  aspect-ratio: 1;
   border-radius: var(--radius-5);
   background-color: var(--accent-2, var(--neutral-2));
 }
@@ -1099,7 +1115,7 @@ input[type=radio].radio-2 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-5);
   --size: var(--space-5);
 }
@@ -1118,14 +1134,18 @@ input[type=radio].radio-2:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-2:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=radio].radio-2:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=radio].radio-2:disabled, input[type=radio].radio-2[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-2::before {
-  height: 70%;
-  width: 70%;
+  height: calc(var(--size) - 0.5em);
+  width: auto;
+  aspect-ratio: 1;
   border-radius: var(--radius-5);
   background-color: var(--accent-2, var(--neutral-2));
 }
@@ -1143,7 +1163,7 @@ input[type=radio].radio-3 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-5);
   --size: var(--space-6);
 }
@@ -1162,14 +1182,18 @@ input[type=radio].radio-3:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-3:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=radio].radio-3:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=radio].radio-3:disabled, input[type=radio].radio-3[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-3::before {
-  height: 70%;
-  width: 70%;
+  height: calc(var(--size) - 0.5em);
+  width: auto;
+  aspect-ratio: 1;
   border-radius: var(--radius-5);
   background-color: var(--accent-2, var(--neutral-2));
 }
@@ -1187,7 +1211,7 @@ input[type=radio].radio-4 {
   height: var(--size);
   width: var(--size);
   cursor: pointer;
-  border: 1px solid var(--neutral-6);
+  border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-5);
   --size: var(--space-7);
 }
@@ -1206,14 +1230,18 @@ input[type=radio].radio-4:active {
   border-color: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-4:hover {
+  background-color: var(--accent-4, var(--neutral-7));
+}
+input[type=radio].radio-4:focus {
   border-color: var(--accent-1, var(--neutral-1));
 }
 input[type=radio].radio-4:disabled, input[type=radio].radio-4[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-4::before {
-  height: 70%;
-  width: 70%;
+  height: calc(var(--size) - 0.5em);
+  width: auto;
+  aspect-ratio: 1;
   border-radius: var(--radius-5);
   background-color: var(--accent-2, var(--neutral-2));
 }

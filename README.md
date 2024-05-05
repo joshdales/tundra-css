@@ -89,4 +89,4 @@ This has been built with newer devices in mind - a lot of the colour palette use
 Though if you bowser doesn't support custom properties or the `@supports` rule I guess that you are out of luck 😢. Should be good as long as your browser has been updated since 2016.
 
 ## SCSS
-There are SCSS variables and mixins provided which you can use if you want to override or change things up. They are there if you want them, the variables are names the same as the custom properties .
+There are SCSS variables and mixins provided which you can use if you want to override or change things up. They are there if you want them, the variables are names the same as the custom properties.

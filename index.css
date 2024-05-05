@@ -1013,7 +1013,7 @@ input[type=checkbox].checkbox-1:checked::before {
 input[type=checkbox].checkbox-1:checked::after {
   transform: rotate(310deg);
   width: 80%;
-  margin-bottom: 42%;
+  margin-bottom: 45%;
   margin-left: 20%;
 }
 input[type=checkbox].checkbox-1:indeterminate::before {
@@ -1069,7 +1069,7 @@ input[type=checkbox].checkbox-2:checked::before {
 input[type=checkbox].checkbox-2:checked::after {
   transform: rotate(310deg);
   width: 80%;
-  margin-bottom: 42%;
+  margin-bottom: 45%;
   margin-left: 20%;
 }
 input[type=checkbox].checkbox-2:indeterminate::before {
@@ -1125,7 +1125,7 @@ input[type=checkbox].checkbox-3:checked::before {
 input[type=checkbox].checkbox-3:checked::after {
   transform: rotate(310deg);
   width: 80%;
-  margin-bottom: 42%;
+  margin-bottom: 45%;
   margin-left: 20%;
 }
 input[type=checkbox].checkbox-3:indeterminate::before {
@@ -1181,7 +1181,7 @@ input[type=checkbox].checkbox-4:checked::before {
 input[type=checkbox].checkbox-4:checked::after {
   transform: rotate(310deg);
   width: 80%;
-  margin-bottom: 42%;
+  margin-bottom: 45%;
   margin-left: 20%;
 }
 input[type=checkbox].checkbox-4:indeterminate::before {

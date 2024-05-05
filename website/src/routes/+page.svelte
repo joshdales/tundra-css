@@ -73,13 +73,13 @@
 						desc="For when someone needs to type into a box"
 					/>
 				</li>
-				<li>
+				<!-- <li>
 					<LinkCard
 						href="/checkboxes"
 						title="Checkboxes and Radios"
 						desc="Confirmation and selection"
 					/>
-				</li>
+				</li> -->
 				<li>
 					<LinkCard
 						href="/text-styles"

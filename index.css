@@ -755,7 +755,6 @@ input,
 select,
 textarea,
 [role=textbox] {
-  background-color: var(--neutral-8);
   border: 1.5px solid var(--neutral-6);
   border-radius: var(--radius-1);
   caret-color: var(--accent-1, var(--neutral-4));
@@ -773,9 +772,9 @@ input:hover,
 select:hover,
 textarea:hover,
 [role=textbox]:hover {
+  background-color: var(--neutral-8);
   border-color: var(--accent-2, var(--neutral-5));
   box-shadow: 0 0 var(--space-1) 0 oklch(20% 0.01 250/10%);
-  background-color: var(--accent-4, var(--neutral-7));
 }
 input:focus, input:active,
 select:focus,
@@ -784,7 +783,7 @@ textarea:focus,
 textarea:active,
 [role=textbox]:focus,
 [role=textbox]:active {
-  background-color: var(--neutral-8);
+  background-color: var(--accent-4, var(--neutral-7));
   border-color: var(--accent-3, var(--neutral-4));
 }
 input:disabled, input[aria-disabled=true],

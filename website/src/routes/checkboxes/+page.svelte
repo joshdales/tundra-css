@@ -8,9 +8,8 @@
 <main>
 	<TokenDescription title="Checkboxes & Radios">
 		<p class="body-4">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus minus atque,
-			hic totam voluptatem sit tempora? Dolor possimus, provident ipsum quam iste molestias esse et
-			temporibus voluptates illum fuga!
+			When a user needs to select items from a list you can apply either the <code>checkbox-*</code>
+			or <code>radio-*</code> to the appropriate input.
 		</p>
 
 		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />

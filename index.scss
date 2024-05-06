@@ -197,7 +197,7 @@ input[type="submit"] {
 }
 
 /* Elements: Text-entry inputs */
-input,
+input:not([type="button"], [type="reset"], [type="submit"], [type="checkbox"], [type="radio"], [type="range"]),
 select,
 textarea,
 [role="textbox"] {

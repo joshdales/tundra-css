@@ -103,10 +103,10 @@
   --space-13: 64px;
   --space-14: 128px;
   /* Font Weight */
-  --font-weight-1: 400;
+  --font-weight-1: 300;
   --font-weight-2: 500;
   --font-weight-3: 700;
-  --font-weight-4: 800;
+  --font-weight-4: 900;
   /* Font Size */
   --font-size-1: 0.75rem;
   --font-size-2: 0.875rem;
@@ -151,7 +151,7 @@
 }
 .alt-heading-1 b,
 .alt-heading-1 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 .body-1 {
@@ -184,7 +184,7 @@
 }
 .button-1 b,
 .button-1 strong {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
 }
 
 .label-1 {
@@ -238,18 +238,18 @@ textarea.input-1 strong,
 }
 .alt-heading-2 b,
 .alt-heading-2 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 .body-2 {
   line-height: var(--line-height-5);
   font-size: var(--font-size-2);
-  font-weight: var(--font-weight-1);
+  font-weight: var(--font-weight-2);
   letter-spacing: var(--letter-spacing-4);
 }
 .body-2 b,
 .body-2 strong {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
 }
 
 .link-2 {
@@ -271,7 +271,7 @@ textarea.input-1 strong,
 }
 .button-2 b,
 .button-2 strong {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
 }
 
 .label-2 {
@@ -325,7 +325,7 @@ textarea.input-2 strong,
 }
 .alt-heading-3 b,
 .alt-heading-3 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 .body-3 {
@@ -358,7 +358,7 @@ textarea.input-2 strong,
 }
 .button-3 b,
 .button-3 strong {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
 }
 
 .label-3 {
@@ -412,7 +412,7 @@ textarea.input-3 strong,
 }
 .alt-heading-4 b,
 .alt-heading-4 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 .body-4 {
@@ -445,7 +445,7 @@ textarea.input-3 strong,
 }
 .button-4 b,
 .button-4 strong {
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-3);
 }
 
 .label-4 {
@@ -499,7 +499,7 @@ textarea.input-4 strong,
 }
 .alt-heading-5 b,
 .alt-heading-5 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 .heading-6 {
@@ -521,7 +521,7 @@ textarea.input-4 strong,
 }
 .alt-heading-6 b,
 .alt-heading-6 strong {
-  font-weight: var(--font-size-4);
+  font-weight: var(--font-weight-4);
 }
 
 /* Elements: Buttons */

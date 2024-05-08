@@ -34,3 +34,7 @@ Buttons:
 Inputs:
   - changed-files:
     - any-glob-to-any-file: 'styles/_inputs.scss'
+
+Checkboxes:
+  - changed-files:
+    - any-glob-to-any-file: 'styles/_checkboxes.scss'

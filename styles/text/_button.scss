@@ -21,5 +21,5 @@
 		font-size: var(--font-size-5);
 	}
 
-	@include utils.bold_text(var(--font-weight-2))
+	@include utils.bold_text(var(--font-weight-3))
 }

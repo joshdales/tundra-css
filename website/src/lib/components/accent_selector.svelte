@@ -16,13 +16,21 @@
 
 	$: {
 		const pageColour = $page.url.searchParams.get('colour')
-		if (selectedColour && selectedColour !== pageColour) {
+		if (selectedColour !== pageColour) {
 			$page.url.searchParams.set('colour', selectedColour)
 			goto($page.url, { replaceState: true })
 		}
 	}
 
 	$: dispatch('accent', selectedColour)
+
+	function resetSelectedColour(
+		event: MouseEvent & { currentTarget: EventTarget & HTMLInputElement },
+	) {
+		if (event.currentTarget.value === selectedColour) {
+			selectedColour = ''
+		}
+	}
 </script>
 
 <fieldset name="accent">
@@ -37,6 +45,7 @@
 				name="colours"
 				value={colour}
 				id="colours-{colour}"
+				on:click={resetSelectedColour}
 				hidden
 			/>
 		</label>

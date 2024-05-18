@@ -40,7 +40,7 @@
 
 		<p class="body-4">Click on a button to copy it's classes.</p>
 
-		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+		<AccentSelector updateColour={(newColour) => (selectedColour = newColour)} />
 	</TokenDescription>
 
 	<h2 class="heading-4">Filled</h2>

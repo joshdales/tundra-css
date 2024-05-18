@@ -12,7 +12,7 @@
 			or <code>radio-*</code> to the appropriate input.
 		</p>
 
-		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+		<AccentSelector updateColour={(newColour) => (selectedColour = newColour)} />
 	</TokenDescription>
 
 	<fieldset name="checkbox">

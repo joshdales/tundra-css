@@ -12,7 +12,7 @@
 			colour then the accent colours with be greyscale.
 		</p>
 
-		<AccentSelector {selectedColour} on:accent={(ev) => (selectedColour = ev.detail)} />
+		<AccentSelector updateColour={(newColour) => (selectedColour = newColour)} />
 	</TokenDescription>
 
 	<label for="input1" class="label-1">

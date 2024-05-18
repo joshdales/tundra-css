@@ -1,34 +1,38 @@
 <script lang="ts">
-	import { createEventDispatcher, onMount } from 'svelte'
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
+	import { browser } from '$app/environment'
 
-	const dispatch = createEventDispatcher()
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
-	export let selectedColour: string
+	let selectedColour = $page.url.searchParams.get('colour')
+	export let updateColour: (newColour: string) => void
 
-	onMount(() => {
+	function updateQueryColour(newColour: string | null) {
 		const pageColour = $page.url.searchParams.get('colour')
-		if (pageColour) {
-			selectedColour = pageColour
+		if (newColour === pageColour) {
+			return
 		}
-	})
 
-	$: {
-		const pageColour = $page.url.searchParams.get('colour')
-		if (selectedColour !== pageColour) {
-			$page.url.searchParams.set('colour', selectedColour)
-			goto($page.url, { replaceState: true })
+		if (newColour) {
+			$page.url.searchParams.set('colour', newColour)
+		} else {
+			$page.url.searchParams.delete('colour')
+		}
+
+		if (browser) {
+			goto($page.url, { replaceState: true, keepFocus: true, noScroll: true })
 		}
 	}
 
-	$: dispatch('accent', selectedColour)
+	$: {
+		updateColour(selectedColour ?? '')
+		updateQueryColour(selectedColour)
+	}
 
-	function resetSelectedColour(
-		event: MouseEvent & { currentTarget: EventTarget & HTMLInputElement },
-	) {
+	type ClickEvent = MouseEvent & { currentTarget: EventTarget & HTMLInputElement }
+	function resetSelectedColour(event: ClickEvent) {
 		if (event.currentTarget.value === selectedColour) {
-			selectedColour = ''
+			selectedColour = null
 		}
 	}
 </script>
@@ -46,7 +50,6 @@
 				value={colour}
 				id="colours-{colour}"
 				on:click={resetSelectedColour}
-				hidden
 			/>
 		</label>
 	{/each}
@@ -79,8 +82,12 @@
 		margin-block-end: var(--space-4);
 	}
 
-	label {
+	label,
+	input {
 		cursor: pointer;
+	}
+
+	label {
 		color: var(--foreground);
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
@@ -91,19 +98,26 @@
 		transition:
 			all 0.1s ease-in-out,
 			transform 0.3s ease-in;
+
+		&:hover {
+			transform: translate(0, calc(var(--space-1) * -1));
+		}
+
+		&:focus-within {
+			box-shadow:
+				0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
+				0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
+				inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-7) l c h / 10%);
+		}
+
+		&.active {
+			border-color: var(--blue-8);
+			background-color: oklch(from var(--blue-8) l c h / 30%);
+		}
 	}
 
-	.active,
-	label:hover {
-		border-color: var(--blue-8);
-		background-color: oklch(from var(--blue-8) l c h / 30%);
-	}
-
-	label:hover {
-		box-shadow:
-			0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
-			0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
-			inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-7) l c h / 10%);
-		transform: translate(0, calc(var(--space-1) * -1));
+	input {
+		position: absolute;
+		opacity: 0;
 	}
 </style>

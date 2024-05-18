@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte'
+	import { createEventDispatcher, onMount } from 'svelte'
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
 
@@ -7,17 +7,22 @@
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
 	export let selectedColour: string
 
-	$: dispatch('accent', selectedColour)
+	onMount(() => {
+		const pageColour = $page.url.searchParams.get('colour')
+		if (pageColour) {
+			selectedColour = pageColour
+		}
+	})
 
 	$: {
 		const pageColour = $page.url.searchParams.get('colour')
-		if (pageColour && !selectedColour) {
-			selectedColour = pageColour
-		} else if (selectedColour && selectedColour !== pageColour) {
+		if (selectedColour && selectedColour !== pageColour) {
 			$page.url.searchParams.set('colour', selectedColour)
 			goto($page.url, { replaceState: true })
 		}
 	}
+
+	$: dispatch('accent', selectedColour)
 </script>
 
 <fieldset name="accent">

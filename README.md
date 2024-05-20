@@ -56,12 +56,31 @@ There are a series of classes for text, along with others elements like buttons,
 - Buttons - 4 button sizes, along with different styled variations
 	- Text style and button sizes: `.button-1` - `.button-4`
 	- Variations: `.filled`, `.outline`, `.ghost`
-	- Accent colours: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
 - Labels - For labelling inputs, or anything else that you want
 	- Text styles: `.label-1` - `.label-4`
 - Inputs - Text based inputs
 	- Text styles and input sizes: `.input-1` - `.input-4`
-	- Accent colours: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, `.pink`
+- Inputs - Checkbox & radios
+	- Input sizes: `.checkbox-1` - `checkbox-4`, and `.radio-1` - `radio-4`
+
+### Customisation
+The the element classes this is managed with colour classes: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, and `.pink`.
+Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-4` to a class:
+```css
+.colour {
+	--accent-1: var(--colour-darkest);
+	--accent-2: var(--colour-dark);
+	--accent-3: var(--colour-light);
+	--accent-4: var(--colour-lightest);
+}
+```
+Generally the best way to think of it is like so:
+1. `accent-1` The accent used when elements are in a hover state
+2. `accent-2` The standard accent colour
+3. `accent-3` The element is active
+4. `accent-4` Used occasionally for variations or elements that have a higher contrast range.
+
+If you have a button or input and there is accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.
 
 ## Installation
 Install via npm (or your preferred package manager):

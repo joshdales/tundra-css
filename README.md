@@ -4,6 +4,17 @@ An opinionated and reasonably comprehensive, but not overwhelming, CSS design sy
 > [!NOTE]
 > Just to say that as this is currently pre v1 there may be random breaking changes as I move styles around and fiddle with the colours, and I'm sorry about that.
 
+This is not a framework, it's a collection of CSS classes and variables to help you create a consistent interface for a website or app.
+It's not utility classes for every single property ala Tailwind or Tachyons, if you want those you can easily make them from the
+There are no components, you can bring these styles into your own project apply them where you need them, and I've tried to make it so that you should only need very minimal HTML in order to get the styles for the elements.
+
+- ✅ CSS Custom Properties
+- ✅ Classes for general UI elements
+- ✅ Customisable
+- ❌ Component library
+- ❌ Utilities classes for every property
+- ❌ Prescriptive HTML structure
+
 ## Naming
 I've aimed to name everything with the same numerical scale convention, there are no `small`, `medium`,`large`, etc sizes everything just uses sequentially increasing numbers. <br />
 The property names are suffixed by a number 0 -> 999 or whatever the highest number in that scale might be.

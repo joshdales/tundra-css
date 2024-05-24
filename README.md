@@ -96,6 +96,8 @@ Generally the best way to think of it is like so:
 
 If you have a button or input and there is accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.
 
+Changing the padding on elements is just a matter of updating `padding-x` or `padding-y`, these use `padding-inline` and `padding-block` but I opted for `x` and `y` in case folks are unfamiliar with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+
 ## Installation
 Install via npm (or your preferred package manager):
 ```

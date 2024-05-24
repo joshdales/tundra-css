@@ -16,13 +16,16 @@ There are no components, you can bring these styles into your own project apply 
 - ❌ Prescriptive HTML structure
 
 ## Naming
-I've aimed to name everything with the same numerical scale convention, there are no `small`, `medium`,`large`, etc sizes everything just uses sequentially increasing numbers. <br />
+I've aimed to name everything with the same numerical scale convention, there are no `small`, `medium`,`large`, etc sizes everything just uses sequentially increasing numbers.
+
 The property names are suffixed by a number 0 -> 999 or whatever the highest number in that scale might be.
 
 - The colours go from dark -> light, I felt like this made the most sense as #000000 is black.
 - The size and typography tokens go from small -> large.
 - Element classes go from small -> large, eg. a button or inputs gets larger as you increase the size.
 - Text classes go from small -> large.
+
+I've generally opted to name things by their full title (so classes are things like `button` as opposed to `btn` or some other abbreviation) because I wanted it to be easy to remember and obvious about what they do. Same goes for custom properties, if they are for a particular property I've named it to follow that property.
 
 ## Usage
 You can apply one of the class provided and/or then customise it as you need with the variables. Ideally where you can try to only use the provided classes and variables, keep it simple and don't overthink things.

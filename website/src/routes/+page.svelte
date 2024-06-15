@@ -18,6 +18,8 @@
 		</p>
 
 		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
+
+		<LinkCard href="/cusomisation" title="Customisation" desc="How to make it your own" />
 	</header>
 
 	<main>

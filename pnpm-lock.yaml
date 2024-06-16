@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   sass:
-    specifier: ^1.69.5
-    version: 1.69.5
+    specifier: ^1.77.5
+    version: 1.77.5
 
 packages:
 
@@ -113,8 +113,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /sass@1.69.5:
-    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
+  /sass@1.77.5:
+    resolution: {integrity: sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:

@@ -162,10 +162,14 @@
 }
 
 .body-1 {
-  --font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-1);
   --letter-spacing: var(--letter-spacing-4);
+}
+.body-1 b,
+.body-1 strong {
+  --font-weight: var(--font-weight-3);
 }
 
 .link-1 {
@@ -234,10 +238,14 @@
 }
 
 .body-2 {
-  --font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-2);
   --letter-spacing: var(--letter-spacing-4);
+}
+.body-2 b,
+.body-2 strong {
+  --font-weight: var(--font-weight-3);
 }
 
 .link-2 {
@@ -306,10 +314,14 @@
 }
 
 .body-3 {
-  --font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-3);
   --letter-spacing: var(--letter-spacing-2);
+}
+.body-3 b,
+.body-3 strong {
+  --font-weight: var(--font-weight-3);
 }
 
 .link-3 {
@@ -378,10 +390,14 @@
 }
 
 .body-4 {
-  --font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-4);
   --letter-spacing: var(--letter-spacing-2);
+}
+.body-4 b,
+.body-4 strong {
+  --font-weight: var(--font-weight-3);
 }
 
 .link-4 {

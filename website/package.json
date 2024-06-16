@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"modern-normalize": "^2.0.0",
-		"tundra-css": "^0.7.0"
+		"tundra-css": "^0.8.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^4.4.0",

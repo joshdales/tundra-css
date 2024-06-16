@@ -1,10 +1,8 @@
 @use '../utils/text' as utils;
 
 @mixin text($level) {
-	font-size: var(--font-size);
-	font-weight: var(--font-weight, var(--font-weight-3));
-	line-height: var(--line-height);
-	letter-spacing: var(--letter-spacing);
+	@include text-properties;
+	--font-weight: var(--font-weight-3);
 
 	@if $level ==1 {
 		--font-size: var(--font-size-4);

@@ -1,3 +1,10 @@
+.alt-heading-1, .body-1, .alt-heading-2, .body-2, .alt-heading-3, .body-3, .alt-heading-4, .body-4, .alt-heading-5, .alt-heading-6 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
   /* Neutral */
@@ -133,79 +140,99 @@
 
 /* Text */
 .heading-1 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-4);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-4);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-3);
 }
 .heading-1 b,
 .heading-1 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-1 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-4);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-4);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .alt-heading-1 b,
 .alt-heading-1 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 .body-1 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-1);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --line-height: var(--line-height-5);
+  --font-size: var(--font-size-1);
+  --font-weight: var(--font-weight-2);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .body-1 b,
 .body-1 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .link-1 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-1);
-  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-1);
+  --letter-spacing: var(--letter-spacing-5);
 }
 .link-1 b,
 .link-1 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .button-1 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-2);
 }
 .button-1 b,
 .button-1 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .label-1 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-2);
-  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-3);
+  --font-size: var(--font-size-2);
+  --letter-spacing: var(--letter-spacing-5);
 }
 .label-1 b,
 .label-1 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .input-1, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1,
 select.input-1,
 textarea.input-1,
 [role=textbox].input-1 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-2);
-  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-1);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-2);
+  --letter-spacing: var(--letter-spacing-5);
 }
 .input-1 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1 b,
 select.input-1 b,
@@ -216,83 +243,103 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select.input-1 strong,
 textarea.input-1 strong,
 [role=textbox].input-1 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .heading-2 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-5);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-3);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-5);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-3);
 }
 .heading-2 b,
 .heading-2 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-2 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-5);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-5);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .alt-heading-2 b,
 .alt-heading-2 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 .body-2 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --line-height: var(--line-height-5);
+  --font-size: var(--font-size-2);
+  --font-weight: var(--font-weight-2);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .body-2 b,
 .body-2 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .link-2 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-2);
-  letter-spacing: var(--letter-spacing-5);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-2);
+  --letter-spacing: var(--letter-spacing-5);
 }
 .link-2 b,
 .link-2 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .button-2 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-3);
 }
 .button-2 b,
 .button-2 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .label-2 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-3);
+  --font-size: var(--font-size-3);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .label-2 b,
 .label-2 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .input-2, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2,
 select.input-2,
 textarea.input-2,
 [role=textbox].input-2 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-1);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-3);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .input-2 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2 b,
 select.input-2 b,
@@ -303,83 +350,103 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select.input-2 strong,
 textarea.input-2 strong,
 [role=textbox].input-2 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .heading-3 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-6);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .heading-3 b,
 .heading-3 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-3 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-6);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-6);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .alt-heading-3 b,
 .alt-heading-3 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 .body-3 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-3);
-  font-weight: var(--font-weight-1);
-  letter-spacing: var(--letter-spacing-2);
+  --font-weight: var(--font-weight-3);
+  --line-height: var(--line-height-5);
+  --font-size: var(--font-size-3);
+  --font-weight: var(--font-weight-1);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .body-3 b,
 .body-3 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .link-3 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-3);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .link-3 b,
 .link-3 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .button-3 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-4);
 }
 .button-3 b,
 .button-3 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .label-3 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-3);
+  --font-size: var(--font-size-4);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .label-3 b,
 .label-3 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .input-3, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3,
 select.input-3,
 textarea.input-3,
 [role=textbox].input-3 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-3);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-1);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-4);
+  --letter-spacing: var(--letter-spacing-3);
 }
 .input-3 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3 b,
 select.input-3 b,
@@ -390,83 +457,103 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select.input-3 strong,
 textarea.input-3 strong,
 [role=textbox].input-3 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .heading-4 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-2);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-7);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .heading-4 b,
 .heading-4 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-4 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-7);
-  line-height: var(--line-height-5);
-  letter-spacing: var(--letter-spacing-4);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-7);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .alt-heading-4 b,
 .alt-heading-4 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 .body-4 {
-  line-height: var(--line-height-5);
-  font-size: var(--font-size-4);
-  font-weight: var(--font-weight-1);
-  letter-spacing: var(--letter-spacing-2);
+  --font-weight: var(--font-weight-3);
+  --line-height: var(--line-height-5);
+  --font-size: var(--font-size-4);
+  --font-weight: var(--font-weight-1);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .body-4 b,
 .body-4 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .link-4 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-4);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-4);
+  --letter-spacing: var(--letter-spacing-4);
 }
 .link-4 b,
 .link-4 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .button-4 {
-  line-height: var(--line-height-4);
-  font-weight: var(--font-weight-2);
-  letter-spacing: var(--letter-spacing-5);
-  font-size: var(--font-size-5);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-5);
 }
 .button-4 b,
 .button-4 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .label-4 {
-  font-weight: var(--font-weight-2);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-5);
-  letter-spacing: var(--letter-spacing-3);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --line-height: var(--line-height-3);
+  --font-size: var(--font-size-5);
+  --letter-spacing: var(--letter-spacing-3);
 }
 .label-4 b,
 .label-4 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .input-4, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4,
 select.input-4,
 textarea.input-4,
 [role=textbox].input-4 {
-  font-weight: var(--font-weight-1);
-  line-height: var(--line-height-4);
-  font-size: var(--font-size-5);
-  letter-spacing: var(--letter-spacing-2);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-1);
+  --line-height: var(--line-height-4);
+  --font-size: var(--font-size-5);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .input-4 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4 b,
 select.input-4 b,
@@ -477,51 +564,59 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select.input-4 strong,
 textarea.input-4 strong,
 [role=textbox].input-4 strong {
-  font-weight: var(--font-weight-2);
+  --font-weight: var(--font-weight-2);
 }
 
 .heading-5 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-8);
+  --line-height: var(--line-height-4);
+  --letter-spacing: var(--letter-spacing-1);
 }
 .heading-5 b,
 .heading-5 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-5 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-8);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-3);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-8);
+  --line-height: var(--line-height-4);
+  --letter-spacing: var(--letter-spacing-3);
 }
 .alt-heading-5 b,
 .alt-heading-5 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 .heading-6 {
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-9);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-1);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  --font-weight: var(--font-weight-2);
+  --font-size: var(--font-size-9);
+  --line-height: var(--line-height-4);
+  --letter-spacing: var(--letter-spacing-1);
 }
 .heading-6 b,
 .heading-6 strong {
-  font-weight: var(--font-weight-3);
+  --font-weight: var(--font-weight-3);
 }
 
 .alt-heading-6 {
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-9);
-  line-height: var(--line-height-4);
-  letter-spacing: var(--letter-spacing-2);
+  --font-weight: var(--font-weight-3);
+  --font-size: var(--font-size-9);
+  --line-height: var(--line-height-4);
+  --letter-spacing: var(--letter-spacing-2);
 }
 .alt-heading-6 b,
 .alt-heading-6 strong {
-  font-weight: var(--font-weight-4);
+  --font-weight: var(--font-weight-4);
 }
 
 /* Elements: Buttons */
@@ -856,6 +951,7 @@ textarea[role=textbox].input-4,
   --padding-x: var(--space-5);
 }
 
+/* Elements: Checkbox */
 input[type=checkbox].checkbox-1 {
   appearance: none;
   position: relative;
@@ -1097,6 +1193,7 @@ input[type=checkbox].checkbox-4:active {
   background-color: var(--accent-3, var(--neutral-3));
 }
 
+/* Elements: Radio */
 input[type=radio].radio-1 {
   appearance: none;
   position: relative;

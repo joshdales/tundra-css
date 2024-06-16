@@ -82,8 +82,8 @@
   --pink-7: oklch(90% 0.0816 350);
   --pink-8: oklch(95% 0.0386 350);
   /* Radius */
-  --radius-1: 3px;
-  --radius-2: 6px;
+  --radius-1: 4px;
+  --radius-2: 8px;
   --radius-3: 12px;
   --radius-4: 24px;
   --radius-5: 48px;

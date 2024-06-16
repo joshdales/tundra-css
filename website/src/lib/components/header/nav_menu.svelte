@@ -28,6 +28,12 @@
 	{#if showMenu}
 		<menu>
 			<li>
+				<a on:click={hideMenu} class="link-3" href="/customisation">Customisation</a>
+			</li>
+
+			<hr />
+
+			<li>
 				<a on:click={hideMenu} class="link-3" href="/colours">Colours</a>
 			</li>
 			<li>

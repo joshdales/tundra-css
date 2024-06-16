@@ -34,13 +34,6 @@
 		Input 4
 		<input class="input-4 {selectedColour}" type="text" placeholder="Input 4" id="input4" />
 	</label>
-
-	<h2 class="heading-4">Customisation</h2>
-
-	<p class="body-4">
-		In order to make your own variations of the inputs you just need to make a class that overrides
-		the accent variables: <code>--accent-1</code> or <code>--accent-2</code> with your preferred values.
-	</p>
 </main>
 
 <style>

@@ -92,12 +92,6 @@
 			<button class="button-2 ghost" disabled> Lorem ipsum </button>
 		</div>
 	</section>
-
-	<h2 class="heading-4">Customisation</h2>
-	<p class="body-4">
-		In order to make your own button variations you just need to make a class that overrides the
-		accent variables: <code>--accent-1</code> to <code>--accent-4</code> with your preferred values.
-	</p>
 </main>
 
 <CopyToaster {copiedValue} />

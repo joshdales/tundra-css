@@ -18,7 +18,7 @@
 	gap: var(--gap);
 	padding-inline: var(--padding-x);
 	padding-block: var(--padding-y);
-	border-radius: var(--radius-1);
+	border-radius: var(--border-radius, var(--radius-1));
 	text-decoration: none;
 
 	@include utils.disabled {

@@ -1,7 +1,7 @@
 @use '../utils/text' as utils;
 
 @mixin text($level) {
-	@include utils.text-properties;
+	@extend %text-properties;
 	--font-weight: var(--font-weight-1);
 	--line-height: var(--line-height-4);
 

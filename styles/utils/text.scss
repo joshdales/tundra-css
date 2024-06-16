@@ -4,7 +4,7 @@
 
 	b,
 	strong {
-		font-weight: $value;
+		--font-weight: #{$value};
 	}
 }
 

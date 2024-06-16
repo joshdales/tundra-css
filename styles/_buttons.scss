@@ -15,10 +15,10 @@
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	gap: var(--space-1);
+	gap: var(--gap);
 	padding-inline: var(--padding-x);
 	padding-block: var(--padding-y);
-	border-radius: var(--radius-1);
+	border-radius: var(--border-radius, var(--radius-1));
 	text-decoration: none;
 
 	@include utils.disabled {
@@ -28,26 +28,34 @@
 
 @mixin size($level) {
 	@if $level ==1 {
+		--gap: var(--space-2);
 		--padding-y: var(--space-1);
 		--padding-x: var(--space-2);
 	}
 
 	@else if $level ==2 {
+		--gap: var(--space-3);
 		--padding-y: var(--space-2);
 		--padding-x: var(--space-3);
 	}
 
 	@else if $level ==3 {
+		--gap: var(--space-3);
 		--padding-y: var(--space-3);
 		--padding-x: var(--space-4);
 	}
 
 	@else if $level ==4 {
+		--gap: var(--space-4);
 		--padding-y: var(--space-4);
 		--padding-x: var(--space-5);
 	}
 }
 
+/// A button of a solid colour
+///
+/// @param {boolean} $include_base
+/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin filled($include_base: false) {
 	@if $include_base {
 		@include base;
@@ -75,6 +83,10 @@
 	}
 }
 
+/// A button of a with a neutral background and accented border and text colour
+///
+/// @param {boolean} $include_base
+/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin outline($include_base: false) {
 	@if $include_base {
 		@include base;
@@ -105,6 +117,10 @@
 	}
 }
 
+/// A transparent button with accented text
+///
+/// @param {boolean} $include_base
+/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin ghost($include_base: false) {
 	@if $include_base {
 		@include base;

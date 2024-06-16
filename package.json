@@ -9,9 +9,15 @@
   "exports": {
     ".": "./index.css",
     "./css": "./index.css",
-    "./scss": "./index.scss",
-    "./styles": "./styles/index.scss",
-    "./styles/*": "./styles/*"
+    "./scss": {
+      "sass": "./index.scss"
+    },
+    "./styles":{
+      "sass": "./styles/index.scss"
+    },
+    "./styles/*": {
+      "sass": "./styles/*"
+    }
   },
   "scripts": {
     "build": "sass --no-source-map ./index.scss ./index.css"

@@ -134,6 +134,10 @@
 }
 
 /* Text */
+%text-properties {
+	@include text-properties;
+}
+
 @for $level from 1 through 6 {
 	.heading-#{$level} {
 		@include heading-text($level);

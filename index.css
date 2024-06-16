@@ -132,11 +132,14 @@
 }
 
 /* Text */
-.heading-1 {
+.alt-heading-6, .heading-6, .alt-heading-5, .heading-5, .input-4, .label-4, .button-4, .link-4, .body-4, .alt-heading-4, .heading-4, .input-3, .label-3, .button-3, .link-3, .body-3, .alt-heading-3, .heading-3, .input-2, .label-2, .button-2, .link-2, .body-2, .alt-heading-2, .heading-2, .input-1, .label-1, .button-1, .link-1, .body-1, .alt-heading-1, .heading-1 {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
+}
+
+.heading-1 {
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-4);
   --line-height: var(--line-height-5);
@@ -148,10 +151,6 @@
 }
 
 .alt-heading-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-4);
   --line-height: var(--line-height-5);
@@ -163,10 +162,6 @@
 }
 
 .body-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-1);
@@ -174,10 +169,6 @@
 }
 
 .link-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-1);
@@ -189,10 +180,6 @@
 }
 
 .button-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-2);
@@ -203,10 +190,6 @@
 }
 
 .label-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
   --font-size: var(--font-size-2);
@@ -217,36 +200,18 @@
   --font-weight: var(--font-weight-3);
 }
 
-.input-1, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1,
-select.input-1,
-textarea.input-1,
-[role=textbox].input-1 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+.input-1 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-2);
   --letter-spacing: var(--letter-spacing-5);
 }
-.input-1 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1 b,
-select.input-1 b,
-textarea.input-1 b,
-[role=textbox].input-1 b,
-.input-1 strong,
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1 strong,
-select.input-1 strong,
-textarea.input-1 strong,
-[role=textbox].input-1 strong {
+.input-1 b,
+.input-1 strong {
   --font-weight: var(--font-weight-2);
 }
 
 .heading-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-5);
   --line-height: var(--line-height-5);
@@ -258,10 +223,6 @@ textarea.input-1 strong,
 }
 
 .alt-heading-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-5);
   --line-height: var(--line-height-5);
@@ -273,22 +234,13 @@ textarea.input-1 strong,
 }
 
 .body-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-2);
-  --font-weight: var(--font-weight-2);
   --letter-spacing: var(--letter-spacing-4);
 }
 
 .link-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-2);
@@ -300,10 +252,6 @@ textarea.input-1 strong,
 }
 
 .button-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-3);
@@ -314,10 +262,6 @@ textarea.input-1 strong,
 }
 
 .label-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
   --font-size: var(--font-size-3);
@@ -328,36 +272,18 @@ textarea.input-1 strong,
   --font-weight: var(--font-weight-3);
 }
 
-.input-2, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2,
-select.input-2,
-textarea.input-2,
-[role=textbox].input-2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+.input-2 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-3);
   --letter-spacing: var(--letter-spacing-4);
 }
-.input-2 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2 b,
-select.input-2 b,
-textarea.input-2 b,
-[role=textbox].input-2 b,
-.input-2 strong,
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2 strong,
-select.input-2 strong,
-textarea.input-2 strong,
-[role=textbox].input-2 strong {
+.input-2 b,
+.input-2 strong {
   --font-weight: var(--font-weight-2);
 }
 
 .heading-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-6);
   --line-height: var(--line-height-5);
@@ -369,10 +295,6 @@ textarea.input-2 strong,
 }
 
 .alt-heading-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-6);
   --line-height: var(--line-height-5);
@@ -384,10 +306,6 @@ textarea.input-2 strong,
 }
 
 .body-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-3);
@@ -395,10 +313,6 @@ textarea.input-2 strong,
 }
 
 .link-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-3);
@@ -410,10 +324,6 @@ textarea.input-2 strong,
 }
 
 .button-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-4);
@@ -424,10 +334,6 @@ textarea.input-2 strong,
 }
 
 .label-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
   --font-size: var(--font-size-4);
@@ -438,36 +344,18 @@ textarea.input-2 strong,
   --font-weight: var(--font-weight-3);
 }
 
-.input-3, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3,
-select.input-3,
-textarea.input-3,
-[role=textbox].input-3 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+.input-3 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-4);
   --letter-spacing: var(--letter-spacing-3);
 }
-.input-3 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3 b,
-select.input-3 b,
-textarea.input-3 b,
-[role=textbox].input-3 b,
-.input-3 strong,
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3 strong,
-select.input-3 strong,
-textarea.input-3 strong,
-[role=textbox].input-3 strong {
+.input-3 b,
+.input-3 strong {
   --font-weight: var(--font-weight-2);
 }
 
 .heading-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-7);
   --line-height: var(--line-height-5);
@@ -479,10 +367,6 @@ textarea.input-3 strong,
 }
 
 .alt-heading-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-7);
   --line-height: var(--line-height-5);
@@ -494,10 +378,6 @@ textarea.input-3 strong,
 }
 
 .body-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-5);
   --font-size: var(--font-size-4);
@@ -505,10 +385,6 @@ textarea.input-3 strong,
 }
 
 .link-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-4);
@@ -520,10 +396,6 @@ textarea.input-3 strong,
 }
 
 .button-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-5);
@@ -534,10 +406,6 @@ textarea.input-3 strong,
 }
 
 .label-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
   --font-size: var(--font-size-5);
@@ -548,36 +416,18 @@ textarea.input-3 strong,
   --font-weight: var(--font-weight-3);
 }
 
-.input-4, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4,
-select.input-4,
-textarea.input-4,
-[role=textbox].input-4 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+.input-4 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-4);
   --font-size: var(--font-size-5);
   --letter-spacing: var(--letter-spacing-2);
 }
-.input-4 b, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4 b,
-select.input-4 b,
-textarea.input-4 b,
-[role=textbox].input-4 b,
-.input-4 strong,
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4 strong,
-select.input-4 strong,
-textarea.input-4 strong,
-[role=textbox].input-4 strong {
+.input-4 b,
+.input-4 strong {
   --font-weight: var(--font-weight-2);
 }
 
 .heading-5 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-8);
   --line-height: var(--line-height-4);
@@ -589,10 +439,6 @@ textarea.input-4 strong,
 }
 
 .alt-heading-5 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-8);
   --line-height: var(--line-height-4);
@@ -604,10 +450,6 @@ textarea.input-4 strong,
 }
 
 .heading-6 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-2);
   --font-size: var(--font-size-9);
   --line-height: var(--line-height-4);
@@ -619,10 +461,6 @@ textarea.input-4 strong,
 }
 
 .alt-heading-6 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
   --font-weight: var(--font-weight-3);
   --font-size: var(--font-size-9);
   --line-height: var(--line-height-4);
@@ -930,40 +768,28 @@ textarea[aria-disabled=true],
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-1,
 select.input-1,
-select[role=textbox].input-1,
 textarea.input-1,
-textarea[role=textbox].input-1,
-[role=textbox].input-1,
 [role=textbox].input-1 {
   --padding-y: var(--space-1);
   --padding-x: var(--space-2);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-2,
 select.input-2,
-select[role=textbox].input-2,
 textarea.input-2,
-textarea[role=textbox].input-2,
-[role=textbox].input-2,
 [role=textbox].input-2 {
   --padding-y: var(--space-2);
   --padding-x: var(--space-3);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3,
 select.input-3,
-select[role=textbox].input-3,
 textarea.input-3,
-textarea[role=textbox].input-3,
-[role=textbox].input-3,
 [role=textbox].input-3 {
   --padding-y: var(--space-3);
   --padding-x: var(--space-4);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4,
 select.input-4,
-select[role=textbox].input-4,
 textarea.input-4,
-textarea[role=textbox].input-4,
-[role=textbox].input-4,
 [role=textbox].input-4 {
   --padding-y: var(--space-4);
   --padding-x: var(--space-5);

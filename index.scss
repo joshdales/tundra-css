@@ -1,6 +1,5 @@
-@use 'styles' as *;
-
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
+@use 'styles' as *;
 
 :root {
 	/* Neutral */
@@ -210,6 +209,7 @@ textarea,
 	}
 }
 
+/* Elements: Checkbox */
 input[type="checkbox"] {
 	@for $level from 1 through 4 {
 		&.checkbox-#{$level} {
@@ -218,6 +218,7 @@ input[type="checkbox"] {
 	}
 }
 
+/* Elements: Radio */
 input[type="radio"] {
 	@for $level from 1 through 4 {
 		&.radio-#{$level} {

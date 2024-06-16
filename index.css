@@ -84,9 +84,9 @@
   /* Radius */
   --radius-1: 4px;
   --radius-2: 8px;
-  --radius-3: 12px;
-  --radius-4: 24px;
-  --radius-5: 48px;
+  --radius-3: 16px;
+  --radius-4: 32px;
+  --radius-5: 64px;
   /* Space */
   --space-1: 4px;
   --space-2: 8px;

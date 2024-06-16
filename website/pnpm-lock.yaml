@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   tundra-css:
-    specifier: ^0.7.0
-    version: 0.7.0
+    specifier: ^0.8.0
+    version: 0.8.0
 
 devDependencies:
   '@sveltejs/adapter-cloudflare':
@@ -2757,8 +2757,8 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tundra-css@0.7.0:
-    resolution: {integrity: sha512-CmbhmDdNLwLAr34LRtvy9G6HAg1k7GakyWGh1hxnKTloYLO0McxRg9z3uhrNoAXzZorKUojM434XsrP8kPcBjw==}
+  /tundra-css@0.8.0:
+    resolution: {integrity: sha512-CaKIvt4jPGKK8BdH25CxyejFC4Hdb0SgD4rpRi2S0K2jNITk6JsxWKMmWsZaAJSflIoR79roauFN9JdaQl74nQ==}
     dev: false
 
   /type-check@0.4.0:

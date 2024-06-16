@@ -1,27 +1,29 @@
 @use '../utils/text' as utils;
 
 @mixin text($level) {
-	font-weight: var(--font-weight-2);
-	line-height: var(--line-height-3);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight, var(--font-weight-2));
+	line-height: var(--line-height, var(--line-height-3));
+	letter-spacing: var(--letter-spacing);
 
 	@if $level ==1 {
-		font-size: var(--font-size-2);
-		letter-spacing: var(--letter-spacing-5);
+		--font-size: var(--font-size-2);
+		--letter-spacing: var(--letter-spacing-5);
 	}
 
 	@else if $level ==2 {
-		font-size: var(--font-size-3);
-		letter-spacing: var(--letter-spacing-4);
+		--font-size: var(--font-size-3);
+		--letter-spacing: var(--letter-spacing-4);
 	}
 
 	@else if $level ==3 {
-		font-size: var(--font-size-4);
-		letter-spacing: var(--letter-spacing-4);
+		--font-size: var(--font-size-4);
+		--letter-spacing: var(--letter-spacing-4);
 	}
 
 	@else if $level ==4 {
-		font-size: var(--font-size-5);
-		letter-spacing: var(--letter-spacing-3);
+		--font-size: var(--font-size-5);
+		--letter-spacing: var(--letter-spacing-3);
 	}
 
 	@include utils.bold_text(var(--font-weight-3))

@@ -196,7 +196,7 @@
 .label-1 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
-  --font-size: var(--font-size-2);
+  --font-size: var(--font-size-1);
   --letter-spacing: var(--letter-spacing-5);
 }
 .label-1 b,
@@ -272,7 +272,7 @@
 .label-2 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
-  --font-size: var(--font-size-3);
+  --font-size: var(--font-size-2);
   --letter-spacing: var(--letter-spacing-4);
 }
 .label-2 b,
@@ -348,7 +348,7 @@
 .label-3 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
-  --font-size: var(--font-size-4);
+  --font-size: var(--font-size-3);
   --letter-spacing: var(--letter-spacing-4);
 }
 .label-3 b,
@@ -424,7 +424,7 @@
 .label-4 {
   --font-weight: var(--font-weight-1);
   --line-height: var(--line-height-3);
-  --font-size: var(--font-size-5);
+  --font-size: var(--font-size-4);
   --letter-spacing: var(--letter-spacing-3);
 }
 .label-4 b,

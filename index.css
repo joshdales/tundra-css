@@ -503,7 +503,7 @@ input[type=submit] {
   gap: var(--gap);
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
-  border-radius: var(--border-radius, var(--radius-1));
+  border-radius: var(--border-radius, var(--radius-2));
   text-decoration: none;
 }
 button:disabled, button[aria-disabled=true],
@@ -525,7 +525,7 @@ button.button-1,
 input[type=button].button-1,
 input[type=reset].button-1,
 input[type=submit].button-1 {
-  --gap: var(--space-2);
+  --gap: var(--space-1);
   --padding-y: var(--space-1);
   --padding-x: var(--space-2);
 }
@@ -535,9 +535,9 @@ button.button-2,
 input[type=button].button-2,
 input[type=reset].button-2,
 input[type=submit].button-2 {
-  --gap: var(--space-3);
+  --gap: var(--space-2);
   --padding-y: var(--space-2);
-  --padding-x: var(--space-3);
+  --padding-x: var(--space-5);
 }
 button.button-3,
 .button.button-3,
@@ -547,7 +547,7 @@ input[type=reset].button-3,
 input[type=submit].button-3 {
   --gap: var(--space-3);
   --padding-y: var(--space-3);
-  --padding-x: var(--space-4);
+  --padding-x: var(--space-8);
 }
 button.button-4,
 .button.button-4,
@@ -555,9 +555,9 @@ button.button-4,
 input[type=button].button-4,
 input[type=reset].button-4,
 input[type=submit].button-4 {
-  --gap: var(--space-4);
-  --padding-y: var(--space-4);
-  --padding-x: var(--space-5);
+  --gap: var(--space-5);
+  --padding-y: var(--space-5);
+  --padding-x: var(--space-10);
 }
 button.filled,
 .button.filled,
@@ -743,7 +743,7 @@ select,
 textarea,
 [role=textbox] {
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
+  border-radius: var(--border-radius, var(--radius-2));
   caret-color: var(--accent-1, var(--neutral-4));
   outline: none;
   padding-inline: var(--padding-x);
@@ -794,21 +794,21 @@ select.input-2,
 textarea.input-2,
 [role=textbox].input-2 {
   --padding-y: var(--space-2);
-  --padding-x: var(--space-3);
+  --padding-x: var(--space-5);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-3,
 select.input-3,
 textarea.input-3,
 [role=textbox].input-3 {
   --padding-y: var(--space-3);
-  --padding-x: var(--space-4);
+  --padding-x: var(--space-8);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]).input-4,
 select.input-4,
 textarea.input-4,
 [role=textbox].input-4 {
-  --padding-y: var(--space-4);
-  --padding-x: var(--space-5);
+  --padding-y: var(--space-5);
+  --padding-x: var(--space-10);
 }
 
 /* Elements: Checkbox */
@@ -819,7 +819,7 @@ input[type=checkbox].checkbox-1 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
+  border-radius: var(--border-radius, var(--radius-1));
   --size: var(--space-4);
 }
 input[type=checkbox].checkbox-1::before, input[type=checkbox].checkbox-1::after {
@@ -879,7 +879,7 @@ input[type=checkbox].checkbox-2 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
+  border-radius: var(--border-radius, var(--radius-1));
   --size: var(--space-5);
 }
 input[type=checkbox].checkbox-2::before, input[type=checkbox].checkbox-2::after {
@@ -939,7 +939,7 @@ input[type=checkbox].checkbox-3 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
+  border-radius: var(--border-radius, var(--radius-1));
   --size: var(--space-6);
 }
 input[type=checkbox].checkbox-3::before, input[type=checkbox].checkbox-3::after {
@@ -999,7 +999,7 @@ input[type=checkbox].checkbox-4 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
+  border-radius: var(--border-radius, var(--radius-1));
   --size: var(--space-7);
 }
 input[type=checkbox].checkbox-4::before, input[type=checkbox].checkbox-4::after {
@@ -1061,8 +1061,8 @@ input[type=radio].radio-1 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
-  border-radius: var(--radius-5);
+  border-radius: var(--border-radius, var(--radius-1));
+  --border-radius: var(--radius-5);
   --size: var(--space-4);
 }
 input[type=radio].radio-1::before, input[type=radio].radio-1::after {
@@ -1110,8 +1110,8 @@ input[type=radio].radio-2 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
-  border-radius: var(--radius-5);
+  border-radius: var(--border-radius, var(--radius-1));
+  --border-radius: var(--radius-5);
   --size: var(--space-5);
 }
 input[type=radio].radio-2::before, input[type=radio].radio-2::after {
@@ -1159,8 +1159,8 @@ input[type=radio].radio-3 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
-  border-radius: var(--radius-5);
+  border-radius: var(--border-radius, var(--radius-1));
+  --border-radius: var(--radius-5);
   --size: var(--space-6);
 }
 input[type=radio].radio-3::before, input[type=radio].radio-3::after {
@@ -1208,8 +1208,8 @@ input[type=radio].radio-4 {
   width: var(--size);
   cursor: pointer;
   border: 1.5px solid var(--neutral-6);
-  border-radius: var(--radius-1);
-  border-radius: var(--radius-5);
+  border-radius: var(--border-radius, var(--radius-1));
+  --border-radius: var(--radius-5);
   --size: var(--space-7);
 }
 input[type=radio].radio-4::before, input[type=radio].radio-4::after {

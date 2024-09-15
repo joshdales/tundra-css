@@ -6,7 +6,7 @@
 
 <a {href}>
 	<h3 class="heading-2">{title}</h3>
-	<p class="label-1">{desc}</p>
+	<p class="label-2">{desc}</p>
 </a>
 
 <style>

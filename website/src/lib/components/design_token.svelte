@@ -59,6 +59,7 @@
 			transform 0.1s ease-out,
 			box-shadow 0.1s ease-out;
 		position: relative;
+		--border-radius: var(--radius-1);
 	}
 
 	.token:hover {

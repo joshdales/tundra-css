@@ -1,7 +1,6 @@
 {
 	"name": "tundra-css-website",
 	"version": "0.0.1",
-	"private": true,
 	"scripts": {
 		"serve": "vite dev",
 		"build": "vite build",
@@ -32,5 +31,8 @@
 		"typescript": "^5.6.2",
 		"vite": "^5.4.5"
 	},
-	"type": "module"
+	"type": "module",
+	"engines": {
+		"node": "20"
+	}
 }

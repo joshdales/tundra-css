@@ -165,6 +165,9 @@
 	}
 
 	label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		cursor: pointer;
 		color: var(--foreground);
 		border-radius: var(--radius-2);

@@ -51,6 +51,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: unset;
+		justify-content: flex-start;
 		padding: var(--space-2);
 		cursor: pointer;
 		background-color: #fff;

@@ -1,5 +1,35 @@
 @use "./utils" as utils;
 
+@mixin _tick($level) {
+
+	&::before,
+	&::after {
+		content: '';
+		background-color: var(--accent-8, var(--neutral-8));
+	}
+
+	&::before {
+		transform: rotate(50deg);
+		width: 45%;
+		margin-bottom: 30%;
+		margin-left: 5%;
+	}
+
+	&::after {
+		transform: rotate(310deg);
+		width: 80%;
+		margin-bottom: 45%;
+
+		@if $level % 2==0 {
+			margin-left: 20%;
+		}
+
+		@else {
+			margin-left: 22%;
+		}
+	}
+}
+
 @mixin base {
 	appearance: none;
 	position: relative;
@@ -19,20 +49,30 @@
 		border-radius: var(--radius-1);
 	}
 
-	&:checked {
-		border-color: var(--accent-2, var(--neutral-2));
-	}
-
 	&:active {
+		border-color: var(--accent-4, var(--neutral-3));
+		background-color: var(--accent-4, var(--neutral-3));
+	}
+
+	&:hover,
+	&:focus-visible {
 		border-color: var(--accent-3, var(--neutral-3));
+		background-color: var(--accent-8, var(--neutral-7));
 	}
 
-	&:hover {
-		background-color: var(--accent-4, var(--neutral-7));
-	}
+	&:checked {
+		--background: var(--accent-4, var(--neutral-2));
+		background-color: var(--background);
+		border-color: var(--background);
 
-	&:focus {
-		border-color: var(--accent-1, var(--neutral-1));
+		&:hover,
+		&:focus-visible {
+			--background: var(--accent-3, var(--neutral-1));
+		}
+
+		&:active {
+			--background: var(--accent-5, var(--neutral-3));
+		}
 	}
 
 	@include utils.disabled {
@@ -60,39 +100,15 @@
 	}
 
 	&:checked {
-		background-color: var(--accent-2, var(--neutral-2));
-
-		&::before,
-		&::after {
-			content: '';
-			background-color: var(--neutral-8);
-		}
-
-		&::before {
-			transform: rotate(50deg);
-			width: 45%;
-			margin-bottom: 30%;
-			margin-left: 5%;
-		}
-
-		&::after {
-			transform: rotate(310deg);
-			width: 80%;
-			margin-bottom: 45%;
-			margin-left: 20%;
-		}
+		@include _tick($level);
 	}
 
 	&:indeterminate {
 		&::before {
 			content: '';
 			width: 80%;
-			background-color: var(--accent-2, var(--neutral-2));
+			background-color: var(--accent-3, var(--neutral-2));
 		}
-	}
-
-	&:active {
-		background-color: var(--accent-3, var(--neutral-3));
 	}
 }
 
@@ -116,21 +132,7 @@
 		--size: var(--space-7);
 	}
 
-	&::before {
-		height: calc(var(--size) - 0.5em);
-		width: auto;
-		aspect-ratio: 1;
-		border-radius: var(--radius-5);
-		background-color: var(--accent-2, var(--neutral-2));
-	}
-
-	&:checked::before {
-		content: '';
-		background-color: var(--accent-2, var(--neutral-2));
-	}
-
-	&:active::before {
-		content: '';
-		background-color: var(--accent-3, var(--neutral-3));
+	&:checked {
+		@include _tick($level)
 	}
 }

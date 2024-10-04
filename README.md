@@ -79,22 +79,26 @@ There are a series of classes for text, along with others elements like buttons,
 
 ### Customisation
 The the element classes this is managed with colour classes: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, and `.pink`.
-Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-4` to a class:
+Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-8` to a class:
 ```css
 .colour {
-	--accent-1: var(--colour-darkest);
-	--accent-2: var(--colour-dark);
-	--accent-3: var(--colour-light);
-	--accent-4: var(--colour-lightest);
+	--accent-1: var(--colour-1);
+	--accent-2: var(--colour-2);
+	--accent-3: var(--colour-3);
+	--accent-4: var(--colour-4);
+	--accent-5: var(--colour-5);
+	--accent-6: var(--colour-6);
+	--accent-7: var(--colour-7);
+	--accent-8: var(--colour-8);
 }
 ```
-Generally the best way to think of it is like so:
-1. `accent-1` The accent used when elements are in a hover state
-2. `accent-2` The standard accent colour
-3. `accent-3` The element is active
-4. `accent-4` Used occasionally for variations or elements that have a higher contrast range.
+The accent variables are often used in the following way on interactive elements:
+1. `accent-3` The standard accent colour.
+2. `accent-2` The accent used when elements are being viewed (either by focus or hover).
+3. `accent-4` The element is being activated or interactive with.
+4. `accent-8` Contrast colour with the main accent.
 
-If you have a button or input and there is accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.
+If you have a button or input and there is no accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.
 
 Changing the padding on elements is just a matter of updating `padding-x` or `padding-y`, these use `padding-inline` and `padding-block` but I opted for `x` and `y` in case folks are unfamiliar with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
 
@@ -119,7 +123,7 @@ Or you could access it via a CDN:
 - https://cdn.jsdelivr.net/npm/tundra-css/index.min.css
 
 ## Compatibility
-This has been built with newer devices in mind - a lot of the colour palette uses the P3 colour gamut, however I've provided fallbacks for that if your display doesn't support it.
+This has been built with newer devices and CSS rules in mind - a lot of the colour palette uses the P3 colour gamut, however I've provided fallbacks for that if your display doesn't support it.
 
 Though if you bowser doesn't support custom properties or the `@supports` rule I guess that you are out of luck 😢. Should be good as long as your browser has been updated since 2016.
 

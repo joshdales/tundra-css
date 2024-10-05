@@ -16,6 +16,7 @@
 	&:hover {
 		border-color: var(--accent-5, var(--neutral-4));
 		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
+		box-shadow: var(--shadow-1);
 
 		&::placeholder {
 			color: var(--accent-5, var(--neutral-5));

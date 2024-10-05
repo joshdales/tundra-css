@@ -114,7 +114,10 @@
 	--letter-spacing-3: #{$letter-spacing-3};
 	--letter-spacing-4: #{$letter-spacing-4};
 	--letter-spacing-5: #{$letter-spacing-5};
-
+	/* Shadows */
+	--shadow-1: #{$shadow-1};
+	--shadow-2: #{$shadow-2};
+	--shadow-3: #{$shadow-3};
 }
 
 /* Text */
@@ -222,6 +225,11 @@ input[type="radio"] {
 		@for $level from 1 through 9 {
 			--accent-#{$level}: var(--#{$colour}-#{$level});
 		}
+
+		// These custom properties have to be redeclared otherwise CSS can't compute that --accent-1 is now present.
+		--shadow-1: #{$shadow-1};
+		--shadow-2: #{$shadow-2};
+		--shadow-3: #{$shadow-3};
 	}
 }
 

@@ -8,45 +8,63 @@
 		--neutral-#{$level}: #{$colour};
 	}
 
+	--neutral: var(--neutral-1);
+
 	/* Red */
 	@each $level, $colour in $reds {
 		--red-#{$level}: #{$colour};
 	}
+
+	--red: var(--red-5);
 
 	/* Orange */
 	@each $level, $colour in $oranges {
 		--orange-#{$level}: #{$colour};
 	}
 
+	--orange: var(--orange-5);
+
 	/* Yellow */
 	@each $level, $colour in $yellows {
 		--yellow-#{$level}: #{$colour};
 	}
+
+	--yellow: var(--yellow-5);
 
 	/* Green */
 	@each $level, $colour in $greens {
 		--green-#{$level}: #{$colour};
 	}
 
+	--green: var(--green-5);
+
 	/* Cyan */
 	@each $level, $colour in $cyans {
 		--cyan-#{$level}: #{$colour};
 	}
+
+	--cyan: var(--cyan-5);
 
 	/* Blue */
 	@each $level, $colour in $blues {
 		--blue-#{$level}: #{$colour};
 	}
 
+	--blue: var(--blue-5);
+
 	/* Purple */
 	@each $level, $colour in $purples {
 		--purple-#{$level}: #{$colour};
 	}
 
+	--purple: var(--purple-5);
+
 	/* Pink */
 	@each $level, $colour in $pinks {
 		--pink-#{$level}: #{$colour};
 	}
+
+	--pink: var(--pink-5);
 
 	/* Radius */
 	--radius-1: #{$radius-1};
@@ -199,7 +217,7 @@ input[type="radio"] {
 
 @each $colour in $colours {
 	.#{$colour} {
-		accent-color: var(--#{$colour}, var(--#{$colour}-4));
+		accent-color: var(--#{colour});
 
 		@for $level from 1 through 9 {
 			--accent-#{$level}: var(--#{$colour}-#{$level});

@@ -201,43 +201,9 @@ input[type="radio"] {
 	.#{$colour} {
 		accent-color: var(--#{$colour}, var(--#{$colour}-4));
 
-		@for $level from 1 through 8 {
+		@for $level from 1 through 9 {
 			--accent-#{$level}: var(--#{$colour}-#{$level});
 		}
-	}
-}
-
-/* Fallbacks */
-
-// When Display-P3 is not supported use these values.
-@supports not (color: color(display-p3 1 1 1)) {
-	:root {
-		--neutral-8: oklch(98% 0.0097 250);
-		--red-1: oklch(40% 0.16 25);
-		--red-5: oklch(70% 0.19 25);
-		--red-6: oklch(80% 0.1142 25);
-		--red-7: oklch(90% 0.0511 25);
-		--red-8: oklch(95% 0.0239 25);
-		--yellow-1: oklch(70% 0.1447 80);
-		--yellow-4: oklch(85% 0.1436 80);
-		--yellow-5: oklch(89% 0.1033 80);
-		--yellow-6: oklch(92% 0.0739 80);
-		--yellow-7: oklch(95% 0.0457 80);
-		--yellow-8: oklch(97% 0.0261 80);
-		--green-1: oklch(35% 0.0729 165);
-		--green-2: oklch(40% 0.0837 165);
-		--green-3: oklch(50% 0.1044 165);
-		--green-4: oklch(60% 0.1251 165);
-		--green-5: oklch(70% 0.1469 165);
-		--green-8: oklch(95% 0.0739 165);
-		--blue-1: oklch(35% 0.1142 255);
-		--blue-2: oklch(40% 0.1316 255);
-		--blue-3: oklch(50% 0.1643 255);
-		--blue-4: oklch(60% 0.1969 255);
-		--blue-5: oklch(70% 0.1588 255);
-		--blue-6: oklch(80% 0.1022 255);
-		--blue-7: oklch(90% 0.0489 255);
-		--blue-8: oklch(95% 0.0239 255);
 	}
 }
 

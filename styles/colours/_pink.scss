@@ -1,11 +1,12 @@
-$pink-1: oklch(30% 0.1398 350);
-$pink-2: oklch(40% 0.17 350);
-$pink-3: oklch(50% 0.17 350);
-$pink-4: oklch(60% 0.17 350);
-$pink-5: oklch(70% 0.17 350);
-$pink-6: oklch(80% 0.17 350);
-$pink-7: oklch(90% 0.0816 350);
-$pink-8: oklch(95% 0.0386 350);
+$pink-1: oklch(20% 0.17 350);
+$pink-2: oklch(30% 0.17 350);
+$pink-3: oklch(40% 0.17 350);
+$pink-4: oklch(50% 0.17 350);
+$pink-5: oklch(60% 0.17 350);
+$pink-6: oklch(70% 0.17 350);
+$pink-7: oklch(80% 0.17 350);
+$pink-8: oklch(90% 0.0816 350);
+$pink-9: oklch(97% 0.0228 350);
 
 $pinks: (
 	"1": $pink-1,
@@ -15,4 +16,6 @@ $pinks: (
 	"5": $pink-5,
 	"6": $pink-6,
 	"7": $pink-7,
-	"8": $pink-8)
+	"8": $pink-8,
+	"9": $pink-9,
+	)

@@ -1,86 +1,95 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
   /* Neutral */
-  --neutral-1: oklch(20% 0.01 250);
-  --neutral-2: oklch(35% 0.01 250);
-  --neutral-3: oklch(45% 0.01 250);
-  --neutral-4: oklch(55% 0.01 250);
-  --neutral-5: oklch(85% 0.01 250);
-  --neutral-6: oklch(90% 0.01 250);
-  --neutral-7: oklch(95% 0.01 250);
-  --neutral-8: oklch(98% 0.01 250);
+  --neutral-1: oklch(20% 0 0);
+  --neutral-2: oklch(30% 0 0);
+  --neutral-3: oklch(40% 0 0);
+  --neutral-4: oklch(50% 0 0);
+  --neutral-5: oklch(60% 0 0);
+  --neutral-6: oklch(70% 0 0);
+  --neutral-7: oklch(80% 0 0);
+  --neutral-8: oklch(90% 0 0);
+  --neutral-9: oklch(97% 0 0);
   /* Red */
-  --red-1: oklch(40% 0.18 25);
-  --red-2: oklch(45% 0.2 25);
-  --red-3: oklch(50% 0.2274 25);
-  --red-4: oklch(60% 0.24 25);
-  --red-5: oklch(70% 0.24 25);
-  --red-6: oklch(80% 0.138 25);
-  --red-7: oklch(90% 0.0663 25);
-  --red-8: oklch(95% 0.0315 25);
+  --red-1: oklch(20% 0.24 25);
+  --red-2: oklch(30% 0.24 25);
+  --red-3: oklch(40% 0.24 25);
+  --red-4: oklch(50% 0.24 25);
+  --red-5: oklch(60% 0.24 25);
+  --red-6: oklch(70% 0.24 25);
+  --red-7: oklch(80% 0.24 25);
+  --red-8: oklch(90% 0.0669 25);
+  --red-9: oklch(97% 0.019 25);
   /* Orange */
-  --orange-1: oklch(50% 0.1616 45);
-  --orange-2: oklch(55% 0.1942 45);
-  --orange-3: oklch(60% 0.1942 45);
-  --orange-4: oklch(70% 0.2 45);
-  --orange-5: oklch(77% 0.1833 45);
-  --orange-6: oklch(83% 0.1289 45);
-  --orange-7: oklch(87% 0.0952 45);
-  --orange-8: oklch(95% 0.0342 45);
+  --orange-1: oklch(20% 0.2 45);
+  --orange-2: oklch(30% 0.2 45);
+  --orange-3: oklch(40% 0.2 45);
+  --orange-4: oklch(50% 0.2 45);
+  --orange-5: oklch(60% 0.2 45);
+  --orange-6: oklch(70% 0.2 45);
+  --orange-7: oklch(80% 0.2 45);
+  --orange-8: oklch(90% 0.0718 45);
+  --orange-9: oklch(97% 0.0201 45);
   /* Yellow */
-  --yellow-1: oklch(50% 0.1191 80);
-  --yellow-2: oklch(55% 0.1305 80);
-  --yellow-3: oklch(65% 0.15 80);
-  --yellow-4: oklch(75% 0.15 80);
-  --yellow-5: oklch(85% 0.15 80);
-  --yellow-6: oklch(89% 0.129 80);
-  --yellow-7: oklch(92% 0.092 80);
-  --yellow-8: oklch(98% 0.022 80);
+  --yellow-1: oklch(20% 0.15 80);
+  --yellow-2: oklch(30% 0.15 80);
+  --yellow-3: oklch(40% 0.15 80);
+  --yellow-4: oklch(50% 0.15 80);
+  --yellow-5: oklch(60% 0.15 80);
+  --yellow-6: oklch(70% 0.15 80);
+  --yellow-7: oklch(80% 0.15 80);
+  --yellow-8: oklch(90% 0.1164 80);
+  --yellow-9: oklch(97% 0.0337 80);
   /* Green */
-  --green-1: oklch(35% 0.1 165);
-  --green-2: oklch(40% 0.11 165);
-  --green-3: oklch(50% 0.14 165);
-  --green-4: oklch(60% 0.15 165);
-  --green-5: oklch(70% 0.15 165);
-  --green-6: oklch(80% 0.15 165);
-  --green-7: oklch(95% 0.08 165);
-  --green-8: oklch(98% 0.0315 165);
+  --green-1: oklch(20% 0.15 165);
+  --green-2: oklch(30% 0.15 165);
+  --green-3: oklch(40% 0.15 165);
+  --green-4: oklch(50% 0.15 165);
+  --green-5: oklch(60% 0.15 165);
+  --green-6: oklch(70% 0.15 165);
+  --green-7: oklch(80% 0.15 165);
+  --green-8: oklch(90% 0.15 165);
+  --green-9: oklch(97% 0.0484 165);
   /* Cyan */
-  --cyan-1: oklch(35% 0.08 190);
-  --cyan-2: oklch(40% 0.093 190);
-  --cyan-3: oklch(50% 0.11 190);
-  --cyan-4: oklch(60% 0.13 190);
-  --cyan-5: oklch(70% 0.15 190);
-  --cyan-6: oklch(80% 0.15 190);
-  --cyan-7: oklch(95% 0.08 190);
-  --cyan-8: oklch(98% 0.0315 190);
+  --cyan-1: oklch(20% 0.15 190);
+  --cyan-2: oklch(30% 0.15 190);
+  --cyan-3: oklch(40% 0.15 190);
+  --cyan-4: oklch(50% 0.15 190);
+  --cyan-5: oklch(60% 0.15 190);
+  --cyan-6: oklch(70% 0.15 190);
+  --cyan-7: oklch(80% 0.15 190);
+  --cyan-8: oklch(90% 0.15 190);
+  --cyan-9: oklch(97% 0.0484 190);
   /* Blue */
-  --blue-1: oklch(35% 0.14 255);
-  --blue-2: oklch(40% 0.15 255);
-  --blue-3: oklch(50% 0.15 255);
-  --blue-4: oklch(60% 0.15 255);
-  --blue-5: oklch(70% 0.15 255);
-  --blue-6: oklch(80% 0.111 255);
-  --blue-7: oklch(90% 0.0533 255);
-  --blue-8: oklch(95% 0.0261 255);
+  --blue-1: oklch(20% 0.15 255);
+  --blue-2: oklch(30% 0.15 255);
+  --blue-3: oklch(40% 0.15 255);
+  --blue-4: oklch(50% 0.15 255);
+  --blue-5: oklch(60% 0.15 255);
+  --blue-6: oklch(70% 0.15 255);
+  --blue-7: oklch(80% 0.15 255);
+  --blue-8: oklch(90% 0.0538 255);
+  --blue-9: oklch(95% 0.0261 255);
   /* Purple */
-  --purple-1: oklch(30% 0.1664 300);
-  --purple-2: oklch(40% 0.15 300);
-  --purple-3: oklch(50% 0.15 300);
-  --purple-4: oklch(60% 0.15 300);
-  --purple-5: oklch(70% 0.15 300);
-  --purple-6: oklch(80% 0.13 300);
-  --purple-7: oklch(90% 0.0625 300);
-  --purple-8: oklch(95% 0.0304 300);
+  --purple-1: oklch(20% 0.15 300);
+  --purple-2: oklch(30% 0.15 300);
+  --purple-3: oklch(40% 0.15 300);
+  --purple-4: oklch(50% 0.15 300);
+  --purple-5: oklch(60% 0.15 300);
+  --purple-6: oklch(70% 0.15 300);
+  --purple-7: oklch(80% 0.15 300);
+  --purple-8: oklch(90% 0.0625 300);
+  --purple-9: oklch(97% 0.0179 300);
   /* Pink */
-  --pink-1: oklch(30% 0.1398 350);
-  --pink-2: oklch(40% 0.17 350);
-  --pink-3: oklch(50% 0.17 350);
-  --pink-4: oklch(60% 0.17 350);
-  --pink-5: oklch(70% 0.17 350);
-  --pink-6: oklch(80% 0.17 350);
-  --pink-7: oklch(90% 0.0816 350);
-  --pink-8: oklch(95% 0.0386 350);
+  --pink-1: oklch(20% 0.17 350);
+  --pink-2: oklch(30% 0.17 350);
+  --pink-3: oklch(40% 0.17 350);
+  --pink-4: oklch(50% 0.17 350);
+  --pink-5: oklch(60% 0.17 350);
+  --pink-6: oklch(70% 0.17 350);
+  --pink-7: oklch(80% 0.17 350);
+  --pink-8: oklch(90% 0.0816 350);
+  --pink-9: oklch(97% 0.0228 350);
   /* Radius */
   --radius-1: 4px;
   --radius-2: 8px;
@@ -565,11 +574,10 @@ button.filled,
 input[type=button].filled,
 input[type=reset].filled,
 input[type=submit].filled {
-  --background: var(--accent-3, var(--neutral-2));
-  --foreground: var(--accent-8, var(--neutral-8));
+  --background: var(--accent-4, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
-  color: var(--foreground);
+  color: var(--accent-9, var(--neutral-9));
 }
 button.filled:focus-visible, button.filled:hover,
 .button.filled:focus-visible,
@@ -582,7 +590,7 @@ input[type=reset].filled:focus-visible,
 input[type=reset].filled:hover,
 input[type=submit].filled:focus-visible,
 input[type=submit].filled:hover {
-  --background: var(--accent-2, var(--neutral-1));
+  --background: var(--accent-3, var(--neutral-2));
 }
 button.filled:active,
 .button.filled:active,
@@ -590,7 +598,7 @@ button.filled:active,
 input[type=button].filled:active,
 input[type=reset].filled:active,
 input[type=submit].filled:active {
-  --background: var(--accent-4, var(--neutral-3));
+  --background: var(--accent-2, var(--neutral-3));
 }
 button.filled:disabled, button.filled[aria-disabled=true],
 .button.filled:disabled,
@@ -603,7 +611,8 @@ input[type=reset].filled:disabled,
 input[type=reset].filled[aria-disabled=true],
 input[type=submit].filled:disabled,
 input[type=submit].filled[aria-disabled=true] {
-  --background: var(--neutral-5);
+  --background: var(--neutral-7);
+  --foreground: var(--neutral-9);
 }
 button.filled:disabled:hover, button.filled[aria-disabled=true]:hover,
 .button.filled:disabled:hover,
@@ -616,7 +625,7 @@ input[type=reset].filled:disabled:hover,
 input[type=reset].filled[aria-disabled=true]:hover,
 input[type=submit].filled:disabled:hover,
 input[type=submit].filled[aria-disabled=true]:hover {
-  --background: var(--neutral-6);
+  --background: var(--neutral-8);
 }
 button.outline,
 .button.outline,
@@ -624,8 +633,8 @@ button.outline,
 input[type=button].outline,
 input[type=reset].outline,
 input[type=submit].outline {
-  --background: var(--accent-8, var(--neutral-8));
-  --foreground: var(--accent-3, var(--neutral-2));
+  --background: var(--accent-9, var(--neutral-9));
+  --foreground: var(--accent-4, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--foreground);
   color: var(--foreground);
@@ -641,8 +650,8 @@ input[type=reset].outline:focus-visible,
 input[type=reset].outline:hover,
 input[type=submit].outline:focus-visible,
 input[type=submit].outline:hover {
-  --background: var(--accent-7, var(--neutral-7));
-  --foreground: var(--accent-2, var(--neutral-1));
+  --foreground: var(--accent-3, var(--neutral-2));
+  box-shadow: inset 0px 0 0 0.5px currentColor;
 }
 button.outline:active,
 .button.outline:active,
@@ -650,7 +659,8 @@ button.outline:active,
 input[type=button].outline:active,
 input[type=reset].outline:active,
 input[type=submit].outline:active {
-  --foreground: var(--accent-4, var(--neutral-3));
+  --background: var(--accent-8, var(--neutral-8));
+  --foreground: var(--accent-2, var(--neutral-3));
 }
 button.outline:disabled, button.outline[aria-disabled=true],
 .button.outline:disabled,
@@ -663,8 +673,8 @@ input[type=reset].outline:disabled,
 input[type=reset].outline[aria-disabled=true],
 input[type=submit].outline:disabled,
 input[type=submit].outline[aria-disabled=true] {
-  --background: var(--neutral-8);
-  --foreground: var(--neutral-5);
+  --background: var(--neutral-9);
+  --foreground: var(--neutral-7);
 }
 button.outline:disabled:hover, button.outline[aria-disabled=true]:hover,
 .button.outline:disabled:hover,
@@ -677,7 +687,7 @@ input[type=reset].outline:disabled:hover,
 input[type=reset].outline[aria-disabled=true]:hover,
 input[type=submit].outline:disabled:hover,
 input[type=submit].outline[aria-disabled=true]:hover {
-  --background: var(--neutral-7);
+  --foreground: var(--neutral-8);
 }
 button.ghost,
 .button.ghost,
@@ -686,7 +696,7 @@ input[type=button].ghost,
 input[type=reset].ghost,
 input[type=submit].ghost {
   --background: transparent;
-  --foreground: var(--accent-2, var(--neutral-2));
+  --foreground: var(--accent-4, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
   color: var(--foreground);
@@ -702,8 +712,8 @@ input[type=reset].ghost:focus-visible,
 input[type=reset].ghost:hover,
 input[type=submit].ghost:focus-visible,
 input[type=submit].ghost:hover {
-  --background: var(--accent-8, var(--neutral-8));
-  --foreground: var(--accent-1, var(--neutral-1));
+  --background: var(--accent-9, var(--neutral-9));
+  --foreground: var(--accent-3, var(--neutral-2));
 }
 button.ghost:active,
 .button.ghost:active,
@@ -711,8 +721,8 @@ button.ghost:active,
 input[type=button].ghost:active,
 input[type=reset].ghost:active,
 input[type=submit].ghost:active {
-  --background: var(--accent-7, var(--neutral-7));
-  --foreground: var(--accent-3, var(--neutral-3));
+  --background: var(--accent-8, var(--neutral-8));
+  --foreground: var(--accent-2, var(--neutral-3));
 }
 button.ghost:disabled, button.ghost[aria-disabled=true],
 .button.ghost:disabled,
@@ -725,7 +735,7 @@ input[type=reset].ghost:disabled,
 input[type=reset].ghost[aria-disabled=true],
 input[type=submit].ghost:disabled,
 input[type=submit].ghost[aria-disabled=true] {
-  --foreground: var(--neutral-5);
+  --foreground: var(--neutral-7);
 }
 button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
 .button.ghost:disabled:hover,
@@ -738,7 +748,8 @@ input[type=reset].ghost:disabled:hover,
 input[type=reset].ghost[aria-disabled=true]:hover,
 input[type=submit].ghost:disabled:hover,
 input[type=submit].ghost[aria-disabled=true]:hover {
-  --background: var(--neutral-7);
+  --background: var(--neutral-9);
+  --foreground: var(--neutral-8);
 }
 
 /* Elements: Text-entry inputs */
@@ -746,9 +757,10 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select,
 textarea,
 [role=textbox] {
-  border: 1.5px solid var(--neutral-6);
+  color: var(--neutral-1);
+  caret-color: var(--accent-5, var(--neutral-2));
+  border: 1.5px solid var(--neutral-5);
   border-radius: var(--border-radius, var(--radius-2));
-  caret-color: var(--accent-4, var(--neutral-2));
   outline: none;
   padding-inline: var(--padding-x);
   padding-block: var(--padding-y);
@@ -757,40 +769,40 @@ input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=rad
 select::placeholder,
 textarea::placeholder,
 [role=textbox]::placeholder {
-  color: var(--neutral-5);
+  color: var(--neutral-6);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):hover,
 select:hover,
 textarea:hover,
 [role=textbox]:hover {
-  background-color: var(--accent-8, var(--neutral-8));
-  border-color: var(--accent-4, var(--neutral-4));
+  border-color: var(--accent-5, var(--neutral-4));
   box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):hover::placeholder,
 select:hover::placeholder,
 textarea:hover::placeholder,
 [role=textbox]:hover::placeholder {
-  color: var(--accent-4, var(--neutral-5));
+  color: var(--accent-5, var(--neutral-5));
 }
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):focus, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):active,
+input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):focus,
 select:focus,
-select:active,
 textarea:focus,
-textarea:active,
-[role=textbox]:focus,
-[role=textbox]:active {
-  background-color: var(--neutral-8);
-  border-color: var(--accent-3, var(--neutral-3));
+[role=textbox]:focus {
+  border-color: var(--accent-5, var(--neutral-4));
+  color: var(--accent-1, var(--neutral-1));
+  background-color: var(--accent-9, var(--neutral-9));
 }
-input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):focus::placeholder, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):active::placeholder,
+input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):focus::placeholder,
 select:focus::placeholder,
-select:active::placeholder,
 textarea:focus::placeholder,
-textarea:active::placeholder,
-[role=textbox]:focus::placeholder,
-[role=textbox]:active::placeholder {
+[role=textbox]:focus::placeholder {
   color: transparent;
+}
+input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):active,
+select:active,
+textarea:active,
+[role=textbox]:active {
+  border-color: var(--accent-4, var(--neutral-3));
 }
 input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range]):disabled, input:not([type=button], [type=reset], [type=submit], [type=checkbox], [type=radio], [type=range])[aria-disabled=true],
 select:disabled,
@@ -848,32 +860,32 @@ input[type=checkbox].checkbox-1::before, input[type=checkbox].checkbox-1::after 
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-1:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-1:hover, input[type=checkbox].checkbox-1:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-1:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=checkbox].checkbox-1:checked:hover, input[type=checkbox].checkbox-1:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-1:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-1:disabled, input[type=checkbox].checkbox-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-1:checked::before, input[type=checkbox].checkbox-1:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=checkbox].checkbox-1:checked::before {
   transform: rotate(50deg);
@@ -887,10 +899,13 @@ input[type=checkbox].checkbox-1:checked::after {
   margin-bottom: 45%;
   margin-left: 22%;
 }
+input[type=checkbox].checkbox-1:indeterminate {
+  border-color: var(--accent-5, var(--neutral-1));
+}
 input[type=checkbox].checkbox-1:indeterminate::before {
   content: "";
   width: 80%;
-  background-color: var(--accent-3, var(--neutral-2));
+  background-color: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-2 {
   appearance: none;
@@ -909,32 +924,32 @@ input[type=checkbox].checkbox-2::before, input[type=checkbox].checkbox-2::after 
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-2:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-2:hover, input[type=checkbox].checkbox-2:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-2:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=checkbox].checkbox-2:checked:hover, input[type=checkbox].checkbox-2:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-2:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-2[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-2:checked::before, input[type=checkbox].checkbox-2:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=checkbox].checkbox-2:checked::before {
   transform: rotate(50deg);
@@ -948,10 +963,13 @@ input[type=checkbox].checkbox-2:checked::after {
   margin-bottom: 45%;
   margin-left: 20%;
 }
+input[type=checkbox].checkbox-2:indeterminate {
+  border-color: var(--accent-5, var(--neutral-1));
+}
 input[type=checkbox].checkbox-2:indeterminate::before {
   content: "";
   width: 80%;
-  background-color: var(--accent-3, var(--neutral-2));
+  background-color: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-3 {
   appearance: none;
@@ -970,32 +988,32 @@ input[type=checkbox].checkbox-3::before, input[type=checkbox].checkbox-3::after 
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-3:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-3:hover, input[type=checkbox].checkbox-3:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-3:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=checkbox].checkbox-3:checked:hover, input[type=checkbox].checkbox-3:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-3:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-3[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-3:checked::before, input[type=checkbox].checkbox-3:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=checkbox].checkbox-3:checked::before {
   transform: rotate(50deg);
@@ -1009,10 +1027,13 @@ input[type=checkbox].checkbox-3:checked::after {
   margin-bottom: 45%;
   margin-left: 22%;
 }
+input[type=checkbox].checkbox-3:indeterminate {
+  border-color: var(--accent-5, var(--neutral-1));
+}
 input[type=checkbox].checkbox-3:indeterminate::before {
   content: "";
   width: 80%;
-  background-color: var(--accent-3, var(--neutral-2));
+  background-color: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-4 {
   appearance: none;
@@ -1031,32 +1052,32 @@ input[type=checkbox].checkbox-4::before, input[type=checkbox].checkbox-4::after 
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-4:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-4:hover, input[type=checkbox].checkbox-4:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-4:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=checkbox].checkbox-4:checked:hover, input[type=checkbox].checkbox-4:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-4:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-4[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-4:checked::before, input[type=checkbox].checkbox-4:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=checkbox].checkbox-4:checked::before {
   transform: rotate(50deg);
@@ -1070,10 +1091,13 @@ input[type=checkbox].checkbox-4:checked::after {
   margin-bottom: 45%;
   margin-left: 20%;
 }
+input[type=checkbox].checkbox-4:indeterminate {
+  border-color: var(--accent-5, var(--neutral-1));
+}
 input[type=checkbox].checkbox-4:indeterminate::before {
   content: "";
   width: 80%;
-  background-color: var(--accent-3, var(--neutral-2));
+  background-color: var(--accent-5, var(--neutral-1));
 }
 
 /* Elements: Radio */
@@ -1095,32 +1119,32 @@ input[type=radio].radio-1::before, input[type=radio].radio-1::after {
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-1:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-1:hover, input[type=radio].radio-1:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-1:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=radio].radio-1:checked:hover, input[type=radio].radio-1:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-1:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-1:disabled, input[type=radio].radio-1[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-1:checked::before, input[type=radio].radio-1:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=radio].radio-1:checked::before {
   transform: rotate(50deg);
@@ -1152,32 +1176,32 @@ input[type=radio].radio-2::before, input[type=radio].radio-2::after {
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-2:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-2:hover, input[type=radio].radio-2:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-2:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=radio].radio-2:checked:hover, input[type=radio].radio-2:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-2:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-2:disabled, input[type=radio].radio-2[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-2:checked::before, input[type=radio].radio-2:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=radio].radio-2:checked::before {
   transform: rotate(50deg);
@@ -1209,32 +1233,32 @@ input[type=radio].radio-3::before, input[type=radio].radio-3::after {
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-3:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-3:hover, input[type=radio].radio-3:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-3:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=radio].radio-3:checked:hover, input[type=radio].radio-3:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-3:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-3:disabled, input[type=radio].radio-3[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-3:checked::before, input[type=radio].radio-3:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=radio].radio-3:checked::before {
   transform: rotate(50deg);
@@ -1266,32 +1290,32 @@ input[type=radio].radio-4::before, input[type=radio].radio-4::after {
   margin: auto;
   height: 15%;
   border-radius: var(--radius-1);
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-4:active {
-  border-color: var(--accent-4, var(--neutral-3));
-  background-color: var(--accent-4, var(--neutral-3));
+  border-color: var(--accent-5, var(--neutral-3));
+  background-color: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-4:hover, input[type=radio].radio-4:focus-visible {
-  border-color: var(--accent-3, var(--neutral-3));
-  background-color: var(--accent-8, var(--neutral-7));
+  border-color: var(--accent-4, var(--neutral-3));
+  background-color: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-4:checked {
-  --background: var(--accent-4, var(--neutral-2));
+  --background: var(--accent-5, var(--neutral-1));
   background-color: var(--background);
   border-color: var(--background);
 }
 input[type=radio].radio-4:checked:hover, input[type=radio].radio-4:checked:focus-visible {
-  --background: var(--accent-3, var(--neutral-1));
+  --background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-4:checked:active {
-  --background: var(--accent-5, var(--neutral-3));
+  --background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-4:disabled, input[type=radio].radio-4[aria-disabled=true] {
   background-color: var(--neutral-6);
 }
 input[type=radio].radio-4:checked::before, input[type=radio].radio-4:checked::after {
   content: "";
-  background-color: var(--accent-8, var(--neutral-8));
 }
 input[type=radio].radio-4:checked::before {
   transform: rotate(50deg);
@@ -1316,6 +1340,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--red-6);
   --accent-7: var(--red-7);
   --accent-8: var(--red-8);
+  --accent-9: var(--red-9);
 }
 
 .orange {
@@ -1328,6 +1353,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--orange-6);
   --accent-7: var(--orange-7);
   --accent-8: var(--orange-8);
+  --accent-9: var(--orange-9);
 }
 
 .yellow {
@@ -1340,6 +1366,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--yellow-6);
   --accent-7: var(--yellow-7);
   --accent-8: var(--yellow-8);
+  --accent-9: var(--yellow-9);
 }
 
 .green {
@@ -1352,6 +1379,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--green-6);
   --accent-7: var(--green-7);
   --accent-8: var(--green-8);
+  --accent-9: var(--green-9);
 }
 
 .cyan {
@@ -1364,6 +1392,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--cyan-6);
   --accent-7: var(--cyan-7);
   --accent-8: var(--cyan-8);
+  --accent-9: var(--cyan-9);
 }
 
 .blue {
@@ -1376,6 +1405,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--blue-6);
   --accent-7: var(--blue-7);
   --accent-8: var(--blue-8);
+  --accent-9: var(--blue-9);
 }
 
 .purple {
@@ -1388,6 +1418,7 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--purple-6);
   --accent-7: var(--purple-7);
   --accent-8: var(--purple-8);
+  --accent-9: var(--purple-9);
 }
 
 .pink {
@@ -1400,39 +1431,9 @@ input[type=radio].radio-4:checked::after {
   --accent-6: var(--pink-6);
   --accent-7: var(--pink-7);
   --accent-8: var(--pink-8);
+  --accent-9: var(--pink-9);
 }
 
-/* Fallbacks */
-@supports not (color: color(display-p3 1 1 1)) {
-  :root {
-    --neutral-8: oklch(98% 0.0097 250);
-    --red-1: oklch(40% 0.16 25);
-    --red-5: oklch(70% 0.19 25);
-    --red-6: oklch(80% 0.1142 25);
-    --red-7: oklch(90% 0.0511 25);
-    --red-8: oklch(95% 0.0239 25);
-    --yellow-1: oklch(70% 0.1447 80);
-    --yellow-4: oklch(85% 0.1436 80);
-    --yellow-5: oklch(89% 0.1033 80);
-    --yellow-6: oklch(92% 0.0739 80);
-    --yellow-7: oklch(95% 0.0457 80);
-    --yellow-8: oklch(97% 0.0261 80);
-    --green-1: oklch(35% 0.0729 165);
-    --green-2: oklch(40% 0.0837 165);
-    --green-3: oklch(50% 0.1044 165);
-    --green-4: oklch(60% 0.1251 165);
-    --green-5: oklch(70% 0.1469 165);
-    --green-8: oklch(95% 0.0739 165);
-    --blue-1: oklch(35% 0.1142 255);
-    --blue-2: oklch(40% 0.1316 255);
-    --blue-3: oklch(50% 0.1643 255);
-    --blue-4: oklch(60% 0.1969 255);
-    --blue-5: oklch(70% 0.1588 255);
-    --blue-6: oklch(80% 0.1022 255);
-    --blue-7: oklch(90% 0.0489 255);
-    --blue-8: oklch(95% 0.0239 255);
-  }
-}
 @supports not (color: oklch(60% 0.15 165)) {
   :root {
     --neutral-1: #13161a;

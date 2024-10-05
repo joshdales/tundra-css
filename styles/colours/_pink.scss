@@ -6,3 +6,13 @@ $pink-5: oklch(70% 0.17 350);
 $pink-6: oklch(80% 0.17 350);
 $pink-7: oklch(90% 0.0816 350);
 $pink-8: oklch(95% 0.0386 350);
+
+$pinks: (
+	"1": $pink-1,
+	"2": $pink-2,
+	"3": $pink-3,
+	"4": $pink-4,
+	"5": $pink-5,
+	"6": $pink-6,
+	"7": $pink-7,
+	"8": $pink-8)

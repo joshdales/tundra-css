@@ -1,35 +1,39 @@
 @use "./utils" as utils;
 
 @mixin base {
-	border: 1.5px solid var(--neutral-6);
+	color: var(--neutral-1);
+	caret-color: var(--accent-5, var(--neutral-2));
+	border: 1.5px solid var(--neutral-5);
 	border-radius: var(--border-radius, var(--radius-2));
-	caret-color: var(--accent-4, var(--neutral-2));
 	outline: none;
 	padding-inline: var(--padding-x);
 	padding-block: var(--padding-y);
 
 	&::placeholder {
-		color: var(--neutral-5);
+		color: var(--neutral-6);
 	}
 
 	&:hover {
-		background-color: var(--accent-8, var(--neutral-8));
-		border-color: var(--accent-4, var(--neutral-4));
+		border-color: var(--accent-5, var(--neutral-4));
 		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
 
 		&::placeholder {
-			color: var(--accent-4, var(--neutral-5));
+			color: var(--accent-5, var(--neutral-5));
 		}
 	}
 
-	&:focus,
-	&:active {
-		background-color: var(--neutral-8);
-		border-color: var(--accent-3, var(--neutral-3));
+	&:focus {
+		border-color: var(--accent-5, var(--neutral-4));
+		color: var(--accent-1, var(--neutral-1));
+		background-color: var(--accent-9, var(--neutral-9));
 
 		&::placeholder {
 			color: transparent;
 		}
+	}
+
+	&:active {
+		border-color: var(--accent-4, var(--neutral-3));
 	}
 
 	@include utils.disabled {

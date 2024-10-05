@@ -1,0 +1,19 @@
+@function shadow-colour($alpha) {
+	$shadow-colour: var(--accent-1, var(--neutral-1));
+	@return oklch(from $shadow-colour l c h / $alpha);
+}
+
+$shadow-1: 0.3px 0.6px 0.7px shadow-colour(0.45),
+	0.5px 0.9px 1.1px -1.5px shadow-colour(0.39),
+	1.3px 2.3px 2.7px -3.1px shadow-colour(0.34);
+$shadow-2: 0.3px 0.6px 0.7px shadow-colour(0.48),
+	0.9px 1.7px 2px -1px shadow-colour(0.43),
+	2.5px 4.5px 5.3px -2.1px shadow-colour(0.38),
+	6.5px 11.5px 13.7px -3.1px shadow-colour(0.34);
+$shadow-3: 0.3px 0.6px 0.7px shadow-colour(0.5),
+	1.8px 3.1px 3.7px -0.5px shadow-colour(0.48),
+	3.6px 6.4px 7.6px -1px shadow-colour(0.45),
+	6.8px 12px 14.3px -1.5px shadow-colour(0.42),
+	12.2px 21.6px 25.7px -2.1px shadow-colour(0.39),
+	20.8px 36.7px 43.7px -2.6px shadow-colour(0.36),
+	33.4px 59.1px 70.3px -3.1px shadow-colour(0.34);

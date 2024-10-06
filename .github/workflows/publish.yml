@@ -1,36 +1,36 @@
-name: Build Check
+name: Publish package
 
 on:
-  push
+  release:
+    types: [published]
 
 jobs:
-  build-css:
+  publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
           run_install: false
 
-      - name: Install Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
           cache: pnpm
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build CSS
-        run: pnpm build
-
-      - name: Check if CSS is up to date
-        run: |
-          if ! git diff --quiet index.css; then
-            echo "The index.css has changes after running the build command. Please commit those changes."
-            exit 1
-          fi
+      - name: Publish
+        run: pnpm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -106,7 +106,7 @@
 			box-shadow:
 				0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
 				0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
-				inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-7) l c h / 10%);
+				inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-9) l c h / 10%);
 		}
 
 		&.active {

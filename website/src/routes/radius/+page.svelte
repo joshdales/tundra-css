@@ -29,7 +29,7 @@
 	div:before {
 		content: '';
 		display: block;
-		background-color: var(--red-6);
+		background-color: var(--red-7);
 		height: var(--space-14);
 		width: var(--space-14);
 		border-radius: var(--radius);

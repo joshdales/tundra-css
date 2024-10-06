@@ -208,7 +208,7 @@
 	}
 
 	.line-height {
-		border-block: 1.5px solid var(--red-6);
+		border-block: 1.5px solid var(--red-7);
 	}
 
 	.empty {

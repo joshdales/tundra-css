@@ -11,7 +11,7 @@
 	import Toast from './toast.svelte'
 
 	export let copiedValue: CopiedValue | undefined
-	let timer: number
+	let timer: ReturnType<typeof setTimeout>
 
 	$: {
 		if (copiedValue && copiedValue.success) {

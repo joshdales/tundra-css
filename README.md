@@ -94,9 +94,9 @@ Each has numbered `accent` properties and sets the `accent-color` property as we
 }
 ```
 The accent variables are often used in the following way on interactive elements:
-1. `accent-5` The standard accent colour for the element.
-2. `accent-4` The accent used when elements are being viewed (either by focus or hover).
-3. `accent-3` The element is being activated or interactive with.
+1. `accent-4` The standard accent colour for the element.
+2. `accent-3` The accent used when elements are being viewed (either by focus or hover).
+3. `accent-2` The element is being activated or interactive with.
 4. `accent-8` Contrast colour with the main accent, usually text or background.
 
 If you have a button or input and there is no accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.

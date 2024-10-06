@@ -1,8 +1,21 @@
-$blue-1: oklch(35% 0.14 255);
-$blue-2: oklch(40% 0.15 255);
-$blue-3: oklch(50% 0.15 255);
-$blue-4: oklch(60% 0.15 255);
-$blue-5: oklch(70% 0.15 255);
-$blue-6: oklch(80% 0.111 255);
-$blue-7: oklch(90% 0.0533 255);
-$blue-8: oklch(95% 0.0261 255);
+$blue-1: oklch(20% 0.15 255);
+$blue-2: oklch(30% 0.15 255);
+$blue-3: oklch(40% 0.15 255);
+$blue-4: oklch(50% 0.15 255);
+$blue-5: oklch(60% 0.15 255);
+$blue-6: oklch(70% 0.15 255);
+$blue-7: oklch(80% 0.15 255);
+$blue-8: oklch(90% 0.0538 255);
+$blue-9: oklch(95% 0.0261 255);
+
+$blues: (
+	"1": $blue-1,
+	"2": $blue-2,
+	"3": $blue-3,
+	"4": $blue-4,
+	"5": $blue-5,
+	"6": $blue-6,
+	"7": $blue-7,
+	"8": $blue-8,
+	"9": $blue-9,
+	)

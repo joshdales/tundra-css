@@ -1,8 +1,21 @@
-$cyan-1: oklch(35% 0.08 190);
-$cyan-2: oklch(40% 0.093 190);
-$cyan-3: oklch(50% 0.11 190);
-$cyan-4: oklch(60% 0.13 190);
-$cyan-5: oklch(70% 0.15 190);
-$cyan-6: oklch(80% 0.15 190);
-$cyan-7: oklch(95% 0.08 190);
-$cyan-8: oklch(98% 0.0315 190);
+$cyan-1: oklch(20% 0.15 190);
+$cyan-2: oklch(30% 0.15 190);
+$cyan-3: oklch(40% 0.15 190);
+$cyan-4: oklch(50% 0.15 190);
+$cyan-5: oklch(60% 0.15 190);
+$cyan-6: oklch(70% 0.15 190);
+$cyan-7: oklch(80% 0.15 190);
+$cyan-8: oklch(90% 0.15 190);
+$cyan-9: oklch(97% 0.0484 190);
+
+$cyans: (
+	"1": $cyan-1,
+	"2": $cyan-2,
+	"3": $cyan-3,
+	"4": $cyan-4,
+	"5": $cyan-5,
+	"6": $cyan-6,
+	"7": $cyan-7,
+	"8": $cyan-8,
+	"9": $cyan-9,
+	)

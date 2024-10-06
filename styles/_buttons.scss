@@ -61,26 +61,26 @@
 		@include base;
 	}
 
-	--background: var(--accent-3, var(--neutral-2));
-	--foreground: var(--accent-8, var(--neutral-8));
+	--background: var(--accent-4, var(--neutral-1));
 
 	background-color: var(--background);
 	border-color: var(--background);
-	color: var(--foreground);
+	color: var(--accent-9, var(--neutral-9));
 
 	@include _viewing {
-		--background: var(--accent-2, var(--neutral-1));
+		--background: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--background: var(--accent-4, var(--neutral-3));
+		--background: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--background: var(--neutral-5);
+		--background: var(--neutral-7);
+		--foreground: var(--neutral-9);
 
 		&:hover {
-			--background: var(--neutral-6);
+			--background: var(--neutral-8);
 		}
 	}
 }
@@ -94,28 +94,29 @@
 		@include base;
 	}
 
-	--background: var(--accent-8, var(--neutral-8));
-	--foreground: var(--accent-3, var(--neutral-2));
+	--background: var(--accent-9, var(--neutral-9));
+	--foreground: var(--accent-4, var(--neutral-1));
 
 	background-color: var(--background);
 	border-color: var(--foreground);
 	color: var(--foreground);
 
 	@include _viewing {
-		--background: var(--accent-7, var(--neutral-7));
-		--foreground: var(--accent-2, var(--neutral-1));
+		--foreground: var(--accent-3, var(--neutral-2));
+		box-shadow: inset 0px 0 0 0.5px currentColor;
 	}
 
 	&:active {
-		--foreground: var(--accent-4, var(--neutral-3));
+		--background: var(--accent-8, var(--neutral-8));
+		--foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--background: var(--neutral-8);
-		--foreground: var(--neutral-5);
+		--background: var(--neutral-9);
+		--foreground: var(--neutral-7);
 
 		&:hover {
-			--background: var(--neutral-7);
+			--foreground: var(--neutral-8);
 		}
 	}
 }
@@ -130,27 +131,28 @@
 	}
 
 	--background: transparent;
-	--foreground: var(--accent-2, var(--neutral-2));
+	--foreground: var(--accent-4, var(--neutral-1));
 
 	background-color: var(--background);
 	border-color: var(--background);
 	color: var(--foreground);
 
 	@include _viewing {
-		--background: var(--accent-8, var(--neutral-8));
-		--foreground: var(--accent-1, var(--neutral-1));
+		--background: var(--accent-9, var(--neutral-9));
+		--foreground: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--background: var(--accent-7, var(--neutral-7));
-		--foreground: var(--accent-3, var(--neutral-3));
+		--background: var(--accent-8, var(--neutral-8));
+		--foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--foreground: var(--neutral-5);
+		--foreground: var(--neutral-7);
 
 		&:hover {
-			--background: var(--neutral-7);
+			--background: var(--neutral-9);
+			--foreground: var(--neutral-8);
 		}
 	}
 }

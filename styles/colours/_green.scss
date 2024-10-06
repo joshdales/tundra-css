@@ -1,8 +1,21 @@
-$green-1: oklch(35% 0.1 165);
-$green-2: oklch(40% 0.11 165);
-$green-3: oklch(50% 0.14 165);
-$green-4: oklch(60% 0.15 165);
-$green-5: oklch(70% 0.15 165);
-$green-6: oklch(80% 0.15 165);
-$green-7: oklch(95% 0.08 165);
-$green-8: oklch(98% 0.0315 165);
+$green-1: oklch(20% 0.15 165);
+$green-2: oklch(30% 0.15 165);
+$green-3: oklch(40% 0.15 165);
+$green-4: oklch(50% 0.15 165);
+$green-5: oklch(60% 0.15 165);
+$green-6: oklch(70% 0.15 165);
+$green-7: oklch(80% 0.15 165);
+$green-8: oklch(90% 0.15 165);
+$green-9: oklch(97% 0.0484 165);
+
+$greens: (
+	"1": $green-1,
+	"2": $green-2,
+	"3": $green-3,
+	"4": $green-4,
+	"5": $green-5,
+	"6": $green-6,
+	"7": $green-7,
+	"8": $green-8,
+	"9": $green-9,
+	)

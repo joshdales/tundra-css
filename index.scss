@@ -2,87 +2,70 @@
 @use 'styles' as *;
 
 :root {
+
 	/* Neutral */
-	--neutral-1: #{$neutral-1};
-	--neutral-2: #{$neutral-2};
-	--neutral-3: #{$neutral-3};
-	--neutral-4: #{$neutral-4};
-	--neutral-5: #{$neutral-5};
-	--neutral-6: #{$neutral-6};
-	--neutral-7: #{$neutral-7};
-	--neutral-8: #{$neutral-8};
+	@each $level, $colour in $neutrals {
+		--neutral-#{$level}: #{$colour};
+	}
+
+	--neutral: var(--neutral-1);
+
 	/* Red */
-	--red-1: #{$red-1};
-	--red-2: #{$red-2};
-	--red-3: #{$red-3};
-	--red-4: #{$red-4};
-	--red-5: #{$red-5};
-	--red-6: #{$red-6};
-	--red-7: #{$red-7};
-	--red-8: #{$red-8};
+	@each $level, $colour in $reds {
+		--red-#{$level}: #{$colour};
+	}
+
+	--red: var(--red-5);
+
 	/* Orange */
-	--orange-1: #{$orange-1};
-	--orange-2: #{$orange-2};
-	--orange-3: #{$orange-3};
-	--orange-4: #{$orange-4};
-	--orange-5: #{$orange-5};
-	--orange-6: #{$orange-6};
-	--orange-7: #{$orange-7};
-	--orange-8: #{$orange-8};
+	@each $level, $colour in $oranges {
+		--orange-#{$level}: #{$colour};
+	}
+
+	--orange: var(--orange-5);
+
 	/* Yellow */
-	--yellow-1: #{$yellow-1};
-	--yellow-2: #{$yellow-2};
-	--yellow-3: #{$yellow-3};
-	--yellow-4: #{$yellow-4};
-	--yellow-5: #{$yellow-5};
-	--yellow-6: #{$yellow-6};
-	--yellow-7: #{$yellow-7};
-	--yellow-8: #{$yellow-8};
+	@each $level, $colour in $yellows {
+		--yellow-#{$level}: #{$colour};
+	}
+
+	--yellow: var(--yellow-5);
+
 	/* Green */
-	--green-1: #{$green-1};
-	--green-2: #{$green-2};
-	--green-3: #{$green-3};
-	--green-4: #{$green-4};
-	--green-5: #{$green-5};
-	--green-6: #{$green-6};
-	--green-7: #{$green-7};
-	--green-8: #{$green-8};
+	@each $level, $colour in $greens {
+		--green-#{$level}: #{$colour};
+	}
+
+	--green: var(--green-5);
+
 	/* Cyan */
-	--cyan-1: #{$cyan-1};
-	--cyan-2: #{$cyan-2};
-	--cyan-3: #{$cyan-3};
-	--cyan-4: #{$cyan-4};
-	--cyan-5: #{$cyan-5};
-	--cyan-6: #{$cyan-6};
-	--cyan-7: #{$cyan-7};
-	--cyan-8: #{$cyan-8};
+	@each $level, $colour in $cyans {
+		--cyan-#{$level}: #{$colour};
+	}
+
+	--cyan: var(--cyan-5);
+
 	/* Blue */
-	--blue-1: #{$blue-1};
-	--blue-2: #{$blue-2};
-	--blue-3: #{$blue-3};
-	--blue-4: #{$blue-4};
-	--blue-5: #{$blue-5};
-	--blue-6: #{$blue-6};
-	--blue-7: #{$blue-7};
-	--blue-8: #{$blue-8};
+	@each $level, $colour in $blues {
+		--blue-#{$level}: #{$colour};
+	}
+
+	--blue: var(--blue-5);
+
 	/* Purple */
-	--purple-1: #{$purple-1};
-	--purple-2: #{$purple-2};
-	--purple-3: #{$purple-3};
-	--purple-4: #{$purple-4};
-	--purple-5: #{$purple-5};
-	--purple-6: #{$purple-6};
-	--purple-7: #{$purple-7};
-	--purple-8: #{$purple-8};
+	@each $level, $colour in $purples {
+		--purple-#{$level}: #{$colour};
+	}
+
+	--purple: var(--purple-5);
+
 	/* Pink */
-	--pink-1: #{$pink-1};
-	--pink-2: #{$pink-2};
-	--pink-3: #{$pink-3};
-	--pink-4: #{$pink-4};
-	--pink-5: #{$pink-5};
-	--pink-6: #{$pink-6};
-	--pink-7: #{$pink-7};
-	--pink-8: #{$pink-8};
+	@each $level, $colour in $pinks {
+		--pink-#{$level}: #{$colour};
+	}
+
+	--pink: var(--pink-5);
+
 	/* Radius */
 	--radius-1: #{$radius-1};
 	--radius-2: #{$radius-2};
@@ -131,6 +114,7 @@
 	--letter-spacing-3: #{$letter-spacing-3};
 	--letter-spacing-4: #{$letter-spacing-4};
 	--letter-spacing-5: #{$letter-spacing-5};
+
 }
 
 /* Text */
@@ -231,178 +215,99 @@ input[type="radio"] {
 	}
 }
 
-.red {
-	accent-color: var(--red, var(--red-4));
-	--accent-1: var(--red-1);
-	--accent-2: var(--red-2);
-	--accent-3: var(--red-3);
-	--accent-4: var(--red-4);
-	--accent-5: var(--red-5);
-	--accent-6: var(--red-6);
-	--accent-7: var(--red-7);
-	--accent-8: var(--red-8);
-}
+@each $colour in $colours {
+	.#{$colour} {
+		accent-color: var(--#{colour});
 
-.orange {
-	accent-color: var(--orange, var(--orange-4));
-	--accent-1: var(--orange-1);
-	--accent-2: var(--orange-2);
-	--accent-3: var(--orange-3);
-	--accent-4: var(--orange-4);
-	--accent-5: var(--orange-5);
-	--accent-6: var(--orange-6);
-	--accent-7: var(--orange-7);
-	--accent-8: var(--orange-8);
-}
-
-.yellow {
-	accent-color: var(--yellow, var(--yellow-4));
-	--accent-1: var(--yellow-1);
-	--accent-2: var(--yellow-2);
-	--accent-3: var(--yellow-3);
-	--accent-4: var(--yellow-4);
-	--accent-5: var(--yellow-5);
-	--accent-6: var(--yellow-6);
-	--accent-7: var(--yellow-7);
-	--accent-8: var(--yellow-8);
-}
-
-.green {
-	accent-color: var(--green, var(--green-4));
-	--accent-1: var(--green-1);
-	--accent-2: var(--green-2);
-	--accent-3: var(--green-3);
-	--accent-4: var(--green-4);
-	--accent-5: var(--green-5);
-	--accent-6: var(--green-6);
-	--accent-7: var(--green-7);
-	--accent-8: var(--green-8);
-}
-
-.cyan {
-	accent-color: var(--cyan, var(--cyan-4));
-	--accent-1: var(--cyan-1);
-	--accent-2: var(--cyan-2);
-	--accent-3: var(--cyan-3);
-	--accent-4: var(--cyan-4);
-	--accent-5: var(--cyan-5);
-	--accent-6: var(--cyan-6);
-	--accent-7: var(--cyan-7);
-	--accent-8: var(--cyan-8);
-}
-
-.blue {
-	accent-color: var(--blue, var(--blue-4));
-	--accent-1: var(--blue-1);
-	--accent-2: var(--blue-2);
-	--accent-3: var(--blue-3);
-	--accent-4: var(--blue-4);
-	--accent-5: var(--blue-5);
-	--accent-6: var(--blue-6);
-	--accent-7: var(--blue-7);
-	--accent-8: var(--blue-8);
-}
-
-.purple {
-	accent-color: var(--purple, var(--purple-4));
-	--accent-1: var(--purple-1);
-	--accent-2: var(--purple-2);
-	--accent-3: var(--purple-3);
-	--accent-4: var(--purple-4);
-	--accent-5: var(--purple-5);
-	--accent-6: var(--purple-6);
-	--accent-7: var(--purple-7);
-	--accent-8: var(--purple-8);
-}
-
-.pink {
-	accent-color: var(--pink, var(--pink-4));
-	--accent-1: var(--pink-1);
-	--accent-2: var(--pink-2);
-	--accent-3: var(--pink-3);
-	--accent-4: var(--pink-4);
-	--accent-5: var(--pink-5);
-	--accent-6: var(--pink-6);
-	--accent-7: var(--pink-7);
-	--accent-8: var(--pink-8);
-}
-
-/* Fallbacks */
-
-// When Display-P3 is not supported use these values.
-@supports not (color: color(display-p3 1 1 1)) {
-	:root {
-		--neutral-8: oklch(98% 0.0097 250);
-		--red-1: oklch(40% 0.16 25);
-		--red-5: oklch(70% 0.19 25);
-		--red-6: oklch(80% 0.1142 25);
-		--red-7: oklch(90% 0.0511 25);
-		--red-8: oklch(95% 0.0239 25);
-		--yellow-1: oklch(70% 0.1447 80);
-		--yellow-4: oklch(85% 0.1436 80);
-		--yellow-5: oklch(89% 0.1033 80);
-		--yellow-6: oklch(92% 0.0739 80);
-		--yellow-7: oklch(95% 0.0457 80);
-		--yellow-8: oklch(97% 0.0261 80);
-		--green-1: oklch(35% 0.0729 165);
-		--green-2: oklch(40% 0.0837 165);
-		--green-3: oklch(50% 0.1044 165);
-		--green-4: oklch(60% 0.1251 165);
-		--green-5: oklch(70% 0.1469 165);
-		--green-8: oklch(95% 0.0739 165);
-		--blue-1: oklch(35% 0.1142 255);
-		--blue-2: oklch(40% 0.1316 255);
-		--blue-3: oklch(50% 0.1643 255);
-		--blue-4: oklch(60% 0.1969 255);
-		--blue-5: oklch(70% 0.1588 255);
-		--blue-6: oklch(80% 0.1022 255);
-		--blue-7: oklch(90% 0.0489 255);
-		--blue-8: oklch(95% 0.0239 255);
+		@for $level from 1 through 9 {
+			--accent-#{$level}: var(--#{$colour}-#{$level});
+		}
 	}
 }
 
 // When oklch is not supported then use hex-codes
 @supports not (color: oklch(60% 0.15 165)) {
 	:root {
-		--neutral-1: #13161a;
-		--neutral-2: #373b40;
-		--neutral-3: #51565b;
-		--neutral-4: #6d7277;
-		--neutral-5: #c9ced4;
-		--neutral-6: #d9dfe5;
-		--neutral-7: #eaeff5;
-		--neutral-8: #f4f9ff;
-		--red-1: #8a0012;
-		--red-2: #a30018;
-		--red-3: #bc001d;
-		--red-4: #ee0b2a;
-		--red-5: #ff635f;
-		--red-6: #ffa098;
-		--red-7: #ffd1cd;
-		--red-8: #ffe9e6;
-		--yellow-1: #cd9200;
-		--yellow-2: #dfa11a;
-		--yellow-3: #f0b135;
-		--yellow-4: #ffc251;
-		--yellow-5: #ffd48a;
-		--yellow-6: #ffe0ad;
-		--yellow-7: #ffeccd;
-		--yellow-8: #fff7eb;
-		--green-1: #004631;
-		--green-2: #00563c;
-		--green-3: #007654;
-		--green-4: #00976d;
-		--green-5: #00ba87;
-		--green-6: #41dca5;
-		--green-7: #c0ffe2;
-		--green-8: #e8fff4;
-		--blue-1: #003974;
-		--blue-2: #00468c;
-		--blue-3: #0061be;
-		--blue-4: #007df2;
-		--blue-5: #53a0ff;
-		--blue-6: #91c1ff;
-		--blue-7: #c9e0ff;
-		--blue-8: #e4f0ff;
+		--neutral-1: #161616;
+		--neutral-2: #2e2e2e;
+		--neutral-3: #484848;
+		--neutral-4: #636363;
+		--neutral-5: #808080;
+		--neutral-6: #9e9e9e;
+		--neutral-7: #bebebe;
+		--neutral-8: #dedede;
+		--neutral-9: #f5f5f5;
+		--red-1: #380000;
+		--red-2: #620000;
+		--red-3: #910006;
+		--red-4: #c20010;
+		--red-5: #ee0b2a;
+		--red-6: #ff5655;
+		--red-7: #ff9890;
+		--red-8: #ffccc5;
+		--red-9: #ffece9;
+		--orange-1: #320200;
+		--orange-2: #571000;
+		--orange-3: #802300;
+		--orange-4: #ac3600;
+		--orange-5: #d94a00;
+		--orange-6: #fe6a00;
+		--orange-7: #ff9d69;
+		--orange-8: #ffceb2;
+		--orange-9: #ffeee0;
+		--yellow-1: #241100;
+		--yellow-2: #432700;
+		--yellow-3: #643f00;
+		--yellow-4: #875900;
+		--yellow-5: #ac7400;
+		--yellow-6: #ce9200;
+		--yellow-7: #f0b135;
+		--yellow-8: #ffd470;
+		--yellow-9: #fff1c2;
+		--green-1: #001f0e;
+		--green-2: #003b22;
+		--green-3: #005939;
+		--green-4: #007950;
+		--green-5: #009b69;
+		--green-6: #00bb87;
+		--green-7: #41dca5;
+		--green-8: #6afdc5;
+		--green-9: #c4ffe8;
+		--cyan-1: #001d1b;
+		--cyan-2: #003836;
+		--cyan-3: #003836;
+		--cyan-4: #007671;
+		--cyan-5: #009790;
+		--cyan-6: #00b9b2;
+		--cyan-7: #00dbd3;
+		--cyan-8: #2bfdf4;
+		--cyan-9: #b7ffff;
+		--blue-1: #000d49;
+		--blue-2: #002774;
+		--blue-3: #004495;
+		--blue-4: #1762b6;
+		--blue-5: #3a81d7;
+		--blue-6: #59a0f9;
+		--blue-7: #85c1ff;
+		--blue-8: #bfe1ff;
+		--blue-9: #e6f7ff;
+		--purple-1: #220046;
+		--purple-2: #3c086b;
+		--purple-3: #562c8b;
+		--purple-4: #724aab;
+		--purple-5: #8f68cb;
+		--purple-6: #ad87ed;
+		--purple-7: #cca7ff;
+		--purple-8: #e6d2ff;
+		--purple-9: #f9f0ff;
+		--pink-1: #33001c;
+		--pink-2: #5c0038;
+		--pink-3: #830054;
+		--pink-4: #a42c71;
+		--pink-5: #c74c8e;
+		--pink-6: #e96cad;
+		--pink-7: #ff8ecd;
+		--pink-8: #ffc6e6;
+		--pink-9: #ffeaf9;
 	}
 }

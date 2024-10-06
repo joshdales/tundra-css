@@ -1,8 +1,21 @@
-$neutral-1: oklch(20% 0.01 250);
-$neutral-2: oklch(35% 0.01 250);
-$neutral-3: oklch(45% 0.01 250);
-$neutral-4: oklch(55% 0.01 250);
-$neutral-5: oklch(85% 0.01 250);
-$neutral-6: oklch(90% 0.01 250);
-$neutral-7: oklch(95% 0.01 250);
-$neutral-8: oklch(98% 0.01 250);
+$neutral-1: oklch(20% 0 0);
+$neutral-2: oklch(30% 0 0);
+$neutral-3: oklch(40% 0 0);
+$neutral-4: oklch(50% 0 0);
+$neutral-5: oklch(60% 0 0);
+$neutral-6: oklch(70% 0 0);
+$neutral-7: oklch(80% 0 0);
+$neutral-8: oklch(90% 0 0);
+$neutral-9: oklch(97% 0 0);
+
+$neutrals: (
+	"1": $neutral-1,
+	"2": $neutral-2,
+	"3": $neutral-3,
+	"4": $neutral-4,
+	"5": $neutral-5,
+	"6": $neutral-6,
+	"7": $neutral-7,
+	"8": $neutral-8,
+	"9": $neutral-9,
+	)

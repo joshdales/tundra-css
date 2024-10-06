@@ -88,16 +88,15 @@
 	}
 
 	label {
-		color: var(--app-foreground);
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
 		padding-inline: var(--space-6);
-		border: 1.5px solid var(--neutral-6);
+		border: 1.5px solid var(--neutral-8);
 		text-align: center;
 		text-transform: capitalize;
 		transition:
 			all 0.1s ease-in-out,
-			transform 0.3s ease-in;
+			transform 0.2s ease-in;
 
 		&:hover {
 			transform: translate(0, calc(var(--space-1) * -1));

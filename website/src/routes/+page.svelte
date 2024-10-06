@@ -113,7 +113,7 @@
 
 	h1 {
 		margin-block-end: var(--space-6);
-		color: var(--accent);
+		color: var(--app-accent);
 	}
 
 	main {

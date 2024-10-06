@@ -88,7 +88,7 @@
 	}
 
 	label {
-		color: var(--foreground);
+		color: var(--app-foreground);
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
 		padding-inline: var(--space-6);

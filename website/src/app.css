@@ -26,13 +26,13 @@
 /* Any global styles should come after this */
 
 :root {
-	--accent: var(--green-4);
-	--foreground: var(--neutral-1);
-	--background: var(--neutral-8);
+	--app-accent: var(--green-5);
+	--app-foreground: var(--neutral-1);
+	--app-background: var(--neutral-9);
 }
 
 html {
-	color: var(--foreground);
+	color: var(--app-foreground);
 }
 
 html,
@@ -52,21 +52,21 @@ main {
 }
 
 code {
-	background-color: var(--neutral-7);
-	color: var(--accent);
+	background-color: var(--neutral-9);
+	color: var(--app-accent);
 	padding-inline: var(--space-2);
 	padding-block: var(--space-1);
 	border-radius: var(--radius-1);
 }
 
 hr {
-	border: 0.5px solid var(--neutral-6);
+	border: 0.5px solid var(--neutral-8);
 }
 
 a {
 	display: flex;
 	gap: var(--space-2);
-	color: var(--accent);
+	color: var(--app-accent);
 	text-decoration: none;
 
 	&:hover {

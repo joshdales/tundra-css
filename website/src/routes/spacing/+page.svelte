@@ -31,7 +31,7 @@
 	div {
 		height: var(--space);
 		width: var(--space);
-		background-color: var(--red-6);
+		background-color: var(--red-7);
 		margin: auto;
 	}
 </style>

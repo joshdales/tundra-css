@@ -88,16 +88,15 @@
 	}
 
 	label {
-		color: var(--foreground);
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
 		padding-inline: var(--space-6);
-		border: 1.5px solid var(--neutral-6);
+		border: 1.5px solid var(--neutral-8);
 		text-align: center;
 		text-transform: capitalize;
 		transition:
 			all 0.1s ease-in-out,
-			transform 0.3s ease-in;
+			transform 0.2s ease-in;
 
 		&:hover {
 			transform: translate(0, calc(var(--space-1) * -1));
@@ -107,7 +106,7 @@
 			box-shadow:
 				0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
 				0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
-				inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-7) l c h / 10%);
+				inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-9) l c h / 10%);
 		}
 
 		&.active {

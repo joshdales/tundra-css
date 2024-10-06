@@ -13,7 +13,7 @@
 		'blue',
 		'purple',
 		'pink',
-	].map((colour) => new Array(8).fill(colour))
+	].map((colour) => new Array(9).fill(colour))
 
 	let copiedValue: CopiedValue | undefined
 </script>
@@ -50,7 +50,19 @@
 
 <style>
 	.swatch-grid {
-		--columns: 8;
+		--columns: 9;
+	}
+
+	@media screen and (max-width: 700px) {
+		.swatch-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.swatch-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	.colour-block {

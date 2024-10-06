@@ -36,7 +36,7 @@
 	aside {
 		display: flex;
 		align-items: center;
-		background-color: var(--neutral-8);
+		background-color: var(--neutral-9);
 		gap: var(--space-3);
 		padding: var(--space-4);
 		border-radius: var(--radius-2);

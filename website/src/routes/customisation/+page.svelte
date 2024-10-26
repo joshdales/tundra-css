@@ -49,7 +49,7 @@
 			</li>
 			<li><code>accent-2</code> The element is being activated or interactive with.</li>
 			<li>
-				<code>accent-8</code> Contrast colour with the main accent, usually on whatever the accent colour
+				<code>accent-9</code> Contrast colour with the main accent, usually on whatever the accent colour
 				isn't.
 			</li>
 		</ol>

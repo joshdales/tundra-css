@@ -72,7 +72,7 @@
 
 	header,
 	header.hide {
-		&:has(menu) {
+		:global(&:has(menu)) {
 			top: 0;
 		}
 	}

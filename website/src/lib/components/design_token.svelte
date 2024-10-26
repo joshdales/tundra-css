@@ -7,7 +7,7 @@
 	}
 
 	let { property, level, children }: Props = $props()
-	let element: HTMLDivElement = $state()
+	let element: HTMLDivElement | undefined = $state()
 
 	let colourValue = $derived(
 		element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`),

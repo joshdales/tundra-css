@@ -17,7 +17,7 @@
 	}
 
 	let { copiedValue = $bindable() }: Props = $props()
-	let timer: ReturnType<typeof setTimeout> = $state()
+	let timer: ReturnType<typeof setTimeout> | undefined = $state()
 
 	run(() => {
 		if (copiedValue && copiedValue.success) {

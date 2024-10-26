@@ -1,14 +1,14 @@
 <script lang="ts">
 	let showMenu = $state(false)
 
-	let navRef: HTMLElement = $state()
+	let navRef: HTMLElement | undefined = $state()
 
 	function handleOutsideClick(event: MouseEvent) {
 		if (!showMenu) {
 			return
 		}
 
-		if (!navRef.contains(event.target as Node | null)) {
+		if (!navRef?.contains(event.target as Node | null)) {
 			hideMenu()
 		}
 	}
@@ -21,7 +21,12 @@
 <svelte:window onclick={handleOutsideClick} />
 
 <nav bind:this={navRef}>
-	<button class="button-1 ghost" class:show={showMenu} onclick={() => (showMenu = !showMenu)}>
+	<button
+		aria-label={showMenu ? 'Show menu' : 'Hide menu'}
+		class="button-1 ghost"
+		class:show={showMenu}
+		onclick={() => (showMenu = !showMenu)}
+	>
 		<div></div>
 	</button>
 

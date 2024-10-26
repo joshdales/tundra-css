@@ -6,9 +6,6 @@
 </script>
 
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
-	import { onDestroy } from 'svelte'
 	import { fly } from 'svelte/transition'
 	import Toast from './toast.svelte'
 
@@ -19,19 +16,18 @@
 	let { copiedValue = $bindable() }: Props = $props()
 	let timer: ReturnType<typeof setTimeout> | undefined = $state()
 
-	run(() => {
+	$effect(() => {
 		if (copiedValue && copiedValue.success) {
-			if (timer) {
-				clearTimeout(timer)
-			}
 			timer = setTimeout(() => {
 				copiedValue = undefined
 			}, 2000)
 		}
-	})
 
-	onDestroy(() => {
-		clearTimeout(timer)
+		return () => {
+			if (timer) {
+				clearTimeout(timer)
+			}
+		}
 	})
 </script>
 

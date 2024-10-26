@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
 	import DesignToken from '$lib/components/design_token.svelte'
@@ -11,7 +9,7 @@
 	let selectedToken = $state($page.url.searchParams.get('token') || '')
 	let copiedValue: CopiedValue | undefined = $state()
 
-	run(() => {
+	$effect(() => {
 		const token = $page.url.searchParams.get('token')
 		if (token && !selectedToken) {
 			selectedToken = token

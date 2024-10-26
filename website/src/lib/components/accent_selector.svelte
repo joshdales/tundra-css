@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy'
-
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
 	import { browser } from '$app/environment'
@@ -30,7 +28,7 @@
 		}
 	}
 
-	run(() => {
+	$effect(() => {
 		updateColour(selectedColour ?? '')
 		updateQueryColour(selectedColour)
 	})

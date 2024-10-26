@@ -1,7 +1,7 @@
 <script lang="ts">
-	let showMenu = false
+	let showMenu = $state(false)
 
-	let navRef: HTMLElement
+	let navRef: HTMLElement = $state()
 
 	function handleOutsideClick(event: MouseEvent) {
 		if (!showMenu) {
@@ -18,47 +18,47 @@
 	}
 </script>
 
-<svelte:window on:click={handleOutsideClick} />
+<svelte:window onclick={handleOutsideClick} />
 
 <nav bind:this={navRef}>
-	<button class="button-1 ghost" class:show={showMenu} on:click={() => (showMenu = !showMenu)}>
-		<div />
+	<button class="button-1 ghost" class:show={showMenu} onclick={() => (showMenu = !showMenu)}>
+		<div></div>
 	</button>
 
 	{#if showMenu}
 		<menu>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/customisation">Customisation</a>
+				<a onclick={hideMenu} class="link-3" href="/customisation">Customisation</a>
 			</li>
 
 			<hr />
 
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/colours">Colours</a>
+				<a onclick={hideMenu} class="link-3" href="/colours">Colours</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/radius">Radius</a>
+				<a onclick={hideMenu} class="link-3" href="/radius">Radius</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/spacing">Spacing</a>
+				<a onclick={hideMenu} class="link-3" href="/spacing">Spacing</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/typography">Typography</a>
+				<a onclick={hideMenu} class="link-3" href="/typography">Typography</a>
 			</li>
 
 			<hr />
 
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/buttons">Buttons</a>
+				<a onclick={hideMenu} class="link-3" href="/buttons">Buttons</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/inputs">Inputs</a>
+				<a onclick={hideMenu} class="link-3" href="/inputs">Inputs</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/checkboxes">Checkboxes</a>
+				<a onclick={hideMenu} class="link-3" href="/checkboxes">Checkboxes</a>
 			</li>
 			<li>
-				<a on:click={hideMenu} class="link-3" href="/text-styles">Text Styles</a>
+				<a onclick={hideMenu} class="link-3" href="/text-styles">Text Styles</a>
 			</li>
 
 			<hr />

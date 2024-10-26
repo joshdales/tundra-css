@@ -1,11 +1,17 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
 	import { browser } from '$app/environment'
 
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
-	let selectedColour = $page.url.searchParams.get('colour')
-	export let updateColour: (newColour: string) => void
+	let selectedColour = $state($page.url.searchParams.get('colour'))
+	interface Props {
+		updateColour: (newColour: string) => void;
+	}
+
+	let { updateColour }: Props = $props();
 
 	function updateQueryColour(newColour: string | null) {
 		const pageColour = $page.url.searchParams.get('colour')
@@ -24,10 +30,10 @@
 		}
 	}
 
-	$: {
+	run(() => {
 		updateColour(selectedColour ?? '')
 		updateQueryColour(selectedColour)
-	}
+	});
 
 	type ClickEvent = MouseEvent & { currentTarget: EventTarget & HTMLInputElement }
 	function resetSelectedColour(event: ClickEvent) {
@@ -49,7 +55,7 @@
 				name="colours"
 				value={colour}
 				id="colours-{colour}"
-				on:click={resetSelectedColour}
+				onclick={resetSelectedColour}
 			/>
 		</label>
 	{/each}

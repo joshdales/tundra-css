@@ -4,7 +4,7 @@
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 	import TokenDescription from '$lib/components/token_description.svelte'
 
-	let copiedValue: CopiedValue | undefined
+	let copiedValue: CopiedValue | undefined = $state()
 </script>
 
 <main>
@@ -19,7 +19,7 @@
 	<section class="swatch-grid">
 		{#each new Array(14).fill('space') as property, index}
 			<DesignToken {property} level={index + 1} on:copied_value={(ev) => (copiedValue = ev.detail)}>
-				<div style="--space: var(--space-{index + 1})" />
+				<div style="--space: var(--space-{index + 1})"></div>
 			</DesignToken>
 		{/each}
 	</section>

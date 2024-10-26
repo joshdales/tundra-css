@@ -4,8 +4,8 @@
 	import CopyToaster from '$lib/components/copy_toaster.svelte'
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 
-	let selectedColour = ''
-	let copiedValue: CopiedValue | undefined
+	let selectedColour = $state('')
+	let copiedValue: CopiedValue | undefined = $state()
 
 	function copyClasses(event: MouseEvent) {
 		const element = event.target as HTMLButtonElement
@@ -46,37 +46,37 @@
 	<h2 class="heading-4">Filled</h2>
 
 	<div class="btn-group">
-		<button class="button-1 filled {selectedColour}" on:click={copyClasses}> Button 1 </button>
+		<button class="button-1 filled {selectedColour}" onclick={copyClasses}> Button 1 </button>
 
-		<button class="button-2 filled {selectedColour}" on:click={copyClasses}> Button 2 </button>
+		<button class="button-2 filled {selectedColour}" onclick={copyClasses}> Button 2 </button>
 
-		<button class="button-3 filled {selectedColour}" on:click={copyClasses}> Button 3 </button>
+		<button class="button-3 filled {selectedColour}" onclick={copyClasses}> Button 3 </button>
 
-		<button class="button-4 filled {selectedColour}" on:click={copyClasses}> Button 4 </button>
+		<button class="button-4 filled {selectedColour}" onclick={copyClasses}> Button 4 </button>
 	</div>
 
 	<h2 class="heading-4">Outline</h2>
 
 	<div class="btn-group">
-		<button class="button-1 outline {selectedColour}" on:click={copyClasses}> Button 1 </button>
+		<button class="button-1 outline {selectedColour}" onclick={copyClasses}> Button 1 </button>
 
-		<button class="button-2 outline {selectedColour}" on:click={copyClasses}> Button 2 </button>
+		<button class="button-2 outline {selectedColour}" onclick={copyClasses}> Button 2 </button>
 
-		<button class="button-3 outline {selectedColour}" on:click={copyClasses}> Button 3 </button>
+		<button class="button-3 outline {selectedColour}" onclick={copyClasses}> Button 3 </button>
 
-		<button class="button-4 outline {selectedColour}" on:click={copyClasses}> Button 4 </button>
+		<button class="button-4 outline {selectedColour}" onclick={copyClasses}> Button 4 </button>
 	</div>
 
 	<h2 class="heading-4">Ghost</h2>
 
 	<div class="btn-group">
-		<button class="button-1 ghost {selectedColour}" on:click={copyClasses}> Button 1 </button>
+		<button class="button-1 ghost {selectedColour}" onclick={copyClasses}> Button 1 </button>
 
-		<button class="button-2 ghost {selectedColour}" on:click={copyClasses}> Button 2 </button>
+		<button class="button-2 ghost {selectedColour}" onclick={copyClasses}> Button 2 </button>
 
-		<button class="button-3 ghost {selectedColour}" on:click={copyClasses}> Button 3 </button>
+		<button class="button-3 ghost {selectedColour}" onclick={copyClasses}> Button 3 </button>
 
-		<button class="button-4 ghost {selectedColour}" on:click={copyClasses}> Button 4 </button>
+		<button class="button-4 ghost {selectedColour}" onclick={copyClasses}> Button 4 </button>
 	</div>
 
 	<section class="disabled">

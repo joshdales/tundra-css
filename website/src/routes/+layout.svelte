@@ -3,6 +3,11 @@
 	import { page } from '$app/stores'
 	import NavHeader from '$lib/components/header/nav_header.svelte'
 	import '../app.css'
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) {
@@ -26,7 +31,7 @@
 	<NavHeader />
 {/if}
 
-<slot />
+{@render children?.()}
 
 <footer>
 	<h3>

@@ -6,17 +6,17 @@
 </script>
 
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import { onDestroy } from 'svelte'
 	import { fly } from 'svelte/transition'
 	import Toast from './toast.svelte'
 
 	interface Props {
-		copiedValue: CopiedValue | undefined;
+		copiedValue: CopiedValue | undefined
 	}
 
-	let { copiedValue = $bindable() }: Props = $props();
+	let { copiedValue = $bindable() }: Props = $props()
 	let timer: ReturnType<typeof setTimeout> = $state()
 
 	run(() => {
@@ -28,7 +28,7 @@
 				copiedValue = undefined
 			}, 2000)
 		}
-	});
+	})
 
 	onDestroy(() => {
 		clearTimeout(timer)

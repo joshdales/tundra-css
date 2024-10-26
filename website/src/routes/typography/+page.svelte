@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
+	import { run } from 'svelte/legacy'
 
 	import { goto } from '$app/navigation'
 	import { page } from '$app/stores'
@@ -19,7 +19,7 @@
 			$page.url.searchParams.set('token', selectedToken)
 			goto($page.url, { replaceState: true })
 		}
-	});
+	})
 </script>
 
 <main>

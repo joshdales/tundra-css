@@ -1,15 +1,17 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
 	interface Props {
-		property: string;
-		level: number;
-		children?: import('svelte').Snippet;
+		property: string
+		level: number
+		children?: import('svelte').Snippet
 	}
 
-	let { property, level, children }: Props = $props();
+	let { property, level, children }: Props = $props()
 	let element: HTMLDivElement = $state()
 
-	let colourValue = $derived(element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`))
+	let colourValue = $derived(
+		element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`),
+	)
 
 	function copyOnEnter(event: KeyboardEvent) {
 		if (event.key === 'Enter') {

@@ -62,10 +62,11 @@
 	}
 
 	--background: var(--accent-4, var(--neutral-1));
+	--foreground: var(--accent-9, var(--neutral-9));
 
 	background-color: var(--background);
 	border-color: var(--background);
-	color: var(--accent-9, var(--neutral-9));
+	color: var(--foreground);
 
 	@include _viewing {
 		--background: var(--accent-3, var(--neutral-2));

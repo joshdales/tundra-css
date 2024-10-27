@@ -1,7 +1,7 @@
 <script>
 	import AccentSelector from '$lib/components/accent_selector.svelte'
 	import TokenDescription from '$lib/components/token_description.svelte'
-	let selectedColour = ''
+	let selectedColour = $state('')
 </script>
 
 <main>

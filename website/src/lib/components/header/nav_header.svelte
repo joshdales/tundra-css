@@ -1,8 +1,8 @@
 <script lang="ts">
 	import NavMenu from './nav_menu.svelte'
 
-	let headerHeight: number = 0
-	let currentPosition: number = 0
+	let headerHeight: number = $state(0)
+	let currentPosition: number = $state(0)
 	let prevPosition: number = 0
 
 	function shouldHideHeader(currentYPosition: number): boolean {
@@ -15,7 +15,7 @@
 		return positionDelta < 0
 	}
 
-	$: hide = shouldHideHeader(currentPosition)
+	let hide = $derived(shouldHideHeader(currentPosition))
 </script>
 
 <svelte:window bind:scrollY={currentPosition} />
@@ -72,7 +72,7 @@
 
 	header,
 	header.hide {
-		&:has(menu) {
+		:global(&:has(menu)) {
 			top: 0;
 		}
 	}

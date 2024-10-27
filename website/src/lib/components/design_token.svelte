@@ -1,10 +1,17 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
-	export let property: string
-	export let level: number
-	let element: HTMLDivElement
+	interface Props {
+		property: string
+		level: number
+		children?: import('svelte').Snippet
+	}
 
-	$: colourValue = element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`)
+	let { property, level, children }: Props = $props()
+	let element: HTMLDivElement | undefined = $state()
+
+	let colourValue = $derived(
+		element && getComputedStyle(element).getPropertyValue(`--${property}-${level}`),
+	)
 
 	function copyOnEnter(event: KeyboardEvent) {
 		if (event.key === 'Enter') {
@@ -31,13 +38,13 @@
 	bind:this={element}
 	class="token"
 	style="--prop: var(--{property}-{level});"
-	on:click={copyValue}
-	on:keydown={copyOnEnter}
+	onclick={copyValue}
+	onkeydown={copyOnEnter}
 	role="button"
 	tabindex="0"
 >
 	<div class="swatch">
-		<slot />
+		{@render children?.()}
 	</div>
 
 	<p class="label-2">

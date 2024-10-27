@@ -6,10 +6,10 @@
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 	import TokenDescription from '$lib/components/token_description.svelte'
 
-	let selectedToken = $page.url.searchParams.get('token') || ''
-	let copiedValue: CopiedValue | undefined
+	let selectedToken = $state($page.url.searchParams.get('token') || '')
+	let copiedValue: CopiedValue | undefined = $state()
 
-	$: {
+	$effect(() => {
 		const token = $page.url.searchParams.get('token')
 		if (token && !selectedToken) {
 			selectedToken = token
@@ -17,7 +17,7 @@
 			$page.url.searchParams.set('token', selectedToken)
 			goto($page.url, { replaceState: true })
 		}
-	}
+	})
 </script>
 
 <main>

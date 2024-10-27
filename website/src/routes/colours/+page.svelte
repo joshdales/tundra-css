@@ -15,7 +15,7 @@
 		'pink',
 	].map((colour) => new Array(9).fill(colour))
 
-	let copiedValue: CopiedValue | undefined
+	let copiedValue: CopiedValue | undefined = $state()
 </script>
 
 <main>
@@ -39,7 +39,7 @@
 					level={index + 1}
 					on:copied_value={(ev) => (copiedValue = ev.detail)}
 				>
-					<div class="colour-block" />
+					<div class="colour-block"></div>
 				</DesignToken>
 			{/each}
 		</div>

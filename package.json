@@ -19,12 +19,6 @@
       "sass": "./styles/*"
     }
   },
-  "scripts": {
-    "build": "sass --no-source-map ./index.scss ./index.css"
-  },
-  "devDependencies": {
-    "sass": "^1.77.5"
-  },
   "keywords": [
     "tundra",
     "css",

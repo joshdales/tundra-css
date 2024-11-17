@@ -4,11 +4,12 @@ This site is built with SvelteKit. It's a visual reference for all the propertie
 
 ## Developing
 
-Install the dependencies with `pnpm install`, and then you can run the dev server:
+I'm using Deno to develop and run the website locally.
 
 ```bash
-pnpm run serve
+# Install dependencies
+deno install
 
-# or start the server and open the app in a new browser tab
-pnpm run serve -- --open
+# Run the dev server
+deno task serve
 ```

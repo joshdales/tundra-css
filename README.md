@@ -79,7 +79,7 @@ There are a series of classes for text, along with others elements like buttons,
 
 ### Customisation
 The the element classes this is managed with colour classes: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, and `.pink`.
-Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-8` to a class:
+Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-9` to a class:
 ```css
 .colour {
 	--accent-1: var(--colour-1);
@@ -97,7 +97,7 @@ The accent variables are often used in the following way on interactive elements
 1. `accent-4` The standard accent colour for the element.
 2. `accent-3` The accent used when elements are being viewed (either by focus or hover).
 3. `accent-2` The element is being activated or interactive with.
-4. `accent-8` Contrast colour with the main accent, usually text or background.
+4. `accent-9` Contrast colour with the main accent, usually text or background.
 
 If you have a button or input and there is no accent class currently set on the element or a common ancestor then they will fallback to using the neutral colours as their accent.
 
@@ -129,4 +129,17 @@ This has been built with newer devices and CSS rules in mind - a lot of the colo
 Though if you bowser doesn't support custom properties or the `@supports` rule I guess that you are out of luck 😢. Should be good as long as your browser has been updated since 2016.
 
 ## SCSS
-There are SCSS variables and mixins provided which you can use if you want to override or change things up. They are there if you want them, the variables are names the same as the custom properties.
+There are SCSS variables and mixins provided which you can use if you want to override or change things up. They can be imported from the `/styles` directory, the variables are names the same as the custom properties. However I've not documented any of it yet.
+
+## Development
+This project uses Deno for local development.
+```bash
+# Install dependencies
+deno install
+
+# Build the main css file
+deno build
+
+# Pass the watch flag to update on any style updates
+deno build --watch
+```

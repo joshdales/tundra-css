@@ -1,6 +1,6 @@
 {
   "name": "tundra-css",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.",
   "author": "joshdales",
   "homepage": "https://tundra.joshdales.dev",
@@ -18,12 +18,6 @@
     "./styles/*": {
       "sass": "./styles/*"
     }
-  },
-  "scripts": {
-    "build": "sass --no-source-map ./index.scss ./index.css"
-  },
-  "devDependencies": {
-    "sass": "^1.77.5"
   },
   "keywords": [
     "tundra",

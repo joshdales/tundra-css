@@ -9,26 +9,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: main
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
         with:
-          version: 9
-          run_install: false
+          deno-version: v2.x
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          node-version: '20.x'
-          cache: pnpm
+          path: |
+            ~/.deno
+            ~/.cache/deno
+          key: ${{ hashFiles('deno.lock') }}
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install Deps
+        run: deno install
 
       - name: Build CSS
-        run: pnpm build
+        run: deno task build
 
       - name: Check if CSS is up to date
         run: |

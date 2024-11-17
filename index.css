@@ -1,103 +1,103 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 :root {
   /* Neutral */
-  --neutral-1: oklch(20% 0 0);
-  --neutral-2: oklch(30% 0 0);
-  --neutral-3: oklch(40% 0 0);
-  --neutral-4: oklch(50% 0 0);
-  --neutral-5: oklch(60% 0 0);
-  --neutral-6: oklch(70% 0 0);
-  --neutral-7: oklch(80% 0 0);
-  --neutral-8: oklch(90% 0 0);
-  --neutral-9: oklch(97% 0 0);
+  --neutral-1: oklch(20% 0 0deg);
+  --neutral-2: oklch(30% 0 0deg);
+  --neutral-3: oklch(40% 0 0deg);
+  --neutral-4: oklch(50% 0 0deg);
+  --neutral-5: oklch(60% 0 0deg);
+  --neutral-6: oklch(70% 0 0deg);
+  --neutral-7: oklch(80% 0 0deg);
+  --neutral-8: oklch(90% 0 0deg);
+  --neutral-9: oklch(97% 0 0deg);
   --neutral: var(--neutral-1);
   /* Red */
-  --red-1: oklch(20% 0.24 25);
-  --red-2: oklch(30% 0.24 25);
-  --red-3: oklch(40% 0.24 25);
-  --red-4: oklch(50% 0.24 25);
-  --red-5: oklch(60% 0.24 25);
-  --red-6: oklch(70% 0.24 25);
-  --red-7: oklch(80% 0.24 25);
-  --red-8: oklch(90% 0.0669 25);
-  --red-9: oklch(97% 0.019 25);
+  --red-1: oklch(20% 0.24 25deg);
+  --red-2: oklch(30% 0.24 25deg);
+  --red-3: oklch(40% 0.24 25deg);
+  --red-4: oklch(50% 0.24 25deg);
+  --red-5: oklch(60% 0.24 25deg);
+  --red-6: oklch(70% 0.24 25deg);
+  --red-7: oklch(80% 0.24 25deg);
+  --red-8: oklch(90% 0.0669 25deg);
+  --red-9: oklch(97% 0.019 25deg);
   --red: var(--red-5);
   /* Orange */
-  --orange-1: oklch(20% 0.2 45);
-  --orange-2: oklch(30% 0.2 45);
-  --orange-3: oklch(40% 0.2 45);
-  --orange-4: oklch(50% 0.2 45);
-  --orange-5: oklch(60% 0.2 45);
-  --orange-6: oklch(70% 0.2 45);
-  --orange-7: oklch(80% 0.2 45);
-  --orange-8: oklch(90% 0.0718 45);
-  --orange-9: oklch(97% 0.0201 45);
+  --orange-1: oklch(20% 0.2 45deg);
+  --orange-2: oklch(30% 0.2 45deg);
+  --orange-3: oklch(40% 0.2 45deg);
+  --orange-4: oklch(50% 0.2 45deg);
+  --orange-5: oklch(60% 0.2 45deg);
+  --orange-6: oklch(70% 0.2 45deg);
+  --orange-7: oklch(80% 0.2 45deg);
+  --orange-8: oklch(90% 0.0718 45deg);
+  --orange-9: oklch(97% 0.0201 45deg);
   --orange: var(--orange-5);
   /* Yellow */
-  --yellow-1: oklch(20% 0.15 80);
-  --yellow-2: oklch(30% 0.15 80);
-  --yellow-3: oklch(40% 0.15 80);
-  --yellow-4: oklch(50% 0.15 80);
-  --yellow-5: oklch(60% 0.15 80);
-  --yellow-6: oklch(70% 0.15 80);
-  --yellow-7: oklch(80% 0.15 80);
-  --yellow-8: oklch(90% 0.1164 80);
-  --yellow-9: oklch(97% 0.0337 80);
+  --yellow-1: oklch(20% 0.15 80deg);
+  --yellow-2: oklch(30% 0.15 80deg);
+  --yellow-3: oklch(40% 0.15 80deg);
+  --yellow-4: oklch(50% 0.15 80deg);
+  --yellow-5: oklch(60% 0.15 80deg);
+  --yellow-6: oklch(70% 0.15 80deg);
+  --yellow-7: oklch(80% 0.15 80deg);
+  --yellow-8: oklch(90% 0.1164 80deg);
+  --yellow-9: oklch(97% 0.0337 80deg);
   --yellow: var(--yellow-5);
   /* Green */
-  --green-1: oklch(20% 0.15 165);
-  --green-2: oklch(30% 0.15 165);
-  --green-3: oklch(40% 0.15 165);
-  --green-4: oklch(50% 0.15 165);
-  --green-5: oklch(60% 0.15 165);
-  --green-6: oklch(70% 0.15 165);
-  --green-7: oklch(80% 0.15 165);
-  --green-8: oklch(90% 0.15 165);
-  --green-9: oklch(97% 0.0484 165);
+  --green-1: oklch(20% 0.15 165deg);
+  --green-2: oklch(30% 0.15 165deg);
+  --green-3: oklch(40% 0.15 165deg);
+  --green-4: oklch(50% 0.15 165deg);
+  --green-5: oklch(60% 0.15 165deg);
+  --green-6: oklch(70% 0.15 165deg);
+  --green-7: oklch(80% 0.15 165deg);
+  --green-8: oklch(90% 0.15 165deg);
+  --green-9: oklch(97% 0.0484 165deg);
   --green: var(--green-5);
   /* Cyan */
-  --cyan-1: oklch(20% 0.15 190);
-  --cyan-2: oklch(30% 0.15 190);
-  --cyan-3: oklch(40% 0.15 190);
-  --cyan-4: oklch(50% 0.15 190);
-  --cyan-5: oklch(60% 0.15 190);
-  --cyan-6: oklch(70% 0.15 190);
-  --cyan-7: oklch(80% 0.15 190);
-  --cyan-8: oklch(90% 0.15 190);
-  --cyan-9: oklch(97% 0.0484 190);
+  --cyan-1: oklch(20% 0.15 190deg);
+  --cyan-2: oklch(30% 0.15 190deg);
+  --cyan-3: oklch(40% 0.15 190deg);
+  --cyan-4: oklch(50% 0.15 190deg);
+  --cyan-5: oklch(60% 0.15 190deg);
+  --cyan-6: oklch(70% 0.15 190deg);
+  --cyan-7: oklch(80% 0.15 190deg);
+  --cyan-8: oklch(90% 0.15 190deg);
+  --cyan-9: oklch(97% 0.0484 190deg);
   --cyan: var(--cyan-5);
   /* Blue */
-  --blue-1: oklch(20% 0.15 255);
-  --blue-2: oklch(30% 0.15 255);
-  --blue-3: oklch(40% 0.15 255);
-  --blue-4: oklch(50% 0.15 255);
-  --blue-5: oklch(60% 0.15 255);
-  --blue-6: oklch(70% 0.15 255);
-  --blue-7: oklch(80% 0.15 255);
-  --blue-8: oklch(90% 0.0538 255);
-  --blue-9: oklch(95% 0.0261 255);
+  --blue-1: oklch(20% 0.15 255deg);
+  --blue-2: oklch(30% 0.15 255deg);
+  --blue-3: oklch(40% 0.15 255deg);
+  --blue-4: oklch(50% 0.15 255deg);
+  --blue-5: oklch(60% 0.15 255deg);
+  --blue-6: oklch(70% 0.15 255deg);
+  --blue-7: oklch(80% 0.15 255deg);
+  --blue-8: oklch(90% 0.0538 255deg);
+  --blue-9: oklch(95% 0.0261 255deg);
   --blue: var(--blue-5);
   /* Purple */
-  --purple-1: oklch(20% 0.15 300);
-  --purple-2: oklch(30% 0.15 300);
-  --purple-3: oklch(40% 0.15 300);
-  --purple-4: oklch(50% 0.15 300);
-  --purple-5: oklch(60% 0.15 300);
-  --purple-6: oklch(70% 0.15 300);
-  --purple-7: oklch(80% 0.15 300);
-  --purple-8: oklch(90% 0.0625 300);
-  --purple-9: oklch(97% 0.0179 300);
+  --purple-1: oklch(20% 0.15 300deg);
+  --purple-2: oklch(30% 0.15 300deg);
+  --purple-3: oklch(40% 0.15 300deg);
+  --purple-4: oklch(50% 0.15 300deg);
+  --purple-5: oklch(60% 0.15 300deg);
+  --purple-6: oklch(70% 0.15 300deg);
+  --purple-7: oklch(80% 0.15 300deg);
+  --purple-8: oklch(90% 0.0625 300deg);
+  --purple-9: oklch(97% 0.0179 300deg);
   --purple: var(--purple-5);
   /* Pink */
-  --pink-1: oklch(20% 0.17 350);
-  --pink-2: oklch(30% 0.17 350);
-  --pink-3: oklch(40% 0.17 350);
-  --pink-4: oklch(50% 0.17 350);
-  --pink-5: oklch(60% 0.17 350);
-  --pink-6: oklch(70% 0.17 350);
-  --pink-7: oklch(80% 0.17 350);
-  --pink-8: oklch(90% 0.0816 350);
-  --pink-9: oklch(97% 0.0228 350);
+  --pink-1: oklch(20% 0.17 350deg);
+  --pink-2: oklch(30% 0.17 350deg);
+  --pink-3: oklch(40% 0.17 350deg);
+  --pink-4: oklch(50% 0.17 350deg);
+  --pink-5: oklch(60% 0.17 350deg);
+  --pink-6: oklch(70% 0.17 350deg);
+  --pink-7: oklch(80% 0.17 350deg);
+  --pink-8: oklch(90% 0.0816 350deg);
+  --pink-9: oklch(97% 0.0228 350deg);
   --pink: var(--pink-5);
   /* Radius */
   --radius-1: 4px;
@@ -1443,7 +1443,7 @@ input[type=radio].radio-4:checked::after {
   --accent-9: var(--pink-9);
 }
 
-@supports not (color: oklch(60% 0.15 165)) {
+@supports not (color: oklch(60% 0.15 165deg)) {
   :root {
     --neutral-1: #161616;
     --neutral-2: #2e2e2e;

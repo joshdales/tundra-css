@@ -35,6 +35,5 @@ jobs:
         run: |
           if ! git diff --quiet index.css; then
             echo "The index.css has changes after running the build command. Please commit those changes."
-            git branch
             exit 1
           fi

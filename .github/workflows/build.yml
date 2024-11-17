@@ -12,23 +12,13 @@ jobs:
         with:
           ref: main
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
         with:
-          version: 9
-          run_install: false
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          deno-version: v2.x
 
       - name: Build CSS
-        run: pnpm build
+        run: deno task build
 
       - name: Check if CSS is up to date
         run: |

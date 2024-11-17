@@ -17,6 +17,14 @@ jobs:
         with:
           deno-version: v2.x
 
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.deno
+            ~/.cache/deno
+          key: ${{ hashFiles('deno.lock') }}
+
       - name: Install Deps
         run: deno install
 

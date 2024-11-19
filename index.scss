@@ -228,12 +228,11 @@ input[type="radio"] {
 			--accent-#{$level}: var(--#{$colour}-#{$level});
 		}
 
-		// These custom properties have to be redeclared otherwise CSS can't compute that --accent-1 is now present.
-		--shadow-1: #{$shadow-1};
-		--shadow-2: #{$shadow-2};
-		--shadow-3: #{$shadow-3};
-		--shadow-4: #{$shadow-4};
-		--shadow-5: #{$shadow-5};
+		--accent-shadow-1: #{$shadow-1};
+		--accent-shadow-2: #{$shadow-2};
+		--accent-shadow-3: #{$shadow-3};
+		--accent-shadow-4: #{$shadow-4};
+		--accent-shadow-5: #{$shadow-5};
 	}
 }
 

@@ -1,12 +1,12 @@
 @use 'spacing' as *;
 
 @function shadow-colour($alpha: 1) {
-	$shadow-colour: var(--accent-1, var(--neutral-1));
+	$shadow-colour: var(--accent-5, var(--neutral-1));
 	@return oklch(from $shadow-colour l c h / $alpha);
 }
 
-$shadow-1: 0 0 $space-2 $space-1 shadow-colour(0.1);
+$shadow-1: 0 0 $space-2 $space-1 shadow-colour(0.2);
 $shadow-2: $shadow-1, 0 0 $space-3 $space-1 shadow-colour(0.15);
-$shadow-3: $shadow-2, 0 0 $space-5 $space-2 shadow-colour(0.2);
+$shadow-3: $shadow-2, 0 0 $space-5 $space-2 shadow-colour(0.1);
 $shadow-4: $shadow-3, 0 0 $space-10 $space-3 shadow-colour(0.25);
 $shadow-5: $shadow-4, 0 0 $space-12 $space-4 shadow-colour(0.2);

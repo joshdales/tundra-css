@@ -82,6 +82,7 @@ The the element classes this is managed with colour classes: `.red`, `.orange`, 
 Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-9` to a class:
 ```css
 .colour {
+	--accent: var(--colour);
 	--accent-1: var(--colour-1);
 	--accent-2: var(--colour-2);
 	--accent-3: var(--colour-3);

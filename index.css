@@ -596,7 +596,7 @@
 }
 @property --font-size {
   syntax: "*";
-  inherits: false;
+  inherits: true;
   initial-value: 1rem;
 }
 @property --font-size-1 {
@@ -646,7 +646,7 @@
 }
 @property --font-weight {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 500;
 }
 @property --font-weight-1 {
@@ -671,7 +671,7 @@
 }
 @property --letter-spacing {
   syntax: "*";
-  inherits: false;
+  inherits: true;
   initial-value: 0em;
 }
 @property --letter-spacing-1 {
@@ -701,7 +701,7 @@
 }
 @property --letter-spacing {
   syntax: "*";
-  inherits: false;
+  inherits: true;
   initial-value: 1;
 }
 @property --line-height-1 {

@@ -4,7 +4,7 @@
 @use './spacing';
 @use './typography';
 
-@mixin create_prop($name, $syntax, $value, $inherits: false) {
+@mixin create_prop($name, $syntax: "*", $value, $inherits: false) {
 	@if $syntax !="*" {
 		$syntax: "<#{$syntax}>";
 	}
@@ -41,25 +41,25 @@ $_colours: map.merge(colours.$colours, $_colours);
 	@include create_prop("space-#{$level}", "length", $value);
 }
 
-@include create_prop("font-size", "*", typography.$font-size-3);
+@include create_prop("font-size", "*", typography.$font-size-3, true);
 
 @each $level, $value in typography.$font-size {
 	@include create_prop("font-size-#{$level}", "*", $value);
 }
 
-@include create_prop("font-weight", "number", typography.$font-weight-2);
+@include create_prop("font-weight", "number", typography.$font-weight-2, true);
 
 @each $level, $value in typography.$font-weight {
 	@include create_prop("font-weight-#{$level}", "number", $value);
 }
 
-@include create_prop("letter-spacing", "*", typography.$letter-spacing-3);
+@include create_prop("letter-spacing", "*", typography.$letter-spacing-3, true);
 
 @each $level, $value in typography.$letter-spacing {
 	@include create_prop("letter-spacing-#{$level}", "*", $value);
 }
 
-@include create_prop("letter-spacing", "*", typography.$line-height-1);
+@include create_prop("letter-spacing", "*", typography.$line-height-1, true);
 
 @each $level, $value in typography.$line-height {
 	@include create_prop("line-height-#{$level}", "number", $value);

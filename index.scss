@@ -14,8 +14,8 @@
 			}
 
 			@else {
-				$pure_values: map.remove($values, 0);
-				$key: list.index(map.values($pure_values), map.get($values, 0));
+				$_values: map.remove($values, 0);
+				$key: list.index(map.values($_values), map.get($values, 0));
 				--#{$colour}: var(--#{$colour}-#{$key});
 			}
 		}

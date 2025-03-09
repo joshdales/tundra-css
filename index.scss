@@ -1,120 +1,55 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
+@use "sass:list";
+@use "sass:map";
 @use 'styles' as *;
+@use 'styles/properties.scss';
 
 :root {
+	@each $colour, $values in $colours {
 
-	/* Neutral */
-	@each $level, $colour in $neutrals {
-		--neutral-#{$level}: #{$colour};
+		/* #{$colour} */
+		@each $level, $value in $values {
+			@if ($level > 0) {
+				--#{$colour}-#{$level}: #{$value};
+			}
+
+			@else {
+				$_values: map.remove($values, 0);
+				$key: list.index(map.values($_values), map.get($values, 0));
+				--#{$colour}: var(--#{$colour}-#{$key});
+			}
+		}
 	}
-
-	--neutral: var(--neutral-1);
-
-	/* Red */
-	@each $level, $colour in $reds {
-		--red-#{$level}: #{$colour};
-	}
-
-	--red: var(--red-5);
-
-	/* Orange */
-	@each $level, $colour in $oranges {
-		--orange-#{$level}: #{$colour};
-	}
-
-	--orange: var(--orange-5);
-
-	/* Yellow */
-	@each $level, $colour in $yellows {
-		--yellow-#{$level}: #{$colour};
-	}
-
-	--yellow: var(--yellow-5);
-
-	/* Green */
-	@each $level, $colour in $greens {
-		--green-#{$level}: #{$colour};
-	}
-
-	--green: var(--green-5);
-
-	/* Cyan */
-	@each $level, $colour in $cyans {
-		--cyan-#{$level}: #{$colour};
-	}
-
-	--cyan: var(--cyan-5);
-
-	/* Blue */
-	@each $level, $colour in $blues {
-		--blue-#{$level}: #{$colour};
-	}
-
-	--blue: var(--blue-5);
-
-	/* Purple */
-	@each $level, $colour in $purples {
-		--purple-#{$level}: #{$colour};
-	}
-
-	--purple: var(--purple-5);
-
-	/* Pink */
-	@each $level, $colour in $pinks {
-		--pink-#{$level}: #{$colour};
-	}
-
-	--pink: var(--pink-5);
 
 	/* Radius */
-	--radius-1: #{$radius-1};
-	--radius-2: #{$radius-2};
-	--radius-3: #{$radius-3};
-	--radius-4: #{$radius-4};
-	--radius-5: #{$radius-5};
-	/* Space */
-	--space-1: #{$space-1};
-	--space-2: #{$space-2};
-	--space-3: #{$space-3};
-	--space-4: #{$space-4};
-	--space-5: #{$space-5};
-	--space-6: #{$space-6};
-	--space-7: #{$space-7};
-	--space-8: #{$space-8};
-	--space-9: #{$space-9};
-	--space-10: #{$space-10};
-	--space-11: #{$space-11};
-	--space-12: #{$space-12};
-	--space-13: #{$space-13};
-	--space-14: #{$space-14};
-	/* Font Weight */
-	--font-weight-1: #{$font-weight-1};
-	--font-weight-2: #{$font-weight-2};
-	--font-weight-3: #{$font-weight-3};
-	--font-weight-4: #{$font-weight-4};
-	/* Font Size */
-	--font-size-1: #{$font-size-1};
-	--font-size-2: #{$font-size-2};
-	--font-size-3: #{$font-size-3};
-	--font-size-4: #{$font-size-4};
-	--font-size-5: #{$font-size-5};
-	--font-size-6: #{$font-size-6};
-	--font-size-7: #{$font-size-7};
-	--font-size-8: #{$font-size-8};
-	--font-size-9: #{$font-size-9};
-	/* Line Height */
-	--line-height-1: #{$line-height-1};
-	--line-height-2: #{$line-height-2};
-	--line-height-3: #{$line-height-3};
-	--line-height-4: #{$line-height-4};
-	--line-height-5: #{$line-height-5};
-	/* Letter Spacing */
-	--letter-spacing-1: #{$letter-spacing-1};
-	--letter-spacing-2: #{$letter-spacing-2};
-	--letter-spacing-3: #{$letter-spacing-3};
-	--letter-spacing-4: #{$letter-spacing-4};
-	--letter-spacing-5: #{$letter-spacing-5};
+	@each $level, $value in $radius {
+		--radius-#{$level}: #{$value};
+	}
 
+	/* Space */
+	@each $level, $value in $space {
+		--space-#{$level}: #{$value};
+	}
+
+	/* Font Weight */
+	@each $level, $value in $font-weight {
+		--font-weight-#{$level}: #{$value};
+	}
+
+	/* Font Size */
+	@each $level, $value in $font-size {
+		--font-size-#{$level}: #{$value};
+	}
+
+	/* Line Height */
+	@each $level, $value in $line-height {
+		--line-height-#{$level}: #{$value};
+	}
+
+	/* Letter Spacing */
+	@each $level, $value in $letter-spacing {
+		--letter-spacing-#{$level}: #{$value};
+	}
 }
 
 /* Text */
@@ -215,13 +150,17 @@ input[type="radio"] {
 	}
 }
 
-@each $colour in $colours {
+$_colours: map.remove($colours, "neutral");
+
+@each $colour, $_ in $_colours {
 	.#{$colour} {
-		accent-color: var(--#{colour});
+		--accent: var(--#{$colour});
 
 		@for $level from 1 through 9 {
 			--accent-#{$level}: var(--#{$colour}-#{$level});
 		}
+
+		accent-color: var(--accent);
 	}
 }
 

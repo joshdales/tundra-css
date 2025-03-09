@@ -5,3 +5,11 @@ $radius-2: spacing.$space-2;
 $radius-3: spacing.$space-5;
 $radius-4: spacing.$space-10;
 $radius-5: spacing.$space-13;
+
+$radius: (
+	1: $radius-1,
+	2: $radius-2,
+	3: $radius-3,
+	4: $radius-4,
+	5: $radius-5,
+);

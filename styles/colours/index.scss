@@ -8,13 +8,24 @@
 @forward 'red';
 @forward 'yellow';
 
+@use 'blue' as *;
+@use 'cyan' as *;
+@use 'green' as *;
+@use 'neutral' as *;
+@use 'orange' as *;
+@use 'pink' as *;
+@use 'purple' as *;
+@use 'red' as *;
+@use 'yellow' as *;
+
 $colours: (
-	"red",
-	"orange",
-	"yellow",
-	"green",
-	"cyan",
-	"blue",
-	"purple",
-	"pink"
+	"neutral": $neutrals,
+	"red": $reds,
+	"orange": $oranges,
+	"yellow": $yellows,
+	"green": $greens,
+	"cyan": $cyans,
+	"blue": $blues,
+	"purple": $purples,
+	"pink": $pinks,
 );

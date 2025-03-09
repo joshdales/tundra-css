@@ -114,8 +114,8 @@
 		}
 
 		&.active {
-			border-color: var(--blue-8);
-			background-color: oklch(from var(--blue-8) l c h / 30%);
+			border-color: var(--app-accent-8);
+			background-color: oklch(from var(--app-accent-8) l c h / 30%);
 		}
 	}
 

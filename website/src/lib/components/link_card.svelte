@@ -45,8 +45,8 @@
 			0 var(--space-1) var(--space-2) oklch(from var(--neutral-1) l c h / 5%),
 			0 0 var(--space-1) oklch(from var(--neutral-1) l c h / 10%),
 			inset var(--space-2) var(--space-1) var(--space-3) oklch(from var(--blue-8) l c h / 10%);
-		background-color: oklch(from var(--blue-9) l c h / 40%);
-		border-color: var(--blue-9);
+		background-color: oklch(from var(--app-accent-9) l c h / 40%);
+		border-color: var(--app-accent-9);
 		transform: translate(0, calc(var(--space-1) * -1));
 		text-decoration: none;
 	}
@@ -60,7 +60,7 @@
 
 	a:focus {
 		outline: none;
-		border-color: var(--blue-6);
+		border-color: var(--app-accent-6);
 	}
 
 	h3 {

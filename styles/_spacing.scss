@@ -12,3 +12,20 @@ $space-11: 40px;
 $space-12: 48px;
 $space-13: 64px;
 $space-14: 128px;
+
+$space: (
+	1: $space-1,
+	2: $space-2,
+	3: $space-3,
+	4: $space-4,
+	5: $space-5,
+	6: $space-6,
+	7: $space-7,
+	8: $space-8,
+	9: $space-9,
+	10: $space-10,
+	11: $space-11,
+	12: $space-12,
+	13: $space-13,
+	14: $space-14,
+);

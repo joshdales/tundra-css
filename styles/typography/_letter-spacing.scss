@@ -3,3 +3,11 @@ $letter-spacing-2: -0.02em;
 $letter-spacing-3: 0em;
 $letter-spacing-4: 0.02em;
 $letter-spacing-5: 0.04em;
+
+$letter-spacing: (
+	1: $letter-spacing-1,
+	2: $letter-spacing-2,
+	3: $letter-spacing-3,
+	4: $letter-spacing-4,
+	5: $letter-spacing-5,
+);

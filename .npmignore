@@ -2,4 +2,5 @@
 website
 deno.json
 deno.lock
+.gitattributes
 .editorconfig

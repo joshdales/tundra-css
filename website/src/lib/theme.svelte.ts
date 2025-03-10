@@ -7,10 +7,17 @@ export type ThemeColour =
 	| 'blue'
 	| 'purple'
 	| 'pink'
+	| 'gradient'
 
 export type ThemeBrightness = 'light' | 'dark' | 'system'
 
-export const theme = $state<{ colour: ThemeColour; brightness: ThemeBrightness }>({
+interface Theme {
+	colour: ThemeColour
+	brightness: ThemeBrightness
+	gradient?: Set<ThemeColour>
+}
+
+export const theme = $state<Theme>({
 	colour: localStorage.getItem('theme-colour') ?? 'green',
 	brightness: 'light',
 })

@@ -19,7 +19,21 @@
 
 		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
 
-		<LinkCard href="/customisation" title="Customisation" desc="How to make it your own" />
+		<nav>
+			<menu>
+				<li>
+					<LinkCard
+						href="/customisation"
+						title="Customisation"
+						desc="A quick walkthrough of what you can change"
+					/>
+				</li>
+
+				<li>
+					<LinkCard href="/site-config" title="Configure this site" desc="<ake it your own" />
+				</li>
+			</menu>
+		</nav>
 	</header>
 
 	<main>

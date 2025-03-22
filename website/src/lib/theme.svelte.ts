@@ -11,13 +11,8 @@ export type ThemeColour =
 
 export type ThemeBrightness = 'light' | 'dark' | 'system'
 
-interface Theme {
+export interface Theme {
 	colour: ThemeColour
 	brightness: ThemeBrightness
 	gradient?: Set<ThemeColour>
 }
-
-export const theme = $state<Theme>({
-	colour: '',
-	brightness: 'light',
-})

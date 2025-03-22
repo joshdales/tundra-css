@@ -13,7 +13,7 @@
 <form method="post" onchange={(evt) => handleUpdate(evt)}>
 	<fieldset aria-label="Theme colour for the site">
 		<input
-			class="radio-1 red"
+			class="radio-2 red"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-red"
@@ -21,7 +21,7 @@
 			checked={theme.accent === 'red'}
 		/>
 		<input
-			class="radio-1 orange"
+			class="radio-2 orange"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-orange"
@@ -29,7 +29,7 @@
 			checked={theme.accent === 'orange'}
 		/>
 		<input
-			class="radio-1 yellow"
+			class="radio-2 yellow"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-yellow"
@@ -37,7 +37,7 @@
 			checked={theme.accent === 'yellow'}
 		/>
 		<input
-			class="radio-1 green"
+			class="radio-2 green"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-green"
@@ -45,7 +45,7 @@
 			checked={theme.accent === 'green'}
 		/>
 		<input
-			class="radio-1 cyan"
+			class="radio-2 cyan"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-cyan"
@@ -53,7 +53,7 @@
 			checked={theme.accent === 'cyan'}
 		/>
 		<input
-			class="radio-1 blue"
+			class="radio-2 blue"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-blue"
@@ -61,7 +61,7 @@
 			checked={theme.accent === 'blue'}
 		/>
 		<input
-			class="radio-1 purple"
+			class="radio-2 purple"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-purple"
@@ -69,7 +69,7 @@
 			checked={theme.accent === 'purple'}
 		/>
 		<input
-			class="radio-1 pink"
+			class="radio-2 pink"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-pink"
@@ -88,6 +88,7 @@
 		border: 1px solid var(--neutral-8);
 		border-radius: var(--radius-2);
 		gap: var(--space-2);
+		background-color: #fff;
 	}
 
 	input {

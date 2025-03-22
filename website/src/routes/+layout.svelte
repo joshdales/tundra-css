@@ -27,7 +27,14 @@
 
 	$effect(() => {
 		if (theme.accent) {
-			const appClass = document.documentElement.classList.values().find((key) => /^app/.test(key))
+			let appClass
+			for (const value of document.documentElement.classList.values()) {
+				if (/^app/.test(value)) {
+					appClass = value
+					break
+				}
+			}
+
 			if (appClass) {
 				document.documentElement.classList.replace(appClass, `app-${theme.accent}`)
 			}

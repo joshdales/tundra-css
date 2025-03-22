@@ -25,7 +25,16 @@
 /* Any global styles should come after this */
 
 :root {
-	--app-accent: var(--green-5);
+	--app-accent: var(--neutral-3);
+	--app-accent-1: var(--neutral-1);
+	--app-accent-2: var(--neutral-2);
+	--app-accent-3: var(--neutral-3);
+	--app-accent-4: var(--neutral-4);
+	--app-accent-5: var(--neutral-5);
+	--app-accent-6: var(--neutral-6);
+	--app-accent-7: var(--neutral-7);
+	--app-accent-8: var(--neutral-8);
+	--app-accent-9: var(--neutral-9);
 	--app-foreground: var(--neutral-1);
 	--app-background: var(--neutral-9);
 }

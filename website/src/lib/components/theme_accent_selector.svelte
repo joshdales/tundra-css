@@ -86,7 +86,8 @@
 		padding: var(--space-3) var(--space-6);
 		justify-items: center;
 		border: 1px solid var(--neutral-8);
-		border-radius: var(--radius-1);
+		border-radius: var(--radius-2);
+		gap: var(--space-2);
 	}
 
 	input {

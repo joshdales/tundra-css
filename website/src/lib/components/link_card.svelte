@@ -27,7 +27,7 @@
 		border-radius: var(--radius-2);
 		padding-block: var(--space-4);
 		padding-inline: var(--space-6);
-		border-top: 0.5px solid transparent;
+		border: 0.5px solid transparent;
 		transition:
 			all 0.1s ease-in-out,
 			transform 0.3s ease-in;

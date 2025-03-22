@@ -5,7 +5,7 @@ export const actions: Actions = {
 		const data = await request.formData()
 		const themeColour = data.get('colour')?.toString()
 		if (themeColour) {
-			cookies.set('themeColour', themeColour, { path: '/' })
+			cookies.set('themeAccent', themeColour, { path: '/' })
 		}
 
 		return { success: true }

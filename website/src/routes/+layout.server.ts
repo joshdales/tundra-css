@@ -1,11 +1,11 @@
 import type { Cookies } from '@sveltejs/kit'
-import type { Theme, ThemeColour } from '$lib/theme.svelte'
+import type { Theme, AccentColour } from '$lib/theme.svelte'
 
 export async function load({ cookies }: { cookies: Cookies }) {
 	const theme: Partial<Theme> = {}
-	const themeColour = cookies.get('themeColour')
-	if (themeColour) {
-		theme.colour = themeColour as ThemeColour
+	const themeAccent = cookies.get('themeAccent')
+	if (themeAccent) {
+		theme.accent = themeAccent as AccentColour
 	}
 
 	return {

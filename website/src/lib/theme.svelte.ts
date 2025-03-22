@@ -1,4 +1,4 @@
-export type ThemeColour =
+export type AccentColour =
 	| 'red'
 	| 'orange'
 	| 'yellow'
@@ -7,18 +7,13 @@ export type ThemeColour =
 	| 'blue'
 	| 'purple'
 	| 'pink'
-	| 'gradient'
 
-export type ThemeBrightness = 'light' | 'dark' | 'system'
+export type Brightness = 'light' | 'dark' | 'system'
 
 export interface Theme {
-	colour: ThemeColour
+	accent: AccentColour
 	/**
 	 * @todo
 	 */
-	brightness: ThemeBrightness
-	/**
-	 * @todo
-	 */
-	gradient?: Set<ThemeColour>
+	mode: Brightness
 }

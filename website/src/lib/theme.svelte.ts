@@ -18,10 +18,6 @@ interface Theme {
 }
 
 export const theme = $state<Theme>({
-	colour: localStorage.getItem('theme-colour') ?? 'green',
+	colour: '',
 	brightness: 'light',
 })
-
-export function saveTheme(colour: string) {
-	localStorage.setItem('theme-colour', colour)
-}

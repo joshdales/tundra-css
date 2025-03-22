@@ -1,19 +1,6 @@
-export type AccentColour =
-	| 'red'
-	| 'orange'
-	| 'yellow'
-	| 'green'
-	| 'cyan'
-	| 'blue'
-	| 'purple'
-	| 'pink'
+import type { Theme } from './theme.ts'
 
-export type Brightness = 'light' | 'dark' | 'system'
-
-export interface Theme {
-	accent: AccentColour
-	/**
-	 * @todo
-	 */
-	mode: Brightness
-}
+export const theme = $state<Theme>({
+	accent: '',
+	mode: 'system',
+})

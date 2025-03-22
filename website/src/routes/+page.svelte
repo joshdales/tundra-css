@@ -30,7 +30,7 @@
 				</li>
 
 				<li>
-					<LinkCard href="/site-config" title="Configure this site" desc="<ake it your own" />
+					<LinkCard href="/site-config" title="Configure this site" desc="Make it your own" />
 				</li>
 			</menu>
 		</nav>

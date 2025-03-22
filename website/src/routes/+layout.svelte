@@ -2,7 +2,6 @@
 	import { onNavigate } from '$app/navigation'
 	import { page } from '$app/state'
 	import NavHeader from '$lib/components/header/nav_header.svelte'
-	import { theme } from '$lib/theme.svelte'
 	import '../app.css'
 	interface Props {
 		children?: import('svelte').Snippet
@@ -26,7 +25,14 @@
 	})
 
 	$effect(() => {
-		document.body.className = `app-${theme.colour}`
+		const themeColour = page.data.theme.colour
+		if (themeColour) {
+			localStorage.setItem('themeColour', themeColour)
+			const appClass = document.documentElement.classList.values().find((key) => /^app/.test(key))
+			if (appClass) {
+				document.documentElement.classList.replace(appClass, `app-${themeColour}`)
+			}
+		}
 	})
 </script>
 

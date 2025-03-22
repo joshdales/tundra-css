@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ThemeAccentSelector from '../theme_accent_selector.svelte'
 	import NavMenu from './nav_menu.svelte'
 
 	let headerHeight: number = $state(0)
@@ -22,6 +23,8 @@
 
 <header bind:clientHeight={headerHeight} style="--header-height:{headerHeight}px" class:hide>
 	<a href="/" class="alt-heading-3">Tundra CSS</a>
+
+	<ThemeAccentSelector />
 
 	<NavMenu />
 </header>

@@ -4,14 +4,14 @@
 
 	function handleUpdate(evt: Event) {
 		evt.preventDefault()
-		const value = (evt.target as HTMLInputElement).value as AccentColour
-		localStorage.setItem('themeAccent', value)
-		theme.accent = value
+		const target = evt.target as HTMLInputElement
+		localStorage.setItem(target.name, target.value)
+		theme.accent = target.value as AccentColour
 	}
 </script>
 
 <form method="post" onchange={(evt) => handleUpdate(evt)}>
-	<fieldset>
+	<fieldset aria-label="Theme colour for the site">
 		<input
 			class="radio-1 red"
 			type="radio"

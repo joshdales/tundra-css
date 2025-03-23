@@ -20,6 +20,11 @@
 	label {
 		cursor: pointer;
 	}
+
+	select {
+		/* Remove Safari default styles */
+		appearance: none;
+	}
 }
 
 /* Any global styles should come after this */

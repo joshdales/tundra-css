@@ -1,10 +1,14 @@
 <script>
 	import LinkCard from '$lib/components/link_card.svelte'
+	import ThemeAccentSelector from '$lib/components/theme_accent_selector.svelte'
 </script>
 
 <div class="grid">
 	<header>
 		<h1 class="alt-heading-6">Tundra CSS</h1>
+
+		<ThemeAccentSelector />
+
 		<p class="body-4">
 			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 		</p>
@@ -19,7 +23,11 @@
 
 		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
 
-		<LinkCard href="/customisation" title="Customisation" desc="How to make it your own" />
+		<LinkCard
+			href="/customisation"
+			title="Customisation"
+			desc="A quick walkthrough of what you can change"
+		/>
 	</header>
 
 	<main>

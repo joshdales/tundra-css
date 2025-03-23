@@ -1,13 +1,16 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
-	import { page } from '$app/stores'
+	import { page } from '$app/state'
 	import NavHeader from '$lib/components/header/nav_header.svelte'
 	import '../app.css'
+	import { theme } from '$lib'
 	interface Props {
 		children?: import('svelte').Snippet
 	}
 
 	let { children }: Props = $props()
+
+	let showHeader = $derived(() => !page.data.hideHeader)
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) {
@@ -21,13 +24,29 @@
 			})
 		})
 	})
+
+	$effect(() => {
+		if (theme.accent) {
+			let appClass
+			for (const value of document.documentElement.classList.values()) {
+				if (/^app/.test(value)) {
+					appClass = value
+					break
+				}
+			}
+
+			if (appClass) {
+				document.documentElement.classList.replace(appClass, `app-${theme.accent}`)
+			}
+		}
+	})
 </script>
 
 <svelte:head>
 	<title>Tundra CSS</title>
 </svelte:head>
 
-{#if !$page.data.hideHeader}
+{#if showHeader()}
 	<NavHeader />
 {/if}
 

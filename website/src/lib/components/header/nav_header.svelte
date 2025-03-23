@@ -1,4 +1,5 @@
 <script lang="ts">
+	import NavAccent from './nav_accent.svelte'
 	import NavMenu from './nav_menu.svelte'
 
 	let headerHeight: number = $state(0)
@@ -23,11 +24,13 @@
 <header bind:clientHeight={headerHeight} style="--header-height:{headerHeight}px" class:hide>
 	<a href="/" class="alt-heading-3">Tundra CSS</a>
 
+	<NavAccent />
 	<NavMenu />
 </header>
 
 <style>
 	header {
+		container-type: inline-size;
 		position: sticky;
 		z-index: 2;
 		display: flex;
@@ -36,7 +39,7 @@
 		justify-content: space-between;
 		top: var(--space-2);
 		transition: top 0.7s ease-in-out;
-		color: var(--green);
+		color: var(--app-accent);
 		padding-inline: var(--space-10);
 		padding-block: var(--space-6);
 		width: 100%;
@@ -72,7 +75,7 @@
 
 	header,
 	header.hide {
-		:global(&:has(menu)) {
+		:global(&:has(menu), &:has(.selector.show)) {
 			top: 0;
 		}
 	}

@@ -5,6 +5,7 @@
 			;(function () {
 				window.counterscale = { q: [['set', 'siteId', 'tundra-css'], ['trackPageview']] }
 			})()
+			document.documentElement.classList.add(`app-${localStorage.getItem('themeAccent')}`)
 		</script>
 		<script id="counterscale-script" src="https://counter.joshdales.dev/tracker.js" defer></script>
 		<meta charset="utf-8" />

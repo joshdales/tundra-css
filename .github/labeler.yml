@@ -1,6 +1,6 @@
 Website:
   - changed-files:
-    - any-glob-to-any-file: ['website/*', 'website/**/*']
+    - any-glob-to-any-file: ['www/*', 'www/**/*']
   - base-branch: 'website'
 
 Styles:

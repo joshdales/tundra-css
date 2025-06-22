@@ -7,6 +7,9 @@ const config = {
 	runes: true,
 	kit: {
 		adapter: adapter(),
+		prerender: {
+			handleHttpError: "warn"
+		}
 	},
 }
 

@@ -1,6 +1,7 @@
 name = "tundra-css"
 main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2025-06-19"
+routes = [{ pattern = "tundra.joshdales.dev", custom_domain = true }]
 
 [assets]
 binding = "ASSETS"

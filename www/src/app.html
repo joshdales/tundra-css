@@ -2,12 +2,14 @@
 <html lang="en">
 	<head>
 		<script>
-			;(function () {
-				window.counterscale = { q: [['set', 'siteId', 'tundra-css'], ['trackPageview']] }
-			})()
 			document.documentElement.classList.add(`app-${localStorage.getItem('themeAccent')}`)
 		</script>
-		<script id="counterscale-script" src="https://counter.joshdales.dev/tracker.js" defer></script>
+		<script
+			id="counterscale-script"
+			data-site-id="tundra-css"
+			src="https://counter.joshdales.dev/tracker.js"
+			defer
+		></script>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />

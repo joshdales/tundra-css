@@ -7,13 +7,13 @@
 		/* #{$colour} */
 		@each $level, $value in $values {
 			@if ($level > 0) {
-				--#{$colour}-#{$level}: #{$value};
 				--color-#{$colour}-#{$level}: #{$value};
+				--#{$colour}-#{$level}: var(--color-#{$colour}-#{$level});
 			} @else {
 				$_values: map.remove($values, 0);
 				$key: list.index(map.values($_values), map.get($values, 0));
-				--#{$colour}: var(--#{$colour}-#{$key});
-				--color-#{$colour}: var(--#{$colour}-#{$key});
+				--color-#{$colour}: var(--color-#{$colour}-#{$key});
+				--#{$colour}: var(--color-#{$colour}-#{$key});
 			}
 		}
 	}

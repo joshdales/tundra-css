@@ -1,19 +1,16 @@
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 @use "sass:list";
 @use "sass:map";
-@use 'styles' as *;
-@use 'styles/properties.scss';
+@use "styles" as *;
+@use "styles/properties.scss";
 
 :root {
 	@each $colour, $values in $colours {
-
 		/* #{$colour} */
 		@each $level, $value in $values {
 			@if ($level > 0) {
 				--#{$colour}-#{$level}: #{$value};
-			}
-
-			@else {
+			} @else {
 				$_values: map.remove($values, 0);
 				$key: list.index(map.values($_values), map.get($values, 0));
 				--#{$colour}: var(--#{$colour}-#{$key});
@@ -53,49 +50,57 @@
 }
 
 /* Text */
-%text-properties {
+.text {
 	@include text-properties;
 }
 
 @for $level from 1 through 6 {
-	.heading-#{$level} {
+	.heading-#{$level},
+	.text-heading-#{$level} {
 		@include heading-text($level);
 	}
 
-	.alt-heading-#{$level} {
+	.alt-heading-#{$level},
+	.text-alt-heading-#{$level} {
 		@include alt-heading-text($level);
 	}
 
 	@if $level < 5 {
-		.body-#{$level} {
+		.body-#{$level},
+		.text-body-#{$level} {
 			@include body-text($level);
 		}
 
-		.link-#{$level} {
+		.link-#{$level},
+		.text-link-#{$level} {
 			@include link-text($level);
 		}
 
-		.button-#{$level} {
+		.button-#{$level},
+		.text-button-#{$level} {
 			@include button-text($level);
 		}
 
-		.label-#{$level} {
+		.label-#{$level},
+		.text-label-#{$level} {
 			@include label-text($level);
 		}
 
-		.input-#{$level} {
+		.input-#{$level},
+		.text-input-#{$level} {
 			@include input-text($level);
 		}
 	}
 }
 
 /* Elements: Buttons */
+
 button,
-.button,
-[role="button"],
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.button,
+.element-button {
 	@include button-base;
 
 	@for $level from 1 through 4 {
@@ -115,14 +120,22 @@ input[type="submit"] {
 	&.ghost {
 		@include button-ghost;
 	}
-
 }
 
 /* Elements: Text-entry inputs */
-input:not([type="button"], [type="reset"], [type="submit"], [type="checkbox"], [type="radio"], [type="range"]),
+
+input:not(
+	[type="button"],
+	[type="reset"],
+	[type="submit"],
+	[type="checkbox"],
+	[type="radio"],
+	[type="range"]
+),
 select,
 textarea,
-[role="textbox"] {
+[role="textbox"],
+.element-text-entry {
 	@include input-base;
 
 	@for $level from 1 through 4 {
@@ -133,7 +146,8 @@ textarea,
 }
 
 /* Elements: Checkbox */
-input[type="checkbox"] {
+input[type="checkbox"],
+.element-checkbox {
 	@for $level from 1 through 4 {
 		&.checkbox-#{$level} {
 			@include checkbox($level);
@@ -142,7 +156,8 @@ input[type="checkbox"] {
 }
 
 /* Elements: Radio */
-input[type="radio"] {
+input[type="radio"],
+.element-radio {
 	@for $level from 1 through 4 {
 		&.radio-#{$level} {
 			@include radio($level);
@@ -153,7 +168,8 @@ input[type="radio"] {
 $_colours: map.remove($colours, "neutral");
 
 @each $colour, $_ in $_colours {
-	.#{$colour} {
+	.#{$colour},
+	.accent-#{$colour} {
 		--accent: var(--#{$colour});
 
 		@for $level from 1 through 9 {

@@ -7,11 +7,15 @@
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	gap: var(--gap);
-	padding-inline: var(--padding-x);
-	padding-block: var(--padding-y);
-	border-radius: var(--border-radius, var(--radius-2));
 	text-decoration: none;
+
+	gap: var(--button-gap);
+	padding-inline: var(--button-padding-x);
+	padding-block: var(--button-padding-y);
+	border-radius: var(--button-border-radius, var(--radius-2));
+	border-color: var(--button-border);
+	background-color: var(--button-background);
+	color: var(--button-forground);
 
 	@include utils.disabled {
 		cursor: not-allowed;
@@ -20,21 +24,21 @@
 
 @mixin size($level) {
 	@if $level ==1 {
-		--gap: var(--space-1);
-		--padding-y: var(--space-1);
-		--padding-x: var(--space-2);
+		--button-gap: var(--space-1);
+		--button-padding-y: var(--space-1);
+		--button-padding-x: var(--space-2);
 	} @else if $level ==2 {
-		--gap: var(--space-2);
-		--padding-y: var(--space-2);
-		--padding-x: var(--space-5);
+		--button-gap: var(--space-2);
+		--button-padding-y: var(--space-2);
+		--button-padding-x: var(--space-5);
 	} @else if $level ==3 {
-		--gap: var(--space-3);
-		--padding-y: var(--space-3);
-		--padding-x: var(--space-8);
+		--button-gap: var(--space-3);
+		--button-padding-y: var(--space-3);
+		--button-padding-x: var(--space-8);
 	} @else if $level ==4 {
-		--gap: var(--space-5);
-		--padding-y: var(--space-5);
-		--padding-x: var(--space-10);
+		--button-gap: var(--space-5);
+		--button-padding-y: var(--space-5);
+		--button-padding-x: var(--space-10);
 	}
 }
 
@@ -47,26 +51,24 @@
 		@include base;
 	}
 
-	--background: var(--accent-4, var(--neutral-1));
-
-	background-color: var(--background);
-	border-color: var(--background);
-	color: var(--accent-9, var(--neutral-9));
+	--button-background: var(--accent-4, var(--neutral-1));
+	--button-border: var(--button-background);
+	--button-foreground: var(--accent-9, var(--neutral-9));
 
 	@include utils.viewing {
-		--background: var(--accent-3, var(--neutral-2));
+		--button-background: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--background: var(--accent-2, var(--neutral-3));
+		--button-background: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--background: var(--neutral-7);
-		--foreground: var(--neutral-9);
+		--button-background: var(--neutral-7);
+		--button-foreground: var(--neutral-9);
 
 		&:hover {
-			--background: var(--neutral-8);
+			--button-background: var(--neutral-8);
 		}
 	}
 }
@@ -80,29 +82,26 @@
 		@include base;
 	}
 
-	--background: var(--accent-9, var(--neutral-9));
-	--foreground: var(--accent-4, var(--neutral-1));
-
-	background-color: var(--background);
-	border-color: var(--foreground);
-	color: var(--foreground);
+	--button-background: var(--accent-9, var(--neutral-9));
+	--button-foreground: var(--accent-4, var(--neutral-1));
+	--button-border: var(var(--button-foreground));
 
 	@include utils.viewing {
-		--foreground: var(--accent-3, var(--neutral-2));
+		--button-foreground: var(--accent-3, var(--neutral-2));
 		box-shadow: inset 0px 0 0 0.5px currentColor;
 	}
 
 	&:active {
-		--background: var(--accent-8, var(--neutral-8));
-		--foreground: var(--accent-2, var(--neutral-3));
+		--button-background: var(--accent-8, var(--neutral-8));
+		--button-foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--background: var(--neutral-9);
-		--foreground: var(--neutral-7);
+		--button-background: var(--neutral-9);
+		--button-foreground: var(--neutral-7);
 
 		&:hover {
-			--foreground: var(--neutral-8);
+			--button-foreground: var(--neutral-8);
 		}
 	}
 }
@@ -116,29 +115,26 @@
 		@include base;
 	}
 
-	--background: transparent;
-	--foreground: var(--accent-4, var(--neutral-1));
-
-	background-color: var(--background);
-	border-color: var(--background);
-	color: var(--foreground);
+	--button-background: transparent;
+	--button-foreground: var(--accent-4, var(--neutral-1));
+	--button-border: var(--button-background);
 
 	@include utils.viewing {
-		--background: var(--accent-9, var(--neutral-9));
-		--foreground: var(--accent-3, var(--neutral-2));
+		--button-background: var(--accent-9, var(--neutral-9));
+		--button-foreground: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--background: var(--accent-8, var(--neutral-8));
-		--foreground: var(--accent-2, var(--neutral-3));
+		--button-background: var(--accent-8, var(--neutral-8));
+		--button-foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--foreground: var(--neutral-7);
+		--button-foreground: var(--neutral-7);
 
 		&:hover {
-			--background: var(--neutral-9);
-			--foreground: var(--neutral-8);
+			--button-background: var(--neutral-9);
+			--button-foreground: var(--neutral-8);
 		}
 	}
 }

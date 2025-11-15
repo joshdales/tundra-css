@@ -1,44 +1,34 @@
-@use '../utils/text' as utils;
+@use "../utils/text" as utils;
 
 @mixin text($level) {
 	@extend %text-properties;
-	--font-weight: var(--font-weight-3);
+	--text-font-weight: var(--font-weight-3);
 
 	@if $level ==1 {
-		--font-size: var(--font-size-4);
-		--line-height: var(--line-height-5);
-		--letter-spacing: var(--letter-spacing-4);
+		--text-font-size: var(--font-size-4);
+		--text-line-height: var(--line-height-5);
+		--text-letter-spacing: var(--letter-spacing-4);
+	} @else if $level ==2 {
+		--text-font-size: var(--font-size-5);
+		--text-line-height: var(--line-height-5);
+		--text-letter-spacing: var(--letter-spacing-4);
+	} @else if $level ==3 {
+		--text-font-size: var(--font-size-6);
+		--text-line-height: var(--line-height-5);
+		--text-letter-spacing: var(--letter-spacing-4);
+	} @else if $level ==4 {
+		--text-font-size: var(--font-size-7);
+		--text-line-height: var(--line-height-5);
+		--text-letter-spacing: var(--letter-spacing-4);
+	} @else if $level ==5 {
+		--text-font-size: var(--font-size-8);
+		--text-line-height: var(--line-height-4);
+		--text-letter-spacing: var(--letter-spacing-3);
+	} @else if $level ==6 {
+		--text-font-size: var(--font-size-9);
+		--text-line-height: var(--line-height-4);
+		--text-letter-spacing: var(--letter-spacing-2);
 	}
 
-	@else if $level ==2 {
-		--font-size: var(--font-size-5);
-		--line-height: var(--line-height-5);
-		--letter-spacing: var(--letter-spacing-4);
-	}
-
-	@else if $level ==3 {
-		--font-size: var(--font-size-6);
-		--line-height: var(--line-height-5);
-		--letter-spacing: var(--letter-spacing-4);
-	}
-
-	@else if $level ==4 {
-		--font-size: var(--font-size-7);
-		--line-height: var(--line-height-5);
-		--letter-spacing: var(--letter-spacing-4);
-	}
-
-	@else if $level ==5 {
-		--font-size: var(--font-size-8);
-		--line-height: var(--line-height-4);
-		--letter-spacing: var(--letter-spacing-3);
-	}
-
-	@else if $level ==6 {
-		--font-size: var(--font-size-9);
-		--line-height: var(--line-height-4);
-		--letter-spacing: var(--letter-spacing-2);
-	}
-
-	@include utils.bold_text(var(--font-weight-4))
+	@include utils.bold_text(var(--font-weight-4));
 }

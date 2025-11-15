@@ -1,25 +1,19 @@
-@use '../utils/text' as utils;
+@use "../utils/text" as utils;
 
 @mixin text($level) {
 	@extend %text-properties;
-	--font-weight: var(--font-weight-2);
-	--line-height: var(--line-height-4);
+	--text-font-weight: var(--font-weight-2);
+	--text-line-height: var(--line-height-4);
 
 	@if $level ==1 {
-		--font-size: var(--font-size-2);
+		--text-font-size: var(--font-size-2);
+	} @else if $level ==2 {
+		--text-font-size: var(--font-size-3);
+	} @else if $level ==3 {
+		--text-font-size: var(--font-size-4);
+	} @else if $level ==4 {
+		--text-font-size: var(--font-size-5);
 	}
 
-	@else if $level ==2 {
-		--font-size: var(--font-size-3);
-	}
-
-	@else if $level ==3 {
-		--font-size: var(--font-size-4);
-	}
-
-	@else if $level ==4 {
-		--font-size: var(--font-size-5);
-	}
-
-	@include utils.bold_text(var(--font-weight-3))
+	@include utils.bold_text(var(--font-weight-3));
 }

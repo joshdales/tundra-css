@@ -1,43 +1,26 @@
 @use "./utils" as utils;
 
 @mixin base {
-	color: var(--neutral-1);
-	caret-color: var(--accent-5, var(--neutral-2));
-	border: 1.5px solid var(--neutral-5);
-	border-radius: var(--border-radius, var(--radius-2));
+	border: 1.5px solid;
 	outline: none;
-	padding-inline: var(--padding-x);
-	padding-block: var(--padding-y);
+
+	background-color: var(--input-background);
+	border-color: var(--input-border-color);
+	border-radius: var(--input-border-radius);
+	caret-color: var(--input-caret);
+	color: var(--input-foreground);
+	padding-inline: var(--input-padding-x);
+	padding-block: var(--input-padding-y);
+
+	--input-placeholder: var(--neutral-6);
 
 	&::placeholder {
-		color: var(--neutral-6);
-	}
-
-	&:hover {
-		border-color: var(--accent-5, var(--neutral-4));
-		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
-
-		&::placeholder {
-			color: var(--accent-5, var(--neutral-5));
-		}
-	}
-
-	&:focus {
-		border-color: var(--accent-5, var(--neutral-4));
-		color: var(--accent-1, var(--neutral-1));
-		background-color: var(--accent-9, var(--neutral-9));
-
-		&::placeholder {
-			color: transparent;
-		}
-	}
-
-	&:active {
-		border-color: var(--accent-4, var(--neutral-3));
+		color: var(--input-placeholder);
 	}
 
 	@include utils.disabled {
-		background-color: var(--neutral-6);
+		--input-background: var(--neutral-8);
+		cursor: not-allowed;
 	}
 }
 
@@ -49,22 +32,38 @@
 	}
 
 	@if $level ==1 {
-		--padding-y: var(--space-1);
-		--padding-x: var(--space-2);
+		--input-padding-y: var(--space-1);
+		--input-padding-x: var(--space-2);
+	} @else if $level ==2 {
+		--input-padding-y: var(--space-2);
+		--input-padding-x: var(--space-5);
+	} @else if $level ==3 {
+		--input-padding-y: var(--space-3);
+		--input-padding-x: var(--space-8);
+	} @else if $level ==4 {
+		--input-padding-y: var(--space-5);
+		--input-padding-x: var(--space-10);
 	}
 
-	@if $level ==2 {
-		--padding-y: var(--space-2);
-		--padding-x: var(--space-5);
+	--input-border-color: var(--accent-5, var(--neutral-5));
+	--input-border-radius: var(--radius-2);
+	--input-foreground: var(--neutral-1);
+	--input-caret: var(--neutral-4);
+
+	&:hover {
+		--input-border-color: var(--accent-6, var(--neutral-4));
+		--input-placeholder: var(--accent-6, var(--neutral-4));
+		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
 	}
 
-	@if $level ==3 {
-		--padding-y: var(--space-3);
-		--padding-x: var(--space-8);
+	&:focus {
+		--input-border-color: var(--accent-5, var(--neutral-4));
+		--input-foregoround: var(--accent-1, var(--neutral-1));
+		--input-background: var(--accent-9, var(--neutral-9));
+		--input-placeholder: transparent;
 	}
 
-	@if $level ==4 {
-		--padding-y: var(--space-5);
-		--padding-x: var(--space-10);
+	&:active {
+		--input-border-color: var(--accent-4, var(--neutral-4));
 	}
 }

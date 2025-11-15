@@ -1,9 +1,15 @@
-@forward 'text';
+@forward "text";
 
 @mixin disabled {
-
 	&:disabled,
 	&[aria-disabled="true"] {
+		@content;
+	}
+}
+
+@mixin viewing {
+	&:focus-visible,
+	&:hover {
 		@content;
 	}
 }

@@ -19,7 +19,7 @@
 		place-content: center;
 		position: absolute;
 		inset: 0;
-		font-size: 80%;
+		font-size: var(--checkbox-tick-size);
 	}
 
 	&:active {
@@ -74,6 +74,7 @@
 
 	&:checked::after {
 		content: "✔︎";
+		--checkbox-tick-size: 90%;
 	}
 
 	&:indeterminate {
@@ -87,7 +88,7 @@
 			width: 75%;
 			height: 10%;
 			margin: auto;
-			border-radius: var(--radius-1);
+			border-radius: var(--checkbox-border-radius);
 		}
 	}
 }
@@ -99,5 +100,6 @@
 
 	&:checked::after {
 		content: "✔︎";
+		--checkbox-tick-size: 80%;
 	}
 }

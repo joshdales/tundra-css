@@ -1,17 +1,16 @@
-@use 'sass:math';
+@use "sass:math";
 
 @mixin text-properties {
-	font-size: var(--font-size);
-	font-weight: var(--font-weight);
-	line-height: var(--line-height);
-	letter-spacing: var(--letter-spacing);
+	font-size: var(--text-font-size);
+	font-weight: var(--text-font-weight);
+	line-height: var(--text-line-height);
+	letter-spacing: var(--text-letter-spacing);
 }
 
 @mixin bold_text($value) {
-
 	b,
 	strong {
-		--font-weight: #{$value};
+		--text-font-weight: #{$value};
 	}
 }
 

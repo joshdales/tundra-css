@@ -1715,9 +1715,9 @@ input[type=checkbox].checkbox-1:indeterminate::after {
   background-color: currentColor;
   display: block;
   width: 75%;
-  height: 10%;
+  height: 12.5%;
   margin: auto;
-  border-radius: var(--checkbox-border-radius);
+  border-radius: var(--radius-1);
 }
 input[type=checkbox].checkbox-2 {
   appearance: none;
@@ -1774,9 +1774,9 @@ input[type=checkbox].checkbox-2:indeterminate::after {
   background-color: currentColor;
   display: block;
   width: 75%;
-  height: 10%;
+  height: 12.5%;
   margin: auto;
-  border-radius: var(--checkbox-border-radius);
+  border-radius: var(--radius-1);
 }
 input[type=checkbox].checkbox-3 {
   appearance: none;
@@ -1833,9 +1833,9 @@ input[type=checkbox].checkbox-3:indeterminate::after {
   background-color: currentColor;
   display: block;
   width: 75%;
-  height: 10%;
+  height: 12.5%;
   margin: auto;
-  border-radius: var(--checkbox-border-radius);
+  border-radius: var(--radius-1);
 }
 input[type=checkbox].checkbox-4 {
   appearance: none;
@@ -1892,9 +1892,9 @@ input[type=checkbox].checkbox-4:indeterminate::after {
   background-color: currentColor;
   display: block;
   width: 75%;
-  height: 10%;
+  height: 12.5%;
   margin: auto;
-  border-radius: var(--checkbox-border-radius);
+  border-radius: var(--radius-1);
 }
 
 /* Elements: Radio */

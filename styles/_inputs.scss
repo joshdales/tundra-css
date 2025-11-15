@@ -36,13 +36,13 @@
 		--input-padding-x: var(--space-2);
 	} @else if $level ==2 {
 		--input-padding-y: var(--space-2);
-		--input-padding-x: var(--space-5);
+		--input-padding-x: var(--space-4);
 	} @else if $level ==3 {
 		--input-padding-y: var(--space-3);
-		--input-padding-x: var(--space-8);
+		--input-padding-x: var(--space-6);
 	} @else if $level ==4 {
-		--input-padding-y: var(--space-5);
-		--input-padding-x: var(--space-10);
+		--input-padding-y: var(--space-4);
+		--input-padding-x: var(--space-8);
 	}
 
 	--input-border-color: var(--accent-5, var(--neutral-5));

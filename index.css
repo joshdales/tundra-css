@@ -2685,6 +2685,7 @@ textarea.input-4:active,
 /* Elements: Checkbox */
 input[type=checkbox].checkbox-1,
 .element-checkbox.checkbox-1 {
+  --checkbox-size: var(--space-4);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -2695,7 +2696,6 @@ input[type=checkbox].checkbox-1,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-4);
 }
 input[type=checkbox].checkbox-1::after,
 .element-checkbox.checkbox-1::after {
@@ -2758,6 +2758,7 @@ input[type=checkbox].checkbox-1:indeterminate::after,
 }
 input[type=checkbox].checkbox-2,
 .element-checkbox.checkbox-2 {
+  --checkbox-size: var(--space-5);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -2768,7 +2769,6 @@ input[type=checkbox].checkbox-2,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-5);
 }
 input[type=checkbox].checkbox-2::after,
 .element-checkbox.checkbox-2::after {
@@ -2831,6 +2831,7 @@ input[type=checkbox].checkbox-2:indeterminate::after,
 }
 input[type=checkbox].checkbox-3,
 .element-checkbox.checkbox-3 {
+  --checkbox-size: var(--space-6);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -2841,7 +2842,6 @@ input[type=checkbox].checkbox-3,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-6);
 }
 input[type=checkbox].checkbox-3::after,
 .element-checkbox.checkbox-3::after {
@@ -2904,6 +2904,7 @@ input[type=checkbox].checkbox-3:indeterminate::after,
 }
 input[type=checkbox].checkbox-4,
 .element-checkbox.checkbox-4 {
+  --checkbox-size: var(--space-7);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -2914,7 +2915,6 @@ input[type=checkbox].checkbox-4,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-7);
 }
 input[type=checkbox].checkbox-4::after,
 .element-checkbox.checkbox-4::after {
@@ -2979,6 +2979,8 @@ input[type=checkbox].checkbox-4:indeterminate::after,
 /* Elements: Radio */
 input[type=radio].radio-1,
 .element-radio.radio-1 {
+  --checkbox-border-radius: var(--radius-5);
+  --checkbox-size: var(--space-4);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -2989,8 +2991,6 @@ input[type=radio].radio-1,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-4);
-  --checkbox-border-radius: var(--radius-5);
 }
 input[type=radio].radio-1::after,
 .element-radio.radio-1::after {
@@ -3038,6 +3038,8 @@ input[type=radio].radio-1:checked::after,
 }
 input[type=radio].radio-2,
 .element-radio.radio-2 {
+  --checkbox-border-radius: var(--radius-5);
+  --checkbox-size: var(--space-5);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -3048,8 +3050,6 @@ input[type=radio].radio-2,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-5);
-  --checkbox-border-radius: var(--radius-5);
 }
 input[type=radio].radio-2::after,
 .element-radio.radio-2::after {
@@ -3097,6 +3097,8 @@ input[type=radio].radio-2:checked::after,
 }
 input[type=radio].radio-3,
 .element-radio.radio-3 {
+  --checkbox-border-radius: var(--radius-5);
+  --checkbox-size: var(--space-6);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -3107,8 +3109,6 @@ input[type=radio].radio-3,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-6);
-  --checkbox-border-radius: var(--radius-5);
 }
 input[type=radio].radio-3::after,
 .element-radio.radio-3::after {
@@ -3156,6 +3156,8 @@ input[type=radio].radio-3:checked::after,
 }
 input[type=radio].radio-4,
 .element-radio.radio-4 {
+  --checkbox-border-radius: var(--radius-5);
+  --checkbox-size: var(--space-7);
   appearance: none;
   cursor: pointer;
   position: relative;
@@ -3166,8 +3168,6 @@ input[type=radio].radio-4,
   border-color: var(--checkbox-border-color, var(--neutral-6));
   background-color: var(--checkbox-background);
   --checkbox-foreground: var(--accent-9, var(--neutral-9));
-  --checkbox-size: var(--space-7);
-  --checkbox-border-radius: var(--radius-5);
 }
 input[type=radio].radio-4::after,
 .element-radio.radio-4::after {

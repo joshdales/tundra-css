@@ -66,8 +66,8 @@
 }
 
 @mixin checkbox($level: null) {
-	@include base;
 	@include size($level);
+	@include base;
 	@include container;
 
 	&:checked::after {
@@ -92,11 +92,10 @@
 }
 
 @mixin radio($level: null) {
-	@include base;
-	@include size($level);
-	@include container;
-
 	--checkbox-border-radius: var(--radius-5);
+	@include size($level);
+	@include base;
+	@include container;
 
 	&:checked::after {
 		content: "✔︎";

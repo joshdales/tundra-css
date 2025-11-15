@@ -4,13 +4,14 @@
 	appearance: none;
 	cursor: pointer;
 	position: relative;
-	border: 1px solid;
+	border: 1.5px solid;
 
 	height: var(--checkbox-size);
 	width: var(--checkbox-size);
 	border-radius: var(--checkbox-border-radius, var(--radius-1));
 	border-color: var(--checkbox-border-color, var(--neutral-6));
 	background-color: var(--checkbox-background);
+
 	--checkbox-foreground: var(--accent-9, var(--neutral-9));
 
 	&::after {
@@ -21,7 +22,21 @@
 		inset: 0;
 		font-size: var(--checkbox-tick-size);
 	}
+}
 
+@mixin size($level) {
+	@if $level ==1 {
+		--checkbox-size: var(--space-4);
+	} @else if $level ==2 {
+		--checkbox-size: var(--space-5);
+	} @else if $level ==3 {
+		--checkbox-size: var(--space-6);
+	} @else if $level ==4 {
+		--checkbox-size: var(--space-7);
+	}
+}
+
+@mixin container {
 	&:active {
 		--checkbox-border-color: var(--accent-5, var(--neutral-3));
 		--checkbox-background: var(--accent-5, var(--neutral-3));
@@ -50,27 +65,10 @@
 	}
 }
 
-@mixin size($level) {
-	@if $level ==1 {
-		--checkbox-size: var(--space-4);
-	}
-
-	@if $level ==2 {
-		--checkbox-size: var(--space-5);
-	}
-
-	@if $level ==3 {
-		--checkbox-size: var(--space-6);
-	}
-
-	@if $level ==4 {
-		--checkbox-size: var(--space-7);
-	}
-}
-
 @mixin checkbox($level: null) {
 	@include base;
 	@include size($level);
+	@include container;
 
 	&:checked::after {
 		content: "✔︎";
@@ -96,6 +94,8 @@
 @mixin radio($level: null) {
 	@include base;
 	@include size($level);
+	@include container;
+
 	--checkbox-border-radius: var(--radius-5);
 
 	&:checked::after {

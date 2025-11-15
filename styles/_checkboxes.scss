@@ -1,100 +1,70 @@
 @use "./utils" as utils;
 
-@mixin _tick($level) {
-
-	&::before,
-	&::after {
-		content: '';
-	}
-
-	&::before {
-		transform: rotate(50deg);
-		width: 45%;
-		margin-bottom: 30%;
-		margin-left: 5%;
-	}
-
-	&::after {
-		transform: rotate(310deg);
-		width: 80%;
-		margin-bottom: 45%;
-
-		@if $level % 2==0 {
-			margin-left: 20%;
-		}
-
-		@else {
-			margin-left: 22%;
-		}
-	}
-}
-
 @mixin base {
 	appearance: none;
-	position: relative;
-	height: var(--size);
-	width: var(--size);
 	cursor: pointer;
-	border: 1.5px solid var(--neutral-6);
-	border-radius: var(--border-radius, var(--radius-1));
+	position: relative;
+	border: 1px solid;
 
-	&::before,
+	height: var(--checkbox-size);
+	width: var(--checkbox-size);
+	border-radius: var(--checkbox-border-radius, var(--radius-1));
+	border-color: var(--checkbox-border-color, var(--neutral-6));
+	background-color: var(--checkbox-background);
+	--checkbox-foreground: var(--accent-9, var(--neutral-9));
+
 	&::after {
+		color: var(--checkbox-foreground);
+		display: grid;
+		place-content: center;
 		position: absolute;
 		inset: 0;
-		z-index: 1;
-		margin: auto;
-		height: 15%;
-		border-radius: var(--radius-1);
-		background-color: var(--accent-9, var(--neutral-9));
+		font-size: 80%;
 	}
 
 	&:active {
-		border-color: var(--accent-5, var(--neutral-3));
-		background-color: var(--accent-5, var(--neutral-3));
+		--checkbox-border-color: var(--accent-5, var(--neutral-3));
+		--checkbox-background: var(--accent-5, var(--neutral-3));
 	}
 
-	&:hover,
-	&:focus-visible {
-		border-color: var(--accent-4, var(--neutral-3));
-		background-color: var(--accent-9, var(--neutral-9));
+	@include utils.viewing {
+		--checkbox-border-color: var(--accent-4, var(--neutral-3));
+		--checkbox-background: var(--accent-9, var(--neutral-9));
 	}
 
 	&:checked {
-		--background: var(--accent-5, var(--neutral-1));
-		background-color: var(--background);
-		border-color: var(--background);
+		--checkbox-background: var(--accent-5, var(--neutral-1));
+		--checkbox-border-color: var(--checkbox-background);
 
-		&:hover,
-		&:focus-visible {
-			--background: var(--accent-4, var(--neutral-2));
+		@include utils.viewing {
+			--checkbox-background: var(--accent-4, var(--neutral-2));
 		}
 
 		&:active {
-			--background: var(--accent-3, var(--neutral-3));
+			--checkbox-background: var(--accent-3, var(--neutral-3));
 		}
 	}
 
 	@include utils.disabled {
-		background-color: var(--neutral-6);
+		--checkbox-background-color: var(--neutral-6);
 	}
 }
 
 @mixin size($level) {
 	@if $level ==1 {
-		--size: var(--space-4);
+		--checkbox-size: var(--space-4);
 	}
 
 	@if $level ==2 {
-		--size: var(--space-5);
+		--checkbox-size: var(--space-5);
 	}
 
 	@if $level ==3 {
-		--size: var(--space-6);
+		--checkbox-size: var(--space-6);
 	}
 
 	@if $level ==4 {
-		--size: var(--space-7);
+		--checkbox-size: var(--space-7);
 	}
 }
 
@@ -102,17 +72,22 @@
 	@include base;
 	@include size($level);
 
-	&:checked {
-		@include _tick($level);
+	&:checked::after {
+		content: "✔︎";
 	}
 
 	&:indeterminate {
-		border-color: var(--accent-5, var(--neutral-1));
+		--checkbox-border-color: var(--accent-5, var(--neutral-1));
+		--checkbox-foreground: var(--accent-5, var(--neutral-1));
 
-		&::before {
-			content: '';
-			width: 80%;
-			background-color: var(--accent-5, var(--neutral-1));
+		&::after {
+			content: "";
+			background-color: currentColor;
+			display: block;
+			width: 75%;
+			height: 10%;
+			margin: auto;
+			border-radius: var(--radius-1);
 		}
 	}
 }
@@ -120,9 +95,9 @@
 @mixin radio($level: null) {
 	@include base;
 	@include size($level);
-	--border-radius: var(--radius-5);
+	--checkbox-border-radius: var(--radius-5);
 
-	&:checked {
-		@include _tick($level)
+	&:checked::after {
+		content: "✔︎";
 	}
 }

@@ -3,8 +3,9 @@
 @use "./radius";
 @use "./spacing";
 @use "./typography";
+@use "./typography/font-size";
 
-@mixin create_prop($name, $syntax: "*", $value, $inherits: false) {
+@mixin create_prop($name, $syntax: "*", $value, $inherits: true) {
 	@if $syntax != "*" {
 		$syntax: "<#{$syntax}>";
 	}
@@ -22,11 +23,11 @@ $_colours: (
 @each $colour, $values in $_colours {
 	@each $level, $value in $values {
 		@if ($level ==0) {
-			@include create_prop("accent", "color", $value, true);
-			@include create_prop("color-accent", "color", $value, true);
+			@include create_prop("accent", "color", $value);
+			@include create_prop("color-accent", "color", $value);
 		} @else {
-			@include create_prop("accent-#{$level}", "color", $value, true);
-			@include create_prop("color-accent-#{$level}", "color", $value, true);
+			@include create_prop("accent-#{$level}", "color", $value);
+			@include create_prop("color-accent-#{$level}", "color", $value);
 		}
 	}
 }
@@ -35,11 +36,11 @@ $_colours: map.merge(colours.$colours, $_colours);
 @each $colour, $values in $_colours {
 	@each $level, $value in $values {
 		@if ($level ==0) {
-			@include create_prop($colour, "color", $value, $colour == "accent");
-			@include create_prop("color-#{$colour}", "color", $value, $colour == "accent");
+			@include create_prop($colour, "color", $value);
+			@include create_prop("color-#{$colour}", "color", $value);
 		} @else {
-			@include create_prop("#{$colour}-#{$level}", "color", $value, $colour == "accent");
-			@include create_prop("color-#{$colour}-#{$level}", "color", $value, $colour == "accent");
+			@include create_prop("#{$colour}-#{$level}", "color", $value);
+			@include create_prop("color-#{$colour}-#{$level}", "color", $value);
 		}
 	}
 }
@@ -52,22 +53,8 @@ $_colours: map.merge(colours.$colours, $_colours);
 	@include create_prop("space-#{$level}", "length", $value);
 }
 
-@include create_prop("text-font-size", "*", typography.$font-size-3);
-
-@each $level, $value in typography.$font-size {
-	@include create_prop("font-size-#{$level}", "*", $value);
-}
-
-@include create_prop("text-font-weight", "number", typography.$font-weight-2);
-
 @each $level, $value in typography.$font-weight {
 	@include create_prop("font-weight-#{$level}", "number", $value);
-}
-
-@include create_prop("text-letter-spacing", "*", typography.$letter-spacing-3);
-
-@each $level, $value in typography.$letter-spacing {
-	@include create_prop("letter-spacing-#{$level}", "*", $value);
 }
 
 @include create_prop("text-line-height", "number", typography.$line-height-1);
@@ -75,3 +62,19 @@ $_colours: map.merge(colours.$colours, $_colours);
 @each $level, $value in typography.$line-height {
 	@include create_prop("line-height-#{$level}", "number", $value);
 }
+
+// Because these properties use relative values we need to define them with a absolute value. Otherwise the rule is invalid
+
+@include create_prop("text-font-size", "length", map.get(font-size.$raw, 3));
+
+@each $level, $value in font-size.$raw {
+	@include create_prop("font-size-#{$level}", "length", $value);
+}
+
+@include create_prop("text-letter-spacing", "length", 0px);
+
+@each $level, $value in typography.$letter-spacing {
+	@include create_prop("letter-spacing-#{$level}", "length", 0px);
+}
+
+@include create_prop("text-font-weight", "number", typography.$font-weight-2);

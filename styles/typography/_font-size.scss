@@ -1,15 +1,38 @@
-@use '../spacing' as *;
-@use '../utils/text.scss' as utils;
+@use "../spacing" as *;
+@use "../utils/text.scss" as utils;
 
-$font-size-1: utils.convert_px_to_rem($space-3);
-$font-size-2: utils.convert_px_to_rem($space-4);
-$font-size-3: utils.convert_px_to_rem($space-5);
-$font-size-4: utils.convert_px_to_rem($space-6);
-$font-size-5: utils.convert_px_to_rem($space-7);
-$font-size-6: utils.convert_px_to_rem($space-8);
-$font-size-7: utils.convert_px_to_rem($space-9);
-$font-size-8: utils.convert_px_to_rem($space-10);
-$font-size-9: utils.convert_px_to_rem($space-12);
+$font-size-1: $space-3;
+$font-size-2: $space-4;
+$font-size-3: $space-5;
+$font-size-4: $space-6;
+$font-size-5: $space-7;
+$font-size-6: $space-8;
+$font-size-7: $space-9;
+$font-size-8: $space-10;
+$font-size-9: $space-12;
+
+/// Used in order to register properties, rather than actually used for any styles.
+$raw: (
+	1: $font-size-1,
+	2: $font-size-2,
+	3: $font-size-3,
+	4: $font-size-4,
+	5: $font-size-5,
+	6: $font-size-6,
+	7: $font-size-7,
+	8: $font-size-8,
+	9: $font-size-9,
+);
+
+$font-size-1: utils.convert_px_to_rem($font-size-1);
+$font-size-2: utils.convert_px_to_rem($font-size-2);
+$font-size-3: utils.convert_px_to_rem($font-size-3);
+$font-size-4: utils.convert_px_to_rem($font-size-4);
+$font-size-5: utils.convert_px_to_rem($font-size-5);
+$font-size-6: utils.convert_px_to_rem($font-size-6);
+$font-size-7: utils.convert_px_to_rem($font-size-7);
+$font-size-8: utils.convert_px_to_rem($font-size-8);
+$font-size-9: utils.convert_px_to_rem($font-size-9);
 
 $font-size: (
 	1: $font-size-1,

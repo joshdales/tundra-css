@@ -102,902 +102,902 @@
 }
 @property --neutral {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0 0deg);
 }
 @property --color-neutral {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0 0deg);
 }
 @property --neutral-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0 0deg);
 }
 @property --color-neutral-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0 0deg);
 }
 @property --neutral-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(27.6% 0 0deg);
 }
 @property --color-neutral-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(27.6% 0 0deg);
 }
 @property --neutral-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(37.2% 0 0deg);
 }
 @property --color-neutral-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(37.2% 0 0deg);
 }
 @property --neutral-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(46.9% 0 0deg);
 }
 @property --color-neutral-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(46.9% 0 0deg);
 }
 @property --neutral-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0 0deg);
 }
 @property --color-neutral-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0 0deg);
 }
 @property --neutral-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.1% 0 0deg);
 }
 @property --color-neutral-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.1% 0 0deg);
 }
 @property --neutral-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75.7% 0 0deg);
 }
 @property --color-neutral-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75.7% 0 0deg);
 }
 @property --neutral-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.4% 0 0deg);
 }
 @property --color-neutral-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.4% 0 0deg);
 }
 @property --neutral-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0 0deg);
 }
 @property --color-neutral-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0 0deg);
 }
 @property --red {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(59% 0.234 25deg);
 }
 @property --color-red {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(59% 0.234 25deg);
 }
 @property --red-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(23% 0.091 25deg);
 }
 @property --color-red-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(23% 0.091 25deg);
 }
 @property --red-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(32% 0.127 25deg);
 }
 @property --color-red-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(32% 0.127 25deg);
 }
 @property --red-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(41% 0.162 25deg);
 }
 @property --color-red-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(41% 0.162 25deg);
 }
 @property --red-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(50% 0.198 25deg);
 }
 @property --color-red-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(50% 0.198 25deg);
 }
 @property --red-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(59% 0.234 25deg);
 }
 @property --color-red-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(59% 0.234 25deg);
 }
 @property --red-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(68% 0.229 25deg);
 }
 @property --color-red-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(68% 0.229 25deg);
 }
 @property --red-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(77% 0.151 25deg);
 }
 @property --color-red-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(77% 0.151 25deg);
 }
 @property --red-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(86% 0.085 25deg);
 }
 @property --color-red-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(86% 0.085 25deg);
 }
 @property --red-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.028 25deg);
 }
 @property --color-red-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.028 25deg);
 }
 @property --orange {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.218 45deg);
 }
 @property --color-orange {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.218 45deg);
 }
 @property --orange-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(22% 0.071 45deg);
 }
 @property --color-orange-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(22% 0.071 45deg);
 }
 @property --orange-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(31.1% 0.1 45deg);
 }
 @property --color-orange-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(31.1% 0.1 45deg);
 }
 @property --orange-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(40.2% 0.13 45deg);
 }
 @property --color-orange-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(40.2% 0.13 45deg);
 }
 @property --orange-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(49.4% 0.159 45deg);
 }
 @property --color-orange-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(49.4% 0.159 45deg);
 }
 @property --orange-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58.5% 0.188 45deg);
 }
 @property --color-orange-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58.5% 0.188 45deg);
 }
 @property --orange-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.218 45deg);
 }
 @property --color-orange-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.218 45deg);
 }
 @property --orange-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.185 45deg);
 }
 @property --color-orange-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.185 45deg);
 }
 @property --orange-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.9% 0.104 45deg);
 }
 @property --color-orange-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.9% 0.104 45deg);
 }
 @property --orange-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.034 45deg);
 }
 @property --color-orange-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.034 45deg);
 }
 @property --yellow {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76% 0.163 80deg);
 }
 @property --color-yellow {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76% 0.163 80deg);
 }
 @property --yellow-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(19% 0.041 80deg);
 }
 @property --color-yellow-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(19% 0.041 80deg);
 }
 @property --yellow-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(28.5% 0.061 80deg);
 }
 @property --color-yellow-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(28.5% 0.061 80deg);
 }
 @property --yellow-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(38% 0.081 80deg);
 }
 @property --color-yellow-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(38% 0.081 80deg);
 }
 @property --yellow-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(47.5% 0.102 80deg);
 }
 @property --color-yellow-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(47.5% 0.102 80deg);
 }
 @property --yellow-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(57% 0.122 80deg);
 }
 @property --color-yellow-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(57% 0.122 80deg);
 }
 @property --yellow-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.5% 0.142 80deg);
 }
 @property --color-yellow-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.5% 0.142 80deg);
 }
 @property --yellow-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76% 0.163 80deg);
 }
 @property --color-yellow-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76% 0.163 80deg);
 }
 @property --yellow-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.5% 0.156 80deg);
 }
 @property --color-yellow-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.5% 0.156 80deg);
 }
 @property --yellow-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.051 80deg);
 }
 @property --color-yellow-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.051 80deg);
 }
 @property --green {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(54% 0.15 165deg);
 }
 @property --color-green {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(54% 0.15 165deg);
 }
 @property --green-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(14% 0.039 165deg);
 }
 @property --color-green-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(14% 0.039 165deg);
 }
 @property --green-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(24% 0.067 165deg);
 }
 @property --color-green-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(24% 0.067 165deg);
 }
 @property --green-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(34% 0.094 165deg);
 }
 @property --color-green-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(34% 0.094 165deg);
 }
 @property --green-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(44% 0.122 165deg);
 }
 @property --color-green-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(44% 0.122 165deg);
 }
 @property --green-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(54% 0.15 165deg);
 }
 @property --color-green-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(54% 0.15 165deg);
 }
 @property --green-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(64% 0.178 165deg);
 }
 @property --color-green-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(64% 0.178 165deg);
 }
 @property --green-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(74% 0.205 165deg);
 }
 @property --color-green-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(74% 0.205 165deg);
 }
 @property --green-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(84% 0.233 165deg);
 }
 @property --color-green-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(84% 0.233 165deg);
 }
 @property --green-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(94% 0.098 165deg);
 }
 @property --color-green-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(94% 0.098 165deg);
 }
 @property --cyan {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(55% 0.108 190deg);
 }
 @property --color-cyan {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(55% 0.108 190deg);
 }
 @property --cyan-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(15% 0.029 190deg);
 }
 @property --color-cyan-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(15% 0.029 190deg);
 }
 @property --cyan-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(25% 0.049 190deg);
 }
 @property --color-cyan-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(25% 0.049 190deg);
 }
 @property --cyan-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(35% 0.069 190deg);
 }
 @property --color-cyan-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(35% 0.069 190deg);
 }
 @property --cyan-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(45% 0.088 190deg);
 }
 @property --color-cyan-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(45% 0.088 190deg);
 }
 @property --cyan-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(55% 0.108 190deg);
 }
 @property --color-cyan-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(55% 0.108 190deg);
 }
 @property --cyan-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(65% 0.128 190deg);
 }
 @property --color-cyan-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(65% 0.128 190deg);
 }
 @property --cyan-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75% 0.147 190deg);
 }
 @property --color-cyan-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75% 0.147 190deg);
 }
 @property --cyan-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85% 0.167 190deg);
 }
 @property --color-cyan-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85% 0.167 190deg);
 }
 @property --cyan-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.071 190deg);
 }
 @property --color-cyan-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.071 190deg);
 }
 @property --blue {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0.146 255deg);
 }
 @property --color-blue {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0.146 255deg);
 }
 @property --blue-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0.046 255deg);
 }
 @property --color-blue-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(18% 0.046 255deg);
 }
 @property --blue-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(27.6% 0.071 255deg);
 }
 @property --color-blue-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(27.6% 0.071 255deg);
 }
 @property --blue-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(37.2% 0.096 255deg);
 }
 @property --color-blue-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(37.2% 0.096 255deg);
 }
 @property --blue-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(46.9% 0.121 255deg);
 }
 @property --color-blue-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(46.9% 0.121 255deg);
 }
 @property --blue-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0.146 255deg);
 }
 @property --color-blue-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(56.5% 0.146 255deg);
 }
 @property --blue-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.1% 0.121 255deg);
 }
 @property --color-blue-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(66.1% 0.121 255deg);
 }
 @property --blue-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75.7% 0.084 255deg);
 }
 @property --color-blue-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(75.7% 0.084 255deg);
 }
 @property --blue-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.4% 0.049 255deg);
 }
 @property --color-blue-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.4% 0.049 255deg);
 }
 @property --blue-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.016 255deg);
 }
 @property --color-blue-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.016 255deg);
 }
 @property --purple {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58% 0.163 300deg);
 }
 @property --color-purple {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58% 0.163 300deg);
 }
 @property --purple-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(21% 0.065 300deg);
 }
 @property --color-purple-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(21% 0.065 300deg);
 }
 @property --purple-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(30.2% 0.093 300deg);
 }
 @property --color-purple-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(30.2% 0.093 300deg);
 }
 @property --purple-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(39.5% 0.121 300deg);
 }
 @property --color-purple-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(39.5% 0.121 300deg);
 }
 @property --purple-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(48.7% 0.15 300deg);
 }
 @property --color-purple-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(48.7% 0.15 300deg);
 }
 @property --purple-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58% 0.163 300deg);
 }
 @property --color-purple-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58% 0.163 300deg);
 }
 @property --purple-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.2% 0.123 300deg);
 }
 @property --color-purple-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.2% 0.123 300deg);
 }
 @property --purple-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.5% 0.086 300deg);
 }
 @property --color-purple-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.5% 0.086 300deg);
 }
 @property --purple-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.7% 0.05 300deg);
 }
 @property --color-purple-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.7% 0.05 300deg);
 }
 @property --purple-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.017 300deg);
 }
 @property --color-purple-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.017 300deg);
 }
 @property --pink {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.13 350deg);
 }
 @property --color-pink {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.13 350deg);
 }
 @property --pink-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(22% 0.062 350deg);
 }
 @property --color-pink-1 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(22% 0.062 350deg);
 }
 @property --pink-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(31.1% 0.088 350deg);
 }
 @property --color-pink-2 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(31.1% 0.088 350deg);
 }
 @property --pink-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(40.2% 0.113 350deg);
 }
 @property --color-pink-3 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(40.2% 0.113 350deg);
 }
 @property --pink-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(49.4% 0.139 350deg);
 }
 @property --color-pink-4 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(49.4% 0.139 350deg);
 }
 @property --pink-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58.5% 0.165 350deg);
 }
 @property --color-pink-5 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(58.5% 0.165 350deg);
 }
 @property --pink-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.19 350deg);
 }
 @property --color-pink-6 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(67.6% 0.19 350deg);
 }
 @property --pink-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.13 350deg);
 }
 @property --color-pink-7 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(76.7% 0.13 350deg);
 }
 @property --pink-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.9% 0.072 350deg);
 }
 @property --color-pink-8 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(85.9% 0.072 350deg);
 }
 @property --pink-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.024 350deg);
 }
 @property --color-pink-9 {
   syntax: "<color>";
-  inherits: false;
+  inherits: true;
   initial-value: oklch(95% 0.024 350deg);
 }
 @property --accent {
@@ -1102,233 +1102,233 @@
 }
 @property --radius-1 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 4px;
 }
 @property --radius-2 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 8px;
 }
 @property --radius-3 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 16px;
 }
 @property --radius-4 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 32px;
 }
 @property --radius-5 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 64px;
 }
 @property --space-1 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 4px;
 }
 @property --space-2 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 8px;
 }
 @property --space-3 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 12px;
 }
 @property --space-4 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 14px;
 }
 @property --space-5 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 16px;
 }
 @property --space-6 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 18px;
 }
 @property --space-7 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 20px;
 }
 @property --space-8 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 24px;
 }
 @property --space-9 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 28px;
 }
 @property --space-10 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 32px;
 }
 @property --space-11 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 40px;
 }
 @property --space-12 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 48px;
 }
 @property --space-13 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 64px;
 }
 @property --space-14 {
   syntax: "<length>";
-  inherits: false;
+  inherits: true;
   initial-value: 128px;
-}
-@property --text-font-size {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1rem;
-}
-@property --font-size-1 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0.75rem;
-}
-@property --font-size-2 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0.875rem;
-}
-@property --font-size-3 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1rem;
-}
-@property --font-size-4 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1.125rem;
-}
-@property --font-size-5 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1.25rem;
-}
-@property --font-size-6 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1.5rem;
-}
-@property --font-size-7 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1.75rem;
-}
-@property --font-size-8 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 2rem;
-}
-@property --font-size-9 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 3rem;
-}
-@property --text-font-weight {
-  syntax: "<number>";
-  inherits: false;
-  initial-value: 500;
 }
 @property --font-weight-1 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 400;
 }
 @property --font-weight-2 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 500;
 }
 @property --font-weight-3 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 600;
 }
 @property --font-weight-4 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 700;
-}
-@property --text-letter-spacing {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0em;
-}
-@property --letter-spacing-1 {
-  syntax: "*";
-  inherits: false;
-  initial-value: -0.04em;
-}
-@property --letter-spacing-2 {
-  syntax: "*";
-  inherits: false;
-  initial-value: -0.02em;
-}
-@property --letter-spacing-3 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0em;
-}
-@property --letter-spacing-4 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0.02em;
-}
-@property --letter-spacing-5 {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0.04em;
 }
 @property --text-line-height {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1;
 }
 @property --line-height-1 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1;
 }
 @property --line-height-2 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1.05;
 }
 @property --line-height-3 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1.15;
 }
 @property --line-height-4 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1.25;
 }
 @property --line-height-5 {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 1.5;
+}
+@property --text-font-size {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 16px;
+}
+@property --font-size-1 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 12px;
+}
+@property --font-size-2 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 14px;
+}
+@property --font-size-3 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 16px;
+}
+@property --font-size-4 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 18px;
+}
+@property --font-size-5 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 20px;
+}
+@property --font-size-6 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 24px;
+}
+@property --font-size-7 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 28px;
+}
+@property --font-size-8 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 32px;
+}
+@property --font-size-9 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 48px;
+}
+@property --text-letter-spacing {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --letter-spacing-1 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --letter-spacing-2 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --letter-spacing-3 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --letter-spacing-4 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --letter-spacing-5 {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --text-font-weight {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 500;
 }
 :root {
   /* neutral */

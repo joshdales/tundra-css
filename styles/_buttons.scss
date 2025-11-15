@@ -1,13 +1,5 @@
 @use "./utils";
 
-@mixin _viewing {
-
-	&:focus-visible,
-	&:hover {
-		@content;
-	}
-}
-
 @mixin base {
 	cursor: pointer;
 	box-sizing: border-box;
@@ -31,21 +23,15 @@
 		--gap: var(--space-1);
 		--padding-y: var(--space-1);
 		--padding-x: var(--space-2);
-	}
-
-	@else if $level ==2 {
+	} @else if $level ==2 {
 		--gap: var(--space-2);
 		--padding-y: var(--space-2);
 		--padding-x: var(--space-5);
-	}
-
-	@else if $level ==3 {
+	} @else if $level ==3 {
 		--gap: var(--space-3);
 		--padding-y: var(--space-3);
 		--padding-x: var(--space-8);
-	}
-
-	@else if $level ==4 {
+	} @else if $level ==4 {
 		--gap: var(--space-5);
 		--padding-y: var(--space-5);
 		--padding-x: var(--space-10);
@@ -67,7 +53,7 @@
 	border-color: var(--background);
 	color: var(--accent-9, var(--neutral-9));
 
-	@include _viewing {
+	@include utils.viewing {
 		--background: var(--accent-3, var(--neutral-2));
 	}
 
@@ -101,7 +87,7 @@
 	border-color: var(--foreground);
 	color: var(--foreground);
 
-	@include _viewing {
+	@include utils.viewing {
 		--foreground: var(--accent-3, var(--neutral-2));
 		box-shadow: inset 0px 0 0 0.5px currentColor;
 	}
@@ -137,7 +123,7 @@
 	border-color: var(--background);
 	color: var(--foreground);
 
-	@include _viewing {
+	@include utils.viewing {
 		--background: var(--accent-9, var(--neutral-9));
 		--foreground: var(--accent-3, var(--neutral-2));
 	}

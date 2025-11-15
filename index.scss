@@ -10,10 +10,12 @@
 		@each $level, $value in $values {
 			@if ($level > 0) {
 				--#{$colour}-#{$level}: #{$value};
+				--color-#{$colour}-#{$level}: #{$value};
 			} @else {
 				$_values: map.remove($values, 0);
 				$key: list.index(map.values($_values), map.get($values, 0));
 				--#{$colour}: var(--#{$colour}-#{$key});
+				--color-#{$colour}: var(--#{$colour}-#{$key});
 			}
 		}
 	}
@@ -171,9 +173,11 @@ $_colours: map.remove($colours, "neutral");
 	.#{$colour},
 	.accent-#{$colour} {
 		--accent: var(--#{$colour});
+		--color-accent: var(--#{$colour});
 
 		@for $level from 1 through 9 {
 			--accent-#{$level}: var(--#{$colour}-#{$level});
+			--color-accent-#{$level}: var(--#{$colour}-#{$level});
 		}
 
 		accent-color: var(--accent);

@@ -733,103 +733,193 @@
 :root {
   /* neutral */
   --neutral: var(--neutral-1);
+  --color-neutral: var(--neutral-1);
   --neutral-1: oklch(18% 0 0deg);
+  --color-neutral-1: oklch(18% 0 0deg);
   --neutral-2: oklch(27.6% 0 0deg);
+  --color-neutral-2: oklch(27.6% 0 0deg);
   --neutral-3: oklch(37.2% 0 0deg);
+  --color-neutral-3: oklch(37.2% 0 0deg);
   --neutral-4: oklch(46.9% 0 0deg);
+  --color-neutral-4: oklch(46.9% 0 0deg);
   --neutral-5: oklch(56.5% 0 0deg);
+  --color-neutral-5: oklch(56.5% 0 0deg);
   --neutral-6: oklch(66.1% 0 0deg);
+  --color-neutral-6: oklch(66.1% 0 0deg);
   --neutral-7: oklch(75.7% 0 0deg);
+  --color-neutral-7: oklch(75.7% 0 0deg);
   --neutral-8: oklch(85.4% 0 0deg);
+  --color-neutral-8: oklch(85.4% 0 0deg);
   --neutral-9: oklch(95% 0 0deg);
+  --color-neutral-9: oklch(95% 0 0deg);
   /* red */
   --red: var(--red-5);
+  --color-red: var(--red-5);
   --red-1: oklch(23% 0.091 25deg);
+  --color-red-1: oklch(23% 0.091 25deg);
   --red-2: oklch(32% 0.127 25deg);
+  --color-red-2: oklch(32% 0.127 25deg);
   --red-3: oklch(41% 0.162 25deg);
+  --color-red-3: oklch(41% 0.162 25deg);
   --red-4: oklch(50% 0.198 25deg);
+  --color-red-4: oklch(50% 0.198 25deg);
   --red-5: oklch(59% 0.234 25deg);
+  --color-red-5: oklch(59% 0.234 25deg);
   --red-6: oklch(68% 0.229 25deg);
+  --color-red-6: oklch(68% 0.229 25deg);
   --red-7: oklch(77% 0.151 25deg);
+  --color-red-7: oklch(77% 0.151 25deg);
   --red-8: oklch(86% 0.085 25deg);
+  --color-red-8: oklch(86% 0.085 25deg);
   --red-9: oklch(95% 0.028 25deg);
+  --color-red-9: oklch(95% 0.028 25deg);
   /* orange */
   --orange: var(--orange-6);
+  --color-orange: var(--orange-6);
   --orange-1: oklch(22% 0.071 45deg);
+  --color-orange-1: oklch(22% 0.071 45deg);
   --orange-2: oklch(31.1% 0.1 45deg);
+  --color-orange-2: oklch(31.1% 0.1 45deg);
   --orange-3: oklch(40.2% 0.13 45deg);
+  --color-orange-3: oklch(40.2% 0.13 45deg);
   --orange-4: oklch(49.4% 0.159 45deg);
+  --color-orange-4: oklch(49.4% 0.159 45deg);
   --orange-5: oklch(58.5% 0.188 45deg);
+  --color-orange-5: oklch(58.5% 0.188 45deg);
   --orange-6: oklch(67.6% 0.218 45deg);
+  --color-orange-6: oklch(67.6% 0.218 45deg);
   --orange-7: oklch(76.7% 0.185 45deg);
+  --color-orange-7: oklch(76.7% 0.185 45deg);
   --orange-8: oklch(85.9% 0.104 45deg);
+  --color-orange-8: oklch(85.9% 0.104 45deg);
   --orange-9: oklch(95% 0.034 45deg);
+  --color-orange-9: oklch(95% 0.034 45deg);
   /* yellow */
   --yellow: var(--yellow-7);
+  --color-yellow: var(--yellow-7);
   --yellow-1: oklch(19% 0.041 80deg);
+  --color-yellow-1: oklch(19% 0.041 80deg);
   --yellow-2: oklch(28.5% 0.061 80deg);
+  --color-yellow-2: oklch(28.5% 0.061 80deg);
   --yellow-3: oklch(38% 0.081 80deg);
+  --color-yellow-3: oklch(38% 0.081 80deg);
   --yellow-4: oklch(47.5% 0.102 80deg);
+  --color-yellow-4: oklch(47.5% 0.102 80deg);
   --yellow-5: oklch(57% 0.122 80deg);
+  --color-yellow-5: oklch(57% 0.122 80deg);
   --yellow-6: oklch(66.5% 0.142 80deg);
+  --color-yellow-6: oklch(66.5% 0.142 80deg);
   --yellow-7: oklch(76% 0.163 80deg);
+  --color-yellow-7: oklch(76% 0.163 80deg);
   --yellow-8: oklch(85.5% 0.156 80deg);
+  --color-yellow-8: oklch(85.5% 0.156 80deg);
   --yellow-9: oklch(95% 0.051 80deg);
+  --color-yellow-9: oklch(95% 0.051 80deg);
   /* green */
   --green: var(--green-5);
+  --color-green: var(--green-5);
   --green-1: oklch(14% 0.039 165deg);
+  --color-green-1: oklch(14% 0.039 165deg);
   --green-2: oklch(24% 0.067 165deg);
+  --color-green-2: oklch(24% 0.067 165deg);
   --green-3: oklch(34% 0.094 165deg);
+  --color-green-3: oklch(34% 0.094 165deg);
   --green-4: oklch(44% 0.122 165deg);
+  --color-green-4: oklch(44% 0.122 165deg);
   --green-5: oklch(54% 0.15 165deg);
+  --color-green-5: oklch(54% 0.15 165deg);
   --green-6: oklch(64% 0.178 165deg);
+  --color-green-6: oklch(64% 0.178 165deg);
   --green-7: oklch(74% 0.205 165deg);
+  --color-green-7: oklch(74% 0.205 165deg);
   --green-8: oklch(84% 0.233 165deg);
+  --color-green-8: oklch(84% 0.233 165deg);
   --green-9: oklch(94% 0.098 165deg);
+  --color-green-9: oklch(94% 0.098 165deg);
   /* cyan */
   --cyan: var(--cyan-5);
+  --color-cyan: var(--cyan-5);
   --cyan-1: oklch(15% 0.029 190deg);
+  --color-cyan-1: oklch(15% 0.029 190deg);
   --cyan-2: oklch(25% 0.049 190deg);
+  --color-cyan-2: oklch(25% 0.049 190deg);
   --cyan-3: oklch(35% 0.069 190deg);
+  --color-cyan-3: oklch(35% 0.069 190deg);
   --cyan-4: oklch(45% 0.088 190deg);
+  --color-cyan-4: oklch(45% 0.088 190deg);
   --cyan-5: oklch(55% 0.108 190deg);
+  --color-cyan-5: oklch(55% 0.108 190deg);
   --cyan-6: oklch(65% 0.128 190deg);
+  --color-cyan-6: oklch(65% 0.128 190deg);
   --cyan-7: oklch(75% 0.147 190deg);
+  --color-cyan-7: oklch(75% 0.147 190deg);
   --cyan-8: oklch(85% 0.167 190deg);
+  --color-cyan-8: oklch(85% 0.167 190deg);
   --cyan-9: oklch(95% 0.071 190deg);
+  --color-cyan-9: oklch(95% 0.071 190deg);
   /* blue */
   --blue: var(--blue-5);
+  --color-blue: var(--blue-5);
   --blue-1: oklch(18% 0.046 255deg);
+  --color-blue-1: oklch(18% 0.046 255deg);
   --blue-2: oklch(27.6% 0.071 255deg);
+  --color-blue-2: oklch(27.6% 0.071 255deg);
   --blue-3: oklch(37.2% 0.096 255deg);
+  --color-blue-3: oklch(37.2% 0.096 255deg);
   --blue-4: oklch(46.9% 0.121 255deg);
+  --color-blue-4: oklch(46.9% 0.121 255deg);
   --blue-5: oklch(56.5% 0.146 255deg);
+  --color-blue-5: oklch(56.5% 0.146 255deg);
   --blue-6: oklch(66.1% 0.121 255deg);
+  --color-blue-6: oklch(66.1% 0.121 255deg);
   --blue-7: oklch(75.7% 0.084 255deg);
+  --color-blue-7: oklch(75.7% 0.084 255deg);
   --blue-8: oklch(85.4% 0.049 255deg);
+  --color-blue-8: oklch(85.4% 0.049 255deg);
   --blue-9: oklch(95% 0.016 255deg);
+  --color-blue-9: oklch(95% 0.016 255deg);
   /* purple */
   --purple: var(--purple-5);
+  --color-purple: var(--purple-5);
   --purple-1: oklch(21% 0.065 300deg);
+  --color-purple-1: oklch(21% 0.065 300deg);
   --purple-2: oklch(30.2% 0.093 300deg);
+  --color-purple-2: oklch(30.2% 0.093 300deg);
   --purple-3: oklch(39.5% 0.121 300deg);
+  --color-purple-3: oklch(39.5% 0.121 300deg);
   --purple-4: oklch(48.7% 0.15 300deg);
+  --color-purple-4: oklch(48.7% 0.15 300deg);
   --purple-5: oklch(58% 0.163 300deg);
+  --color-purple-5: oklch(58% 0.163 300deg);
   --purple-6: oklch(67.2% 0.123 300deg);
+  --color-purple-6: oklch(67.2% 0.123 300deg);
   --purple-7: oklch(76.5% 0.086 300deg);
+  --color-purple-7: oklch(76.5% 0.086 300deg);
   --purple-8: oklch(85.7% 0.05 300deg);
+  --color-purple-8: oklch(85.7% 0.05 300deg);
   --purple-9: oklch(95% 0.017 300deg);
+  --color-purple-9: oklch(95% 0.017 300deg);
   /* pink */
   --pink: var(--pink-7);
+  --color-pink: var(--pink-7);
   --pink-1: oklch(22% 0.062 350deg);
+  --color-pink-1: oklch(22% 0.062 350deg);
   --pink-2: oklch(31.1% 0.088 350deg);
+  --color-pink-2: oklch(31.1% 0.088 350deg);
   --pink-3: oklch(40.2% 0.113 350deg);
+  --color-pink-3: oklch(40.2% 0.113 350deg);
   --pink-4: oklch(49.4% 0.139 350deg);
+  --color-pink-4: oklch(49.4% 0.139 350deg);
   --pink-5: oklch(58.5% 0.165 350deg);
+  --color-pink-5: oklch(58.5% 0.165 350deg);
   --pink-6: oklch(67.6% 0.19 350deg);
+  --color-pink-6: oklch(67.6% 0.19 350deg);
   --pink-7: oklch(76.7% 0.13 350deg);
+  --color-pink-7: oklch(76.7% 0.13 350deg);
   --pink-8: oklch(85.9% 0.072 350deg);
+  --color-pink-8: oklch(85.9% 0.072 350deg);
   --pink-9: oklch(95% 0.024 350deg);
+  --color-pink-9: oklch(95% 0.024 350deg);
   /* Radius */
   --radius-1: 4px;
   --radius-2: 8px;
@@ -2442,120 +2532,200 @@ input[type=radio].radio-4:checked::after,
 .red,
 .accent-red {
   --accent: var(--red);
+  --color-accent: var(--red);
   --accent-1: var(--red-1);
+  --color-accent-1: var(--red-1);
   --accent-2: var(--red-2);
+  --color-accent-2: var(--red-2);
   --accent-3: var(--red-3);
+  --color-accent-3: var(--red-3);
   --accent-4: var(--red-4);
+  --color-accent-4: var(--red-4);
   --accent-5: var(--red-5);
+  --color-accent-5: var(--red-5);
   --accent-6: var(--red-6);
+  --color-accent-6: var(--red-6);
   --accent-7: var(--red-7);
+  --color-accent-7: var(--red-7);
   --accent-8: var(--red-8);
+  --color-accent-8: var(--red-8);
   --accent-9: var(--red-9);
+  --color-accent-9: var(--red-9);
   accent-color: var(--accent);
 }
 
 .orange,
 .accent-orange {
   --accent: var(--orange);
+  --color-accent: var(--orange);
   --accent-1: var(--orange-1);
+  --color-accent-1: var(--orange-1);
   --accent-2: var(--orange-2);
+  --color-accent-2: var(--orange-2);
   --accent-3: var(--orange-3);
+  --color-accent-3: var(--orange-3);
   --accent-4: var(--orange-4);
+  --color-accent-4: var(--orange-4);
   --accent-5: var(--orange-5);
+  --color-accent-5: var(--orange-5);
   --accent-6: var(--orange-6);
+  --color-accent-6: var(--orange-6);
   --accent-7: var(--orange-7);
+  --color-accent-7: var(--orange-7);
   --accent-8: var(--orange-8);
+  --color-accent-8: var(--orange-8);
   --accent-9: var(--orange-9);
+  --color-accent-9: var(--orange-9);
   accent-color: var(--accent);
 }
 
 .yellow,
 .accent-yellow {
   --accent: var(--yellow);
+  --color-accent: var(--yellow);
   --accent-1: var(--yellow-1);
+  --color-accent-1: var(--yellow-1);
   --accent-2: var(--yellow-2);
+  --color-accent-2: var(--yellow-2);
   --accent-3: var(--yellow-3);
+  --color-accent-3: var(--yellow-3);
   --accent-4: var(--yellow-4);
+  --color-accent-4: var(--yellow-4);
   --accent-5: var(--yellow-5);
+  --color-accent-5: var(--yellow-5);
   --accent-6: var(--yellow-6);
+  --color-accent-6: var(--yellow-6);
   --accent-7: var(--yellow-7);
+  --color-accent-7: var(--yellow-7);
   --accent-8: var(--yellow-8);
+  --color-accent-8: var(--yellow-8);
   --accent-9: var(--yellow-9);
+  --color-accent-9: var(--yellow-9);
   accent-color: var(--accent);
 }
 
 .green,
 .accent-green {
   --accent: var(--green);
+  --color-accent: var(--green);
   --accent-1: var(--green-1);
+  --color-accent-1: var(--green-1);
   --accent-2: var(--green-2);
+  --color-accent-2: var(--green-2);
   --accent-3: var(--green-3);
+  --color-accent-3: var(--green-3);
   --accent-4: var(--green-4);
+  --color-accent-4: var(--green-4);
   --accent-5: var(--green-5);
+  --color-accent-5: var(--green-5);
   --accent-6: var(--green-6);
+  --color-accent-6: var(--green-6);
   --accent-7: var(--green-7);
+  --color-accent-7: var(--green-7);
   --accent-8: var(--green-8);
+  --color-accent-8: var(--green-8);
   --accent-9: var(--green-9);
+  --color-accent-9: var(--green-9);
   accent-color: var(--accent);
 }
 
 .cyan,
 .accent-cyan {
   --accent: var(--cyan);
+  --color-accent: var(--cyan);
   --accent-1: var(--cyan-1);
+  --color-accent-1: var(--cyan-1);
   --accent-2: var(--cyan-2);
+  --color-accent-2: var(--cyan-2);
   --accent-3: var(--cyan-3);
+  --color-accent-3: var(--cyan-3);
   --accent-4: var(--cyan-4);
+  --color-accent-4: var(--cyan-4);
   --accent-5: var(--cyan-5);
+  --color-accent-5: var(--cyan-5);
   --accent-6: var(--cyan-6);
+  --color-accent-6: var(--cyan-6);
   --accent-7: var(--cyan-7);
+  --color-accent-7: var(--cyan-7);
   --accent-8: var(--cyan-8);
+  --color-accent-8: var(--cyan-8);
   --accent-9: var(--cyan-9);
+  --color-accent-9: var(--cyan-9);
   accent-color: var(--accent);
 }
 
 .blue,
 .accent-blue {
   --accent: var(--blue);
+  --color-accent: var(--blue);
   --accent-1: var(--blue-1);
+  --color-accent-1: var(--blue-1);
   --accent-2: var(--blue-2);
+  --color-accent-2: var(--blue-2);
   --accent-3: var(--blue-3);
+  --color-accent-3: var(--blue-3);
   --accent-4: var(--blue-4);
+  --color-accent-4: var(--blue-4);
   --accent-5: var(--blue-5);
+  --color-accent-5: var(--blue-5);
   --accent-6: var(--blue-6);
+  --color-accent-6: var(--blue-6);
   --accent-7: var(--blue-7);
+  --color-accent-7: var(--blue-7);
   --accent-8: var(--blue-8);
+  --color-accent-8: var(--blue-8);
   --accent-9: var(--blue-9);
+  --color-accent-9: var(--blue-9);
   accent-color: var(--accent);
 }
 
 .purple,
 .accent-purple {
   --accent: var(--purple);
+  --color-accent: var(--purple);
   --accent-1: var(--purple-1);
+  --color-accent-1: var(--purple-1);
   --accent-2: var(--purple-2);
+  --color-accent-2: var(--purple-2);
   --accent-3: var(--purple-3);
+  --color-accent-3: var(--purple-3);
   --accent-4: var(--purple-4);
+  --color-accent-4: var(--purple-4);
   --accent-5: var(--purple-5);
+  --color-accent-5: var(--purple-5);
   --accent-6: var(--purple-6);
+  --color-accent-6: var(--purple-6);
   --accent-7: var(--purple-7);
+  --color-accent-7: var(--purple-7);
   --accent-8: var(--purple-8);
+  --color-accent-8: var(--purple-8);
   --accent-9: var(--purple-9);
+  --color-accent-9: var(--purple-9);
   accent-color: var(--accent);
 }
 
 .pink,
 .accent-pink {
   --accent: var(--pink);
+  --color-accent: var(--pink);
   --accent-1: var(--pink-1);
+  --color-accent-1: var(--pink-1);
   --accent-2: var(--pink-2);
+  --color-accent-2: var(--pink-2);
   --accent-3: var(--pink-3);
+  --color-accent-3: var(--pink-3);
   --accent-4: var(--pink-4);
+  --color-accent-4: var(--pink-4);
   --accent-5: var(--pink-5);
+  --color-accent-5: var(--pink-5);
   --accent-6: var(--pink-6);
+  --color-accent-6: var(--pink-6);
   --accent-7: var(--pink-7);
+  --color-accent-7: var(--pink-7);
   --accent-8: var(--pink-8);
+  --color-accent-8: var(--pink-8);
   --accent-9: var(--pink-9);
+  --color-accent-9: var(--pink-9);
   accent-color: var(--accent);
 }
 

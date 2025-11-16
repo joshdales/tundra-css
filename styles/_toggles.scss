@@ -5,23 +5,24 @@
 	appearance: none;
 	cursor: pointer;
 	position: relative;
-	border: 1.5px solid;
+	border: var(--element-border-width) solid;
+	outline: var(--toggle-color-border);
 
-	height: var(--checkbox-size);
-	width: var(--checkbox-size);
-	border-radius: var(--checkbox-border-radius, var(--radius-1));
-	border-color: var(--checkbox-color-border, var(--neutral-6));
-	background-color: var(--checkbox-color-background);
+	height: var(--toggle-size);
+	width: var(--toggle-size);
+	border-radius: var(--toggle-border-radius, var(--element-border-radius));
+	border-color: var(--toggle-color-border, var(--element-color-border));
+	background-color: var(--toggle-color-background);
 
-	--checkbox-color-foreground: var(--accent-9, var(--neutral-9));
+	--toggle-color-foreground: var(--app-background);
 
 	&::after {
-		color: var(--checkbox-color-foreground);
+		color: var(--toggle-color-foreground);
 		display: grid;
 		place-content: center;
 		position: absolute;
 		inset: 0;
-		font-size: var(--checkbox-tick-size);
+		font-size: var(--toggle-tick-size);
 	}
 }
 
@@ -29,47 +30,47 @@
 /// @param {number} $level - How big the the input should be, 1 - 4, smallest to largest.
 @mixin size($level) {
 	@if $level ==1 {
-		--checkbox-size: var(--space-4);
+		--toggle-size: var(--space-4);
 	} @else if $level ==2 {
-		--checkbox-size: var(--space-5);
+		--toggle-size: var(--space-5);
 	} @else if $level ==3 {
-		--checkbox-size: var(--space-6);
+		--toggle-size: var(--space-6);
 	} @else if $level ==4 {
-		--checkbox-size: var(--space-7);
+		--toggle-size: var(--space-7);
 	}
 }
 
 /// Styles for the toggle container itself.
 @mixin container {
 	&:active {
-		--checkbox-color-border: var(--accent-5, var(--neutral-3));
-		--checkbox-color-background: var(--accent-5, var(--neutral-3));
+		--toggle-color-border: var(--color-accent-5, var(--color-neutral-3));
+		--toggle-color-background: var(--color-accent-5, var(--color-neutral-3));
 	}
 
 	@include utils.viewing {
-		--checkbox-color-border: var(--accent-4, var(--neutral-3));
-		--checkbox-color-background: var(--accent-9, var(--neutral-9));
+		--toggle-color-border: var(--color-accent-4, var(--color-neutral-3));
+		--toggle-color-background: var(--color-accent-9, var(--color-neutral-9));
 	}
 
 	&:checked {
-		--checkbox-color-background: var(--accent-5, var(--neutral-1));
-		--checkbox-color-border: var(--checkbox-color-background);
+		--toggle-color-background: var(--color-accent-5, var(--color-neutral-1));
+		--toggle-color-border: var(--toggle-color-background);
 
 		&::after {
 			content: "✔︎";
 		}
 
 		@include utils.viewing {
-			--checkbox-color-background: var(--accent-4, var(--neutral-2));
+			--toggle-color-background: var(--color-accent-4, var(--color-neutral-2));
 		}
 
 		&:active {
-			--checkbox-color-background: var(--accent-3, var(--neutral-3));
+			--toggle-color-background: var(--color-accent-3, var(--color-neutral-3));
 		}
 	}
 
 	@include utils.disabled {
-		--checkbox-color-background-color: var(--neutral-6);
+		--toggle-color-background-color: var(--color-neutral-6);
 	}
 }
 
@@ -86,13 +87,15 @@
 		@include container;
 	}
 
+	--toggle-border-radius: var(--radius-1);
+
 	&:checked::after {
-		--checkbox-tick-size: 90%;
+		--toggle-tick-size: 90%;
 	}
 
 	&:indeterminate {
-		--checkbox-color-border: var(--accent-5, var(--neutral-1));
-		--checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+		--toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+		--toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 
 		&::after {
 			content: "";
@@ -111,7 +114,7 @@
 /// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 /// @param {boolean} $include_container [false] - Include the toggle container styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin radio($level: null, $include_base: false, $include_container: false) {
-	--checkbox-border-radius: var(--radius-5);
+	--toggle-border-radius: var(--radius-5);
 	@include size($level);
 	@if $include_base {
 		@include base;
@@ -121,6 +124,6 @@
 	}
 
 	&:checked::after {
-		--checkbox-tick-size: 80%;
+		--toggle-tick-size: 80%;
 	}
 }

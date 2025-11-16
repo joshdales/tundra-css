@@ -2,7 +2,7 @@ name: Publish package
 
 on:
   release:
-    types: [published]
+    types: [created]
 
 permissions:
   id-token: write
@@ -30,3 +30,13 @@ jobs:
 
       - name: Publish
         run: npm publish --provenance --access public
+
+      - name: Update Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          ACTION: ${{ github.event.release.tag_name }}
+        run: |
+          gh release upload $ACTION *.tgz
+          gh release edit $ACTION --draft=false

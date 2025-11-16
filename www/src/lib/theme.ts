@@ -7,13 +7,14 @@ export type AccentColour =
 	| 'blue'
 	| 'purple'
 	| 'pink'
+	| 'neutral'
 
 export type Brightness = 'light' | 'dark' | 'system'
 
 export interface Theme {
 	accent: AccentColour
 	/**
-	 * @todo
+	 * @todo https://github.com/joshdales/tundra-css/issues/104
 	 */
 	mode: Brightness
 }

@@ -55,7 +55,9 @@
 		--checkbox-color-background: var(--accent-5, var(--neutral-1));
 		--checkbox-color-border: var(--checkbox-color-background);
 
-		content: "✔︎";
+		&::after {
+			content: "✔︎";
+		}
 
 		@include utils.viewing {
 			--checkbox-color-background: var(--accent-4, var(--neutral-2));

@@ -5,11 +5,11 @@
 	border: 1.5px solid;
 	outline: none;
 
-	background-color: var(--input-color-background);
+	background-color: var(--input-color-background, var(--color-background));
 	border-color: var(--input-color-border);
-	border-radius: var(--input-border-radius);
+	border-radius: var(--input-border-radius, var(--radius-2));
 	caret-color: var(--input-color-caret);
-	color: var(--input-color-foreground);
+	color: var(--input-color-foreground, var(--color-foreground));
 	padding-inline: var(--input-padding-x);
 	padding-block: var(--input-padding-y);
 
@@ -48,25 +48,24 @@
 		--input-padding-x: var(--space-8);
 	}
 
-	--input-color-border: var(--accent-5, var(--neutral-5));
-	--input-border-radius: var(--radius-2);
-	--input-color-foreground: var(--neutral-1);
-	--input-color-caret: var(--neutral-4);
+	--input-color-border: var(--color-accent-5, var(--color-neutral-5));
+	--input-color-caret: var(--color-neutral-4);
 
 	&:hover {
-		--input-color-border: var(--accent-6, var(--neutral-4));
-		--input-color-placeholder: var(--accent-6, var(--neutral-4));
-		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
+		--input-color-background: var(--color-accent-9, var(--color-neutral-9));
+		--input-color-border: var(--color-accent-4, var(--color-neutral-4));
+		--input-color-placeholder: var(--color-neutral-5);
+		box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 	}
 
 	&:focus {
-		--input-color-border: var(--accent-5, var(--neutral-4));
-		--input-foregoround: var(--accent-1, var(--neutral-1));
-		--input-color-background: var(--accent-9, var(--neutral-9));
+		--input-color-border: var(--color-accent-4, var(--color-neutral-4));
+		--input-foreground: var(--color-foreground);
+		--input-color-background: var(--color-background);
 		--input-color-placeholder: transparent;
 	}
 
 	&:active {
-		--input-color-border: var(--accent-4, var(--neutral-4));
+		--input-color-border: var(--accent-3, var(--neutral-4));
 	}
 }

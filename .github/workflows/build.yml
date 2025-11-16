@@ -1,6 +1,14 @@
 name: Build Check
 
-on: push
+on:
+  push:
+    paths:
+      - "index.scss"
+      - "styles/*"
+  pull_request:
+    paths:
+      - "index.scss"
+      - "styles/*"
 
 jobs:
   build-css:

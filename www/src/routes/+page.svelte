@@ -5,15 +5,15 @@
 
 <div class="grid">
 	<header>
-		<h1 class="alt-heading-6">Tundra CSS</h1>
+		<h1 class="text-alt-heading-6">Tundra CSS</h1>
 
 		<ThemeAccentSelector />
 
-		<p class="body-4">
+		<p class="text-body-4">
 			An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.
 		</p>
 
-		<p class="body-4">
+		<p class="text-body-4">
 			Its not a complete framework of utility classes for every property that you might want like
 			Tailwind or Tachyons or what have you. It is a smaller selection of variables and a few
 			classes that effect multiple properties to style specific things (and there are some SCSS
@@ -21,7 +21,7 @@
 			looking project without having to go through too much trouble.
 		</p>
 
-		<p class="body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
+		<p class="text-body-4">Or maybe you just want to use it as a reference, that's cool too.</p>
 
 		<LinkCard
 			href="/customisation"
@@ -31,8 +31,8 @@
 	</header>
 
 	<main>
-		<h2 class="heading-4">Foundations</h2>
-		<p class="body-3">
+		<h2 class="text-heading-4">Foundations</h2>
+		<p class="text-body-3">
 			The foundational properties that are used to make up styles for the elements.
 		</p>
 
@@ -65,8 +65,8 @@
 			</menu>
 		</nav>
 
-		<h2 class="heading-4">Elements</h2>
-		<p class="body-3">
+		<h2 class="text-heading-4">Elements</h2>
+		<p class="text-body-3">
 			You can apply classes to the following elements to easily adjust the available elements
 			appearance.
 		</p>
@@ -84,11 +84,7 @@
 					/>
 				</li>
 				<li>
-					<LinkCard
-						href="/checkboxes"
-						title="Checkboxes and Radios"
-						desc="Confirmation and selection"
-					/>
+					<LinkCard href="/toggles" title="Toggle Inputs" desc="Confirmation and selection" />
 				</li>
 				<li>
 					<LinkCard
@@ -172,7 +168,7 @@
 		margin-block-start: 0;
 	}
 
-	.body-3 {
+	.text-body-3 {
 		width: 100%;
 		margin-block-end: var(--space-3);
 	}

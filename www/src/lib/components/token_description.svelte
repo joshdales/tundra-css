@@ -8,13 +8,14 @@
 </script>
 
 <div>
-	<h1 class="heading-5">{title}</h1>
+	<h1 class="text-heading-5">{title}</h1>
 
 	{@render children?.()}
 </div>
 
 <style>
 	h1 {
+		text-transform: capitalize;
 		margin-block-end: var(--space-6);
 	}
 

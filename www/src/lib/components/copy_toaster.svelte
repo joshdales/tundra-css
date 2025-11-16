@@ -36,11 +36,11 @@
 		{#if copiedValue}
 			<Toast type={copiedValue.success ? 'success' : 'danger'} showClose={!copiedValue.success}>
 				{#if copiedValue.success}
-					<p class="body-2">
+					<p class="text-body-2">
 						<code>{copiedValue.value}</code> copied to your clipboard!
 					</p>
 				{:else}
-					<p class="body-2">
+					<p class="text-body-2">
 						Copy <code>{copiedValue.value}</code> to your clipboard.
 					</p>
 				{/if}

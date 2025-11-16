@@ -5,6 +5,7 @@
 	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
 
 	let selectedColour = $state('')
+	let acceentClass = $derived(selectedColour ? `accent-${selectedColour}` : undefined)
 	let copiedValue: CopiedValue | undefined = $state()
 
 	function copyClasses(event: MouseEvent) {
@@ -32,13 +33,13 @@
 
 <main>
 	<TokenDescription title="Buttons">
-		<p class="body-4">
-			Apply the class for the button variant and the accent colour that you want the button to be.
-			Add a <code>button-*</code> class to change the size, and a class for the colour it add that accent
-			otherwise the button will be greyscale.
+		<p class="text-body-4">
+			Apply the <code>element-button</code> class to any element as well as the button variant and
+			the accent colour that you want the button to be. Add a <code>button-*</code> class to change the
+			size, and a class for the colour it add that accent otherwise the button will be greyscale.
 		</p>
 
-		<p class="body-4">Click on a button to copy it's classes.</p>
+		<p class="text-body-4">Click on a button to copy it's classes.</p>
 
 		<AccentSelector updateColour={(newColour) => (selectedColour = newColour)} />
 	</TokenDescription>
@@ -46,50 +47,74 @@
 	<h2 class="heading-4">Filled</h2>
 
 	<div class="btn-group">
-		<button class="button-1 filled {selectedColour}" onclick={copyClasses}> Button 1 </button>
+		<button class="element-button button-1 filled {acceentClass}" onclick={copyClasses}>
+			Button 1
+		</button>
 
-		<button class="button-2 filled {selectedColour}" onclick={copyClasses}> Button 2 </button>
+		<button class="element-button button-2 filled {acceentClass}" onclick={copyClasses}>
+			Button 2
+		</button>
 
-		<button class="button-3 filled {selectedColour}" onclick={copyClasses}> Button 3 </button>
+		<button class="element-button button-3 filled {acceentClass}" onclick={copyClasses}>
+			Button 3
+		</button>
 
-		<button class="button-4 filled {selectedColour}" onclick={copyClasses}> Button 4 </button>
+		<button class="element-button button-4 filled {acceentClass}" onclick={copyClasses}>
+			Button 4
+		</button>
 	</div>
 
 	<h2 class="heading-4">Outline</h2>
 
 	<div class="btn-group">
-		<button class="button-1 outline {selectedColour}" onclick={copyClasses}> Button 1 </button>
+		<button class="element-button button-1 outline {acceentClass}" onclick={copyClasses}>
+			Button 1
+		</button>
 
-		<button class="button-2 outline {selectedColour}" onclick={copyClasses}> Button 2 </button>
+		<button class="element-button button-2 outline {acceentClass}" onclick={copyClasses}>
+			Button 2
+		</button>
 
-		<button class="button-3 outline {selectedColour}" onclick={copyClasses}> Button 3 </button>
+		<button class="element-button button-3 outline {acceentClass}" onclick={copyClasses}>
+			Button 3
+		</button>
 
-		<button class="button-4 outline {selectedColour}" onclick={copyClasses}> Button 4 </button>
+		<button class="element-button button-4 outline {acceentClass}" onclick={copyClasses}>
+			Button 4
+		</button>
 	</div>
 
-	<h2 class="heading-4">Ghost</h2>
+	<h2 class="text-heading-4">Ghost</h2>
 
 	<div class="btn-group">
-		<button class="button-1 ghost {selectedColour}" onclick={copyClasses}> Button 1 </button>
+		<button class="element-button button-1 ghost {acceentClass}" onclick={copyClasses}>
+			Button 1
+		</button>
 
-		<button class="button-2 ghost {selectedColour}" onclick={copyClasses}> Button 2 </button>
+		<button class="element-button button-2 ghost {acceentClass}" onclick={copyClasses}>
+			Button 2
+		</button>
 
-		<button class="button-3 ghost {selectedColour}" onclick={copyClasses}> Button 3 </button>
+		<button class="element-button button-3 ghost {acceentClass}" onclick={copyClasses}>
+			Button 3
+		</button>
 
-		<button class="button-4 ghost {selectedColour}" onclick={copyClasses}> Button 4 </button>
+		<button class="element-button button-4 ghost {acceentClass}" onclick={copyClasses}>
+			Button 4
+		</button>
 	</div>
 
 	<section class="disabled">
-		<h3 class="alt-heading-3">Disabled buttons</h3>
+		<h3 class="text-alt-heading-3">Disabled buttons</h3>
 
-		<p class="body-4">
+		<p class="text-body-4">
 			When buttons are disabled they look the same no matter what their accent colour.
 		</p>
 
 		<div class="btn-group">
-			<button class="button-2 filled" disabled> Lorem ipsum </button>
-			<button class="button-2 outline" disabled> Lorem ipsum </button>
-			<button class="button-2 ghost" disabled> Lorem ipsum </button>
+			<button class="element-button button-2 filled" disabled> Lorem ipsum </button>
+			<button class="element-button button-2 outline" disabled> Lorem ipsum </button>
+			<button class="element-button button-2 ghost" disabled> Lorem ipsum </button>
 		</div>
 	</section>
 </main>

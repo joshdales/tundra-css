@@ -23,7 +23,7 @@
 	</div>
 
 	<button
-		class="button-1 ghost theme-selector"
+		class="element-button button-1 ghost theme-selector"
 		aria-label="Update the sites accent colour"
 		onclick={() => (showMenu = !showMenu)}
 	>

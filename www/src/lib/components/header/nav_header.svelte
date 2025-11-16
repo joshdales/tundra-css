@@ -22,7 +22,7 @@
 <svelte:window bind:scrollY={currentPosition} />
 
 <header bind:clientHeight={headerHeight} style="--header-height:{headerHeight}px" class:hide>
-	<a href="/" class="alt-heading-3">Tundra CSS</a>
+	<a href="/" class="text-alt-heading-3">Tundra CSS</a>
 
 	<NavAccent />
 	<NavMenu />

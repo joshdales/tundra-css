@@ -6,7 +6,7 @@
 </script>
 
 <main>
-	<TokenDescription title="Checkboxes & Radios">
+	<TokenDescription title="Inputs (checkboxes & radios)">
 		<p class="body-4">
 			When a user needs to select items from a list you can apply either the <code>checkbox-*</code>
 			or <code>radio-*</code> to the appropriate input.

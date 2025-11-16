@@ -13,7 +13,7 @@
 <form method="post" onchange={(evt) => handleUpdate(evt)}>
 	<fieldset aria-label="Theme colour for the site">
 		<input
-			class="radio-2 red"
+			class="radio-2 accent-red"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-red"
@@ -21,7 +21,7 @@
 			checked={theme.accent === 'red'}
 		/>
 		<input
-			class="radio-2 orange"
+			class="radio-2 accent-orange"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-orange"
@@ -37,7 +37,7 @@
 			checked={theme.accent === 'yellow'}
 		/>
 		<input
-			class="radio-2 green"
+			class="radio-2 accent-green"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-green"
@@ -45,7 +45,7 @@
 			checked={theme.accent === 'green'}
 		/>
 		<input
-			class="radio-2 cyan"
+			class="radio-2 accent-cyan"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-cyan"
@@ -53,7 +53,7 @@
 			checked={theme.accent === 'cyan'}
 		/>
 		<input
-			class="radio-2 blue"
+			class="radio-2 accent-blue"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-blue"
@@ -61,7 +61,7 @@
 			checked={theme.accent === 'blue'}
 		/>
 		<input
-			class="radio-2 purple"
+			class="radio-2 accent-purple"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-purple"
@@ -69,12 +69,20 @@
 			checked={theme.accent === 'purple'}
 		/>
 		<input
-			class="radio-2 pink"
+			class="radio-2 accent-pink"
 			type="radio"
 			name="themeAccent"
 			id="theme-accent-pink"
 			value="pink"
 			checked={theme.accent === 'pink'}
+		/>
+		<input
+			class="radio-2 accent-neutral"
+			type="radio"
+			name="themeAccent"
+			id="theme-accent-neutral"
+			value="neutral"
+			checked={theme.accent === 'neutral'}
 		/>
 	</fieldset>
 </form>
@@ -82,7 +90,7 @@
 <style>
 	fieldset {
 		display: grid;
-		grid-template-columns: repeat(8, 1fr);
+		grid-template-columns: repeat(9, 1fr);
 		padding: var(--space-3) var(--space-6);
 		justify-items: center;
 		border: 1px solid var(--neutral-8);

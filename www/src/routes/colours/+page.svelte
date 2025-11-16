@@ -20,13 +20,13 @@
 
 <main>
 	<TokenDescription title="Colour Palette">
-		<p class="body-4">
+		<p class="text-body-4">
 			A list of all colours that are available as variables. All of the colours are defined in
 			OKLCH, some of them are on the P3 colour gamut, but there are fallbacks for monitors that
 			don't support that.
 		</p>
 
-		<p class="body-4">
+		<p class="text-body-4">
 			Click on one of the colour swatches to copy its variable to your clipboard.
 		</p>
 	</TokenDescription>

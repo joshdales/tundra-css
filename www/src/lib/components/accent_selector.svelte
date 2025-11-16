@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
-	import { page } from '$app/stores'
+	import { page } from '$app/state'
 	import { browser } from '$app/environment'
 
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
-	let selectedColour = $state($page.url.searchParams.get('colour'))
+	let selectedColour = $state(page.url.searchParams.get('colour'))
 	interface Props {
 		updateColour: (newColour: string) => void
 	}
@@ -12,19 +12,19 @@
 	let { updateColour }: Props = $props()
 
 	function updateQueryColour(newColour: string | null) {
-		const pageColour = $page.url.searchParams.get('colour')
+		const pageColour = page.url.searchParams.get('colour')
 		if (newColour === pageColour) {
 			return
 		}
 
 		if (newColour) {
-			$page.url.searchParams.set('colour', newColour)
+			page.url.searchParams.set('colour', newColour)
 		} else {
-			$page.url.searchParams.delete('colour')
+			page.url.searchParams.delete('colour')
 		}
 
 		if (browser) {
-			goto($page.url, { replaceState: true, keepFocus: true, noScroll: true })
+			goto(page.url, { replaceState: true, keepFocus: true, noScroll: true })
 		}
 	}
 
@@ -42,10 +42,10 @@
 </script>
 
 <fieldset name="accent">
-	<legend class="alt-heading-2">Accent</legend>
+	<legend class="text-alt-heading-2">Accent</legend>
 
 	{#each colours as colour}
-		<label class:active={selectedColour === colour} class="label-4" for="colours-{colour}">
+		<label class:active={selectedColour === colour} class="text-label-4" for="colours-{colour}">
 			{colour}
 			<input
 				bind:group={selectedColour}

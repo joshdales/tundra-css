@@ -54,7 +54,7 @@
 
 	--button-color-background: var(--color-accent-5, var(--color-neutral-1));
 	--button-color-border: var(--button-color-background);
-	--button-color-foreground: var(--color-accent-9, var(--color-neutral-9));
+	--button-color-foreground: var(--color-background);
 
 	@include utils.viewing {
 		--button-color-background: var(--color-accent-4, var(--color-neutral-2));
@@ -81,7 +81,7 @@
 		@include base;
 	}
 
-	--button-color-background: var(--color-accent-9, var(--color-neutral-9));
+	--button-color-background: var(--color-background);
 	--button-color-foreground: var(--color-accent-5, var(--color-neutral));
 	--button-color-border: var(var(--button-color-foreground));
 
@@ -96,11 +96,14 @@
 	}
 
 	@include utils.disabled {
-		--button-color-background: var(--color-neutral-9);
 		--button-color-foreground: var(--color-neutral-7);
 
 		&:hover {
 			--button-color-foreground: var(--color-neutral-8);
+		}
+
+		&:active {
+			--button-color-background: var(--color-background);
 		}
 	}
 }

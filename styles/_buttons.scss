@@ -13,9 +13,9 @@
 	padding-inline: var(--button-padding-x);
 	padding-block: var(--button-padding-y);
 	border-radius: var(--button-border-radius, var(--radius-2));
-	border-color: var(--button-border);
-	background-color: var(--button-background);
-	color: var(--button-foreground);
+	border-color: var(--button-color-border);
+	background-color: var(--button-color-background);
+	color: var(--button-color-foreground);
 
 	@include utils.disabled {
 		cursor: not-allowed;
@@ -51,24 +51,24 @@
 		@include base;
 	}
 
-	--button-background: var(--accent-4, var(--neutral-1));
-	--button-border: var(--button-background);
-	--button-foreground: var(--accent-9, var(--neutral-9));
+	--button-color-background: var(--accent-4, var(--neutral-1));
+	--button-color-border: var(--button-color-background);
+	--button-color-foreground: var(--accent-9, var(--neutral-9));
 
 	@include utils.viewing {
-		--button-background: var(--accent-3, var(--neutral-2));
+		--button-color-background: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--button-background: var(--accent-2, var(--neutral-3));
+		--button-color-background: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--button-background: var(--neutral-7);
-		--button-foreground: var(--neutral-9);
+		--button-color-background: var(--neutral-7);
+		--button-color-foreground: var(--neutral-9);
 
 		&:hover {
-			--button-background: var(--neutral-8);
+			--button-color-background: var(--neutral-8);
 		}
 	}
 }
@@ -82,26 +82,26 @@
 		@include base;
 	}
 
-	--button-background: var(--accent-9, var(--neutral-9));
-	--button-foreground: var(--accent-4, var(--neutral-1));
-	--button-border: var(var(--button-foreground));
+	--button-color-background: var(--accent-9, var(--neutral-9));
+	--button-color-foreground: var(--accent-4, var(--neutral-1));
+	--button-color-border: var(var(--button-color-foreground));
 
 	@include utils.viewing {
-		--button-foreground: var(--accent-3, var(--neutral-2));
+		--button-color-foreground: var(--accent-3, var(--neutral-2));
 		box-shadow: inset 0px 0 0 0.5px currentColor;
 	}
 
 	&:active {
-		--button-background: var(--accent-8, var(--neutral-8));
-		--button-foreground: var(--accent-2, var(--neutral-3));
+		--button-color-background: var(--accent-8, var(--neutral-8));
+		--button-color-foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--button-background: var(--neutral-9);
-		--button-foreground: var(--neutral-7);
+		--button-color-background: var(--neutral-9);
+		--button-color-foreground: var(--neutral-7);
 
 		&:hover {
-			--button-foreground: var(--neutral-8);
+			--button-color-foreground: var(--neutral-8);
 		}
 	}
 }
@@ -115,26 +115,26 @@
 		@include base;
 	}
 
-	--button-background: transparent;
-	--button-foreground: var(--accent-4, var(--neutral-1));
-	--button-border: var(--button-background);
+	--button-color-background: transparent;
+	--button-color-foreground: var(--accent-4, var(--neutral-1));
+	--button-color-border: var(--button-color-background);
 
 	@include utils.viewing {
-		--button-background: var(--accent-9, var(--neutral-9));
-		--button-foreground: var(--accent-3, var(--neutral-2));
+		--button-color-background: var(--accent-9, var(--neutral-9));
+		--button-color-foreground: var(--accent-3, var(--neutral-2));
 	}
 
 	&:active {
-		--button-background: var(--accent-8, var(--neutral-8));
-		--button-foreground: var(--accent-2, var(--neutral-3));
+		--button-color-background: var(--accent-8, var(--neutral-8));
+		--button-color-foreground: var(--accent-2, var(--neutral-3));
 	}
 
 	@include utils.disabled {
-		--button-foreground: var(--neutral-7);
+		--button-color-foreground: var(--neutral-7);
 
 		&:hover {
-			--button-background: var(--neutral-9);
-			--button-foreground: var(--neutral-8);
+			--button-color-background: var(--neutral-9);
+			--button-color-foreground: var(--neutral-8);
 		}
 	}
 }

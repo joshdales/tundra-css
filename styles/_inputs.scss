@@ -4,7 +4,6 @@
 @mixin base {
 	border: var(--element-border-width) solid;
 	outline: var(--input-color-border);
-
 	background-color: var(--input-color-background, var(--color-background));
 	border-color: var(--input-color-border, var(--element-color-border));
 	border-radius: var(--input-border-radius, var(--element-border-radius));

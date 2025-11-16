@@ -24,6 +24,7 @@ The property names are suffixed by a number 0 -> 999 or whatever the highest num
 - The size and typography tokens go from small -> large.
 - Element classes go from small -> large, eg. a button or inputs gets larger as you increase the size.
 - Text classes go from small -> large.
+- There are prefixes to classes to indicate what they are for. Text classes are prefixed with `text-`, while classes that style some html to look like an element are prefixed with `element-`.
 
 I've generally opted to name things by their full title (so classes are things like `button` as opposed to `btn` or some other abbreviation) because I wanted it to be easy to remember and obvious about what they do. Same goes for custom properties, if they are for a particular property I've named it to follow that property.
 
@@ -33,15 +34,15 @@ You can apply one of the class provided and/or then customise it as you need wit
 ### Custom-Properties / Variables
 There are a series of css custom properties for the following:
 - Colours (1-8)
-	- `--neutral-1` - `--neutral-8`
-	- `--red-1` - `--red-8`
-	- `--orange-1` - `--orange-8`
-	- `--yellow-1` - `--yellow-8`
-	- `--green-1` - `--green-8`
-	- `--cyan-1` - `--cyan-8`
-	- `--blue-1` - `--blue-8`
-	- `--purple-1` - `--purple-8`
-	- `--pink-1` - `--pink-8`
+	- `--color-neutral-1` - `--color-neutral-8`
+	- `--color-red-1` - `--color-red-8`
+	- `--color-orange-1` - `--color-orange-8`
+	- `--color-yellow-1` - `--color-yellow-8`
+	- `--color-green-1` - `--color-green-8`
+	- `--color-cyan-1` - `--color-cyan-8`
+	- `--color-blue-1` - `--color-blue-8`
+	- `--color-purple-1` - `--color-purple-8`
+	- `--color-pink-1` - `--color-pink-8`
 - Radius (1-4)
 	- `--radius-1` -`--radius-4`
 - Space (1-14)
@@ -59,27 +60,36 @@ There are also these ones related to typography, though to be honest you probabl
 
 ### Classes
 There are a series of classes for text, along with others elements like buttons, and text inputs.
+
 - Headings - 6 levels of headings
-	- Text styles: `.heading-1` - `.heading-6`
+	- Text styles: `.text-heading-1` - `.text-heading-6`
 - Alt-Headings - 6 levels of alterative headings that is a little heavier
-	- Text styles: `.alt-heading-1` - `.alt-heading-6`
+	- Text styles: `.text-alt-heading-1` - `.text-alt-heading-6`
 - Body - text for paragraphs and other large bodies of text
-	- Text styles: `.body-1` - `.body-4`
+	- Text styles: `.text-body-1` - `.text-body-4`
 - Link - for your links, underlined by default
-	- Text styles: `.link-1` - `.link-4`
+	- Text styles: `.text-link-1` - `.text-link-4`
 - Buttons - 4 button sizes, along with different styled variations
+	- Element styles: `.element-button`
+	- Element sizes: `.element-button-1` - `.element-button-4`
+	- Text styles: `.text-button-1` - `.text-button-4`
 	- Text style and button sizes: `.button-1` - `.button-4`
 	- Variations: `.filled`, `.outline`, `.ghost`
 - Labels - For labelling inputs, or anything else that you want
-	- Text styles: `.label-1` - `.label-4`
+	- Text styles: `.text-label-1` - `.text-label-4`
 - Inputs - Text based inputs
+	- Element styles: `.element-text-entry`
+	- Element sizes: `.element-text-entry-1` - `.element-text-entry-4`
+	- Text styles: `.text-input-1` - `.text-input-4`
 	- Text styles and input sizes: `.input-1` - `.input-4`
-- Inputs - Checkbox & radios
-	- Input sizes: `.checkbox-1` - `checkbox-4`, and `.radio-1` - `radio-4`
+- Toggles - Checkbox & radios
+	- Element styles: `.element-toggle`
+	- Element sizes: `.element-toggle-1` - `.element-toggle-4`
+	- Styled inputs with sizes: `.checkbox-1` - `checkbox-4`, and `.radio-1` - `radio-4`
 
 ### Customisation
-The the element classes this is managed with colour classes: `.red`, `.orange`, `.yellow`, `.green`, `.cyan`, `.blue`, `.purple`, and `.pink`.
-Each has numbered `accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-9` to a class:
+The the element classes this is managed with colour classes: `.accent-red`, `.accent-orange`, `.accent-yellow`, `.accent-green`, `.accent-cyan`, `.accent-blue`, `.accent-purple`, and `.accent-pink`.
+Each has numbered `color-accent` properties and sets the `accent-color` property as well, so you can apply a colour class to parent component or directly on an element to give it that accent, or make your own you just need to add `accent-1` - `accent-9` to a class:
 ```css
 .colour {
 	--accent: var(--colour);

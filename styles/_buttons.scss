@@ -1,5 +1,6 @@
 @use "./utils";
 
+/// Properties that stylable on the button
 @mixin base {
 	cursor: pointer;
 	box-sizing: border-box;
@@ -22,6 +23,8 @@
 	}
 }
 
+/// Sets the padding and interal gaps of the button.
+/// @param {number} $level - The size of the button, 1 - 4 smallest to largest.
 @mixin size($level) {
 	@if $level ==1 {
 		--button-gap: var(--space-1);
@@ -42,10 +45,8 @@
 	}
 }
 
-/// A button of a solid colour
-///
-/// @param {boolean} $include_base
-/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
+/// A button of a solid accent colour
+/// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin filled($include_base: false) {
 	@if $include_base {
 		@include base;
@@ -73,10 +74,8 @@
 	}
 }
 
-/// A button of a with a neutral background and accented border and text colour
-///
-/// @param {boolean} $include_base
-/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
+/// A button of a with a neutral background and accented border and text in the same colour
+/// @param {boolean} $include_base [false]- Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin outline($include_base: false) {
 	@if $include_base {
 		@include base;
@@ -107,9 +106,7 @@
 }
 
 /// A transparent button with accented text
-///
-/// @param {boolean} $include_base
-/// 	Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
+/// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin ghost($include_base: false) {
 	@if $include_base {
 		@include base;

@@ -5,6 +5,12 @@
 @use "./typography";
 @use "./typography/font-size";
 
+/// Create an `@property` rule
+///
+/// @param {string} $name - The name of the property to register, note that you do need to include the starting `--`
+/// @param {string} $syntax ["*"] - The type of variable, defaults to `*`, you do not need to include the `<` and `>` of the syntax name.
+/// @param $value - the initial value of this property
+/// @param {boolean} $inherits [true] - Wether or not the prooperty should inherit its value by default. Defaults to `true`.
 @mixin create_prop($name, $syntax: "*", $value, $inherits: true) {
 	@if $syntax != "*" {
 		$syntax: "<#{$syntax}>";

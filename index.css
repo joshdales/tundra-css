@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 @property --accent {
   syntax: "<color>";
@@ -2686,59 +2685,9 @@ textarea.input-4:active,
 input[type=checkbox].checkbox-1,
 .element-checkbox.checkbox-1 {
   --checkbox-size: var(--space-4);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-1::after,
-.element-checkbox.checkbox-1::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=checkbox].checkbox-1:active,
-.element-checkbox.checkbox-1:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=checkbox].checkbox-1:focus-visible, input[type=checkbox].checkbox-1:hover,
-.element-checkbox.checkbox-1:focus-visible,
-.element-checkbox.checkbox-1:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-1:checked,
-.element-checkbox.checkbox-1:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=checkbox].checkbox-1:checked:focus-visible, input[type=checkbox].checkbox-1:checked:hover,
-.element-checkbox.checkbox-1:checked:focus-visible,
-.element-checkbox.checkbox-1:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=checkbox].checkbox-1:checked:active,
-.element-checkbox.checkbox-1:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=checkbox].checkbox-1:disabled, input[type=checkbox].checkbox-1[aria-disabled=true],
-.element-checkbox.checkbox-1:disabled,
-.element-checkbox.checkbox-1[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-1:checked::after,
 .element-checkbox.checkbox-1:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 90%;
 }
 input[type=checkbox].checkbox-1:indeterminate,
@@ -2759,59 +2708,9 @@ input[type=checkbox].checkbox-1:indeterminate::after,
 input[type=checkbox].checkbox-2,
 .element-checkbox.checkbox-2 {
   --checkbox-size: var(--space-5);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-2::after,
-.element-checkbox.checkbox-2::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=checkbox].checkbox-2:active,
-.element-checkbox.checkbox-2:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=checkbox].checkbox-2:focus-visible, input[type=checkbox].checkbox-2:hover,
-.element-checkbox.checkbox-2:focus-visible,
-.element-checkbox.checkbox-2:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-2:checked,
-.element-checkbox.checkbox-2:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=checkbox].checkbox-2:checked:focus-visible, input[type=checkbox].checkbox-2:checked:hover,
-.element-checkbox.checkbox-2:checked:focus-visible,
-.element-checkbox.checkbox-2:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=checkbox].checkbox-2:checked:active,
-.element-checkbox.checkbox-2:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-2[aria-disabled=true],
-.element-checkbox.checkbox-2:disabled,
-.element-checkbox.checkbox-2[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-2:checked::after,
 .element-checkbox.checkbox-2:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 90%;
 }
 input[type=checkbox].checkbox-2:indeterminate,
@@ -2832,59 +2731,9 @@ input[type=checkbox].checkbox-2:indeterminate::after,
 input[type=checkbox].checkbox-3,
 .element-checkbox.checkbox-3 {
   --checkbox-size: var(--space-6);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-3::after,
-.element-checkbox.checkbox-3::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=checkbox].checkbox-3:active,
-.element-checkbox.checkbox-3:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=checkbox].checkbox-3:focus-visible, input[type=checkbox].checkbox-3:hover,
-.element-checkbox.checkbox-3:focus-visible,
-.element-checkbox.checkbox-3:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-3:checked,
-.element-checkbox.checkbox-3:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=checkbox].checkbox-3:checked:focus-visible, input[type=checkbox].checkbox-3:checked:hover,
-.element-checkbox.checkbox-3:checked:focus-visible,
-.element-checkbox.checkbox-3:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=checkbox].checkbox-3:checked:active,
-.element-checkbox.checkbox-3:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-3[aria-disabled=true],
-.element-checkbox.checkbox-3:disabled,
-.element-checkbox.checkbox-3[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-3:checked::after,
 .element-checkbox.checkbox-3:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 90%;
 }
 input[type=checkbox].checkbox-3:indeterminate,
@@ -2905,59 +2754,9 @@ input[type=checkbox].checkbox-3:indeterminate::after,
 input[type=checkbox].checkbox-4,
 .element-checkbox.checkbox-4 {
   --checkbox-size: var(--space-7);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-4::after,
-.element-checkbox.checkbox-4::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=checkbox].checkbox-4:active,
-.element-checkbox.checkbox-4:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=checkbox].checkbox-4:focus-visible, input[type=checkbox].checkbox-4:hover,
-.element-checkbox.checkbox-4:focus-visible,
-.element-checkbox.checkbox-4:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=checkbox].checkbox-4:checked,
-.element-checkbox.checkbox-4:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=checkbox].checkbox-4:checked:focus-visible, input[type=checkbox].checkbox-4:checked:hover,
-.element-checkbox.checkbox-4:checked:focus-visible,
-.element-checkbox.checkbox-4:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=checkbox].checkbox-4:checked:active,
-.element-checkbox.checkbox-4:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-4[aria-disabled=true],
-.element-checkbox.checkbox-4:disabled,
-.element-checkbox.checkbox-4[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-4:checked::after,
 .element-checkbox.checkbox-4:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 90%;
 }
 input[type=checkbox].checkbox-4:indeterminate,
@@ -2981,236 +2780,36 @@ input[type=radio].radio-1,
 .element-radio.radio-1 {
   --checkbox-border-radius: var(--radius-5);
   --checkbox-size: var(--space-4);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-1::after,
-.element-radio.radio-1::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=radio].radio-1:active,
-.element-radio.radio-1:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=radio].radio-1:focus-visible, input[type=radio].radio-1:hover,
-.element-radio.radio-1:focus-visible,
-.element-radio.radio-1:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-1:checked,
-.element-radio.radio-1:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=radio].radio-1:checked:focus-visible, input[type=radio].radio-1:checked:hover,
-.element-radio.radio-1:checked:focus-visible,
-.element-radio.radio-1:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=radio].radio-1:checked:active,
-.element-radio.radio-1:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=radio].radio-1:disabled, input[type=radio].radio-1[aria-disabled=true],
-.element-radio.radio-1:disabled,
-.element-radio.radio-1[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-1:checked::after,
 .element-radio.radio-1:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 80%;
 }
 input[type=radio].radio-2,
 .element-radio.radio-2 {
   --checkbox-border-radius: var(--radius-5);
   --checkbox-size: var(--space-5);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-2::after,
-.element-radio.radio-2::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=radio].radio-2:active,
-.element-radio.radio-2:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=radio].radio-2:focus-visible, input[type=radio].radio-2:hover,
-.element-radio.radio-2:focus-visible,
-.element-radio.radio-2:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-2:checked,
-.element-radio.radio-2:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=radio].radio-2:checked:focus-visible, input[type=radio].radio-2:checked:hover,
-.element-radio.radio-2:checked:focus-visible,
-.element-radio.radio-2:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=radio].radio-2:checked:active,
-.element-radio.radio-2:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=radio].radio-2:disabled, input[type=radio].radio-2[aria-disabled=true],
-.element-radio.radio-2:disabled,
-.element-radio.radio-2[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-2:checked::after,
 .element-radio.radio-2:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 80%;
 }
 input[type=radio].radio-3,
 .element-radio.radio-3 {
   --checkbox-border-radius: var(--radius-5);
   --checkbox-size: var(--space-6);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-3::after,
-.element-radio.radio-3::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=radio].radio-3:active,
-.element-radio.radio-3:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=radio].radio-3:focus-visible, input[type=radio].radio-3:hover,
-.element-radio.radio-3:focus-visible,
-.element-radio.radio-3:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-3:checked,
-.element-radio.radio-3:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=radio].radio-3:checked:focus-visible, input[type=radio].radio-3:checked:hover,
-.element-radio.radio-3:checked:focus-visible,
-.element-radio.radio-3:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=radio].radio-3:checked:active,
-.element-radio.radio-3:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=radio].radio-3:disabled, input[type=radio].radio-3[aria-disabled=true],
-.element-radio.radio-3:disabled,
-.element-radio.radio-3[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-3:checked::after,
 .element-radio.radio-3:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 80%;
 }
 input[type=radio].radio-4,
 .element-radio.radio-4 {
   --checkbox-border-radius: var(--radius-5);
   --checkbox-size: var(--space-7);
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-4::after,
-.element-radio.radio-4::after {
-  color: var(--checkbox-color-foreground);
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  font-size: var(--checkbox-tick-size);
-}
-input[type=radio].radio-4:active,
-.element-radio.radio-4:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
-}
-input[type=radio].radio-4:focus-visible, input[type=radio].radio-4:hover,
-.element-radio.radio-4:focus-visible,
-.element-radio.radio-4:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
-}
-input[type=radio].radio-4:checked,
-.element-radio.radio-4:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
-}
-input[type=radio].radio-4:checked:focus-visible, input[type=radio].radio-4:checked:hover,
-.element-radio.radio-4:checked:focus-visible,
-.element-radio.radio-4:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
-}
-input[type=radio].radio-4:checked:active,
-.element-radio.radio-4:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
-}
-input[type=radio].radio-4:disabled, input[type=radio].radio-4[aria-disabled=true],
-.element-radio.radio-4:disabled,
-.element-radio.radio-4[aria-disabled=true] {
-  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-4:checked::after,
 .element-radio.radio-4:checked::after {
-  content: "✔︎";
   --checkbox-tick-size: 80%;
 }
 

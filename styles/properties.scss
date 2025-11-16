@@ -51,6 +51,13 @@ $_colours: map.merge(colours.$colours, $_colours);
 	}
 }
 
+// Setting the inital values as browser defaults.
+@include create_prop("color-background", "color", #ffffff);
+@include create_prop("color-foreground", "color", #121212);
+@include create_prop("element-color-border", "color", colours.$neutral-6);
+@include create_prop("element-border-radius", "length", radius.$radius-2);
+@include create_prop("element-border-width", "length", 1.5px);
+
 @each $level, $value in radius.$radius {
 	@include create_prop("radius-#{$level}", "length", $value);
 }

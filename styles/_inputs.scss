@@ -2,12 +2,12 @@
 
 /// The base properties and styles that are applied to an input.
 @mixin base {
-	border: 1.5px solid;
-	outline: none;
+	border: var(--element-border-width) solid;
+	outline: var(--input-color-border);
 
 	background-color: var(--input-color-background, var(--color-background));
-	border-color: var(--input-color-border);
-	border-radius: var(--input-border-radius, var(--radius-2));
+	border-color: var(--input-color-border, var(--element-color-border));
+	border-radius: var(--input-border-radius, var(--element-border-radius));
 	caret-color: var(--input-color-caret);
 	color: var(--input-color-foreground, var(--color-foreground));
 	padding-inline: var(--input-padding-x);
@@ -25,8 +25,7 @@
 	}
 }
 
-/// For text based inputs.
-/// eg. [type="text"], [type="password"], [type="number"], select, etc.
+/// For text based inputs eg [type="text"], [type="password"], [type="number"], select, etc.
 /// @param {number} $level - The size of the input, 1 - 4
 /// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin text_entry($level: null, $include_base: false) {
@@ -48,24 +47,23 @@
 		--input-padding-x: var(--space-8);
 	}
 
-	--input-color-border: var(--color-accent-5, var(--color-neutral-5));
 	--input-color-caret: var(--color-neutral-4);
 
 	&:hover {
 		--input-color-background: var(--color-accent-9, var(--color-neutral-9));
-		--input-color-border: var(--color-accent-4, var(--color-neutral-4));
+		--input-color-border: var(--color-accent-5, var(--color-neutral-5));
 		--input-color-placeholder: var(--color-neutral-5);
 		box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 	}
 
 	&:focus {
 		--input-color-border: var(--color-accent-4, var(--color-neutral-4));
-		--input-foreground: var(--color-foreground);
+		--input-color-foreground: var(--color-foreground);
 		--input-color-background: var(--color-background);
 		--input-color-placeholder: transparent;
 	}
 
 	&:active {
-		--input-color-border: var(--accent-3, var(--neutral-4));
+		--input-color-border: var(--color-accent-3, var(--color-neutral-4));
 	}
 }

@@ -1,6 +1,6 @@
 {
   "name": "tundra-css",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "description": "An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.",
   "author": "joshdales",
   "homepage": "https://tundra.joshdales.dev",
@@ -23,7 +23,8 @@
     "tundra",
     "css",
     "scss",
-    "design system"
+    "design system",
+    "styles"
   ],
   "repository": {
     "type": "git",

@@ -1,5 +1,6 @@
 @use "./utils" as utils;
 
+/// Applies the base styles and properties to a toggle element.
 @mixin base {
 	appearance: none;
 	cursor: pointer;
@@ -24,6 +25,8 @@
 	}
 }
 
+/// The size of the toggle element
+/// @param {number} $level - How big the the input should be, 1 - 4, smallest to largest.
 @mixin size($level) {
 	@if $level ==1 {
 		--checkbox-size: var(--space-4);
@@ -36,6 +39,7 @@
 	}
 }
 
+/// Styles for the toggle container itself.
 @mixin container {
 	&:active {
 		--checkbox-color-border: var(--accent-5, var(--neutral-3));
@@ -51,6 +55,10 @@
 		--checkbox-color-background: var(--accent-5, var(--neutral-1));
 		--checkbox-color-border: var(--checkbox-color-background);
 
+		&::after {
+			content: "✔︎";
+		}
+
 		@include utils.viewing {
 			--checkbox-color-background: var(--accent-4, var(--neutral-2));
 		}
@@ -65,13 +73,20 @@
 	}
 }
 
-@mixin checkbox($level: null) {
+/// Style a square checkbox element.
+/// @param {number} $level - The size of the checkbox, 1 - 4, smallest to largest.
+/// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
+/// @param {boolean} $include_container [false] - Include the toggle container styles, this is optional to minimise the css duplication in the root `index.css`
+@mixin checkbox($level: null, $include_base: false, $include_container: false) {
 	@include size($level);
-	@include base;
-	@include container;
+	@if $include_base {
+		@include base;
+	}
+	@if $include_container {
+		@include container;
+	}
 
 	&:checked::after {
-		content: "✔︎";
 		--checkbox-tick-size: 90%;
 	}
 
@@ -91,14 +106,21 @@
 	}
 }
 
-@mixin radio($level: null) {
+/// Style a round radio element
+/// @param {number} $level - The size of the checkbox, 1 - 4, smallest to largest.
+/// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
+/// @param {boolean} $include_container [false] - Include the toggle container styles, this is optional to minimise the css duplication in the root `index.css`
+@mixin radio($level: null, $include_base: false, $include_container: false) {
 	--checkbox-border-radius: var(--radius-5);
 	@include size($level);
-	@include base;
-	@include container;
+	@if $include_base {
+		@include base;
+	}
+	@if $include_container {
+		@include container;
+	}
 
 	&:checked::after {
-		content: "✔︎";
 		--checkbox-tick-size: 80%;
 	}
 }

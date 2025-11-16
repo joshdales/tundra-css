@@ -50,6 +50,15 @@
 }
 
 /* Elements: Buttons */
+.element-button {
+	@include button-base;
+
+	@for $level from 1 through 4 {
+		&-#{$level} {
+			@include button-size($level);
+		}
+	}
+}
 
 button,
 input[type="button"],
@@ -57,11 +66,11 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .element-button {
-	@include button-base;
+	@extend .element-button;
 
 	@for $level from 1 through 4 {
 		&.button-#{$level} {
-			@include button-size($level);
+			@extend .element-button-#{$level};
 		}
 	}
 
@@ -101,25 +110,44 @@ textarea,
 	}
 }
 
+/* Elements: Toggles */
+
+.element-toggle {
+	@include toggle-base;
+	@include toggle-container;
+
+	@for $level from 1 through 4 {
+		&-#{$level} {
+			@include toggle-size($level);
+		}
+	}
+}
+
 /* Elements: Checkbox */
-input[type="checkbox"],
-.element-checkbox {
+
+input[type="checkbox"] {
 	@for $level from 1 through 4 {
 		&.checkbox-#{$level} {
-			@include checkbox($level);
+			@extend .element-toggle;
+			@extend .element-toggle-#{$level};
+			@include toggle-checkbox;
 		}
 	}
 }
 
 /* Elements: Radio */
-input[type="radio"],
-.element-radio {
+
+input[type="radio"] {
 	@for $level from 1 through 4 {
 		&.radio-#{$level} {
-			@include radio($level);
+			@extend .element-toggle;
+			@extend .element-toggle-#{$level};
+			@include toggle-radio;
 		}
 	}
 }
+
+/* Accent Colours */
 
 $_colours: map.remove($colours, "neutral");
 

@@ -1,5 +1,6 @@
 @use "./utils" as utils;
 
+/// The base properties and styles that are applied to an input.
 @mixin base {
 	border: 1.5px solid;
 	outline: none;
@@ -26,6 +27,8 @@
 
 /// For text based inputs.
 /// eg. [type="text"], [type="password"], [type="number"], select, etc.
+/// @param {number} $level - The size of the input, 1 - 4
+/// @param {boolean} $include_base [false] - Include the base/common styles, this is optional to minimise the css duplication in the root `index.css`
 @mixin text_entry($level: null, $include_base: false) {
 	@if $include_base {
 		@include base;

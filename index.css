@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Tundra.css - https: //github.com/joshdales/tundra-css - MIT License */
 @property --accent {
   syntax: "<color>";
@@ -2139,12 +2140,11 @@
 }
 
 /* Elements: Buttons */
-button,
+.element-button, button,
 input[type=button],
 input[type=reset],
 input[type=submit],
-.button,
-.element-button {
+.button {
   cursor: pointer;
   box-sizing: border-box;
   border: 1.5px solid;
@@ -2160,20 +2160,18 @@ input[type=submit],
   background-color: var(--button-color-background);
   color: var(--button-color-foreground);
 }
-button:disabled, button[aria-disabled=true],
+.element-button:disabled, button:disabled,
 input[type=button]:disabled,
-input[type=button][aria-disabled=true],
 input[type=reset]:disabled,
-input[type=reset][aria-disabled=true],
 input[type=submit]:disabled,
-input[type=submit][aria-disabled=true],
-.button:disabled,
-.button[aria-disabled=true],
-.element-button:disabled,
-.element-button[aria-disabled=true] {
+.button:disabled, .element-button[aria-disabled=true], button[aria-disabled=true],
+input[aria-disabled=true][type=button],
+input[aria-disabled=true][type=reset],
+input[aria-disabled=true][type=submit],
+[aria-disabled=true].button {
   cursor: not-allowed;
 }
-button.button-1,
+.element-button-1, button.button-1,
 input[type=button].button-1,
 input[type=reset].button-1,
 input[type=submit].button-1,
@@ -2183,7 +2181,7 @@ input[type=submit].button-1,
   --button-padding-y: var(--space-1);
   --button-padding-x: var(--space-2);
 }
-button.button-2,
+.element-button-2, button.button-2,
 input[type=button].button-2,
 input[type=reset].button-2,
 input[type=submit].button-2,
@@ -2193,7 +2191,7 @@ input[type=submit].button-2,
   --button-padding-y: var(--space-2);
   --button-padding-x: var(--space-4);
 }
-button.button-3,
+.element-button-3, button.button-3,
 input[type=button].button-3,
 input[type=reset].button-3,
 input[type=submit].button-3,
@@ -2203,7 +2201,7 @@ input[type=submit].button-3,
   --button-padding-y: var(--space-3);
   --button-padding-x: var(--space-6);
 }
-button.button-4,
+.element-button-4, button.button-4,
 input[type=button].button-4,
 input[type=reset].button-4,
 input[type=submit].button-4,
@@ -2213,6 +2211,7 @@ input[type=submit].button-4,
   --button-padding-y: var(--space-4);
   --button-padding-x: var(--space-8);
 }
+
 button.filled,
 input[type=button].filled,
 input[type=reset].filled,
@@ -2681,68 +2680,73 @@ textarea.input-4:active,
   --input-color-border: var(--accent-4, var(--neutral-4));
 }
 
-/* Elements: Checkbox */
-input[type=checkbox].checkbox-1,
-.element-checkbox.checkbox-1 {
+/* Elements: Toggles */
+.element-toggle, input[type=radio].radio-4, input[type=radio].radio-3, input[type=radio].radio-2, input[type=radio].radio-1, input[type=checkbox].checkbox-4, input[type=checkbox].checkbox-3, input[type=checkbox].checkbox-2, input[type=checkbox].checkbox-1 {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  border: 1.5px solid;
+  height: var(--checkbox-size);
+  width: var(--checkbox-size);
+  border-radius: var(--checkbox-border-radius, var(--radius-1));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
+}
+.element-toggle::after, input[type=radio].radio-4::after, input[type=radio].radio-3::after, input[type=radio].radio-2::after, input[type=radio].radio-1::after, input[type=checkbox].checkbox-4::after, input[type=checkbox].checkbox-3::after, input[type=checkbox].checkbox-2::after, input[type=checkbox].checkbox-1::after {
+  color: var(--checkbox-color-foreground);
+  display: grid;
+  place-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: var(--checkbox-tick-size);
+}
+.element-toggle:active, input[type=radio].radio-4:active, input[type=radio].radio-3:active, input[type=radio].radio-2:active, input[type=radio].radio-1:active, input[type=checkbox].checkbox-4:active, input[type=checkbox].checkbox-3:active, input[type=checkbox].checkbox-2:active, input[type=checkbox].checkbox-1:active {
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
+}
+.element-toggle:focus-visible, input[type=radio].radio-4:focus-visible, input[type=radio].radio-3:focus-visible, input[type=radio].radio-2:focus-visible, input[type=radio].radio-1:focus-visible, input[type=checkbox].checkbox-4:focus-visible, input[type=checkbox].checkbox-3:focus-visible, input[type=checkbox].checkbox-2:focus-visible, input[type=checkbox].checkbox-1:focus-visible, .element-toggle:hover, input[type=radio].radio-4:hover, input[type=radio].radio-3:hover, input[type=radio].radio-2:hover, input[type=radio].radio-1:hover, input[type=checkbox].checkbox-4:hover, input[type=checkbox].checkbox-3:hover, input[type=checkbox].checkbox-2:hover, input[type=checkbox].checkbox-1:hover {
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
+}
+.element-toggle:checked, input[type=radio].radio-4:checked, input[type=radio].radio-3:checked, input[type=radio].radio-2:checked, input[type=radio].radio-1:checked, input[type=checkbox].checkbox-4:checked, input[type=checkbox].checkbox-3:checked, input[type=checkbox].checkbox-2:checked, input[type=checkbox].checkbox-1:checked {
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
+}
+.element-toggle:checked::after, input[type=radio].radio-4:checked::after, input[type=radio].radio-3:checked::after, input[type=radio].radio-2:checked::after, input[type=radio].radio-1:checked::after, input[type=checkbox].checkbox-4:checked::after, input[type=checkbox].checkbox-3:checked::after, input[type=checkbox].checkbox-2:checked::after, input[type=checkbox].checkbox-1:checked::after {
+  content: "✔︎";
+}
+.element-toggle:checked:focus-visible, input[type=radio].radio-4:checked:focus-visible, input[type=radio].radio-3:checked:focus-visible, input[type=radio].radio-2:checked:focus-visible, input[type=radio].radio-1:checked:focus-visible, input[type=checkbox].checkbox-4:checked:focus-visible, input[type=checkbox].checkbox-3:checked:focus-visible, input[type=checkbox].checkbox-2:checked:focus-visible, input[type=checkbox].checkbox-1:checked:focus-visible, .element-toggle:checked:hover, input[type=radio].radio-4:checked:hover, input[type=radio].radio-3:checked:hover, input[type=radio].radio-2:checked:hover, input[type=radio].radio-1:checked:hover, input[type=checkbox].checkbox-4:checked:hover, input[type=checkbox].checkbox-3:checked:hover, input[type=checkbox].checkbox-2:checked:hover, input[type=checkbox].checkbox-1:checked:hover {
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
+}
+.element-toggle:checked:active, input[type=radio].radio-4:checked:active, input[type=radio].radio-3:checked:active, input[type=radio].radio-2:checked:active, input[type=radio].radio-1:checked:active, input[type=checkbox].checkbox-4:checked:active, input[type=checkbox].checkbox-3:checked:active, input[type=checkbox].checkbox-2:checked:active, input[type=checkbox].checkbox-1:checked:active {
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
+}
+.element-toggle:disabled, input[type=radio].radio-4:disabled, input[type=radio].radio-3:disabled, input[type=radio].radio-2:disabled, input[type=radio].radio-1:disabled, input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-1:disabled, .element-toggle[aria-disabled=true], input[aria-disabled=true][type=radio].radio-4, input[aria-disabled=true][type=radio].radio-3, input[aria-disabled=true][type=radio].radio-2, input[aria-disabled=true][type=radio].radio-1, input[aria-disabled=true][type=checkbox].checkbox-4, input[aria-disabled=true][type=checkbox].checkbox-3, input[aria-disabled=true][type=checkbox].checkbox-2, input[aria-disabled=true][type=checkbox].checkbox-1 {
+  --checkbox-color-background-color: var(--neutral-6);
+}
+.element-toggle-1, input[type=radio].radio-1, input[type=checkbox].checkbox-1 {
   --checkbox-size: var(--space-4);
 }
-input[type=checkbox].checkbox-1:checked::after,
-.element-checkbox.checkbox-1:checked::after {
-  --checkbox-tick-size: 90%;
-}
-input[type=checkbox].checkbox-1:indeterminate,
-.element-checkbox.checkbox-1:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
-}
-input[type=checkbox].checkbox-1:indeterminate::after,
-.element-checkbox.checkbox-1:indeterminate::after {
-  content: "";
-  background-color: currentColor;
-  display: block;
-  width: 75%;
-  height: 12.5%;
-  margin: auto;
-  border-radius: var(--radius-1);
-}
-input[type=checkbox].checkbox-2,
-.element-checkbox.checkbox-2 {
+.element-toggle-2, input[type=radio].radio-2, input[type=checkbox].checkbox-2 {
   --checkbox-size: var(--space-5);
 }
-input[type=checkbox].checkbox-2:checked::after,
-.element-checkbox.checkbox-2:checked::after {
-  --checkbox-tick-size: 90%;
-}
-input[type=checkbox].checkbox-2:indeterminate,
-.element-checkbox.checkbox-2:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
-}
-input[type=checkbox].checkbox-2:indeterminate::after,
-.element-checkbox.checkbox-2:indeterminate::after {
-  content: "";
-  background-color: currentColor;
-  display: block;
-  width: 75%;
-  height: 12.5%;
-  margin: auto;
-  border-radius: var(--radius-1);
-}
-input[type=checkbox].checkbox-3,
-.element-checkbox.checkbox-3 {
+.element-toggle-3, input[type=radio].radio-3, input[type=checkbox].checkbox-3 {
   --checkbox-size: var(--space-6);
 }
-input[type=checkbox].checkbox-3:checked::after,
-.element-checkbox.checkbox-3:checked::after {
+.element-toggle-4, input[type=radio].radio-4, input[type=checkbox].checkbox-4 {
+  --checkbox-size: var(--space-7);
+}
+
+/* Elements: Checkbox */
+input[type=checkbox].checkbox-1:checked::after {
   --checkbox-tick-size: 90%;
 }
-input[type=checkbox].checkbox-3:indeterminate,
-.element-checkbox.checkbox-3:indeterminate {
+input[type=checkbox].checkbox-1:indeterminate {
   --checkbox-color-border: var(--accent-5, var(--neutral-1));
   --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
-input[type=checkbox].checkbox-3:indeterminate::after,
-.element-checkbox.checkbox-3:indeterminate::after {
+input[type=checkbox].checkbox-1:indeterminate::after {
   content: "";
   background-color: currentColor;
   display: block;
@@ -2751,21 +2755,46 @@ input[type=checkbox].checkbox-3:indeterminate::after,
   margin: auto;
   border-radius: var(--radius-1);
 }
-input[type=checkbox].checkbox-4,
-.element-checkbox.checkbox-4 {
-  --checkbox-size: var(--space-7);
-}
-input[type=checkbox].checkbox-4:checked::after,
-.element-checkbox.checkbox-4:checked::after {
+input[type=checkbox].checkbox-2:checked::after {
   --checkbox-tick-size: 90%;
 }
-input[type=checkbox].checkbox-4:indeterminate,
-.element-checkbox.checkbox-4:indeterminate {
+input[type=checkbox].checkbox-2:indeterminate {
   --checkbox-color-border: var(--accent-5, var(--neutral-1));
   --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
-input[type=checkbox].checkbox-4:indeterminate::after,
-.element-checkbox.checkbox-4:indeterminate::after {
+input[type=checkbox].checkbox-2:indeterminate::after {
+  content: "";
+  background-color: currentColor;
+  display: block;
+  width: 75%;
+  height: 12.5%;
+  margin: auto;
+  border-radius: var(--radius-1);
+}
+input[type=checkbox].checkbox-3:checked::after {
+  --checkbox-tick-size: 90%;
+}
+input[type=checkbox].checkbox-3:indeterminate {
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+}
+input[type=checkbox].checkbox-3:indeterminate::after {
+  content: "";
+  background-color: currentColor;
+  display: block;
+  width: 75%;
+  height: 12.5%;
+  margin: auto;
+  border-radius: var(--radius-1);
+}
+input[type=checkbox].checkbox-4:checked::after {
+  --checkbox-tick-size: 90%;
+}
+input[type=checkbox].checkbox-4:indeterminate {
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+}
+input[type=checkbox].checkbox-4:indeterminate::after {
   content: "";
   background-color: currentColor;
   display: block;
@@ -2776,43 +2805,32 @@ input[type=checkbox].checkbox-4:indeterminate::after,
 }
 
 /* Elements: Radio */
-input[type=radio].radio-1,
-.element-radio.radio-1 {
+input[type=radio].radio-1 {
   --checkbox-border-radius: var(--radius-5);
-  --checkbox-size: var(--space-4);
 }
-input[type=radio].radio-1:checked::after,
-.element-radio.radio-1:checked::after {
+input[type=radio].radio-1:checked::after {
   --checkbox-tick-size: 80%;
 }
-input[type=radio].radio-2,
-.element-radio.radio-2 {
+input[type=radio].radio-2 {
   --checkbox-border-radius: var(--radius-5);
-  --checkbox-size: var(--space-5);
 }
-input[type=radio].radio-2:checked::after,
-.element-radio.radio-2:checked::after {
+input[type=radio].radio-2:checked::after {
   --checkbox-tick-size: 80%;
 }
-input[type=radio].radio-3,
-.element-radio.radio-3 {
+input[type=radio].radio-3 {
   --checkbox-border-radius: var(--radius-5);
-  --checkbox-size: var(--space-6);
 }
-input[type=radio].radio-3:checked::after,
-.element-radio.radio-3:checked::after {
+input[type=radio].radio-3:checked::after {
   --checkbox-tick-size: 80%;
 }
-input[type=radio].radio-4,
-.element-radio.radio-4 {
+input[type=radio].radio-4 {
   --checkbox-border-radius: var(--radius-5);
-  --checkbox-size: var(--space-7);
 }
-input[type=radio].radio-4:checked::after,
-.element-radio.radio-4:checked::after {
+input[type=radio].radio-4:checked::after {
   --checkbox-tick-size: 80%;
 }
 
+/* Accent Colours */
 .red,
 .accent-red {
   --accent: var(--red);

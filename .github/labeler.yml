@@ -35,6 +35,6 @@ Inputs:
   - changed-files:
       - any-glob-to-any-file: "styles/_inputs.scss"
 
-Checkboxes:
+Toggles:
   - changed-files:
-      - any-glob-to-any-file: "styles/_checkboxes.scss"
+      - any-glob-to-any-file: "styles/_toggles.scss"

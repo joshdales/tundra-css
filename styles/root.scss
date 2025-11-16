@@ -17,6 +17,8 @@
 			}
 		}
 	}
+	--color-background: #fff;
+	--color-foreground: var(--color-neutral-1);
 
 	/* Radius */
 	@each $level, $value in $radius {

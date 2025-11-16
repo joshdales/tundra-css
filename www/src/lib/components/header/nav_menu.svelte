@@ -23,7 +23,7 @@
 <nav bind:this={navRef}>
 	<button
 		aria-label={showMenu ? 'Show menu' : 'Hide menu'}
-		class="button-1 ghost"
+		class="element-button button-1 ghost"
 		class:show={showMenu}
 		onclick={() => (showMenu = !showMenu)}
 	>
@@ -33,44 +33,44 @@
 	{#if showMenu}
 		<menu>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/customisation">Customisation</a>
+				<a onclick={hideMenu} class="text-link-3" href="/customisation">Customisation</a>
 			</li>
 
 			<hr />
 
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/colours">Colours</a>
+				<a onclick={hideMenu} class="text-link-3" href="/colours">Colours</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/radius">Radius</a>
+				<a onclick={hideMenu} class="text-link-3" href="/radius">Radius</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/spacing">Spacing</a>
+				<a onclick={hideMenu} class="text-link-3" href="/spacing">Spacing</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/typography">Typography</a>
+				<a onclick={hideMenu} class="text-link-3" href="/typography">Typography</a>
 			</li>
 
 			<hr />
 
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/buttons">Buttons</a>
+				<a onclick={hideMenu} class="text-link-3" href="/buttons">Buttons</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/inputs">Inputs</a>
+				<a onclick={hideMenu} class="text-link-3" href="/inputs">Inputs</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/checkboxes">Checkboxes</a>
+				<a onclick={hideMenu} class="text-link-3" href="/toggles">Toggles</a>
 			</li>
 			<li>
-				<a onclick={hideMenu} class="link-3" href="/text-styles">Text Styles</a>
+				<a onclick={hideMenu} class="text-link-3" href="/text-styles">Text Styles</a>
 			</li>
 
 			<hr />
 
 			<li>
 				<a
-					class="link-3 external"
+					class="text-link-3 external"
 					href="https://github.com/joshdales/tundra-css"
 					target="_blank"
 					rel="noopener noreferrer"

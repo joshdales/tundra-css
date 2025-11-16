@@ -1,27 +1,19 @@
 name: Build Check
 
-on:
-  push
+on: push
 
 jobs:
   build-css:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.deno
-            ~/.cache/deno
-          key: ${{ hashFiles('deno.lock') }}
+          cache: true
 
       - name: Install Deps
         run: deno install

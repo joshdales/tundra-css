@@ -1,40 +1,40 @@
 Website:
   - changed-files:
-    - any-glob-to-any-file: ['www/*', 'www/**/*']
-  - base-branch: 'website'
+      - any-glob-to-any-file: ["www/*", "www/**/*"]
+  - base-branch: "website"
 
 Styles:
   - changed-files:
-    - any-glob-to-any-file: ['index.css', 'index.scss']
+      - any-glob-to-any-file: ["index.css", "index.scss"]
 
 Colours:
   - changed-files:
-    - any-glob-to-any-file: 'styles/colours/*'
+      - any-glob-to-any-file: "styles/colours/*"
 
 Radius:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_radius.scss'
+      - any-glob-to-any-file: "styles/_radius.scss"
 
 Spacing:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_spacing.scss'
+      - any-glob-to-any-file: "styles/_spacing.scss"
 
 Typography:
   - changed-files:
-    - any-glob-to-any-file: 'styles/typography/*'
+      - any-glob-to-any-file: "styles/typography/*"
 
 Text:
   - changed-files:
-    - any-glob-to-any-file: 'styles/text/*'
+      - any-glob-to-any-file: "styles/text/*"
 
 Buttons:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_buttons.scss'
+      - any-glob-to-any-file: "styles/_buttons.scss"
 
 Inputs:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_inputs.scss'
+      - any-glob-to-any-file: "styles/_inputs.scss"
 
 Checkboxes:
   - changed-files:
-    - any-glob-to-any-file: 'styles/_checkboxes.scss'
+      - any-glob-to-any-file: "styles/_checkboxes.scss"

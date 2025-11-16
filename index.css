@@ -1100,6 +1100,31 @@
   inherits: true;
   initial-value: oklch(95% 0 0deg);
 }
+@property --color-background {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ffffff;
+}
+@property --color-foreground {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #121212;
+}
+@property --element-color-border {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(66.1% 0 0deg);
+}
+@property --element-border-radius {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 8px;
+}
+@property --element-border-width {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 1.5px;
+}
 @property --radius-1 {
   syntax: "<length>";
   inherits: true;
@@ -1520,6 +1545,8 @@
   --pink-8: var(--color-pink-8);
   --color-pink-9: oklch(95% 0.024 350deg);
   --pink-9: var(--color-pink-9);
+  --color-background: #fff;
+  --color-foreground: var(--color-neutral-1);
   /* Radius */
   --radius-1: 4px;
   --radius-2: 8px;
@@ -1568,6 +1595,10 @@
   --letter-spacing-3: 0em;
   --letter-spacing-4: 0.02em;
   --letter-spacing-5: 0.04em;
+  /* General element configuration */
+  --element-color-border: var(--color-neutral-6);
+  --element-border-radius: var(--radius-2);
+  --element-border-width: 1.5px;
 }
 
 @supports not (color: oklch(60% 0.15 165deg)) {
@@ -2147,7 +2178,7 @@ input[type=submit],
 .button {
   cursor: pointer;
   box-sizing: border-box;
-  border: 1.5px solid;
+  border: var(--element-border-width) solid;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2155,8 +2186,8 @@ input[type=submit],
   gap: var(--button-gap);
   padding-inline: var(--button-padding-x);
   padding-block: var(--button-padding-y);
-  border-radius: var(--button-border-radius, var(--radius-2));
-  border-color: var(--button-color-border);
+  border-radius: var(--button-border-radius, var(--element-border-radius));
+  border-color: var(--button-color-border, var(--element-color-border));
   background-color: var(--button-color-background);
   color: var(--button-color-foreground);
 }
@@ -2218,9 +2249,9 @@ input[type=reset].filled,
 input[type=submit].filled,
 .button.filled,
 .element-button.filled {
-  --button-color-background: var(--accent-4, var(--neutral-1));
+  --button-color-background: var(--color-accent-5, var(--color-neutral-1));
   --button-color-border: var(--button-color-background);
-  --button-color-foreground: var(--accent-9, var(--neutral-9));
+  --button-color-foreground: var(--color-background);
 }
 button.filled:focus-visible, button.filled:hover,
 input[type=button].filled:focus-visible,
@@ -2233,7 +2264,7 @@ input[type=submit].filled:hover,
 .button.filled:hover,
 .element-button.filled:focus-visible,
 .element-button.filled:hover {
-  --button-color-background: var(--accent-3, var(--neutral-2));
+  --button-color-background: var(--color-accent-4, var(--color-neutral-2));
 }
 button.filled:active,
 input[type=button].filled:active,
@@ -2241,7 +2272,7 @@ input[type=reset].filled:active,
 input[type=submit].filled:active,
 .button.filled:active,
 .element-button.filled:active {
-  --button-color-background: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--color-accent-3, var(--color-neutral-3));
 }
 button.filled:disabled, button.filled[aria-disabled=true],
 input[type=button].filled:disabled,
@@ -2254,8 +2285,8 @@ input[type=submit].filled[aria-disabled=true],
 .button.filled[aria-disabled=true],
 .element-button.filled:disabled,
 .element-button.filled[aria-disabled=true] {
-  --button-color-background: var(--neutral-7);
-  --button-color-foreground: var(--neutral-9);
+  --button-color-background: var(--color-neutral-7);
+  --button-color-foreground: var(--color-neutral-9);
 }
 button.filled:disabled:hover, button.filled[aria-disabled=true]:hover,
 input[type=button].filled:disabled:hover,
@@ -2268,7 +2299,7 @@ input[type=submit].filled[aria-disabled=true]:hover,
 .button.filled[aria-disabled=true]:hover,
 .element-button.filled:disabled:hover,
 .element-button.filled[aria-disabled=true]:hover {
-  --button-color-background: var(--neutral-8);
+  --button-color-background: var(--color-neutral-8);
 }
 button.outline,
 input[type=button].outline,
@@ -2276,9 +2307,9 @@ input[type=reset].outline,
 input[type=submit].outline,
 .button.outline,
 .element-button.outline {
-  --button-color-background: var(--accent-9, var(--neutral-9));
-  --button-color-foreground: var(--accent-4, var(--neutral-1));
-  --button-color-border: var(var(--button-color-foreground));
+  --button-color-background: var(--color-background);
+  --button-color-foreground: var(--color-accent-5, var(--color-neutral));
+  --button-color-border: var(--button-color-foreground);
 }
 button.outline:focus-visible, button.outline:hover,
 input[type=button].outline:focus-visible,
@@ -2291,8 +2322,8 @@ input[type=submit].outline:hover,
 .button.outline:hover,
 .element-button.outline:focus-visible,
 .element-button.outline:hover {
-  --button-color-foreground: var(--accent-3, var(--neutral-2));
-  box-shadow: inset 0px 0 0 0.5px currentColor;
+  --button-color-foreground: var(--color-accent-4, var(--color-neutral-2));
+  box-shadow: inset 0px 0 0 0.5px var(--button-color-foreground);
 }
 button.outline:active,
 input[type=button].outline:active,
@@ -2300,8 +2331,8 @@ input[type=reset].outline:active,
 input[type=submit].outline:active,
 .button.outline:active,
 .element-button.outline:active {
-  --button-color-background: var(--accent-8, var(--neutral-8));
-  --button-color-foreground: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --button-color-foreground: var(--color-accent-3, var(--color-neutral-3));
 }
 button.outline:disabled, button.outline[aria-disabled=true],
 input[type=button].outline:disabled,
@@ -2314,8 +2345,7 @@ input[type=submit].outline[aria-disabled=true],
 .button.outline[aria-disabled=true],
 .element-button.outline:disabled,
 .element-button.outline[aria-disabled=true] {
-  --button-color-background: var(--neutral-9);
-  --button-color-foreground: var(--neutral-7);
+  --button-color-foreground: var(--color-neutral-7);
 }
 button.outline:disabled:hover, button.outline[aria-disabled=true]:hover,
 input[type=button].outline:disabled:hover,
@@ -2328,7 +2358,20 @@ input[type=submit].outline[aria-disabled=true]:hover,
 .button.outline[aria-disabled=true]:hover,
 .element-button.outline:disabled:hover,
 .element-button.outline[aria-disabled=true]:hover {
-  --button-color-foreground: var(--neutral-8);
+  --button-color-foreground: var(--color-neutral-8);
+}
+button.outline:disabled:active, button.outline[aria-disabled=true]:active,
+input[type=button].outline:disabled:active,
+input[type=button].outline[aria-disabled=true]:active,
+input[type=reset].outline:disabled:active,
+input[type=reset].outline[aria-disabled=true]:active,
+input[type=submit].outline:disabled:active,
+input[type=submit].outline[aria-disabled=true]:active,
+.button.outline:disabled:active,
+.button.outline[aria-disabled=true]:active,
+.element-button.outline:disabled:active,
+.element-button.outline[aria-disabled=true]:active {
+  --button-color-background: var(--color-background);
 }
 button.ghost,
 input[type=button].ghost,
@@ -2337,7 +2380,7 @@ input[type=submit].ghost,
 .button.ghost,
 .element-button.ghost {
   --button-color-background: transparent;
-  --button-color-foreground: var(--accent-4, var(--neutral-1));
+  --button-color-foreground: var(--color-accent-5, var(--color-neutral-1));
   --button-color-border: var(--button-color-background);
 }
 button.ghost:focus-visible, button.ghost:hover,
@@ -2351,8 +2394,8 @@ input[type=submit].ghost:hover,
 .button.ghost:hover,
 .element-button.ghost:focus-visible,
 .element-button.ghost:hover {
-  --button-color-background: var(--accent-9, var(--neutral-9));
-  --button-color-foreground: var(--accent-3, var(--neutral-2));
+  --button-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --button-color-foreground: var(--color-accent-3, var(--color-neutral-2));
 }
 button.ghost:active,
 input[type=button].ghost:active,
@@ -2360,8 +2403,8 @@ input[type=reset].ghost:active,
 input[type=submit].ghost:active,
 .button.ghost:active,
 .element-button.ghost:active {
-  --button-color-background: var(--accent-8, var(--neutral-8));
-  --button-color-foreground: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--color-accent-8, var(--color-neutral-8));
+  --button-color-foreground: var(--color-accent-2, var(--color-neutral-3));
 }
 button.ghost:disabled, button.ghost[aria-disabled=true],
 input[type=button].ghost:disabled,
@@ -2374,7 +2417,7 @@ input[type=submit].ghost[aria-disabled=true],
 .button.ghost[aria-disabled=true],
 .element-button.ghost:disabled,
 .element-button.ghost[aria-disabled=true] {
-  --button-color-foreground: var(--neutral-7);
+  --button-color-foreground: var(--color-neutral-7);
 }
 button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
 input[type=button].ghost:disabled:hover,
@@ -2387,8 +2430,8 @@ input[type=submit].ghost[aria-disabled=true]:hover,
 .button.ghost[aria-disabled=true]:hover,
 .element-button.ghost:disabled:hover,
 .element-button.ghost[aria-disabled=true]:hover {
-  --button-color-background: var(--neutral-9);
-  --button-color-foreground: var(--neutral-8);
+  --button-color-background: var(--color-neutral-9);
+  --button-color-foreground: var(--color-neutral-8);
 }
 
 /* Elements: Text-entry inputs */
@@ -2402,13 +2445,13 @@ select,
 textarea,
 [role=textbox],
 .element-text-entry {
-  border: 1.5px solid;
-  outline: none;
-  background-color: var(--input-color-background);
-  border-color: var(--input-color-border);
-  border-radius: var(--input-border-radius);
+  border: var(--element-border-width) solid;
+  outline: var(--input-color-border);
+  background-color: var(--input-color-background, var(--color-background));
+  border-color: var(--input-color-border, var(--element-color-border));
+  border-radius: var(--input-border-radius, var(--element-border-radius));
   caret-color: var(--input-color-caret);
-  color: var(--input-color-foreground);
+  color: var(--input-color-foreground, var(--color-foreground));
   padding-inline: var(--input-padding-x);
   padding-block: var(--input-padding-y);
   --input-color-placeholder: var(--neutral-6);
@@ -2459,10 +2502,7 @@ textarea.input-1,
 .element-text-entry.input-1 {
   --input-padding-y: var(--space-1);
   --input-padding-x: var(--space-2);
-  --input-color-border: var(--accent-5, var(--neutral-5));
-  --input-border-radius: var(--radius-2);
-  --input-color-foreground: var(--neutral-1);
-  --input-color-caret: var(--neutral-4);
+  --input-color-caret: var(--color-neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2474,9 +2514,10 @@ select.input-1:hover,
 textarea.input-1:hover,
 [role=textbox].input-1:hover,
 .element-text-entry.input-1:hover {
-  --input-color-border: var(--accent-6, var(--neutral-4));
-  --input-color-placeholder: var(--accent-6, var(--neutral-4));
-  box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
+  --input-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-color-placeholder: var(--color-neutral-5);
+  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 }
 input:not([type=button],
 [type=reset],
@@ -2488,9 +2529,9 @@ select.input-1:focus,
 textarea.input-1:focus,
 [role=textbox].input-1:focus,
 .element-text-entry.input-1:focus {
-  --input-color-border: var(--accent-5, var(--neutral-4));
-  --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-color-foreground: var(--color-foreground);
+  --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
 }
 input:not([type=button],
@@ -2503,7 +2544,7 @@ select.input-1:active,
 textarea.input-1:active,
 [role=textbox].input-1:active,
 .element-text-entry.input-1:active {
-  --input-color-border: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2517,10 +2558,7 @@ textarea.input-2,
 .element-text-entry.input-2 {
   --input-padding-y: var(--space-2);
   --input-padding-x: var(--space-4);
-  --input-color-border: var(--accent-5, var(--neutral-5));
-  --input-border-radius: var(--radius-2);
-  --input-color-foreground: var(--neutral-1);
-  --input-color-caret: var(--neutral-4);
+  --input-color-caret: var(--color-neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2532,9 +2570,10 @@ select.input-2:hover,
 textarea.input-2:hover,
 [role=textbox].input-2:hover,
 .element-text-entry.input-2:hover {
-  --input-color-border: var(--accent-6, var(--neutral-4));
-  --input-color-placeholder: var(--accent-6, var(--neutral-4));
-  box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
+  --input-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-color-placeholder: var(--color-neutral-5);
+  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 }
 input:not([type=button],
 [type=reset],
@@ -2546,9 +2585,9 @@ select.input-2:focus,
 textarea.input-2:focus,
 [role=textbox].input-2:focus,
 .element-text-entry.input-2:focus {
-  --input-color-border: var(--accent-5, var(--neutral-4));
-  --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-color-foreground: var(--color-foreground);
+  --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
 }
 input:not([type=button],
@@ -2561,7 +2600,7 @@ select.input-2:active,
 textarea.input-2:active,
 [role=textbox].input-2:active,
 .element-text-entry.input-2:active {
-  --input-color-border: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2575,10 +2614,7 @@ textarea.input-3,
 .element-text-entry.input-3 {
   --input-padding-y: var(--space-3);
   --input-padding-x: var(--space-6);
-  --input-color-border: var(--accent-5, var(--neutral-5));
-  --input-border-radius: var(--radius-2);
-  --input-color-foreground: var(--neutral-1);
-  --input-color-caret: var(--neutral-4);
+  --input-color-caret: var(--color-neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2590,9 +2626,10 @@ select.input-3:hover,
 textarea.input-3:hover,
 [role=textbox].input-3:hover,
 .element-text-entry.input-3:hover {
-  --input-color-border: var(--accent-6, var(--neutral-4));
-  --input-color-placeholder: var(--accent-6, var(--neutral-4));
-  box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
+  --input-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-color-placeholder: var(--color-neutral-5);
+  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 }
 input:not([type=button],
 [type=reset],
@@ -2604,9 +2641,9 @@ select.input-3:focus,
 textarea.input-3:focus,
 [role=textbox].input-3:focus,
 .element-text-entry.input-3:focus {
-  --input-color-border: var(--accent-5, var(--neutral-4));
-  --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-color-foreground: var(--color-foreground);
+  --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
 }
 input:not([type=button],
@@ -2619,7 +2656,7 @@ select.input-3:active,
 textarea.input-3:active,
 [role=textbox].input-3:active,
 .element-text-entry.input-3:active {
-  --input-color-border: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2633,10 +2670,7 @@ textarea.input-4,
 .element-text-entry.input-4 {
   --input-padding-y: var(--space-4);
   --input-padding-x: var(--space-8);
-  --input-color-border: var(--accent-5, var(--neutral-5));
-  --input-border-radius: var(--radius-2);
-  --input-color-foreground: var(--neutral-1);
-  --input-color-caret: var(--neutral-4);
+  --input-color-caret: var(--color-neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2648,9 +2682,10 @@ select.input-4:hover,
 textarea.input-4:hover,
 [role=textbox].input-4:hover,
 .element-text-entry.input-4:hover {
-  --input-color-border: var(--accent-6, var(--neutral-4));
-  --input-color-placeholder: var(--accent-6, var(--neutral-4));
-  box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
+  --input-color-background: var(--color-accent-9, var(--color-neutral-9));
+  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-color-placeholder: var(--color-neutral-5);
+  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
 }
 input:not([type=button],
 [type=reset],
@@ -2662,9 +2697,9 @@ select.input-4:focus,
 textarea.input-4:focus,
 [role=textbox].input-4:focus,
 .element-text-entry.input-4:focus {
-  --input-color-border: var(--accent-5, var(--neutral-4));
-  --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-color-foreground: var(--color-foreground);
+  --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
 }
 input:not([type=button],
@@ -2677,7 +2712,7 @@ select.input-4:active,
 textarea.input-4:active,
 [role=textbox].input-4:active,
 .element-text-entry.input-4:active {
-  --input-color-border: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
 }
 
 /* Elements: Toggles */
@@ -2685,66 +2720,70 @@ textarea.input-4:active,
   appearance: none;
   cursor: pointer;
   position: relative;
-  border: 1.5px solid;
-  height: var(--checkbox-size);
-  width: var(--checkbox-size);
-  border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-color-border, var(--neutral-6));
-  background-color: var(--checkbox-color-background);
-  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
+  border: var(--element-border-width) solid;
+  outline: var(--toggle-color-border);
+  height: var(--toggle-size);
+  width: var(--toggle-size);
+  border-radius: var(--toggle-border-radius, var(--element-border-radius));
+  border-color: var(--toggle-color-border, var(--element-color-border));
+  background-color: var(--toggle-color-background);
+  --toggle-color-foreground: var(--app-background);
 }
 .element-toggle::after, input[type=radio].radio-4::after, input[type=radio].radio-3::after, input[type=radio].radio-2::after, input[type=radio].radio-1::after, input[type=checkbox].checkbox-4::after, input[type=checkbox].checkbox-3::after, input[type=checkbox].checkbox-2::after, input[type=checkbox].checkbox-1::after {
-  color: var(--checkbox-color-foreground);
+  color: var(--toggle-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
   inset: 0;
-  font-size: var(--checkbox-tick-size);
+  font-size: var(--toggle-tick-size);
 }
 .element-toggle:active, input[type=radio].radio-4:active, input[type=radio].radio-3:active, input[type=radio].radio-2:active, input[type=radio].radio-1:active, input[type=checkbox].checkbox-4:active, input[type=checkbox].checkbox-3:active, input[type=checkbox].checkbox-2:active, input[type=checkbox].checkbox-1:active {
-  --checkbox-color-border: var(--accent-5, var(--neutral-3));
-  --checkbox-color-background: var(--accent-5, var(--neutral-3));
+  --toggle-color-border: var(--color-accent-5, var(--color-neutral-3));
+  --toggle-color-background: var(--color-accent-5, var(--color-neutral-3));
 }
 .element-toggle:focus-visible, input[type=radio].radio-4:focus-visible, input[type=radio].radio-3:focus-visible, input[type=radio].radio-2:focus-visible, input[type=radio].radio-1:focus-visible, input[type=checkbox].checkbox-4:focus-visible, input[type=checkbox].checkbox-3:focus-visible, input[type=checkbox].checkbox-2:focus-visible, input[type=checkbox].checkbox-1:focus-visible, .element-toggle:hover, input[type=radio].radio-4:hover, input[type=radio].radio-3:hover, input[type=radio].radio-2:hover, input[type=radio].radio-1:hover, input[type=checkbox].checkbox-4:hover, input[type=checkbox].checkbox-3:hover, input[type=checkbox].checkbox-2:hover, input[type=checkbox].checkbox-1:hover {
-  --checkbox-color-border: var(--accent-4, var(--neutral-3));
-  --checkbox-color-background: var(--accent-9, var(--neutral-9));
+  --toggle-color-border: var(--color-accent-4, var(--color-neutral-3));
+  --toggle-color-background: var(--color-accent-9, var(--color-neutral-9));
 }
 .element-toggle:checked, input[type=radio].radio-4:checked, input[type=radio].radio-3:checked, input[type=radio].radio-2:checked, input[type=radio].radio-1:checked, input[type=checkbox].checkbox-4:checked, input[type=checkbox].checkbox-3:checked, input[type=checkbox].checkbox-2:checked, input[type=checkbox].checkbox-1:checked {
-  --checkbox-color-background: var(--accent-5, var(--neutral-1));
-  --checkbox-color-border: var(--checkbox-color-background);
+  --toggle-color-background: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-color-border: var(--toggle-color-background);
 }
 .element-toggle:checked::after, input[type=radio].radio-4:checked::after, input[type=radio].radio-3:checked::after, input[type=radio].radio-2:checked::after, input[type=radio].radio-1:checked::after, input[type=checkbox].checkbox-4:checked::after, input[type=checkbox].checkbox-3:checked::after, input[type=checkbox].checkbox-2:checked::after, input[type=checkbox].checkbox-1:checked::after {
   content: "✔︎";
 }
 .element-toggle:checked:focus-visible, input[type=radio].radio-4:checked:focus-visible, input[type=radio].radio-3:checked:focus-visible, input[type=radio].radio-2:checked:focus-visible, input[type=radio].radio-1:checked:focus-visible, input[type=checkbox].checkbox-4:checked:focus-visible, input[type=checkbox].checkbox-3:checked:focus-visible, input[type=checkbox].checkbox-2:checked:focus-visible, input[type=checkbox].checkbox-1:checked:focus-visible, .element-toggle:checked:hover, input[type=radio].radio-4:checked:hover, input[type=radio].radio-3:checked:hover, input[type=radio].radio-2:checked:hover, input[type=radio].radio-1:checked:hover, input[type=checkbox].checkbox-4:checked:hover, input[type=checkbox].checkbox-3:checked:hover, input[type=checkbox].checkbox-2:checked:hover, input[type=checkbox].checkbox-1:checked:hover {
-  --checkbox-color-background: var(--accent-4, var(--neutral-2));
+  --toggle-color-background: var(--color-accent-4, var(--color-neutral-2));
 }
 .element-toggle:checked:active, input[type=radio].radio-4:checked:active, input[type=radio].radio-3:checked:active, input[type=radio].radio-2:checked:active, input[type=radio].radio-1:checked:active, input[type=checkbox].checkbox-4:checked:active, input[type=checkbox].checkbox-3:checked:active, input[type=checkbox].checkbox-2:checked:active, input[type=checkbox].checkbox-1:checked:active {
-  --checkbox-color-background: var(--accent-3, var(--neutral-3));
+  --toggle-color-background: var(--color-accent-3, var(--color-neutral-3));
 }
 .element-toggle:disabled, input[type=radio].radio-4:disabled, input[type=radio].radio-3:disabled, input[type=radio].radio-2:disabled, input[type=radio].radio-1:disabled, input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-1:disabled, .element-toggle[aria-disabled=true], input[aria-disabled=true][type=radio].radio-4, input[aria-disabled=true][type=radio].radio-3, input[aria-disabled=true][type=radio].radio-2, input[aria-disabled=true][type=radio].radio-1, input[aria-disabled=true][type=checkbox].checkbox-4, input[aria-disabled=true][type=checkbox].checkbox-3, input[aria-disabled=true][type=checkbox].checkbox-2, input[aria-disabled=true][type=checkbox].checkbox-1 {
-  --checkbox-color-background-color: var(--neutral-6);
+  --toggle-color-background-color: var(--color-neutral-6);
 }
 .element-toggle-1, input[type=radio].radio-1, input[type=checkbox].checkbox-1 {
-  --checkbox-size: var(--space-4);
+  --toggle-size: var(--space-4);
 }
 .element-toggle-2, input[type=radio].radio-2, input[type=checkbox].checkbox-2 {
-  --checkbox-size: var(--space-5);
+  --toggle-size: var(--space-5);
 }
 .element-toggle-3, input[type=radio].radio-3, input[type=checkbox].checkbox-3 {
-  --checkbox-size: var(--space-6);
+  --toggle-size: var(--space-6);
 }
 .element-toggle-4, input[type=radio].radio-4, input[type=checkbox].checkbox-4 {
-  --checkbox-size: var(--space-7);
+  --toggle-size: var(--space-7);
 }
 
 /* Elements: Checkbox */
+input[type=checkbox].checkbox-1 {
+  --toggle-border-radius: var(--radius-1);
+}
 input[type=checkbox].checkbox-1:checked::after {
-  --checkbox-tick-size: 90%;
+  --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-1:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-1:indeterminate::after {
   content: "";
@@ -2755,12 +2794,15 @@ input[type=checkbox].checkbox-1:indeterminate::after {
   margin: auto;
   border-radius: var(--radius-1);
 }
+input[type=checkbox].checkbox-2 {
+  --toggle-border-radius: var(--radius-1);
+}
 input[type=checkbox].checkbox-2:checked::after {
-  --checkbox-tick-size: 90%;
+  --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-2:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-2:indeterminate::after {
   content: "";
@@ -2771,12 +2813,15 @@ input[type=checkbox].checkbox-2:indeterminate::after {
   margin: auto;
   border-radius: var(--radius-1);
 }
+input[type=checkbox].checkbox-3 {
+  --toggle-border-radius: var(--radius-1);
+}
 input[type=checkbox].checkbox-3:checked::after {
-  --checkbox-tick-size: 90%;
+  --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-3:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-3:indeterminate::after {
   content: "";
@@ -2787,12 +2832,15 @@ input[type=checkbox].checkbox-3:indeterminate::after {
   margin: auto;
   border-radius: var(--radius-1);
 }
+input[type=checkbox].checkbox-4 {
+  --toggle-border-radius: var(--radius-1);
+}
 input[type=checkbox].checkbox-4:checked::after {
-  --checkbox-tick-size: 90%;
+  --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-4:indeterminate {
-  --checkbox-color-border: var(--accent-5, var(--neutral-1));
-  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
+  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-4:indeterminate::after {
   content: "";
@@ -2806,28 +2854,28 @@ input[type=checkbox].checkbox-4:indeterminate::after {
 
 /* Elements: Radio */
 input[type=radio].radio-1 {
-  --checkbox-border-radius: var(--radius-5);
+  --toggle-border-radius: var(--radius-5);
 }
 input[type=radio].radio-1:checked::after {
-  --checkbox-tick-size: 80%;
+  --toggle-tick-size: 80%;
 }
 input[type=radio].radio-2 {
-  --checkbox-border-radius: var(--radius-5);
+  --toggle-border-radius: var(--radius-5);
 }
 input[type=radio].radio-2:checked::after {
-  --checkbox-tick-size: 80%;
+  --toggle-tick-size: 80%;
 }
 input[type=radio].radio-3 {
-  --checkbox-border-radius: var(--radius-5);
+  --toggle-border-radius: var(--radius-5);
 }
 input[type=radio].radio-3:checked::after {
-  --checkbox-tick-size: 80%;
+  --toggle-tick-size: 80%;
 }
 input[type=radio].radio-4 {
-  --checkbox-border-radius: var(--radius-5);
+  --toggle-border-radius: var(--radius-5);
 }
 input[type=radio].radio-4:checked::after {
-  --checkbox-tick-size: 80%;
+  --toggle-tick-size: 80%;
 }
 
 /* Accent Colours */

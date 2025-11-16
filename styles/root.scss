@@ -49,6 +49,11 @@
 	@each $level, $value in $letter-spacing {
 		--letter-spacing-#{$level}: #{$value};
 	}
+
+	/* General element configuration */
+	--element-color-border: var(--color-neutral-6);
+	--element-border-radius: var(--radius-2);
+	--element-border-width: 1.5px;
 }
 
 // When oklch is not supported then use hex-codes

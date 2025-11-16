@@ -106,7 +106,7 @@ input[type="checkbox"],
 .element-checkbox {
 	@for $level from 1 through 4 {
 		&.checkbox-#{$level} {
-			@include checkbox($level);
+			@include toggle-checkbox($level);
 		}
 	}
 }
@@ -116,7 +116,7 @@ input[type="radio"],
 .element-radio {
 	@for $level from 1 through 4 {
 		&.radio-#{$level} {
-			@include radio($level);
+			@include toggle-radio($level);
 		}
 	}
 }

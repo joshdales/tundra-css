@@ -8,9 +8,9 @@
 
 <main>
 	<TokenDescription title="Text Styles">
-		<p class="body-4">Apply the text style class to add those typography variables.</p>
+		<p class="text-body-4">Apply the text style class to add those typography variables.</p>
 
-		<label class="label-2" for="text-style-select">
+		<label class="text-label-2" for="text-style-select">
 			View the text styles
 			<select
 				bind:value={selectedStyle}
@@ -20,29 +20,35 @@
 				placeholder="Select text style"
 			>
 				<!-- <option value="" disabled>Select text style</option> -->
-				<option value="heading">Heading</option>
-				<option value="alt-heading">Alt Heading</option>
-				<option value="body">Body</option>
-				<option value="link">Link</option>
-				<option value="button">Button</option>
-				<option value="label">Label</option>
-				<option value="input">Input</option>
+				<option value="text-heading">Heading</option>
+				<option value="text-alt-heading">Alt Heading</option>
+				<option value="text-body">Body</option>
+				<option value="text-link">Link</option>
+				<option value="text-button">Button</option>
+				<option value="text-label">Label</option>
+				<option value="text-input">Input</option>
 			</select>
 		</label>
 	</TokenDescription>
 
 	<section>
-		{#if selectedStyle === 'heading' || selectedStyle === 'alt-heading'}
-			{#each headings as _, index}
-				<p class="{selectedStyle}-{index + 1}">Lorem ipsum <strong>dolor</strong></p>
-			{/each}
-		{:else if selectedStyle}
-			{#each text as _, index}
-				<p class="{selectedStyle}-{index + 1}">Lorem ipsum <strong>dolor</strong></p>
-			{/each}
-		{:else}
-			<p class="body-4 empty">Nothing selected yet</p>
-		{/if}
+		<ol>
+			{#if selectedStyle === 'text-heading' || selectedStyle === 'text-alt-heading'}
+				{#each headings as _, index}
+					<li data-class="{selectedStyle}-{index + 1}" class="{selectedStyle}-{index + 1}">
+						Lorem ipsum <strong>dolor</strong>
+					</li>
+				{/each}
+			{:else if selectedStyle}
+				{#each text as _, index}
+					<li data-class="{selectedStyle}-{index + 1}" class="{selectedStyle}-{index + 1}">
+						Lorem ipsum <strong>dolor</strong>
+					</li>
+				{/each}
+			{:else}
+				<p class="body-4 empty">Nothing selected yet</p>
+			{/if}
+		</ol>
 	</section>
 </main>
 

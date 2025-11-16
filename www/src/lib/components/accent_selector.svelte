@@ -42,10 +42,10 @@
 </script>
 
 <fieldset name="accent">
-	<legend class="alt-heading-2">Accent</legend>
+	<legend class="text-alt-heading-2">Accent</legend>
 
 	{#each colours as colour}
-		<label class:active={selectedColour === colour} class="label-4" for="colours-{colour}">
+		<label class:active={selectedColour === colour} class="text-label-4" for="colours-{colour}">
 			{colour}
 			<input
 				bind:group={selectedColour}

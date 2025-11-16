@@ -47,9 +47,9 @@
 		{@render children?.()}
 	</div>
 
-	<p class="label-2">
+	<p class="text-label-2">
 		<code>{property}-{level}</code>
-		<span class="label-1">{colourValue}</span>
+		<span class="text-label-1">{colourValue}</span>
 	</p>
 </div>
 

@@ -4,7 +4,7 @@
 @mixin base {
 	cursor: pointer;
 	box-sizing: border-box;
-	border: 1.5px solid;
+	border: var(--element-border-width) solid;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -13,8 +13,8 @@
 	gap: var(--button-gap);
 	padding-inline: var(--button-padding-x);
 	padding-block: var(--button-padding-y);
-	border-radius: var(--button-border-radius, var(--radius-2));
-	border-color: var(--button-color-border);
+	border-radius: var(--button-border-radius, var(--element-border-radius));
+	border-color: var(--button-color-border, var(--element-color-border));
 	background-color: var(--button-color-background);
 	color: var(--button-color-foreground);
 
@@ -83,15 +83,15 @@
 
 	--button-color-background: var(--color-background);
 	--button-color-foreground: var(--color-accent-5, var(--color-neutral));
-	--button-color-border: var(var(--button-color-foreground));
+	--button-color-border: var(--button-color-foreground);
 
 	@include utils.viewing {
 		--button-color-foreground: var(--color-accent-4, var(--color-neutral-2));
-		box-shadow: inset 0px 0 0 0.5px currentColor;
+		box-shadow: inset 0px 0 0 0.5px var(--button-color-foreground);
 	}
 
 	&:active {
-		--button-color-background: var(--color-accent-8, var(--color-neutral-8));
+		--button-color-background: var(--color-accent-9, var(--color-neutral-9));
 		--button-color-foreground: var(--color-accent-3, var(--color-neutral-3));
 	}
 

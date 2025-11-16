@@ -9,13 +9,13 @@
 	height: var(--checkbox-size);
 	width: var(--checkbox-size);
 	border-radius: var(--checkbox-border-radius, var(--radius-1));
-	border-color: var(--checkbox-border-color, var(--neutral-6));
-	background-color: var(--checkbox-background);
+	border-color: var(--checkbox-color-border, var(--neutral-6));
+	background-color: var(--checkbox-color-background);
 
-	--checkbox-foreground: var(--accent-9, var(--neutral-9));
+	--checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 
 	&::after {
-		color: var(--checkbox-foreground);
+		color: var(--checkbox-color-foreground);
 		display: grid;
 		place-content: center;
 		position: absolute;
@@ -38,30 +38,30 @@
 
 @mixin container {
 	&:active {
-		--checkbox-border-color: var(--accent-5, var(--neutral-3));
-		--checkbox-background: var(--accent-5, var(--neutral-3));
+		--checkbox-color-border: var(--accent-5, var(--neutral-3));
+		--checkbox-color-background: var(--accent-5, var(--neutral-3));
 	}
 
 	@include utils.viewing {
-		--checkbox-border-color: var(--accent-4, var(--neutral-3));
-		--checkbox-background: var(--accent-9, var(--neutral-9));
+		--checkbox-color-border: var(--accent-4, var(--neutral-3));
+		--checkbox-color-background: var(--accent-9, var(--neutral-9));
 	}
 
 	&:checked {
-		--checkbox-background: var(--accent-5, var(--neutral-1));
-		--checkbox-border-color: var(--checkbox-background);
+		--checkbox-color-background: var(--accent-5, var(--neutral-1));
+		--checkbox-color-border: var(--checkbox-color-background);
 
 		@include utils.viewing {
-			--checkbox-background: var(--accent-4, var(--neutral-2));
+			--checkbox-color-background: var(--accent-4, var(--neutral-2));
 		}
 
 		&:active {
-			--checkbox-background: var(--accent-3, var(--neutral-3));
+			--checkbox-color-background: var(--accent-3, var(--neutral-3));
 		}
 	}
 
 	@include utils.disabled {
-		--checkbox-background-color: var(--neutral-6);
+		--checkbox-color-background-color: var(--neutral-6);
 	}
 }
 
@@ -76,8 +76,8 @@
 	}
 
 	&:indeterminate {
-		--checkbox-border-color: var(--accent-5, var(--neutral-1));
-		--checkbox-foreground: var(--accent-5, var(--neutral-1));
+		--checkbox-color-border: var(--accent-5, var(--neutral-1));
+		--checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 
 		&::after {
 			content: "";

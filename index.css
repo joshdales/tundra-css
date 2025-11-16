@@ -2157,9 +2157,9 @@ input[type=submit],
   padding-inline: var(--button-padding-x);
   padding-block: var(--button-padding-y);
   border-radius: var(--button-border-radius, var(--radius-2));
-  border-color: var(--button-border);
-  background-color: var(--button-background);
-  color: var(--button-foreground);
+  border-color: var(--button-color-border);
+  background-color: var(--button-color-background);
+  color: var(--button-color-foreground);
 }
 button:disabled, button[aria-disabled=true],
 input[type=button]:disabled,
@@ -2220,9 +2220,9 @@ input[type=reset].filled,
 input[type=submit].filled,
 .button.filled,
 .element-button.filled {
-  --button-background: var(--accent-4, var(--neutral-1));
-  --button-border: var(--button-background);
-  --button-foreground: var(--accent-9, var(--neutral-9));
+  --button-color-background: var(--accent-4, var(--neutral-1));
+  --button-color-border: var(--button-color-background);
+  --button-color-foreground: var(--accent-9, var(--neutral-9));
 }
 button.filled:focus-visible, button.filled:hover,
 input[type=button].filled:focus-visible,
@@ -2235,7 +2235,7 @@ input[type=submit].filled:hover,
 .button.filled:hover,
 .element-button.filled:focus-visible,
 .element-button.filled:hover {
-  --button-background: var(--accent-3, var(--neutral-2));
+  --button-color-background: var(--accent-3, var(--neutral-2));
 }
 button.filled:active,
 input[type=button].filled:active,
@@ -2243,7 +2243,7 @@ input[type=reset].filled:active,
 input[type=submit].filled:active,
 .button.filled:active,
 .element-button.filled:active {
-  --button-background: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--accent-2, var(--neutral-3));
 }
 button.filled:disabled, button.filled[aria-disabled=true],
 input[type=button].filled:disabled,
@@ -2256,8 +2256,8 @@ input[type=submit].filled[aria-disabled=true],
 .button.filled[aria-disabled=true],
 .element-button.filled:disabled,
 .element-button.filled[aria-disabled=true] {
-  --button-background: var(--neutral-7);
-  --button-foreground: var(--neutral-9);
+  --button-color-background: var(--neutral-7);
+  --button-color-foreground: var(--neutral-9);
 }
 button.filled:disabled:hover, button.filled[aria-disabled=true]:hover,
 input[type=button].filled:disabled:hover,
@@ -2270,7 +2270,7 @@ input[type=submit].filled[aria-disabled=true]:hover,
 .button.filled[aria-disabled=true]:hover,
 .element-button.filled:disabled:hover,
 .element-button.filled[aria-disabled=true]:hover {
-  --button-background: var(--neutral-8);
+  --button-color-background: var(--neutral-8);
 }
 button.outline,
 input[type=button].outline,
@@ -2278,9 +2278,9 @@ input[type=reset].outline,
 input[type=submit].outline,
 .button.outline,
 .element-button.outline {
-  --button-background: var(--accent-9, var(--neutral-9));
-  --button-foreground: var(--accent-4, var(--neutral-1));
-  --button-border: var(var(--button-foreground));
+  --button-color-background: var(--accent-9, var(--neutral-9));
+  --button-color-foreground: var(--accent-4, var(--neutral-1));
+  --button-color-border: var(var(--button-color-foreground));
 }
 button.outline:focus-visible, button.outline:hover,
 input[type=button].outline:focus-visible,
@@ -2293,7 +2293,7 @@ input[type=submit].outline:hover,
 .button.outline:hover,
 .element-button.outline:focus-visible,
 .element-button.outline:hover {
-  --button-foreground: var(--accent-3, var(--neutral-2));
+  --button-color-foreground: var(--accent-3, var(--neutral-2));
   box-shadow: inset 0px 0 0 0.5px currentColor;
 }
 button.outline:active,
@@ -2302,8 +2302,8 @@ input[type=reset].outline:active,
 input[type=submit].outline:active,
 .button.outline:active,
 .element-button.outline:active {
-  --button-background: var(--accent-8, var(--neutral-8));
-  --button-foreground: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--accent-8, var(--neutral-8));
+  --button-color-foreground: var(--accent-2, var(--neutral-3));
 }
 button.outline:disabled, button.outline[aria-disabled=true],
 input[type=button].outline:disabled,
@@ -2316,8 +2316,8 @@ input[type=submit].outline[aria-disabled=true],
 .button.outline[aria-disabled=true],
 .element-button.outline:disabled,
 .element-button.outline[aria-disabled=true] {
-  --button-background: var(--neutral-9);
-  --button-foreground: var(--neutral-7);
+  --button-color-background: var(--neutral-9);
+  --button-color-foreground: var(--neutral-7);
 }
 button.outline:disabled:hover, button.outline[aria-disabled=true]:hover,
 input[type=button].outline:disabled:hover,
@@ -2330,7 +2330,7 @@ input[type=submit].outline[aria-disabled=true]:hover,
 .button.outline[aria-disabled=true]:hover,
 .element-button.outline:disabled:hover,
 .element-button.outline[aria-disabled=true]:hover {
-  --button-foreground: var(--neutral-8);
+  --button-color-foreground: var(--neutral-8);
 }
 button.ghost,
 input[type=button].ghost,
@@ -2338,9 +2338,9 @@ input[type=reset].ghost,
 input[type=submit].ghost,
 .button.ghost,
 .element-button.ghost {
-  --button-background: transparent;
-  --button-foreground: var(--accent-4, var(--neutral-1));
-  --button-border: var(--button-background);
+  --button-color-background: transparent;
+  --button-color-foreground: var(--accent-4, var(--neutral-1));
+  --button-color-border: var(--button-color-background);
 }
 button.ghost:focus-visible, button.ghost:hover,
 input[type=button].ghost:focus-visible,
@@ -2353,8 +2353,8 @@ input[type=submit].ghost:hover,
 .button.ghost:hover,
 .element-button.ghost:focus-visible,
 .element-button.ghost:hover {
-  --button-background: var(--accent-9, var(--neutral-9));
-  --button-foreground: var(--accent-3, var(--neutral-2));
+  --button-color-background: var(--accent-9, var(--neutral-9));
+  --button-color-foreground: var(--accent-3, var(--neutral-2));
 }
 button.ghost:active,
 input[type=button].ghost:active,
@@ -2362,8 +2362,8 @@ input[type=reset].ghost:active,
 input[type=submit].ghost:active,
 .button.ghost:active,
 .element-button.ghost:active {
-  --button-background: var(--accent-8, var(--neutral-8));
-  --button-foreground: var(--accent-2, var(--neutral-3));
+  --button-color-background: var(--accent-8, var(--neutral-8));
+  --button-color-foreground: var(--accent-2, var(--neutral-3));
 }
 button.ghost:disabled, button.ghost[aria-disabled=true],
 input[type=button].ghost:disabled,
@@ -2376,7 +2376,7 @@ input[type=submit].ghost[aria-disabled=true],
 .button.ghost[aria-disabled=true],
 .element-button.ghost:disabled,
 .element-button.ghost[aria-disabled=true] {
-  --button-foreground: var(--neutral-7);
+  --button-color-foreground: var(--neutral-7);
 }
 button.ghost:disabled:hover, button.ghost[aria-disabled=true]:hover,
 input[type=button].ghost:disabled:hover,
@@ -2389,8 +2389,8 @@ input[type=submit].ghost[aria-disabled=true]:hover,
 .button.ghost[aria-disabled=true]:hover,
 .element-button.ghost:disabled:hover,
 .element-button.ghost[aria-disabled=true]:hover {
-  --button-background: var(--neutral-9);
-  --button-foreground: var(--neutral-8);
+  --button-color-background: var(--neutral-9);
+  --button-color-foreground: var(--neutral-8);
 }
 
 /* Elements: Text-entry inputs */
@@ -2406,14 +2406,14 @@ textarea,
 .element-text-entry {
   border: 1.5px solid;
   outline: none;
-  background-color: var(--input-background);
-  border-color: var(--input-border-color);
+  background-color: var(--input-color-background);
+  border-color: var(--input-color-border);
   border-radius: var(--input-border-radius);
-  caret-color: var(--input-caret);
-  color: var(--input-foreground);
+  caret-color: var(--input-color-caret);
+  color: var(--input-color-foreground);
   padding-inline: var(--input-padding-x);
   padding-block: var(--input-padding-y);
-  --input-placeholder: var(--neutral-6);
+  --input-color-placeholder: var(--neutral-6);
 }
 input:not([type=button],
 [type=reset],
@@ -2425,7 +2425,7 @@ select::placeholder,
 textarea::placeholder,
 [role=textbox]::placeholder,
 .element-text-entry::placeholder {
-  color: var(--input-placeholder);
+  color: var(--input-color-placeholder);
 }
 input:not([type=button],
 [type=reset],
@@ -2446,7 +2446,7 @@ textarea[aria-disabled=true],
 [role=textbox][aria-disabled=true],
 .element-text-entry:disabled,
 .element-text-entry[aria-disabled=true] {
-  --input-background: var(--neutral-8);
+  --input-color-background: var(--neutral-8);
   cursor: not-allowed;
 }
 input:not([type=button],
@@ -2461,10 +2461,10 @@ textarea.input-1,
 .element-text-entry.input-1 {
   --input-padding-y: var(--space-1);
   --input-padding-x: var(--space-2);
-  --input-border-color: var(--accent-5, var(--neutral-5));
+  --input-color-border: var(--accent-5, var(--neutral-5));
   --input-border-radius: var(--radius-2);
-  --input-foreground: var(--neutral-1);
-  --input-caret: var(--neutral-4);
+  --input-color-foreground: var(--neutral-1);
+  --input-color-caret: var(--neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2476,8 +2476,8 @@ select.input-1:hover,
 textarea.input-1:hover,
 [role=textbox].input-1:hover,
 .element-text-entry.input-1:hover {
-  --input-border-color: var(--accent-6, var(--neutral-4));
-  --input-placeholder: var(--accent-6, var(--neutral-4));
+  --input-color-border: var(--accent-6, var(--neutral-4));
+  --input-color-placeholder: var(--accent-6, var(--neutral-4));
   box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
 }
 input:not([type=button],
@@ -2490,10 +2490,10 @@ select.input-1:focus,
 textarea.input-1:focus,
 [role=textbox].input-1:focus,
 .element-text-entry.input-1:focus {
-  --input-border-color: var(--accent-5, var(--neutral-4));
+  --input-color-border: var(--accent-5, var(--neutral-4));
   --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-background: var(--accent-9, var(--neutral-9));
-  --input-placeholder: transparent;
+  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-placeholder: transparent;
 }
 input:not([type=button],
 [type=reset],
@@ -2505,7 +2505,7 @@ select.input-1:active,
 textarea.input-1:active,
 [role=textbox].input-1:active,
 .element-text-entry.input-1:active {
-  --input-border-color: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--accent-4, var(--neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2519,10 +2519,10 @@ textarea.input-2,
 .element-text-entry.input-2 {
   --input-padding-y: var(--space-2);
   --input-padding-x: var(--space-4);
-  --input-border-color: var(--accent-5, var(--neutral-5));
+  --input-color-border: var(--accent-5, var(--neutral-5));
   --input-border-radius: var(--radius-2);
-  --input-foreground: var(--neutral-1);
-  --input-caret: var(--neutral-4);
+  --input-color-foreground: var(--neutral-1);
+  --input-color-caret: var(--neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2534,8 +2534,8 @@ select.input-2:hover,
 textarea.input-2:hover,
 [role=textbox].input-2:hover,
 .element-text-entry.input-2:hover {
-  --input-border-color: var(--accent-6, var(--neutral-4));
-  --input-placeholder: var(--accent-6, var(--neutral-4));
+  --input-color-border: var(--accent-6, var(--neutral-4));
+  --input-color-placeholder: var(--accent-6, var(--neutral-4));
   box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
 }
 input:not([type=button],
@@ -2548,10 +2548,10 @@ select.input-2:focus,
 textarea.input-2:focus,
 [role=textbox].input-2:focus,
 .element-text-entry.input-2:focus {
-  --input-border-color: var(--accent-5, var(--neutral-4));
+  --input-color-border: var(--accent-5, var(--neutral-4));
   --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-background: var(--accent-9, var(--neutral-9));
-  --input-placeholder: transparent;
+  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-placeholder: transparent;
 }
 input:not([type=button],
 [type=reset],
@@ -2563,7 +2563,7 @@ select.input-2:active,
 textarea.input-2:active,
 [role=textbox].input-2:active,
 .element-text-entry.input-2:active {
-  --input-border-color: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--accent-4, var(--neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2577,10 +2577,10 @@ textarea.input-3,
 .element-text-entry.input-3 {
   --input-padding-y: var(--space-3);
   --input-padding-x: var(--space-6);
-  --input-border-color: var(--accent-5, var(--neutral-5));
+  --input-color-border: var(--accent-5, var(--neutral-5));
   --input-border-radius: var(--radius-2);
-  --input-foreground: var(--neutral-1);
-  --input-caret: var(--neutral-4);
+  --input-color-foreground: var(--neutral-1);
+  --input-color-caret: var(--neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2592,8 +2592,8 @@ select.input-3:hover,
 textarea.input-3:hover,
 [role=textbox].input-3:hover,
 .element-text-entry.input-3:hover {
-  --input-border-color: var(--accent-6, var(--neutral-4));
-  --input-placeholder: var(--accent-6, var(--neutral-4));
+  --input-color-border: var(--accent-6, var(--neutral-4));
+  --input-color-placeholder: var(--accent-6, var(--neutral-4));
   box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
 }
 input:not([type=button],
@@ -2606,10 +2606,10 @@ select.input-3:focus,
 textarea.input-3:focus,
 [role=textbox].input-3:focus,
 .element-text-entry.input-3:focus {
-  --input-border-color: var(--accent-5, var(--neutral-4));
+  --input-color-border: var(--accent-5, var(--neutral-4));
   --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-background: var(--accent-9, var(--neutral-9));
-  --input-placeholder: transparent;
+  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-placeholder: transparent;
 }
 input:not([type=button],
 [type=reset],
@@ -2621,7 +2621,7 @@ select.input-3:active,
 textarea.input-3:active,
 [role=textbox].input-3:active,
 .element-text-entry.input-3:active {
-  --input-border-color: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--accent-4, var(--neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2635,10 +2635,10 @@ textarea.input-4,
 .element-text-entry.input-4 {
   --input-padding-y: var(--space-4);
   --input-padding-x: var(--space-8);
-  --input-border-color: var(--accent-5, var(--neutral-5));
+  --input-color-border: var(--accent-5, var(--neutral-5));
   --input-border-radius: var(--radius-2);
-  --input-foreground: var(--neutral-1);
-  --input-caret: var(--neutral-4);
+  --input-color-foreground: var(--neutral-1);
+  --input-color-caret: var(--neutral-4);
 }
 input:not([type=button],
 [type=reset],
@@ -2650,8 +2650,8 @@ select.input-4:hover,
 textarea.input-4:hover,
 [role=textbox].input-4:hover,
 .element-text-entry.input-4:hover {
-  --input-border-color: var(--accent-6, var(--neutral-4));
-  --input-placeholder: var(--accent-6, var(--neutral-4));
+  --input-color-border: var(--accent-6, var(--neutral-4));
+  --input-color-placeholder: var(--accent-6, var(--neutral-4));
   box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h/10%);
 }
 input:not([type=button],
@@ -2664,10 +2664,10 @@ select.input-4:focus,
 textarea.input-4:focus,
 [role=textbox].input-4:focus,
 .element-text-entry.input-4:focus {
-  --input-border-color: var(--accent-5, var(--neutral-4));
+  --input-color-border: var(--accent-5, var(--neutral-4));
   --input-foregoround: var(--accent-1, var(--neutral-1));
-  --input-background: var(--accent-9, var(--neutral-9));
-  --input-placeholder: transparent;
+  --input-color-background: var(--accent-9, var(--neutral-9));
+  --input-color-placeholder: transparent;
 }
 input:not([type=button],
 [type=reset],
@@ -2679,7 +2679,7 @@ select.input-4:active,
 textarea.input-4:active,
 [role=textbox].input-4:active,
 .element-text-entry.input-4:active {
-  --input-border-color: var(--accent-4, var(--neutral-4));
+  --input-color-border: var(--accent-4, var(--neutral-4));
 }
 
 /* Elements: Checkbox */
@@ -2693,13 +2693,13 @@ input[type=checkbox].checkbox-1,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-1::after,
 .element-checkbox.checkbox-1::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -2708,33 +2708,33 @@ input[type=checkbox].checkbox-1::after,
 }
 input[type=checkbox].checkbox-1:active,
 .element-checkbox.checkbox-1:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-1:focus-visible, input[type=checkbox].checkbox-1:hover,
 .element-checkbox.checkbox-1:focus-visible,
 .element-checkbox.checkbox-1:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-1:checked,
 .element-checkbox.checkbox-1:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=checkbox].checkbox-1:checked:focus-visible, input[type=checkbox].checkbox-1:checked:hover,
 .element-checkbox.checkbox-1:checked:focus-visible,
 .element-checkbox.checkbox-1:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-1:checked:active,
 .element-checkbox.checkbox-1:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-1:disabled, input[type=checkbox].checkbox-1[aria-disabled=true],
 .element-checkbox.checkbox-1:disabled,
 .element-checkbox.checkbox-1[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-1:checked::after,
 .element-checkbox.checkbox-1:checked::after {
@@ -2743,8 +2743,8 @@ input[type=checkbox].checkbox-1:checked::after,
 }
 input[type=checkbox].checkbox-1:indeterminate,
 .element-checkbox.checkbox-1:indeterminate {
-  --checkbox-border-color: var(--accent-5, var(--neutral-1));
-  --checkbox-foreground: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-1:indeterminate::after,
 .element-checkbox.checkbox-1:indeterminate::after {
@@ -2766,13 +2766,13 @@ input[type=checkbox].checkbox-2,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-2::after,
 .element-checkbox.checkbox-2::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -2781,33 +2781,33 @@ input[type=checkbox].checkbox-2::after,
 }
 input[type=checkbox].checkbox-2:active,
 .element-checkbox.checkbox-2:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-2:focus-visible, input[type=checkbox].checkbox-2:hover,
 .element-checkbox.checkbox-2:focus-visible,
 .element-checkbox.checkbox-2:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-2:checked,
 .element-checkbox.checkbox-2:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=checkbox].checkbox-2:checked:focus-visible, input[type=checkbox].checkbox-2:checked:hover,
 .element-checkbox.checkbox-2:checked:focus-visible,
 .element-checkbox.checkbox-2:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-2:checked:active,
 .element-checkbox.checkbox-2:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-2:disabled, input[type=checkbox].checkbox-2[aria-disabled=true],
 .element-checkbox.checkbox-2:disabled,
 .element-checkbox.checkbox-2[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-2:checked::after,
 .element-checkbox.checkbox-2:checked::after {
@@ -2816,8 +2816,8 @@ input[type=checkbox].checkbox-2:checked::after,
 }
 input[type=checkbox].checkbox-2:indeterminate,
 .element-checkbox.checkbox-2:indeterminate {
-  --checkbox-border-color: var(--accent-5, var(--neutral-1));
-  --checkbox-foreground: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-2:indeterminate::after,
 .element-checkbox.checkbox-2:indeterminate::after {
@@ -2839,13 +2839,13 @@ input[type=checkbox].checkbox-3,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-3::after,
 .element-checkbox.checkbox-3::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -2854,33 +2854,33 @@ input[type=checkbox].checkbox-3::after,
 }
 input[type=checkbox].checkbox-3:active,
 .element-checkbox.checkbox-3:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-3:focus-visible, input[type=checkbox].checkbox-3:hover,
 .element-checkbox.checkbox-3:focus-visible,
 .element-checkbox.checkbox-3:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-3:checked,
 .element-checkbox.checkbox-3:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=checkbox].checkbox-3:checked:focus-visible, input[type=checkbox].checkbox-3:checked:hover,
 .element-checkbox.checkbox-3:checked:focus-visible,
 .element-checkbox.checkbox-3:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-3:checked:active,
 .element-checkbox.checkbox-3:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-3:disabled, input[type=checkbox].checkbox-3[aria-disabled=true],
 .element-checkbox.checkbox-3:disabled,
 .element-checkbox.checkbox-3[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-3:checked::after,
 .element-checkbox.checkbox-3:checked::after {
@@ -2889,8 +2889,8 @@ input[type=checkbox].checkbox-3:checked::after,
 }
 input[type=checkbox].checkbox-3:indeterminate,
 .element-checkbox.checkbox-3:indeterminate {
-  --checkbox-border-color: var(--accent-5, var(--neutral-1));
-  --checkbox-foreground: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-3:indeterminate::after,
 .element-checkbox.checkbox-3:indeterminate::after {
@@ -2912,13 +2912,13 @@ input[type=checkbox].checkbox-4,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-4::after,
 .element-checkbox.checkbox-4::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -2927,33 +2927,33 @@ input[type=checkbox].checkbox-4::after,
 }
 input[type=checkbox].checkbox-4:active,
 .element-checkbox.checkbox-4:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=checkbox].checkbox-4:focus-visible, input[type=checkbox].checkbox-4:hover,
 .element-checkbox.checkbox-4:focus-visible,
 .element-checkbox.checkbox-4:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=checkbox].checkbox-4:checked,
 .element-checkbox.checkbox-4:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=checkbox].checkbox-4:checked:focus-visible, input[type=checkbox].checkbox-4:checked:hover,
 .element-checkbox.checkbox-4:checked:focus-visible,
 .element-checkbox.checkbox-4:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=checkbox].checkbox-4:checked:active,
 .element-checkbox.checkbox-4:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=checkbox].checkbox-4:disabled, input[type=checkbox].checkbox-4[aria-disabled=true],
 .element-checkbox.checkbox-4:disabled,
 .element-checkbox.checkbox-4[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=checkbox].checkbox-4:checked::after,
 .element-checkbox.checkbox-4:checked::after {
@@ -2962,8 +2962,8 @@ input[type=checkbox].checkbox-4:checked::after,
 }
 input[type=checkbox].checkbox-4:indeterminate,
 .element-checkbox.checkbox-4:indeterminate {
-  --checkbox-border-color: var(--accent-5, var(--neutral-1));
-  --checkbox-foreground: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--accent-5, var(--neutral-1));
+  --checkbox-color-foreground: var(--accent-5, var(--neutral-1));
 }
 input[type=checkbox].checkbox-4:indeterminate::after,
 .element-checkbox.checkbox-4:indeterminate::after {
@@ -2988,13 +2988,13 @@ input[type=radio].radio-1,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-1::after,
 .element-radio.radio-1::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -3003,33 +3003,33 @@ input[type=radio].radio-1::after,
 }
 input[type=radio].radio-1:active,
 .element-radio.radio-1:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-1:focus-visible, input[type=radio].radio-1:hover,
 .element-radio.radio-1:focus-visible,
 .element-radio.radio-1:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-1:checked,
 .element-radio.radio-1:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=radio].radio-1:checked:focus-visible, input[type=radio].radio-1:checked:hover,
 .element-radio.radio-1:checked:focus-visible,
 .element-radio.radio-1:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-1:checked:active,
 .element-radio.radio-1:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-1:disabled, input[type=radio].radio-1[aria-disabled=true],
 .element-radio.radio-1:disabled,
 .element-radio.radio-1[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-1:checked::after,
 .element-radio.radio-1:checked::after {
@@ -3047,13 +3047,13 @@ input[type=radio].radio-2,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-2::after,
 .element-radio.radio-2::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -3062,33 +3062,33 @@ input[type=radio].radio-2::after,
 }
 input[type=radio].radio-2:active,
 .element-radio.radio-2:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-2:focus-visible, input[type=radio].radio-2:hover,
 .element-radio.radio-2:focus-visible,
 .element-radio.radio-2:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-2:checked,
 .element-radio.radio-2:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=radio].radio-2:checked:focus-visible, input[type=radio].radio-2:checked:hover,
 .element-radio.radio-2:checked:focus-visible,
 .element-radio.radio-2:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-2:checked:active,
 .element-radio.radio-2:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-2:disabled, input[type=radio].radio-2[aria-disabled=true],
 .element-radio.radio-2:disabled,
 .element-radio.radio-2[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-2:checked::after,
 .element-radio.radio-2:checked::after {
@@ -3106,13 +3106,13 @@ input[type=radio].radio-3,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-3::after,
 .element-radio.radio-3::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -3121,33 +3121,33 @@ input[type=radio].radio-3::after,
 }
 input[type=radio].radio-3:active,
 .element-radio.radio-3:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-3:focus-visible, input[type=radio].radio-3:hover,
 .element-radio.radio-3:focus-visible,
 .element-radio.radio-3:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-3:checked,
 .element-radio.radio-3:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=radio].radio-3:checked:focus-visible, input[type=radio].radio-3:checked:hover,
 .element-radio.radio-3:checked:focus-visible,
 .element-radio.radio-3:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-3:checked:active,
 .element-radio.radio-3:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-3:disabled, input[type=radio].radio-3[aria-disabled=true],
 .element-radio.radio-3:disabled,
 .element-radio.radio-3[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-3:checked::after,
 .element-radio.radio-3:checked::after {
@@ -3165,13 +3165,13 @@ input[type=radio].radio-4,
   height: var(--checkbox-size);
   width: var(--checkbox-size);
   border-radius: var(--checkbox-border-radius, var(--radius-1));
-  border-color: var(--checkbox-border-color, var(--neutral-6));
-  background-color: var(--checkbox-background);
-  --checkbox-foreground: var(--accent-9, var(--neutral-9));
+  border-color: var(--checkbox-color-border, var(--neutral-6));
+  background-color: var(--checkbox-color-background);
+  --checkbox-color-foreground: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-4::after,
 .element-radio.radio-4::after {
-  color: var(--checkbox-foreground);
+  color: var(--checkbox-color-foreground);
   display: grid;
   place-content: center;
   position: absolute;
@@ -3180,33 +3180,33 @@ input[type=radio].radio-4::after,
 }
 input[type=radio].radio-4:active,
 .element-radio.radio-4:active {
-  --checkbox-border-color: var(--accent-5, var(--neutral-3));
-  --checkbox-background: var(--accent-5, var(--neutral-3));
+  --checkbox-color-border: var(--accent-5, var(--neutral-3));
+  --checkbox-color-background: var(--accent-5, var(--neutral-3));
 }
 input[type=radio].radio-4:focus-visible, input[type=radio].radio-4:hover,
 .element-radio.radio-4:focus-visible,
 .element-radio.radio-4:hover {
-  --checkbox-border-color: var(--accent-4, var(--neutral-3));
-  --checkbox-background: var(--accent-9, var(--neutral-9));
+  --checkbox-color-border: var(--accent-4, var(--neutral-3));
+  --checkbox-color-background: var(--accent-9, var(--neutral-9));
 }
 input[type=radio].radio-4:checked,
 .element-radio.radio-4:checked {
-  --checkbox-background: var(--accent-5, var(--neutral-1));
-  --checkbox-border-color: var(--checkbox-background);
+  --checkbox-color-background: var(--accent-5, var(--neutral-1));
+  --checkbox-color-border: var(--checkbox-color-background);
 }
 input[type=radio].radio-4:checked:focus-visible, input[type=radio].radio-4:checked:hover,
 .element-radio.radio-4:checked:focus-visible,
 .element-radio.radio-4:checked:hover {
-  --checkbox-background: var(--accent-4, var(--neutral-2));
+  --checkbox-color-background: var(--accent-4, var(--neutral-2));
 }
 input[type=radio].radio-4:checked:active,
 .element-radio.radio-4:checked:active {
-  --checkbox-background: var(--accent-3, var(--neutral-3));
+  --checkbox-color-background: var(--accent-3, var(--neutral-3));
 }
 input[type=radio].radio-4:disabled, input[type=radio].radio-4[aria-disabled=true],
 .element-radio.radio-4:disabled,
 .element-radio.radio-4[aria-disabled=true] {
-  --checkbox-background-color: var(--neutral-6);
+  --checkbox-color-background-color: var(--neutral-6);
 }
 input[type=radio].radio-4:checked::after,
 .element-radio.radio-4:checked::after {

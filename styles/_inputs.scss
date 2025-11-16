@@ -4,22 +4,22 @@
 	border: 1.5px solid;
 	outline: none;
 
-	background-color: var(--input-background);
-	border-color: var(--input-border-color);
+	background-color: var(--input-color-background);
+	border-color: var(--input-color-border);
 	border-radius: var(--input-border-radius);
-	caret-color: var(--input-caret);
-	color: var(--input-foreground);
+	caret-color: var(--input-color-caret);
+	color: var(--input-color-foreground);
 	padding-inline: var(--input-padding-x);
 	padding-block: var(--input-padding-y);
 
-	--input-placeholder: var(--neutral-6);
+	--input-color-placeholder: var(--neutral-6);
 
 	&::placeholder {
-		color: var(--input-placeholder);
+		color: var(--input-color-placeholder);
 	}
 
 	@include utils.disabled {
-		--input-background: var(--neutral-8);
+		--input-color-background: var(--neutral-8);
 		cursor: not-allowed;
 	}
 }
@@ -45,25 +45,25 @@
 		--input-padding-x: var(--space-8);
 	}
 
-	--input-border-color: var(--accent-5, var(--neutral-5));
+	--input-color-border: var(--accent-5, var(--neutral-5));
 	--input-border-radius: var(--radius-2);
-	--input-foreground: var(--neutral-1);
-	--input-caret: var(--neutral-4);
+	--input-color-foreground: var(--neutral-1);
+	--input-color-caret: var(--neutral-4);
 
 	&:hover {
-		--input-border-color: var(--accent-6, var(--neutral-4));
-		--input-placeholder: var(--accent-6, var(--neutral-4));
+		--input-color-border: var(--accent-6, var(--neutral-4));
+		--input-color-placeholder: var(--accent-6, var(--neutral-4));
 		box-shadow: 0 0 var(--space-1) 0 oklch(from var(--accent-1, var(--neutral-1)) l c h / 10%);
 	}
 
 	&:focus {
-		--input-border-color: var(--accent-5, var(--neutral-4));
+		--input-color-border: var(--accent-5, var(--neutral-4));
 		--input-foregoround: var(--accent-1, var(--neutral-1));
-		--input-background: var(--accent-9, var(--neutral-9));
-		--input-placeholder: transparent;
+		--input-color-background: var(--accent-9, var(--neutral-9));
+		--input-color-placeholder: transparent;
 	}
 
 	&:active {
-		--input-border-color: var(--accent-4, var(--neutral-4));
+		--input-color-border: var(--accent-4, var(--neutral-4));
 	}
 }

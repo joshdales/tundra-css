@@ -1,34 +1,34 @@
 {
-  "name": "tundra-css",
-  "version": "0.13.0",
-  "description": "An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.",
-  "author": "joshdales",
-  "homepage": "https://tundra.joshdales.dev",
-  "license": "MIT",
-  "main": "index.css",
-  "exports": {
-    ".": "./index.css",
-    "./css": "./index.css",
-    "./scss": {
-      "sass": "./index.scss"
-    },
-    "./styles":{
-      "sass": "./styles/index.scss"
-    },
-    "./styles/*": {
-      "sass": "./styles/*"
-    }
-  },
-  "keywords": [
-    "tundra",
-    "css",
-    "scss",
-    "design system",
-    "styles"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshdales/tundra-css.git"
-  },
-  "bugs": "https://github.com/joshdales/tundra-css/issues"
+	"name": "tundra-css",
+	"version": "0.14.0",
+	"description": "An opinionated and reasonably comprehensive, but not overwhelming, CSS design system.",
+	"author": "joshdales",
+	"homepage": "https://tundra.joshdales.dev",
+	"license": "MIT",
+	"main": "index.css",
+	"exports": {
+		".": "./index.css",
+		"./css": "./index.css",
+		"./scss": {
+			"sass": "./index.scss"
+		},
+		"./styles": {
+			"sass": "./styles/index.scss"
+		},
+		"./styles/*": {
+			"sass": "./styles/*"
+		}
+	},
+	"keywords": [
+		"tundra",
+		"css",
+		"scss",
+		"design system",
+		"styles"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joshdales/tundra-css.git"
+	},
+	"bugs": "https://github.com/joshdales/tundra-css/issues"
 }

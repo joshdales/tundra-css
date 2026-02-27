@@ -1118,7 +1118,7 @@
 @property --element-border-radius {
   syntax: "<length>";
   inherits: true;
-  initial-value: 8px;
+  initial-value: 6px;
 }
 @property --element-border-width {
   syntax: "<length>";
@@ -1128,27 +1128,27 @@
 @property --radius-1 {
   syntax: "<length>";
   inherits: true;
-  initial-value: 4px;
+  initial-value: 3px;
 }
 @property --radius-2 {
   syntax: "<length>";
   inherits: true;
-  initial-value: 8px;
+  initial-value: 6px;
 }
 @property --radius-3 {
   syntax: "<length>";
   inherits: true;
-  initial-value: 16px;
+  initial-value: 12px;
 }
 @property --radius-4 {
   syntax: "<length>";
   inherits: true;
-  initial-value: 32px;
+  initial-value: 24px;
 }
 @property --radius-5 {
   syntax: "<length>";
   inherits: true;
-  initial-value: 64px;
+  initial-value: 48px;
 }
 @property --space-1 {
   syntax: "<length>";
@@ -1548,11 +1548,11 @@
   --color-background: #fff;
   --color-foreground: var(--color-neutral-1);
   /* Radius */
-  --radius-1: 4px;
-  --radius-2: 8px;
-  --radius-3: 16px;
-  --radius-4: 32px;
-  --radius-5: 64px;
+  --radius-1: 3px;
+  --radius-2: 6px;
+  --radius-3: 12px;
+  --radius-4: 24px;
+  --radius-5: 48px;
   /* Space */
   --space-1: 4px;
   --space-2: 8px;

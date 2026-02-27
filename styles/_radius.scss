@@ -1,10 +1,10 @@
 @use "spacing";
 
-$radius-1: spacing.$space-1;
-$radius-2: spacing.$space-2;
-$radius-3: spacing.$space-5;
-$radius-4: spacing.$space-10;
-$radius-5: spacing.$space-13;
+$radius-1: 3px;
+$radius-2: 6px;
+$radius-3: 12px;
+$radius-4: 24px;
+$radius-5: 48px;
 
 $radius: (
 	1: $radius-1,

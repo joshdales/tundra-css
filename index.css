@@ -3,92 +3,92 @@
 @property --accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --accent-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-accent-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --accent-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --color-accent-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --accent-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --color-accent-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --accent-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --color-accent-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --accent-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --color-accent-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --accent-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --color-accent-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --accent-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --color-accent-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --accent-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --color-accent-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --accent-9 {
   syntax: "<color>";
@@ -103,92 +103,92 @@
 @property --neutral {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-neutral {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --neutral-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-neutral-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --neutral-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --color-neutral-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --neutral-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --color-neutral-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --neutral-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --color-neutral-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --neutral-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --color-neutral-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --neutral-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --color-neutral-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --neutral-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --color-neutral-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --neutral-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --color-neutral-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --neutral-9 {
   syntax: "<color>";
@@ -1003,92 +1003,92 @@
 @property --accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-accent {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --accent-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --color-accent-1 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(18% 0 0deg);
+  initial-value: oklch(21% 0 0deg);
 }
 @property --accent-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --color-accent-2 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(27.6% 0 0deg);
+  initial-value: oklch(30.2% 0 0deg);
 }
 @property --accent-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --color-accent-3 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(37.2% 0 0deg);
+  initial-value: oklch(39.5% 0 0deg);
 }
 @property --accent-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --color-accent-4 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(46.9% 0 0deg);
+  initial-value: oklch(48.7% 0 0deg);
 }
 @property --accent-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --color-accent-5 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(56.5% 0 0deg);
+  initial-value: oklch(58% 0 0deg);
 }
 @property --accent-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --color-accent-6 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --accent-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --color-accent-7 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(75.7% 0 0deg);
+  initial-value: oklch(76.5% 0 0deg);
 }
 @property --accent-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --color-accent-8 {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(85.4% 0 0deg);
+  initial-value: oklch(85.7% 0 0deg);
 }
 @property --accent-9 {
   syntax: "<color>";
@@ -1110,10 +1110,10 @@
   inherits: true;
   initial-value: #121212;
 }
-@property --element-color-border {
+@property --element-border-color {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(66.1% 0 0deg);
+  initial-value: oklch(67.2% 0 0deg);
 }
 @property --element-border-radius {
   syntax: "<length>";
@@ -1359,21 +1359,21 @@
   /* neutral */
   --color-neutral: var(--color-neutral-1);
   --neutral: var(--color-neutral-1);
-  --color-neutral-1: oklch(18% 0 0deg);
+  --color-neutral-1: oklch(21% 0 0deg);
   --neutral-1: var(--color-neutral-1);
-  --color-neutral-2: oklch(27.6% 0 0deg);
+  --color-neutral-2: oklch(30.2% 0 0deg);
   --neutral-2: var(--color-neutral-2);
-  --color-neutral-3: oklch(37.2% 0 0deg);
+  --color-neutral-3: oklch(39.5% 0 0deg);
   --neutral-3: var(--color-neutral-3);
-  --color-neutral-4: oklch(46.9% 0 0deg);
+  --color-neutral-4: oklch(48.7% 0 0deg);
   --neutral-4: var(--color-neutral-4);
-  --color-neutral-5: oklch(56.5% 0 0deg);
+  --color-neutral-5: oklch(58% 0 0deg);
   --neutral-5: var(--color-neutral-5);
-  --color-neutral-6: oklch(66.1% 0 0deg);
+  --color-neutral-6: oklch(67.2% 0 0deg);
   --neutral-6: var(--color-neutral-6);
-  --color-neutral-7: oklch(75.7% 0 0deg);
+  --color-neutral-7: oklch(76.5% 0 0deg);
   --neutral-7: var(--color-neutral-7);
-  --color-neutral-8: oklch(85.4% 0 0deg);
+  --color-neutral-8: oklch(85.7% 0 0deg);
   --neutral-8: var(--color-neutral-8);
   --color-neutral-9: oklch(95% 0 0deg);
   --neutral-9: var(--color-neutral-9);
@@ -1596,7 +1596,7 @@
   --letter-spacing-4: 0.02em;
   --letter-spacing-5: 0.04em;
   /* General element configuration */
-  --element-color-border: var(--color-neutral-6);
+  --element-border-color: var(--color-neutral-6);
   --element-border-radius: var(--radius-2);
   --element-border-width: 1.5px;
 }
@@ -2187,7 +2187,7 @@ input[type=submit],
   padding-inline: var(--button-padding-x);
   padding-block: var(--button-padding-y);
   border-radius: var(--button-border-radius, var(--element-border-radius));
-  border-color: var(--button-color-border, var(--element-color-border));
+  border-color: var(--button-border-color, var(--element-border-color));
   background-color: var(--button-color-background);
   color: var(--button-color-foreground);
 }
@@ -2250,7 +2250,7 @@ input[type=submit].filled,
 .button.filled,
 .element-button.filled {
   --button-color-background: var(--color-accent-5, var(--color-neutral-1));
-  --button-color-border: var(--button-color-background);
+  --button-border-color: var(--button-color-background);
   --button-color-foreground: var(--color-background);
 }
 button.filled:focus-visible, button.filled:hover,
@@ -2309,7 +2309,7 @@ input[type=submit].outline,
 .element-button.outline {
   --button-color-background: var(--color-background);
   --button-color-foreground: var(--color-accent-5, var(--color-neutral));
-  --button-color-border: var(--button-color-foreground);
+  --button-border-color: var(--button-color-foreground);
 }
 button.outline:focus-visible, button.outline:hover,
 input[type=button].outline:focus-visible,
@@ -2381,7 +2381,7 @@ input[type=submit].ghost,
 .element-button.ghost {
   --button-color-background: transparent;
   --button-color-foreground: var(--color-accent-5, var(--color-neutral-1));
-  --button-color-border: var(--button-color-background);
+  --button-border-color: var(--button-color-background);
 }
 button.ghost:focus-visible, button.ghost:hover,
 input[type=button].ghost:focus-visible,
@@ -2446,9 +2446,9 @@ textarea,
 [role=textbox],
 .element-text-entry {
   border: var(--element-border-width) solid;
-  outline: var(--input-color-border);
+  outline: var(--input-border-color);
   background-color: var(--input-color-background, var(--color-background));
-  border-color: var(--input-color-border, var(--element-color-border));
+  border-color: var(--input-border-color, var(--element-border-color));
   border-radius: var(--input-border-radius, var(--element-border-radius));
   caret-color: var(--input-color-caret);
   color: var(--input-color-foreground, var(--color-foreground));
@@ -2515,9 +2515,9 @@ textarea.input-1:hover,
 [role=textbox].input-1:hover,
 .element-text-entry.input-1:hover {
   --input-color-background: var(--color-accent-9, var(--color-neutral-9));
-  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-border-color: var(--color-accent-5, var(--color-neutral-5));
   --input-color-placeholder: var(--color-neutral-5);
-  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
+  box-shadow: inset 0px 0 0 0.5px var(--input-border-color);
 }
 input:not([type=button],
 [type=reset],
@@ -2529,7 +2529,7 @@ select.input-1:focus,
 textarea.input-1:focus,
 [role=textbox].input-1:focus,
 .element-text-entry.input-1:focus {
-  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-4, var(--color-neutral-4));
   --input-color-foreground: var(--color-foreground);
   --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
@@ -2544,7 +2544,7 @@ select.input-1:active,
 textarea.input-1:active,
 [role=textbox].input-1:active,
 .element-text-entry.input-1:active {
-  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2571,9 +2571,9 @@ textarea.input-2:hover,
 [role=textbox].input-2:hover,
 .element-text-entry.input-2:hover {
   --input-color-background: var(--color-accent-9, var(--color-neutral-9));
-  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-border-color: var(--color-accent-5, var(--color-neutral-5));
   --input-color-placeholder: var(--color-neutral-5);
-  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
+  box-shadow: inset 0px 0 0 0.5px var(--input-border-color);
 }
 input:not([type=button],
 [type=reset],
@@ -2585,7 +2585,7 @@ select.input-2:focus,
 textarea.input-2:focus,
 [role=textbox].input-2:focus,
 .element-text-entry.input-2:focus {
-  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-4, var(--color-neutral-4));
   --input-color-foreground: var(--color-foreground);
   --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
@@ -2600,7 +2600,7 @@ select.input-2:active,
 textarea.input-2:active,
 [role=textbox].input-2:active,
 .element-text-entry.input-2:active {
-  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2627,9 +2627,9 @@ textarea.input-3:hover,
 [role=textbox].input-3:hover,
 .element-text-entry.input-3:hover {
   --input-color-background: var(--color-accent-9, var(--color-neutral-9));
-  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-border-color: var(--color-accent-5, var(--color-neutral-5));
   --input-color-placeholder: var(--color-neutral-5);
-  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
+  box-shadow: inset 0px 0 0 0.5px var(--input-border-color);
 }
 input:not([type=button],
 [type=reset],
@@ -2641,7 +2641,7 @@ select.input-3:focus,
 textarea.input-3:focus,
 [role=textbox].input-3:focus,
 .element-text-entry.input-3:focus {
-  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-4, var(--color-neutral-4));
   --input-color-foreground: var(--color-foreground);
   --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
@@ -2656,7 +2656,7 @@ select.input-3:active,
 textarea.input-3:active,
 [role=textbox].input-3:active,
 .element-text-entry.input-3:active {
-  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-3, var(--color-neutral-4));
 }
 input:not([type=button],
 [type=reset],
@@ -2683,9 +2683,9 @@ textarea.input-4:hover,
 [role=textbox].input-4:hover,
 .element-text-entry.input-4:hover {
   --input-color-background: var(--color-accent-9, var(--color-neutral-9));
-  --input-color-border: var(--color-accent-5, var(--color-neutral-5));
+  --input-border-color: var(--color-accent-5, var(--color-neutral-5));
   --input-color-placeholder: var(--color-neutral-5);
-  box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
+  box-shadow: inset 0px 0 0 0.5px var(--input-border-color);
 }
 input:not([type=button],
 [type=reset],
@@ -2697,7 +2697,7 @@ select.input-4:focus,
 textarea.input-4:focus,
 [role=textbox].input-4:focus,
 .element-text-entry.input-4:focus {
-  --input-color-border: var(--color-accent-4, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-4, var(--color-neutral-4));
   --input-color-foreground: var(--color-foreground);
   --input-color-background: var(--color-background);
   --input-color-placeholder: transparent;
@@ -2712,7 +2712,7 @@ select.input-4:active,
 textarea.input-4:active,
 [role=textbox].input-4:active,
 .element-text-entry.input-4:active {
-  --input-color-border: var(--color-accent-3, var(--color-neutral-4));
+  --input-border-color: var(--color-accent-3, var(--color-neutral-4));
 }
 
 /* Elements: Toggles */
@@ -2721,11 +2721,11 @@ textarea.input-4:active,
   cursor: pointer;
   position: relative;
   border: var(--element-border-width) solid;
-  outline: var(--toggle-color-border);
+  outline: var(--toggle-border-color);
   height: var(--toggle-size);
   width: var(--toggle-size);
   border-radius: var(--toggle-border-radius, var(--element-border-radius));
-  border-color: var(--toggle-color-border, var(--element-color-border));
+  border-color: var(--toggle-border-color, var(--element-border-color));
   background-color: var(--toggle-color-background);
   --toggle-color-foreground: var(--app-background);
 }
@@ -2738,16 +2738,16 @@ textarea.input-4:active,
   font-size: var(--toggle-tick-size);
 }
 .element-toggle:active, input[type=radio].radio-4:active, input[type=radio].radio-3:active, input[type=radio].radio-2:active, input[type=radio].radio-1:active, input[type=checkbox].checkbox-4:active, input[type=checkbox].checkbox-3:active, input[type=checkbox].checkbox-2:active, input[type=checkbox].checkbox-1:active {
-  --toggle-color-border: var(--color-accent-5, var(--color-neutral-3));
+  --toggle-border-color: var(--color-accent-5, var(--color-neutral-3));
   --toggle-color-background: var(--color-accent-5, var(--color-neutral-3));
 }
 .element-toggle:focus-visible, input[type=radio].radio-4:focus-visible, input[type=radio].radio-3:focus-visible, input[type=radio].radio-2:focus-visible, input[type=radio].radio-1:focus-visible, input[type=checkbox].checkbox-4:focus-visible, input[type=checkbox].checkbox-3:focus-visible, input[type=checkbox].checkbox-2:focus-visible, input[type=checkbox].checkbox-1:focus-visible, .element-toggle:hover, input[type=radio].radio-4:hover, input[type=radio].radio-3:hover, input[type=radio].radio-2:hover, input[type=radio].radio-1:hover, input[type=checkbox].checkbox-4:hover, input[type=checkbox].checkbox-3:hover, input[type=checkbox].checkbox-2:hover, input[type=checkbox].checkbox-1:hover {
-  --toggle-color-border: var(--color-accent-4, var(--color-neutral-3));
+  --toggle-border-color: var(--color-accent-4, var(--color-neutral-3));
   --toggle-color-background: var(--color-accent-9, var(--color-neutral-9));
 }
 .element-toggle:checked, input[type=radio].radio-4:checked, input[type=radio].radio-3:checked, input[type=radio].radio-2:checked, input[type=radio].radio-1:checked, input[type=checkbox].checkbox-4:checked, input[type=checkbox].checkbox-3:checked, input[type=checkbox].checkbox-2:checked, input[type=checkbox].checkbox-1:checked {
   --toggle-color-background: var(--color-accent-5, var(--color-neutral-1));
-  --toggle-color-border: var(--toggle-color-background);
+  --toggle-border-color: var(--toggle-color-background);
 }
 .element-toggle:checked::after, input[type=radio].radio-4:checked::after, input[type=radio].radio-3:checked::after, input[type=radio].radio-2:checked::after, input[type=radio].radio-1:checked::after, input[type=checkbox].checkbox-4:checked::after, input[type=checkbox].checkbox-3:checked::after, input[type=checkbox].checkbox-2:checked::after, input[type=checkbox].checkbox-1:checked::after {
   content: "✔︎";
@@ -2782,7 +2782,7 @@ input[type=checkbox].checkbox-1:checked::after {
   --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-1:indeterminate {
-  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-border-color: var(--color-accent-5, var(--color-neutral-1));
   --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-1:indeterminate::after {
@@ -2801,7 +2801,7 @@ input[type=checkbox].checkbox-2:checked::after {
   --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-2:indeterminate {
-  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-border-color: var(--color-accent-5, var(--color-neutral-1));
   --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-2:indeterminate::after {
@@ -2820,7 +2820,7 @@ input[type=checkbox].checkbox-3:checked::after {
   --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-3:indeterminate {
-  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-border-color: var(--color-accent-5, var(--color-neutral-1));
   --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-3:indeterminate::after {
@@ -2839,7 +2839,7 @@ input[type=checkbox].checkbox-4:checked::after {
   --toggle-tick-size: 90%;
 }
 input[type=checkbox].checkbox-4:indeterminate {
-  --toggle-color-border: var(--color-accent-5, var(--color-neutral-1));
+  --toggle-border-color: var(--color-accent-5, var(--color-neutral-1));
   --toggle-color-foreground: var(--color-accent-5, var(--color-neutral-1));
 }
 input[type=checkbox].checkbox-4:indeterminate::after {

@@ -14,7 +14,7 @@
 	padding-inline: var(--button-padding-x);
 	padding-block: var(--button-padding-y);
 	border-radius: var(--button-border-radius, var(--element-border-radius));
-	border-color: var(--button-color-border, var(--element-color-border));
+	border-color: var(--button-border-color, var(--element-border-color));
 	background-color: var(--button-color-background);
 	color: var(--button-color-foreground);
 
@@ -53,7 +53,7 @@
 	}
 
 	--button-color-background: var(--color-accent-5, var(--color-neutral-1));
-	--button-color-border: var(--button-color-background);
+	--button-border-color: var(--button-color-background);
 	--button-color-foreground: var(--color-background);
 
 	@include utils.viewing {
@@ -83,7 +83,7 @@
 
 	--button-color-background: var(--color-background);
 	--button-color-foreground: var(--color-accent-5, var(--color-neutral));
-	--button-color-border: var(--button-color-foreground);
+	--button-border-color: var(--button-color-foreground);
 
 	@include utils.viewing {
 		--button-color-foreground: var(--color-accent-4, var(--color-neutral-2));
@@ -117,7 +117,7 @@
 
 	--button-color-background: transparent;
 	--button-color-foreground: var(--color-accent-5, var(--color-neutral-1));
-	--button-color-border: var(--button-color-background);
+	--button-border-color: var(--button-color-background);
 
 	@include utils.viewing {
 		--button-color-background: var(--color-accent-9, var(--color-neutral-9));

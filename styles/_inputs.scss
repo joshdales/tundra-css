@@ -3,9 +3,9 @@
 /// The base properties and styles that are applied to an input.
 @mixin base {
 	border: var(--element-border-width) solid;
-	outline: var(--input-color-border);
+	outline: var(--input-border-color);
 	background-color: var(--input-color-background, var(--color-background));
-	border-color: var(--input-color-border, var(--element-color-border));
+	border-color: var(--input-border-color, var(--element-border-color));
 	border-radius: var(--input-border-radius, var(--element-border-radius));
 	caret-color: var(--input-color-caret);
 	color: var(--input-color-foreground, var(--color-foreground));
@@ -50,19 +50,19 @@
 
 	&:hover {
 		--input-color-background: var(--color-accent-9, var(--color-neutral-9));
-		--input-color-border: var(--color-accent-5, var(--color-neutral-5));
+		--input-border-color: var(--color-accent-5, var(--color-neutral-5));
 		--input-color-placeholder: var(--color-neutral-5);
-		box-shadow: inset 0px 0 0 0.5px var(--input-color-border);
+		box-shadow: inset 0px 0 0 0.5px var(--input-border-color);
 	}
 
 	&:focus {
-		--input-color-border: var(--color-accent-4, var(--color-neutral-4));
+		--input-border-color: var(--color-accent-4, var(--color-neutral-4));
 		--input-color-foreground: var(--color-foreground);
 		--input-color-background: var(--color-background);
 		--input-color-placeholder: transparent;
 	}
 
 	&:active {
-		--input-color-border: var(--color-accent-3, var(--color-neutral-4));
+		--input-border-color: var(--color-accent-3, var(--color-neutral-4));
 	}
 }

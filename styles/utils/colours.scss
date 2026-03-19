@@ -1,0 +1,3 @@
+@function alpha-colour($colour, $alpha) {
+	@return oklch(from var($colour) l c h / $alpha);
+}

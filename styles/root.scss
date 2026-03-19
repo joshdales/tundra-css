@@ -50,6 +50,11 @@
 		--letter-spacing-#{$level}: #{$value};
 	}
 
+	/* Shadows */
+	@each $level, $value in $shadows {
+		--shadow-#{$level}: #{$value};
+	}
+
 	/* General element configuration */
 	--element-border-color: var(--color-neutral-6);
 	--element-border-radius: var(--radius-2);

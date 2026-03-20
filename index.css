@@ -503,12 +503,12 @@
 @property --green {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(54% 0.15 165deg);
+  initial-value: oklch(64% 0.178 165deg);
 }
 @property --color-green {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(54% 0.15 165deg);
+  initial-value: oklch(64% 0.178 165deg);
 }
 @property --green-1 {
   syntax: "<color>";
@@ -1270,6 +1270,41 @@
   inherits: true;
   initial-value: 1.5;
 }
+@property --color-shadow {
+  syntax: "*";
+  inherits: true;
+  initial-value: oklch(21% 0 0deg);
+}
+@property --shadow-1 {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1);
+}
+@property --shadow-2 {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12);
+}
+@property --shadow-3 {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17);
+}
+@property --shadow-4 {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.2);
+}
+@property --shadow-5 {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow) l c h/0.25);
+}
+/* @each $colour in colours.$colours {
+	@each $var, $value in shadows.create-shadow-scale($colour) {
+		@include create_prop($var, "*", $value);
+	}
+} */
 @property --text-font-size {
   syntax: "<length>";
   inherits: true;
@@ -1441,8 +1476,8 @@
   --color-yellow-9: oklch(95% 0.051 80deg);
   --yellow-9: var(--color-yellow-9);
   /* green */
-  --color-green: var(--color-green-5);
-  --green: var(--color-green-5);
+  --color-green: var(--color-green-6);
+  --green: var(--color-green-6);
   --color-green-1: oklch(14% 0.039 165deg);
   --green-1: var(--color-green-1);
   --color-green-2: oklch(24% 0.067 165deg);
@@ -1547,6 +1582,58 @@
   --pink-9: var(--color-pink-9);
   --color-background: #fff;
   --color-foreground: var(--color-neutral-1);
+  /* Shadows */
+  --color-shadow: var(--color-neutral-1);
+  --shadow-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1);
+  --shadow-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12);
+  --shadow-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17);
+  --shadow-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.2);
+  --shadow-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow) l c h/0.25);
+  --shadow-neutral-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-neutral) l c h/0.1);
+  --shadow-neutral-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-neutral) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-neutral) l c h/0.12);
+  --shadow-neutral-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-neutral) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-neutral) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-neutral) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-neutral) l c h/0.17);
+  --shadow-neutral-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-neutral) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-neutral) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-neutral) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-neutral) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-neutral) l c h/0.2);
+  --shadow-neutral-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-neutral) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-neutral) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-neutral) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-neutral) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-neutral) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-neutral) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-neutral) l c h/0.25);
+  --shadow-red-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-red) l c h/0.1);
+  --shadow-red-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-red) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-red) l c h/0.12);
+  --shadow-red-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-red) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-red) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-red) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-red) l c h/0.17);
+  --shadow-red-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-red) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-red) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-red) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-red) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-red) l c h/0.2);
+  --shadow-red-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-red) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-red) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-red) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-red) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-red) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-red) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-red) l c h/0.25);
+  --shadow-orange-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-orange) l c h/0.1);
+  --shadow-orange-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-orange) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-orange) l c h/0.12);
+  --shadow-orange-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-orange) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-orange) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-orange) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-orange) l c h/0.17);
+  --shadow-orange-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-orange) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-orange) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-orange) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-orange) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-orange) l c h/0.2);
+  --shadow-orange-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-orange) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-orange) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-orange) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-orange) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-orange) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-orange) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-orange) l c h/0.25);
+  --shadow-yellow-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-yellow) l c h/0.1);
+  --shadow-yellow-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-yellow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-yellow) l c h/0.12);
+  --shadow-yellow-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-yellow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-yellow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-yellow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-yellow) l c h/0.17);
+  --shadow-yellow-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-yellow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-yellow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-yellow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-yellow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-yellow) l c h/0.2);
+  --shadow-yellow-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-yellow) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-yellow) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-yellow) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-yellow) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-yellow) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-yellow) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-yellow) l c h/0.25);
+  --shadow-green-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-green) l c h/0.1);
+  --shadow-green-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-green) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-green) l c h/0.12);
+  --shadow-green-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-green) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-green) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-green) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-green) l c h/0.17);
+  --shadow-green-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-green) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-green) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-green) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-green) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-green) l c h/0.2);
+  --shadow-green-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-green) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-green) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-green) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-green) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-green) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-green) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-green) l c h/0.25);
+  --shadow-cyan-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-cyan) l c h/0.1);
+  --shadow-cyan-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-cyan) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-cyan) l c h/0.12);
+  --shadow-cyan-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-cyan) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-cyan) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-cyan) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-cyan) l c h/0.17);
+  --shadow-cyan-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-cyan) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-cyan) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-cyan) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-cyan) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-cyan) l c h/0.2);
+  --shadow-cyan-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-cyan) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-cyan) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-cyan) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-cyan) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-cyan) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-cyan) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-cyan) l c h/0.25);
+  --shadow-blue-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-blue) l c h/0.1);
+  --shadow-blue-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-blue) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-blue) l c h/0.12);
+  --shadow-blue-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-blue) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-blue) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-blue) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-blue) l c h/0.17);
+  --shadow-blue-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-blue) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-blue) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-blue) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-blue) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-blue) l c h/0.2);
+  --shadow-blue-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-blue) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-blue) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-blue) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-blue) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-blue) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-blue) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-blue) l c h/0.25);
+  --shadow-purple-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-purple) l c h/0.1);
+  --shadow-purple-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-purple) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-purple) l c h/0.12);
+  --shadow-purple-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-purple) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-purple) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-purple) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-purple) l c h/0.17);
+  --shadow-purple-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-purple) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-purple) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-purple) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-purple) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-purple) l c h/0.2);
+  --shadow-purple-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-purple) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-purple) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-purple) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-purple) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-purple) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-purple) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-purple) l c h/0.25);
+  --shadow-pink-1: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-pink) l c h/0.1);
+  --shadow-pink-2: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-pink) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-pink) l c h/0.12);
+  --shadow-pink-3: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-pink) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-pink) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-pink) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-pink) l c h/0.17);
+  --shadow-pink-4: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-pink) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-pink) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-pink) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-pink) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-pink) l c h/0.2);
+  --shadow-pink-5: 0 0 var(--space-3) 0 oklch(from var(--color-shadow-pink) l c h/0.1), var(--space-2) var(--space-2) var(--space-3) calc(-1 * var(--space-1)) oklch(from var(--color-shadow-pink) l c h/0.12), var(--space-4) var(--space-3) var(--space-5) var(--space-2) oklch(from var(--color-shadow-pink) l c h/0.1), calc(-1 * var(--space-2)) var(--space-4) var(--space-4) calc(-1 * var(--space-2)) oklch(from var(--color-shadow-pink) l c h/0.17), var(--space-2) var(--space-4) var(--space-5) var(--space-2) oklch(from var(--color-shadow-pink) l c h/0.2), var(--space-3) var(--space-6) var(--space-4) calc(-1 * var(--space-3)) oklch(from var(--color-shadow-pink) l c h/0.22), calc(-1 * var(--space-1)) var(--space-6) var(--space-6) var(--space-1) oklch(from var(--color-shadow-pink) l c h/0.25);
   /* Radius */
   --radius-1: 3px;
   --radius-2: 6px;

@@ -403,12 +403,12 @@
 @property --yellow {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(76% 0.163 80deg);
+  initial-value: oklch(85.5% 0.156 80deg);
 }
 @property --color-yellow {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(76% 0.163 80deg);
+  initial-value: oklch(85.5% 0.156 80deg);
 }
 @property --yellow-1 {
   syntax: "<color>";
@@ -603,12 +603,12 @@
 @property --cyan {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(55% 0.108 190deg);
+  initial-value: oklch(75% 0.147 190deg);
 }
 @property --color-cyan {
   syntax: "<color>";
   inherits: true;
-  initial-value: oklch(55% 0.108 190deg);
+  initial-value: oklch(75% 0.147 190deg);
 }
 @property --cyan-1 {
   syntax: "<color>";
@@ -1420,8 +1420,8 @@
   --color-orange-9: oklch(95% 0.034 45deg);
   --orange-9: var(--color-orange-9);
   /* yellow */
-  --color-yellow: var(--color-yellow-7);
-  --yellow: var(--color-yellow-7);
+  --color-yellow: var(--color-yellow-8);
+  --yellow: var(--color-yellow-8);
   --color-yellow-1: oklch(19% 0.041 80deg);
   --yellow-1: var(--color-yellow-1);
   --color-yellow-2: oklch(28.5% 0.061 80deg);
@@ -1462,8 +1462,8 @@
   --color-green-9: oklch(94% 0.098 165deg);
   --green-9: var(--color-green-9);
   /* cyan */
-  --color-cyan: var(--color-cyan-5);
-  --cyan: var(--color-cyan-5);
+  --color-cyan: var(--color-cyan-7);
+  --cyan: var(--color-cyan-7);
   --color-cyan-1: oklch(15% 0.029 190deg);
   --cyan-1: var(--color-cyan-1);
   --color-cyan-2: oklch(25% 0.049 190deg);

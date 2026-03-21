@@ -163,5 +163,9 @@ $_colours: map.remove($colours, "neutral");
 		}
 
 		accent-color: var(--accent);
+
+		@for $level from 1 through 5 {
+			--accent-shadow-#{$level}: var(--shadow-#{$colour}-#{$level});
+		}
 	}
 }

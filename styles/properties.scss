@@ -4,6 +4,7 @@
 @use "./spacing";
 @use "./typography";
 @use "./typography/font-size";
+@use "./shadows";
 
 /// Create an `@property` rule
 ///
@@ -74,6 +75,22 @@ $_colours: map.merge(colours.$colours, $_colours);
 
 @each $level, $value in typography.$line-height {
 	@include create_prop("line-height-#{$level}", "number", $value);
+}
+
+@include create_prop("color-shadow", "*", colours.$neutral-1);
+@each $level, $value in shadows.$shadows {
+	@include create_prop("shadow-#{$level}", "*", $value);
+}
+@each $colour, $_ in colours.$colours {
+	@include create_prop(
+		"color-shadow-#{$colour}",
+		"*",
+		map.get(map.get(colours.$colours, $colour), 3)
+	);
+
+	@each $var, $value in shadows.create-shadow-scale($colour) {
+		@include create_prop($var, "*", $value);
+	}
 }
 
 // Because these properties use relative values we need to define them with a absolute value. Otherwise the rule is invalid

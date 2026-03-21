@@ -20,6 +20,18 @@
 	--color-background: #fff;
 	--color-foreground: var(--color-neutral-1);
 
+	/* Shadows */
+	--color-shadow: var(--color-neutral-1);
+	@each $level, $value in $shadows {
+		--shadow-#{$level}: #{$value};
+	}
+
+	@each $colour, $values in $colours {
+		@each $key, $value in create-shadow-scale($colour, --#{$colour}-3) {
+			#{$key}: $value;
+		}
+	}
+
 	/* Radius */
 	@each $level, $value in $radius {
 		--radius-#{$level}: #{$value};

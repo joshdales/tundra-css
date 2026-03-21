@@ -38,3 +38,7 @@ Inputs:
 Toggles:
   - changed-files:
       - any-glob-to-any-file: "styles/_toggles.scss"
+
+Shadows:
+  - changed-files:
+      - any-glob-to-any-file: "styles/_shadows.scss"

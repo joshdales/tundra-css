@@ -81,7 +81,13 @@ $_colours: map.merge(colours.$colours, $_colours);
 @each $level, $value in shadows.$shadows {
 	@include create_prop("shadow-#{$level}", "*", $value);
 }
-@each $colour in colours.$colours {
+@each $colour, $_ in colours.$colours {
+	@include create_prop(
+		"color-shadow-#{$colour}",
+		"*",
+		map.get(map.get(colours.$colours, $colour), 3)
+	);
+
 	@each $var, $value in shadows.create-shadow-scale($colour) {
 		@include create_prop($var, "*", $value);
 	}

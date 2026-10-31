@@ -143,14 +143,14 @@ Though if you bowser doesn't support custom properties or the `@supports` rule I
 There are SCSS variables and mixins provided which you can use if you want to override or change things up. They can be imported from the `/styles` directory, the variables are names the same as the custom properties. However I've not documented any of it yet.
 
 ## Development
-This project uses Deno for local development.
+This project uses node and pnpm for local development.
 ```bash
 # Install dependencies
-deno install
+pnpm install
 
 # Build the main css file
-deno build
+pnpm build
 
 # Pass the watch flag to update on any style updates
-deno build --watch
+pnpm build --watch
 ```

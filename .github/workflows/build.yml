@@ -14,21 +14,13 @@ jobs:
   build-css:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Install Deno
-        uses: denoland/setup-deno@v2
+      - uses: actions/checkout@v7
+      - uses: pnpm/setup@v3
         with:
-          deno-version: v2.x
+          version: 12
+          runtime: node@lts
           cache: true
-
-      - name: Install Deps
-        run: deno install
-
-      - name: Build CSS
-        run: deno task build
-
+      - run: pnpm build
       - name: Check if CSS is up to date
         run: |
           if ! git diff --quiet index.css; then

@@ -17,17 +17,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Install Deno
-        uses: denoland/setup-deno@v2
+      - name: Install pnpm
+        uses: pnpm/setup@v3
         with:
-          deno-version: v2.x
+          version: 12
+          runtime: node@lts
           cache: true
 
-      - name: Install Deps
-        run: deno install
-
       - name: Build CSS
-        run: deno task build
+        run: pnpm build
 
       - name: Check if CSS is up to date
         run: |

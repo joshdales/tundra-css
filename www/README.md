@@ -4,12 +4,12 @@ This site is built with SvelteKit. It's a visual reference for all the propertie
 
 ## Developing
 
-I'm using Deno to develop and run the website locally.
+I'm using node and pnpm to develop and run the website locally.
 
 ```bash
 # Install dependencies
-deno install
+pnpm install
 
 # Run the dev server
-deno task serve
+pnpm dev
 ```

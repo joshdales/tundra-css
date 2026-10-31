@@ -6,3 +6,5 @@ routes = [{ pattern = "tundra.joshdales.dev", custom_domain = true }]
 [assets]
 binding = "ASSETS"
 directory = ".svelte-kit/cloudflare"
+
+[previews]

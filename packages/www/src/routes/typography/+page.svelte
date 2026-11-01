@@ -10,12 +10,13 @@
 	let copiedValue: CopiedValue | undefined = $state()
 
 	$effect(() => {
-		const token = page.url.searchParams.get('token')
+		const url= new URL(page.url.href)
+		const token = url.searchParams.get('token')
 		if (token && !selectedToken) {
 			selectedToken = token
 		} else if (selectedToken && selectedToken !== token) {
-			page.url.searchParams.set('token', selectedToken)
-			goto(page.url, { replaceState: true })
+			url.searchParams.set('token', selectedToken)
+			goto(url, { replaceState: true })
 		}
 	})
 </script>

@@ -8,7 +8,6 @@ export default defineConfig({
 	plugins: [
 		sveltekit({
 			preprocess: vitePreprocess(),
-			runes: true,
 			adapter: adapter(),
 			prerender: { handleHttpError: 'warn' },
 		}),

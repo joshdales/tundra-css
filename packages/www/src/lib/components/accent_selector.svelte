@@ -5,7 +5,8 @@
 
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
 
-	let selectedColour = $state(page.url.searchParams.get('colour'))
+	const url = new URL(page.url.href)
+	let selectedColour = $state(url.searchParams.get('colour'))
 
 	interface Props {
 		updateColour: (newColour: string) => void
@@ -20,13 +21,13 @@
 		}
 
 		if (newColour) {
-			page.url.searchParams.set('colour', newColour)
+			url.searchParams.set('colour', newColour)
 		} else {
-			page.url.searchParams.delete('colour')
+			url.searchParams.delete('colour')
 		}
 
 		if (browser) {
-			goto(page.url, { replaceState: true, keepFocus: true, noScroll: true })
+			goto(url, { replaceState: true, reset: false })
 		}
 	}
 

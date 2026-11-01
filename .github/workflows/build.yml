@@ -21,7 +21,7 @@ jobs:
           version: 12
           runtime: node@lts
           cache: true
-      - run: pnpm build
+      - run: pnpm --filter "tundra-css" build
       - name: Check if CSS is up to date
         run: |
           if ! git diff --quiet index.css; then

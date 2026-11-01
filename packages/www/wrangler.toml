@@ -1,7 +1,9 @@
 name = "tundra-css"
 main = ".svelte-kit/cloudflare/_worker.js"
-compatibility_date = "2025-06-19"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_als"]
 routes = [{ pattern = "tundra.joshdales.dev", custom_domain = true }]
+workers_dev = true
 
 [assets]
 binding = "ASSETS"

@@ -31,7 +31,7 @@
 		if (theme.accent) {
 			let appClass
 			for (const value of document.documentElement.classList.values()) {
-				if (/^app/.test(value)) {
+				if (value.startsWith('app')) {
 					appClass = value
 					break
 				}

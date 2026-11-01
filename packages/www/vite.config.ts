@@ -9,6 +9,9 @@ export default defineConfig({
 		sveltekit({
 			preprocess: vitePreprocess(),
 			adapter: adapter(),
+			compilerOptions: {
+				runes: true,
+			},
 			prerender: { handleHttpError: 'warn' },
 		}),
 		devtoolsJson(),

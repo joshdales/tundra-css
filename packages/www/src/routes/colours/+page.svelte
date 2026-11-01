@@ -13,7 +13,7 @@
 		'blue',
 		'purple',
 		'pink',
-	].map((colour) => new Array(9).fill(colour))
+	].map((colour) => Array.from<string>({ length:9 }).fill(colour))
 
 	let copiedValue: CopiedValue | undefined = $state()
 </script>

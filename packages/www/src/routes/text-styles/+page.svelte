@@ -2,8 +2,8 @@
 	import TokenDescription from '#lib/components/token_description.svelte'
 
 	let selectedStyle = $state('')
-	const headings = new Array(6)
-	const text = new Array(4)
+	const headings = Array.from({length: 6})
+	const text = Array.from({ length: 4})
 </script>
 
 <main>

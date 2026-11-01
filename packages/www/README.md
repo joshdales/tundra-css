@@ -4,7 +4,7 @@ This site is built with SvelteKit. It's a visual reference for all the propertie
 
 ## Developing
 
-I'm using node and pnpm to develop and run the website locally.
+I'm using node and pnpm to develop and run the website locally, and deploy it to Cloudflare.
 
 ```bash
 # Install dependencies

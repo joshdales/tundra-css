@@ -28,7 +28,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/joshdales/tundra-css.git"
+		"url": "git+https://github.com/joshdales/tundra-css.git",
 		"directory": "packages/tundra"
 	},
 	"bugs": "https://github.com/joshdales/tundra-css/issues",

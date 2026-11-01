@@ -1,8 +1,8 @@
 <script lang="ts">
-	import DesignToken from '$lib/components/design_token.svelte'
-	import Toaster from '$lib/components/copy_toaster.svelte'
-	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
-	import TokenDescription from '$lib/components/token_description.svelte'
+	import DesignToken from '#lib/components/design_token.svelte'
+	import Toaster from '#lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '#lib/components/copy_toaster.svelte'
+	import TokenDescription from '#lib/components/token_description.svelte'
 	const colourMap = [
 		'neutral',
 		'red',
@@ -13,7 +13,7 @@
 		'blue',
 		'purple',
 		'pink',
-	].map((colour) => new Array(9).fill(colour))
+	].map((colour) => Array.from<string>({ length:9 }).fill(colour))
 
 	let copiedValue: CopiedValue | undefined = $state()
 </script>

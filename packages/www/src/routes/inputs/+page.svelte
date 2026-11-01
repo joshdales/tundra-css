@@ -1,6 +1,6 @@
 <script>
-	import AccentSelector from '$lib/components/accent_selector.svelte'
-	import TokenDescription from '$lib/components/token_description.svelte'
+	import AccentSelector from '#lib/components/accent_selector.svelte'
+	import TokenDescription from '#lib/components/token_description.svelte'
 	let selectedColour = $state('')
 </script>
 
@@ -8,8 +8,8 @@
 	<TokenDescription title="Inputs (Text)">
 		<p class="text-body-4 desc">
 			Text based inputs for user entry you can apply the <code>input-*</code> class to the input element,
-			and combine it with the label class on the label element. If you don't include a class for the
-			colour then the accent colours with be greyscale.
+			and combine it with the label class on the label element. If you don't include a class for the colour
+			then the accent colours with be greyscale.
 		</p>
 
 		<AccentSelector updateColour={(newColour) => (selectedColour = newColour)} />

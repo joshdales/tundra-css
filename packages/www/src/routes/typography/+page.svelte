@@ -1,21 +1,22 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
-	import { page } from '$app/stores'
-	import DesignToken from '$lib/components/design_token.svelte'
-	import Toaster from '$lib/components/copy_toaster.svelte'
-	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
-	import TokenDescription from '$lib/components/token_description.svelte'
+	import { page } from '$app/state'
+	import DesignToken from '#lib/components/design_token.svelte'
+	import Toaster from '#lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '#lib/components/copy_toaster.svelte'
+	import TokenDescription from '#lib/components/token_description.svelte'
 
-	let selectedToken = $state($page.url.searchParams.get('token') || '')
+	let selectedToken = $state(page.url.searchParams.get('token') || '')
 	let copiedValue: CopiedValue | undefined = $state()
 
 	$effect(() => {
-		const token = $page.url.searchParams.get('token')
+		const url= new URL(page.url.href)
+		const token = url.searchParams.get('token')
 		if (token && !selectedToken) {
 			selectedToken = token
 		} else if (selectedToken && selectedToken !== token) {
-			$page.url.searchParams.set('token', selectedToken)
-			goto($page.url, { replaceState: true })
+			url.searchParams.set('token', selectedToken)
+			goto(url, { replaceState: true })
 		}
 	})
 </script>

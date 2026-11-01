@@ -1,6 +1,6 @@
 <script>
-	import LinkCard from '$lib/components/link_card.svelte'
-	import ThemeAccentSelector from '$lib/components/theme_accent_selector.svelte'
+	import LinkCard from '#lib/components/link_card.svelte'
+	import ThemeAccentSelector from '#lib/components/theme_accent_selector.svelte'
 </script>
 
 <div class="grid">

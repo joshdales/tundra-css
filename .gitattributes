@@ -1,3 +1,4 @@
 * text=auto eol=lf
 
 index.css -diff
+worker-configuration.d.ts -diff

@@ -1,13 +1,5 @@
 export type AccentColour =
-	| 'red'
-	| 'orange'
-	| 'yellow'
-	| 'green'
-	| 'cyan'
-	| 'blue'
-	| 'purple'
-	| 'pink'
-	| 'neutral'
+	'red' | 'orange' | 'yellow' | 'green' | 'cyan' | 'blue' | 'purple' | 'pink' | 'neutral'
 
 export type Brightness = 'light' | 'dark' | 'system'
 

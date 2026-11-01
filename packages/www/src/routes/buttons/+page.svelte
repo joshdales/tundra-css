@@ -1,8 +1,8 @@
 <script lang="ts">
-	import TokenDescription from '$lib/components/token_description.svelte'
-	import AccentSelector from '$lib/components/accent_selector.svelte'
-	import CopyToaster from '$lib/components/copy_toaster.svelte'
-	import type { CopiedValue } from '$lib/components/copy_toaster.svelte'
+	import TokenDescription from '#lib/components/token_description.svelte'
+	import AccentSelector from '#lib/components/accent_selector.svelte'
+	import CopyToaster from '#lib/components/copy_toaster.svelte'
+	import type { CopiedValue } from '#lib/components/copy_toaster.svelte'
 
 	let selectedColour = $state('')
 	let acceentClass = $derived(selectedColour ? `accent-${selectedColour}` : undefined)

@@ -1,5 +1,5 @@
 import type { Cookies } from '@sveltejs/kit'
-import type { Theme, AccentColour } from '$lib/theme.svelte'
+import type { Theme, AccentColour } from '#lib/theme.svelte.js'
 
 export const prerender = true
 

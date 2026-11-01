@@ -1,18 +1,20 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
 	import { page } from '$app/state'
-	import NavHeader from '$lib/components/header/nav_header.svelte'
+	import NavHeader from '#lib/components/header/nav_header.svelte'
 	import '../app.css'
-	import { theme } from '$lib'
+	import { theme } from '#lib'
+
 	interface Props {
 		children?: import('svelte').Snippet
 	}
 
 	let { children }: Props = $props()
-
 	let showHeader = $derived(() => !page.data.hideHeader)
 
 	onNavigate((navigation) => {
+		if (navigation.shallow && navigation.type === 'goto') return
+
 		if (!document.startViewTransition) {
 			return
 		}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import TokenDescription from '$lib/components/token_description.svelte'
+	import TokenDescription from '#lib/components/token_description.svelte'
 
 	let selectedStyle = $state('')
 	const headings = new Array(6)

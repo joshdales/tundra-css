@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { theme } from '$lib/theme.svelte'
-	import type { AccentColour } from '$lib/theme'
+	import { theme } from '#lib/theme.svelte.js'
+	import type { AccentColour } from '#lib/theme.js'
 
 	function handleUpdate(evt: Event) {
 		evt.preventDefault()

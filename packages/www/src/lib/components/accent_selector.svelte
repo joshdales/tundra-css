@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { page } from '$app/state'
-	import { browser } from '$app/environment'
+	import { browser } from '$app/env'
 
 	const colours = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink']
+
 	let selectedColour = $state(page.url.searchParams.get('colour'))
+
 	interface Props {
 		updateColour: (newColour: string) => void
 	}

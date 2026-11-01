@@ -3,12 +3,13 @@ name: Build Check
 on:
   push:
     paths:
-      - "index.scss"
-      - "styles/*"
+      - "packages/tundra/*"
+      - "packages/tundra/index.scss"
+      - "packages/tundra/styles/*"
   pull_request:
     paths:
-      - "index.scss"
-      - "styles/*"
+      - "packages/tundra/index.scss"
+      - "packges/tundra/styles/*"
 
 jobs:
   build-css:

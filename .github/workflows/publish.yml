@@ -24,4 +24,5 @@ jobs:
       - name: Update npm to latest version
         run: npm install -g npm@latest
       - name: Publish
+        working-directory: packages/tundra
         run: npm publish --provenance
